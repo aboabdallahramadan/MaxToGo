@@ -1,16 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@100;200;300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box !important;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --background: #000000;
   --foreground: #ffffff;
-  --mainColor: #FECC02;
+  --primaryColor: #FECC02;
   --secondaryColor: #006AA7;
 }
 
 body {
-  font-family: "Readex Pro", Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Readex Pro', sans-serif;
 }
 
 @layer utilities {

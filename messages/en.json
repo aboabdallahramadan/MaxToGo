@@ -1,4 +1,11 @@
 {
+    "layout": {
+        "Login": "Login",
+        "Home": "Home",
+        "About": "About",
+        "Services": "Services",
+        "Contact": "Contact Us"
+    },
     "home": {
         "test": "is english"
     }
