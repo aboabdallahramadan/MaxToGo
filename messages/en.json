@@ -7,6 +7,20 @@
         "Contact": "Contact Us",
         "GoApp": "Go to app"
     },
+    "footer": {
+        "MainEmail": "Main Email",
+        "Info": "Info",
+        "OfficePhone": "Office Phone",
+        "Mobile": "Mobile",
+        "Services": "Services",
+        "AboutUs": "About Us",
+        "AboutUsInfo": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed",
+        "Location": "2416 Mapleview Drive Tampa, FL 33634",
+        "WorkWithUs": "Work With Us",
+        "GoToTheApp": "Go To The App",
+        "Subscribe": "Subscribe",
+        "SubscribeInfo": "Get the latest updates via email. you may unsubscribe Any time"
+    },
     "home": {
         "test": "is english"
     }

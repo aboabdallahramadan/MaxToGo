@@ -1,3 +1,4 @@
+import Footer from "@/components/layout/Footer";
 import LayoutHeader from "@/components/layout/LayoutHeader";
 import "@/public/css/globals.css";
 import { NextIntlClientProvider } from "next-intl";
@@ -14,13 +15,14 @@ export default async function RootLayout({ children, params }) {
   // side is the easiest way to get started
   const messages = await getMessages();
   return (
-    <html lang="en">
-      <body>
-        <NextIntlClientProvider messages={messages}>
-          <LayoutHeader/>
-        {children}
-        </NextIntlClientProvider>
-      </body>
-    </html>
+      <NextIntlClientProvider messages={messages}>
+        <html lang="en">
+          <body className="min-h-screen flex flex-col justify-between">
+              <LayoutHeader/>
+              {children}
+              <Footer />
+          </body>
+        </html> 
+      </NextIntlClientProvider>
   );
 }
