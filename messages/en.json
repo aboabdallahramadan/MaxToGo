@@ -1,10 +1,11 @@
 {
-    "layout": {
+    "Header": {
         "Login": "Login",
         "Home": "Home",
         "About": "About",
         "Services": "Services",
-        "Contact": "Contact Us"
+        "Contact": "Contact Us",
+        "GoApp": "Go to app"
     },
     "home": {
         "test": "is english"

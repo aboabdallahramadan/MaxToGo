@@ -7,6 +7,13 @@ module.exports = {
   ],
   theme: {
     container: {
+      padding: {
+        DEFAULT: '1rem',
+        sm: '0rem',
+        lg: '3rem',
+        xl: '3rem',
+        '2xl': '3rem',
+      },
       center: true,
     },
     extend: {
