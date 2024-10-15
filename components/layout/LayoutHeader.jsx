@@ -4,88 +4,135 @@ import Link from "next/link";
 import NavLink from "@/components/NavLink";
 import { useTranslations } from "next-intl";
 import PrimaryLink from "../PrimaryLink";
-import {FaBars, FaGlobe} from "react-icons/fa";
-import { useState } from "react";
-
+import { FaBars, FaGlobe } from "react-icons/fa";
+import { useState, useEffect } from "react";
 
 const LayoutHeader = () => {
-    const t = useTranslations('Header');
+  const t = useTranslations("Header");
 
-    let session = true;
+  let session = true;
 
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setHasScrolled(true);
+      } else {
+        setHasScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="fixed w-full">
-        <div className="container h-12 flex justify-between pt-2">
-          <div className="h-100 w-40">
-          <Image src="/images/logo.png" width={150} height={50} alt="logo" style={{ width: "auto", height: "100%"}} priority/>
-          </div>
-          <nav className="flex justify-between items-center h-100">
+    <header
+      className={`fixed w-full z-50 transition-colors duration-300 ${
+        hasScrolled ? "bg-secondary" : "bg-transparent"
+      }`}
+    >
+      <div className="container h-12 flex justify-between py-2">
+        <div className="h-100 w-40">
+          <Image
+            src="/images/logo.png"
+            width={150}
+            height={50}
+            alt="logo"
+            style={{ width: "auto", height: "100%" }}
+            priority
+          />
+        </div>
+        <nav className="flex justify-between items-center h-100">
           <ul className="items-center h-100 hidden sm:flex">
-              <NavLink link="#">{t("Home")}</NavLink>
-              <NavLink link="#about">{t("About")}</NavLink>
-              <NavLink link="#services">{t("Services")}</NavLink>
-              <NavLink link="#contact">{t("Contact")}</NavLink>
+            <NavLink link="/#">{t("Home")}</NavLink>
+            <NavLink link="/#about">{t("About")}</NavLink>
+            <NavLink link="/#services">{t("Services")}</NavLink>
+            <NavLink link="/#contact">{t("Contact")}</NavLink>
           </ul>
-          </nav>
-          
-          <div className="flex justify-between items-center">
-            {(session ? <PrimaryLink link={"/login"}>{t("Login")}</PrimaryLink> : <PrimaryLink link={"/app"}>{t("GoApp")}</PrimaryLink>)}
-            <button
-              type='button'
-              id='language-dropdown-button'
-              className='ml-4'
-              aria-controls='language-menu'
-              aria-expanded='false'
-              onClick={() => setIsLanguageMenuOpen((prev) => !prev)}
-            ><FaGlobe className="text-secondary"/></button>
-            <button
-              type='button'
-              id='mobile-dropdown-button'
-              className='sm:hidden ml-4'
-              aria-controls='mobile-menu'
-              aria-expanded='false'
-              onClick={() => setIsMobileMenuOpen((prev) => !prev)}
-            ><FaBars className="text-secondary"/></button>
+        </nav>
+
+        <div className="flex justify-between items-center">
+          {session ? (
+            <PrimaryLink link={"/login"}>{t("Login")}</PrimaryLink>
+          ) : (
+            <PrimaryLink link={"/app"}>{t("GoApp")}</PrimaryLink>
+          )}
+          <button
+            type="button"
+            id="language-dropdown-button"
+            className="ml-4"
+            aria-controls="language-menu"
+            aria-expanded="false"
+            onClick={() => setIsLanguageMenuOpen((prev) => !prev)}
+          >
+            <FaGlobe className={`${
+        hasScrolled ? "text-foreground" : "text-secondary"
+      }` } />
+          </button>
+          <button
+            type="button"
+            id="mobile-dropdown-button"
+            className="sm:hidden ml-4"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+            onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+          >
+            <FaBars className={`${
+        hasScrolled ? "text-foreground" : "text-secondary"
+      }` } />
+          </button>
+        </div>
+        {isLanguageMenuOpen && (
+          <div
+            id="Language-menu"
+            className="absolute right-0 top-10 bg-secondary"
+          >
+            <div className="space-y-1 px-2 pb-3 pt-2">
+              <ul className="flex flex-col justify-between items-center gap-4">
+                <li>
+                  <Link
+                    href="/en"
+                    className="font-bold ml-4 px-4 py-2 border border-transparent hover:border hover:border-primary hover:text-primary whitespace-nowrap rounded"
+                  >
+                    {t("English")}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/sv"
+                    className="font-bold ml-4 px-4 py-2 border border-transparent hover:border hover:border-primary hover:text-primary whitespace-nowrap rounded"
+                  >
+                    {t("Swedish")}
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
-          {
-            isLanguageMenuOpen && (
-              <div id='Language-menu' className="absolute right-0 top-10 bg-secondary">
-                <div className='space-y-1 px-2 pb-3 pt-2'>
-                  <ul className="flex flex-col justify-between items-center gap-4">
-                    <li>
-                      <Link href="/en" className="font-bold ml-4 px-4 py-2 border border-transparent hover:border hover:border-primary hover:text-primary whitespace-nowrap rounded">
-                        {t("English")} 
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/sv" className="font-bold ml-4 px-4 py-2 border border-transparent hover:border hover:border-primary hover:text-primary whitespace-nowrap rounded">
-                        {t("Swedish")} 
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            )
-          }
-          {
-            isMobileMenuOpen && (
-              <div id='mobile-menu' className="absolute right-0 top-10 bg-secondary">
-                <div className='space-y-1 px-2 pb-3 pt-2'>
-                  <ul className="flex flex-col justify-between items-center gap-4">
-                    <NavLink link="#">{t("Home")}</NavLink>
-                    <NavLink link="#about">{t("About")}</NavLink>
-                    <NavLink link="#services">{t("Services")}</NavLink>
-                    <NavLink link="#contact">{t("Contact")}</NavLink>
-                  </ul>
-                </div>
-              </div>
-            )
-          }
+        )}
+        {isMobileMenuOpen && (
+          <div
+            id="mobile-menu"
+            className="absolute right-0 top-10 bg-secondary"
+          >
+            <div className="space-y-1 px-2 pb-3 pt-2">
+              <ul className="flex flex-col justify-between items-center gap-4">
+                <NavLink link="#">{t("Home")}</NavLink>
+                <NavLink link="#about">{t("About")}</NavLink>
+                <NavLink link="#services">{t("Services")}</NavLink>
+                <NavLink link="#contact">{t("Contact")}</NavLink>
+              </ul>
+            </div>
+          </div>
+        )}
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default LayoutHeader
+export default LayoutHeader;

@@ -23,7 +23,9 @@
         "Subscribe": "Subscribe",
         "SubscribeInfo": "Get the latest updates via email. you may unsubscribe Any time"
     },
-    "home": {
-        "test": "is english"
+    "Hero": {
+        "info":"Get shipping and cleaning services easily with",
+        "Downland": "Download the App",
+        "Join": "Join Us"
     }
 }
