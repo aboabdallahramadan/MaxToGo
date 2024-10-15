@@ -5,7 +5,9 @@
         "About": "About",
         "Services": "Services",
         "Contact": "Contact Us",
-        "GoApp": "Go to app"
+        "GoApp": "Go to app",
+        "Swedish": "Swedish",
+        "English": "English"
     },
     "footer": {
         "MainEmail": "Main Email",
