@@ -122,10 +122,10 @@ const LayoutHeader = () => {
           >
             <div className="space-y-1 px-2 pb-3 pt-2">
               <ul className="flex flex-col justify-between items-center gap-4">
-                <NavLink link="#">{t("Home")}</NavLink>
-                <NavLink link="#about">{t("About")}</NavLink>
-                <NavLink link="#services">{t("Services")}</NavLink>
-                <NavLink link="#contact">{t("Contact")}</NavLink>
+              <NavLink link="/#" func={()=> setIsMobileMenuOpen(false)}>{t("Home")}</NavLink>
+              <NavLink link="/#about" func={()=> setIsMobileMenuOpen(false)}>{t("About")}</NavLink>
+              <NavLink link="/#services" func={()=> setIsMobileMenuOpen(false)}>{t("Services")}</NavLink>
+              <NavLink link="/#contact" func={()=> setIsMobileMenuOpen(false)}>{t("Contact")}</NavLink>
               </ul>
             </div>
           </div>
