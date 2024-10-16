@@ -3,7 +3,8 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import SectionHeader from "./SectionHeader";
 import { toast } from "react-toastify";
-import Spinner from "../Spinner";
+import Spinner from "@/components/Spinner";
+import FormContainer from "@/components/FormContainer";
 
 const ContactUs = () => {
     const t = useTranslations("Contact");
@@ -64,35 +65,38 @@ const ContactUs = () => {
                 <p className="text-primary text-center text-lg mb-4">
                     {t("ContactInfo")}
                 </p>
-                <form onSubmit={handleSubmit} className="logoMark w-full mx-auto relative shadow-lg shadow-slate-700 border-2 border-primary bg-slate-900 text-primary px-5 sm:px-10 md:px-24 py-6 md:w-full lg:w-3/4">
-                    <div className="flex justify-between items-center gap-4 flex-col sm:flex-row">
-                        <div className="flex flex-col items-start justify-between">
-                            <label htmlFor="firstName">{t("FirstName")}</label>
-                            <input className="bg-transparent border-b-primary border-b focus:outline-none" type="text" id="firstName" name="firstName" value={formData.firstName} onChange={handleChange} required />
+
+                <FormContainer>
+                    <form onSubmit={handleSubmit} >
+                        <div className="flex justify-between items-center gap-4 flex-col sm:flex-row">
+                            <div className="flex flex-col items-start justify-between">
+                                <label htmlFor="firstName">{t("FirstName")}</label>
+                                <input className="bg-transparent border-b-primary border-b focus:outline-none" type="text" id="firstName" name="firstName" value={formData.firstName} onChange={handleChange} required />
+                            </div>
+                            <div className="flex flex-col items-start justify-between">
+                                <label htmlFor="lastName">{t("LastName")}</label>
+                                <input className="bg-transparent border-b-primary border-b focus:outline-none" type="text" id="lastName" name="lastName" value={formData.lastName} onChange={handleChange} required />
+                            </div>
                         </div>
-                        <div className="flex flex-col items-start justify-between">
-                            <label htmlFor="lastName">{t("LastName")}</label>
-                            <input className="bg-transparent border-b-primary border-b focus:outline-none" type="text" id="lastName" name="lastName" value={formData.lastName} onChange={handleChange} required />
+                        <div className="flex flex-col items-start justify-between mt-6 w-full">
+                            <label htmlFor="phone">{t("PhoneNumber")}</label>
+                            <input className="bg-transparent border-b-primary border-b focus:outline-none w-full" id="phone" type="phone" name="phone" value={formData.phone} onChange={handleChange} required />
                         </div>
-                    </div>
-                    <div className="flex flex-col items-start justify-between mt-6 w-full">
-                        <label htmlFor="phone">{t("PhoneNumber")}</label>
-                        <input className="bg-transparent border-b-primary border-b focus:outline-none w-full" id="phone" type="phone" name="phone" value={formData.phone} onChange={handleChange} required />
-                    </div>
-                    <div className="flex flex-col items-start justify-between mt-6 w-full">
-                        <label htmlFor="email">{t("Email")}</label>
-                        <input className="bg-transparent border-b-primary border-b focus:outline-none w-full" id="email" type="email" name="email" value={formData.email} onChange={handleChange} required />
-                    </div>
-                    <div className="flex flex-col items-start justify-between mt-6 w-full">
-                        <label htmlFor="location">{t("Location")}</label>
-                        <input className="bg-transparent border-b-primary border-b focus:outline-none w-full" id="location" type="text" name="location" value={formData.location} onChange={handleChange} required />
-                    </div>
-                    <div className="flex flex-col items-start justify-between mt-6 w-full">
-                        <label htmlFor="message">{t("Message")}</label>
-                        <textarea className="bg-transparent border-primary border focus:outline-none w-full" id="message" name="message" value={formData.message} onChange={handleChange} required />
-                    </div>
-                    <button type="submit" className="mt-6 bg-primary text-secondary px-4 py-2 rounded">{loading ? <Spinner /> :t("Submit")}</button>
-                </form>
+                        <div className="flex flex-col items-start justify-between mt-6 w-full">
+                            <label htmlFor="email">{t("Email")}</label>
+                            <input className="bg-transparent border-b-primary border-b focus:outline-none w-full" id="email" type="email" name="email" value={formData.email} onChange={handleChange} required />
+                        </div>
+                        <div className="flex flex-col items-start justify-between mt-6 w-full">
+                            <label htmlFor="location">{t("Location")}</label>
+                            <input className="bg-transparent border-b-primary border-b focus:outline-none w-full" id="location" type="text" name="location" value={formData.location} onChange={handleChange} required />
+                        </div>
+                        <div className="flex flex-col items-start justify-between mt-6 w-full">
+                            <label htmlFor="message">{t("Message")}</label>
+                            <textarea className="bg-transparent border-primary border focus:outline-none w-full" id="message" name="message" value={formData.message} onChange={handleChange} required />
+                        </div>
+                        <button type="submit" className="mt-6 bg-primary text-secondary px-4 py-2 rounded">{loading ? <Spinner /> :t("Submit")}</button>
+                    </form>
+                </FormContainer>
             </div>
         </section>
     );

@@ -19,7 +19,7 @@ export default async function RootLayout({ children, params }) {
   return (
       <NextIntlClientProvider messages={messages}>
         <html lang="en">
-          <body className="min-h-screen flex flex-col justify-between">
+          <body>
               
               {children}
               
