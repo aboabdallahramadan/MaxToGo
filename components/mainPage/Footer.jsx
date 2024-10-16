@@ -39,10 +39,10 @@ const Footer = () => {
                     <h3 className="text-center text-xl mb-2">{t("Services")}</h3>
                     <ul className="flex justify-between items-start gap-1 flex-col">
                         <li>
-                            <Link href={"/works"}>{t("WorkWithUs")}</Link>
+                            <Link href={"/guest/works"}>{t("WorkWithUs")}</Link>
                         </li>
                         <li>
-                            <Link href={"/app"}>{t("GoToTheApp")}</Link>
+                            <Link href={"/application"}>{t("GoToTheApp")}</Link>
                         </li>
                     </ul>
                 </div>

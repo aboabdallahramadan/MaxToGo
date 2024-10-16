@@ -11,11 +11,11 @@ const Services = () => {
         <section id="services" >
             <SectionHeader name={t("Services")} />
             <div className="container py-4 flex items-center justify-center flex-col gap-4 md:justify-between md:flex-row md:flex-wrap">
-                <Link href={"/tasks/moving"}><ServicesCard Icon={BsArrowsMove} title={t("Service1")} text={t("Service1Info")}></ServicesCard></Link>
+                <Link href={"/guest/tasks/moving"}><ServicesCard Icon={BsArrowsMove} title={t("Service1")} text={t("Service1Info")}></ServicesCard></Link>
                 <ServicesCard Icon={FaClock} title={t("Service2")} text={t("Service2Info")}></ServicesCard>
-                <Link href={"/tasks/cleaning"}><ServicesCard Icon={FaHandSparkles} title={t("Service3")} text={t("Service3Info")}></ServicesCard></Link>
-                <Link href={"/tasks/storage"}><ServicesCard Icon={FaBoxes} title={t("Service4")} text={t("Service4Info")}></ServicesCard></Link>
-                <Link href={"/tasks/truck"}><ServicesCard Icon={FaTruckMoving} title={t("Service5")} text={t("Service5Info")}></ServicesCard></Link>
+                <Link href={"/guest/tasks/cleaning"}><ServicesCard Icon={FaHandSparkles} title={t("Service3")} text={t("Service3Info")}></ServicesCard></Link>
+                <Link href={"/guest/tasks/storage"}><ServicesCard Icon={FaBoxes} title={t("Service4")} text={t("Service4Info")}></ServicesCard></Link>
+                <Link href={"/guest/tasks/truck"}><ServicesCard Icon={FaTruckMoving} title={t("Service5")} text={t("Service5Info")}></ServicesCard></Link>
                 <ServicesCard Icon={FaBuilding} title={t("Service6")} text={t("Service6Info")}></ServicesCard>
             </div>
         </section>

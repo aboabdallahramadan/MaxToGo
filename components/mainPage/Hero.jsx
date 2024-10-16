@@ -28,7 +28,7 @@ const Hero = () => {
                         {t("Downland")}
                         </a>
 
-                        <SecondaryLink link={"/login"}>
+                        <SecondaryLink link={"/guest/works"}>
                             {t("Join")}
                         </SecondaryLink>
                     </div>

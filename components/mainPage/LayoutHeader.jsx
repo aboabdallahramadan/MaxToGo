@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { Link as Ilink } from "@/i18n/routing";
 import NavLink from "@/components/NavLink";
 import { useTranslations } from "next-intl";
 import PrimaryLink from "../PrimaryLink";
@@ -39,14 +40,16 @@ const LayoutHeader = () => {
     >
       <div className="container h-12 flex justify-between py-2">
         <div className="h-100 w-40">
-          <Image
-            src="/images/logo.png"
-            width={150}
-            height={50}
-            alt="logo"
-            style={{ width: "auto", height: "100%" }}
-            priority
-          />
+          <Ilink href={"/"}>
+            <Image
+              src="/images/logo.png"
+              width={150}
+              height={50}
+              alt="logo"
+              style={{ width: "auto", height: "100%" }}
+              priority
+            />
+          </Ilink>
         </div>
         <nav className="flex justify-between items-center h-100">
           <ul className="items-center h-100 hidden sm:flex">
@@ -61,7 +64,7 @@ const LayoutHeader = () => {
           {session ? (
             <PrimaryLink link={"/login"}>{t("Login")}</PrimaryLink>
           ) : (
-            <PrimaryLink link={"/app"}>{t("GoApp")}</PrimaryLink>
+            <PrimaryLink link={"/application"}>{t("GoApp")}</PrimaryLink>
           )}
           <button
             type="button"

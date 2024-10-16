@@ -1,5 +1,5 @@
-import Footer from "@/components/layout/Footer";
-import LayoutHeader from "@/components/layout/LayoutHeader";
+import Footer from "@/components/mainPage/Footer";
+import LayoutHeader from "@/components/mainPage/LayoutHeader";
 import "@/public/css/globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from 'next-intl/server';
@@ -20,9 +20,9 @@ export default async function RootLayout({ children, params }) {
       <NextIntlClientProvider messages={messages}>
         <html lang="en">
           <body className="min-h-screen flex flex-col justify-between">
-              <LayoutHeader/>
+              
               {children}
-              <Footer />
+              
               <ToastContainer theme="dark"/>
           </body>
         </html> 
