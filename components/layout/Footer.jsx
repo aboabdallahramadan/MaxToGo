@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
 import { Link } from "@/i18n/routing";
+import Subscribe from "./Subscribe";
 
 const Footer = () => {
     const t = useTranslations('footer');
@@ -45,14 +46,7 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="flex flex-col justify-between items-center gap-2 md:mt-4 xl:mt-auto">
-                    <h3 className="text-center text-xl mb-2">{t("Subscribe")}</h3>
-                    <form action="" className="flex flex-col justify-between items-center gap-2">
-                        <input type="text" className="border-2 border-primary bg-transparent" />
-                        <button type="submit" className="bg-primary rounded py-1 px-3">{t("Subscribe")}</button>
-                    </form>
-                    <p>{t("SubscribeInfo")}</p>
-                </div>
+                <Subscribe />
             </div>
         </div>
     </footer>

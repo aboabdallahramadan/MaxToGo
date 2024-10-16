@@ -21,7 +21,11 @@
         "WorkWithUs": "Work With Us",
         "GoToTheApp": "Go To The App",
         "Subscribe": "Subscribe",
-        "SubscribeInfo": "Get the latest updates via email. you may unsubscribe Any time"
+        "SubscribeInfo": "Get the latest updates via email. you may unsubscribe Any time",
+        "Email": "Email",
+        "EnterValidEmail": "Enter Valid Email",
+        "SuccessMessage": "You are subscribed successfully",
+        "ErrorMessage": "Something went wrong"
     },
     "Hero": {
         "info":"Get shipping and cleaning services easily with",
@@ -46,5 +50,18 @@
         "Service5Info": "This text can be installed on any design without a problem. It will not look like, or even incomprehensible text. Because it is still an alternative and temporary text.",
         "Service6": "Gathering the best companies",
         "Service6Info": "This text can be installed on any design without a problem. It will not look like, or even incomprehensible text. Because it is still an alternative and temporary text."
+    },
+    "Contact": {
+        "Contact": "Contact Us",
+        "ContactInfo": "add your information to contact you as soon as possible",
+        "FirstName": "First Name",
+        "LastName": "Last Name",
+        "PhoneNumber": "Phone Number",
+        "Email": "Email",
+        "Location": "Location",
+        "Message": "Message",
+        "Submit": "Submit",
+        "SuccessMessage": "Your form has been submitted successfully",
+        "ErrorMessage": "Something went wrong"
     }
 }

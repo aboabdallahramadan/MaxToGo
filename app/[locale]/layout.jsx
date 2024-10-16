@@ -3,6 +3,8 @@ import LayoutHeader from "@/components/layout/LayoutHeader";
 import "@/public/css/globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from 'next-intl/server';
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 export const metadata = {
   title: "Flyttconnect",
@@ -21,6 +23,7 @@ export default async function RootLayout({ children, params }) {
               <LayoutHeader/>
               {children}
               <Footer />
+              <ToastContainer theme="dark"/>
           </body>
         </html> 
       </NextIntlClientProvider>
