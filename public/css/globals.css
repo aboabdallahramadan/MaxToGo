@@ -7,6 +7,8 @@
   box-sizing: border-box !important;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
 }
 
 :root {

@@ -1,5 +1,6 @@
 import About from '@/components/mainPage/About';
 import Hero from '@/components/mainPage/Hero';
+import Services from '@/components/mainPage/Services';
 import {useTranslations} from 'next-intl';
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
     <>
       <Hero />
       <About />
+      <Services />
     </>
   );
 }

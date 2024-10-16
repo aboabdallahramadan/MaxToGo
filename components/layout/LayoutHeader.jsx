@@ -50,7 +50,7 @@ const LayoutHeader = () => {
         </div>
         <nav className="flex justify-between items-center h-100">
           <ul className="items-center h-100 hidden sm:flex">
-            <NavLink link="/#">{t("Home")}</NavLink>
+            <NavLink link="/#hero">{t("Home")}</NavLink>
             <NavLink link="/#about">{t("About")}</NavLink>
             <NavLink link="/#services">{t("Services")}</NavLink>
             <NavLink link="/#contact">{t("Contact")}</NavLink>
