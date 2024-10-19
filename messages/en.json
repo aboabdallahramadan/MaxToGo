@@ -110,6 +110,19 @@
         "Local": "Local",
         "taskMaster": "Task Master",
         "phoneNumber": "Phone Number",
-        "text": "Text"
+        "text": "Text",
+        "Location": "Location",
+        "Balcony": "Does it has balcony",
+        "titleCleaning": "Cleaning Task",
+        "NumberOfCars": "Number Of Cars",
+        "StartingDateTime": "Starting Date",
+        "ArrivalDate": "Date of arrival",
+        "NumberOfWorkers": "Number Of Workers Available",
+        "titleTruck": "Moving in the way task",
+        "StorageDuration": "Storage Duration",
+        "titleStorage": "Storage Task",
+        "Area": "Area cubic in meters",
+        "StorageType": "Storage Type",
+        "EndingDate": "End of storage date"
     }
 }

@@ -9,9 +9,11 @@ import { toast } from "react-toastify";
 import { AiOutlineFileText, AiOutlineCalendar, AiOutlineHome, AiOutlinePhone } from "react-icons/ai";
 import { FaBuilding, FaTruck } from "react-icons/fa";
 import { FiArrowUpRight, FiArrowDownRight } from "react-icons/fi";
+import Spinner from "@/components/Spinner";
 
 const page = () => {
   const t = useTranslations("GuestTasks");
+  const [isLoading,setIsLoading] = useState(false);
 
   const [formData, setFormData] = useState({
     taskName: "",
@@ -38,16 +40,14 @@ const page = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
+    setIsLoading(true);
 
     try {
       const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-      const apiKey = process.env.API_KEY;
 
       const response = await fetch(`${apiUrl}/submit`, {
         method: "POST",
         headers: {
-          Authorization: `Bearer ${apiKey}`,
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
@@ -61,6 +61,8 @@ const page = () => {
     } catch (error) {
       console.error("Error:", error);
       toast.error(t("ErrorMessage"));
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -330,37 +332,39 @@ const page = () => {
           </div>
 
           {/* Task Master */}
-          <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
-            <label htmlFor="taskMaster">
-              <AiOutlineFileText className="inline-block mr-2" />
-              {t("taskMaster")}
-            </label>
-            <input
-              className="bg-transparent border-b-primary border-b focus:outline-none w-full"
-              type="text"
-              id="taskMaster"
-              name="taskMaster"
-              value={formData.taskMaster}
-              onChange={handleChange}
-              required
-            />
-          </div>
+          <div className="w-full flex justify-between items-center flex-nowrap gap-4">
+            <div className="relative flex flex-col items-start justify-between w-2/5 gap-4 mt-6">
+              <label htmlFor="taskMaster">
+                <AiOutlineFileText className="inline-block mr-2" />
+                {t("taskMaster")}
+              </label>
+              <input
+                className="bg-transparent border-b-primary border-b focus:outline-none w-full"
+                type="text"
+                id="taskMaster"
+                name="taskMaster"
+                value={formData.taskMaster}
+                onChange={handleChange}
+                required
+              />
+            </div>
 
-          {/* Phone Number */}
-          <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
-            <label htmlFor="phoneNumber">
-              <AiOutlinePhone className="inline-block mr-2" />
-              {t("phoneNumber")}
-            </label>
-            <input
-              className="bg-transparent border-b-primary border-b focus:outline-none w-full"
-              type="text"
-              id="phoneNumber"
-              name="phoneNumber"
-              value={formData.phoneNumber}
-              onChange={handleChange}
-              required
-            />
+            {/* Phone Number */}
+            <div className="relative flex flex-col items-start justify-between w-2/5 gap-4 mt-6">
+              <label htmlFor="phoneNumber">
+                <AiOutlinePhone className="inline-block mr-2" />
+                {t("phoneNumber")}
+              </label>
+              <input
+                className="bg-transparent border-b-primary border-b focus:outline-none w-full"
+                type="text"
+                id="phoneNumber"
+                name="phoneNumber"
+                value={formData.phoneNumber}
+                onChange={handleChange}
+                required
+              />
+            </div>
           </div>
 
           {/* Text */}
@@ -382,7 +386,7 @@ const page = () => {
 
           <div className="flex justify-end items-center w-full">
             <button type="submit" className="bg-primary text-secondary px-4 py-2 rounded-lg mt-6">
-              {t("Submit")}
+              {isLoading ? <Spinner /> : t("Submit")}
             </button>
           </div>
         </form>

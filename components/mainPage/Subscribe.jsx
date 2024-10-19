@@ -10,8 +10,6 @@ const Subscribe = () => {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
 
-  // API key from .env
-  const apiKey = process.env.NEXT_PUBLIC_API_KEY;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -30,7 +28,6 @@ const Subscribe = () => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${apiKey}`,
         },
         body: JSON.stringify({ email }),
       });
