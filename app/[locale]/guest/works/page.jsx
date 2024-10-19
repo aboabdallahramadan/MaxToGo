@@ -6,9 +6,12 @@ import SectionHeader from "@/components/mainPage/SectionHeader";
 import { BsBuildingFill, BsHouseFill, BsMapFill, BsPersonWorkspace } from "react-icons/bs";
 import { FaUser, FaEnvelope, FaUserGraduate, FaCertificate, FaBookReader, FaFile } from "react-icons/fa";
 import { toast } from "react-toastify";
+import Spinner from "@/components/Spinner";
 
 const page = () => {
   const t = useTranslations("Works");
+  const [isLoading, setIsLoading] = useState(false);
+  
 
   // State for form values
   const [formData, setFormData] = useState({
@@ -41,6 +44,7 @@ const page = () => {
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true);
 
     try {
       const apiUrl = process.env.NEXT_PUBLIC_API_URL;
@@ -51,7 +55,6 @@ const page = () => {
       Object.entries(formData).forEach(([key, value]) => {
         form.append(key, value);
       });
-      console.log(formData);
       // Send form data to external backend
       const response = await fetch(`${apiUrl}/submit`, {
         method: "POST",
@@ -69,6 +72,8 @@ const page = () => {
     } catch (error) {
       console.error("Error:", error);
       toast.error(t("ErrorMessage"));
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -305,7 +310,7 @@ const page = () => {
 
           <div className="flex justify-end items-center w-full">
             <button type="submit" className="bg-primary text-secondary px-4 py-2 rounded-lg mt-6">
-              {t("Send")}
+            {isLoading ? <Spinner /> : t("Send")}
             </button>
           </div>
         </form>
