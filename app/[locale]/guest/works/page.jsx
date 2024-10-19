@@ -256,6 +256,7 @@ const page = () => {
             <div className="flex flex-col sm:flex-row">
               <div className="flex justify-start items-center">
                 <input
+                  className="accent-primary"
                   type="radio"
                   id="single"
                   name="maritalStatus"
@@ -267,6 +268,7 @@ const page = () => {
               </div>
               <div className="flex justify-start items-center ml-6">
                 <input
+                  className="accent-primary"
                   type="radio"
                   id="married"
                   name="maritalStatus"
@@ -285,6 +287,7 @@ const page = () => {
             <div className="flex flex-col sm:flex-row">
               <div className="flex justify-start items-center">
                 <input
+                  className="accent-primary"
                   type="radio"
                   id="male"
                   name="gender"
@@ -296,6 +299,7 @@ const page = () => {
               </div>
               <div className="flex justify-start items-center ml-6">
                 <input
+                  className="accent-primary"
                   type="radio"
                   id="female"
                   name="gender"

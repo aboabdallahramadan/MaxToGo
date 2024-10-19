@@ -86,5 +86,30 @@
         "Send": "Send",
         "SuccessMessage": "your form has been submitted successfully",
         "ErrorMessage": "Something went wrong"
+    },
+    "GuestTasks": {
+        "title": "Transform Task",
+        "TaskName": "Task Name",
+        "DateTime": "The date and time required to complete it",
+        "FromLocation": "The address will transfer from",
+        "ToLocation": "The address will transfer to",
+        "ApartmentType": "Apartment Type",
+        "FloorNumberOne": "Floor number for address 1",
+        "FloorNumberTwo": "Floor Number for address 2",
+        "Elevator": "is there elevator in both addresses?",
+        "Yes": "Yes",
+        "No": "No",
+        "Submit": "Submit",
+        "SuccessMessage": "Your form has been submitted successfully",
+        "ErrorMessage":"Something went wrong",
+        "VehicleSize": "Vehicle Size",
+        "IsTimeFlexible": "Is Time Flexible",
+        "IsWrapping": "Do you want wrapping",
+        "TaskType": "TaskType",
+        "International": "International",
+        "Local": "Local",
+        "taskMaster": "Task Master",
+        "phoneNumber": "Phone Number",
+        "text": "Text"
     }
 }
