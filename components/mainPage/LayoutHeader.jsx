@@ -62,7 +62,7 @@ const LayoutHeader = () => {
 
         <div className="flex justify-between items-center">
           {session ? (
-            <PrimaryLink link={"/login"}>{t("Login")}</PrimaryLink>
+            <PrimaryLink link={"/auth/login"}>{t("Login")}</PrimaryLink>
           ) : (
             <PrimaryLink link={"/application"}>{t("GoApp")}</PrimaryLink>
           )}

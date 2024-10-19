@@ -124,5 +124,8 @@
         "Area": "Area cubic in meters",
         "StorageType": "Storage Type",
         "EndingDate": "End of storage date"
+    },
+    "Auth" : {
+        "Login": "Login"
     }
 }
