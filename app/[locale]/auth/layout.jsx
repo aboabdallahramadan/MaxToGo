@@ -8,7 +8,7 @@ const layout = ({children}) => {
             <div className='h-16 flex justify-center items-center'>
                 <Image src="/images/logo.png" style={{ width: "auto", height: "auto" }} width={100} height={35}  alt="logo" />
             </div>
-            <div>
+            <div className='flex flex-col items-center justify-center flex-1'>
                 {children}
             </div>
         </div>

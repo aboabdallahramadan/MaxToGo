@@ -126,6 +126,17 @@
         "EndingDate": "End of storage date"
     },
     "Auth" : {
-        "Login": "Login"
+        "Login": "Login",
+        "Email": "Email",
+        "Password": "Password",
+        "ForgetPassword": "Did you forget your password?",
+        "noAccount": "Don't have an account?",
+        "NewRegistration": "New Registration",
+        "Continue": "Continue",
+        "PasswordRecovery": "Password recovery",
+        "enterRecoveryEmail": "Enter the registered email to continue",
+        "ActivationCode": "Activation Code",
+        "ConfirmationCode": "Confirmation Code",
+        "ConfirmationCodeMessage": "The Confirmation code has been sent to your email"
     }
 }
