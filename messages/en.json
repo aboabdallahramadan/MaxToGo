@@ -63,5 +63,28 @@
         "Submit": "Submit",
         "SuccessMessage": "Your form has been submitted successfully",
         "ErrorMessage": "Something went wrong"
+    },
+    "Works": {
+        "title": "Request to join work",
+        "Name": "Name",
+        "Email": "Email",
+        "Address": "Address",
+        "AcademicAchievement":"Academic achievement",
+        "Courses": "Courses",
+        "ExperienceCertificates": "Experience certificates",
+        "WorkType": "The type of work you are applying for",
+        "Skills" : "Skills",
+        "PreviousCompanies": "Previous companies",
+        "CV": "CV",
+        "Nationality": "Nationality",
+        "MaritalStatus": "Marital Status",
+        "Single": "Single",
+        "Married": "Married",
+        "Gender" : "Gender",
+        "Male": "Male",
+        "Female": "Female",
+        "Send": "Send",
+        "SuccessMessage": "your form has been submitted successfully",
+        "ErrorMessage": "Something went wrong"
     }
 }
