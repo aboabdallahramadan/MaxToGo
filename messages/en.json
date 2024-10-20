@@ -163,7 +163,10 @@
         "PrivacyPolicyInfo": "Lorem Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed",
         "RequiredField": "This field is required",
         "PasswordsDoNotMatch": "Passwords do not match",
-        "InvalidEmail": "Invalid Email"
+        "InvalidEmail": "Invalid Email",
+        "Logout": "Logout",
+        "CreatedSuccessfully": "Your Account has been created successfully.",
+        "WaitApproval": "Please wait for approval notification from our system administrator."
 
     }
 }
