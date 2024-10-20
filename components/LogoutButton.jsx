@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 const LogoutButton = () => {
   const t = useTranslations("Auth");
   return (
-    <Link className="bg-primary text-secondary py-2 px-4 text-lg font-bold rounded-xl mt-14" href="/">{t("Logout")}</Link>
+    <Link className="bg-primary text-secondary py-2 px-4 font-bold rounded-xl" href="/">{t("Logout")}</Link>
   )
 }
 

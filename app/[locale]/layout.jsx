@@ -1,5 +1,3 @@
-import Footer from "@/components/mainPage/Footer";
-import LayoutHeader from "@/components/mainPage/LayoutHeader";
 import "@/public/css/globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from 'next-intl/server';

@@ -167,6 +167,16 @@
         "Logout": "Logout",
         "CreatedSuccessfully": "Your Account has been created successfully.",
         "WaitApproval": "Please wait for approval notification from our system administrator."
-
+    },
+    "Application": {
+        "Header": {
+            "Home": "Home",
+            "AddTask": "AddTask",
+            "Chats": "Chats",
+            "Notifications": "Notifications",
+            "Profile": "Profile",
+            "English": "English",
+            "Swedish": "Swedish"
+        }
     }
 }

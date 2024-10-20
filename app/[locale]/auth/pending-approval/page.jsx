@@ -8,7 +8,7 @@ const page = () => {
     <>
     <BsCheckLg className='text-9xl text-primary'/>
     <h4 className='text-primary text-xl mt-6'>{t("CreatedSuccessfully")}</h4>
-    <p className='text-foreground mt-4'>{t("WaitApproval")}</p>
+    <p className='text-foreground mt-4 mb-14'>{t("WaitApproval")}</p>
     <LogoutButton />
     
     </>
