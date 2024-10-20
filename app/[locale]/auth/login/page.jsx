@@ -29,6 +29,7 @@ const page = () => {
             type="email"
             id="email"
             name="email"
+            required
           />
         </div>
 
@@ -41,6 +42,7 @@ const page = () => {
             type={showPassword ? "text" : "password"}
             id="password"
             name="password"
+            required
           />
           <div
             className="absolute bottom-1 right-0 cursor-pointer"

@@ -19,6 +19,7 @@ const page = () => {
             type="email"
             id="email"
             name="email"
+            required
           />
         </div>
 

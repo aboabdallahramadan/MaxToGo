@@ -1,3 +1,4 @@
+import { Link } from '@/i18n/routing';
 import Image from 'next/image';
 import React from 'react'
 
@@ -6,7 +7,9 @@ const layout = ({children}) => {
     <div className='flex justify-center items-center h-screen w-screen'>
         <div className="w-full h-full flex flex-col lg:w-1/2">
             <div className='h-16 flex justify-center items-center'>
-                <Image src="/images/logo.png" style={{ width: "auto", height: "auto" }} width={100} height={35}  alt="logo" />
+                <Link href="/">
+                    <Image src="/images/logo.png" style={{ width: "auto", height: "auto" }} width={100} height={35}  alt="logo" />
+                </Link>
             </div>
             <div className='flex flex-col items-center justify-center flex-1'>
                 {children}
