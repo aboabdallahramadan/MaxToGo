@@ -179,6 +179,11 @@
             "English": "English",
             "Swedish": "Swedish",
             "Categories": "Categories"
+        },
+        "AvailableTasks": {
+            "AvailableTasks": "Available Tasks",
+            "MyTasks": "My Tasks",
+            "Purchases": "Purchases"
         }
     }
 }
