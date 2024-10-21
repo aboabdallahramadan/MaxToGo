@@ -144,15 +144,18 @@ const page = () => {
               {errors.address && <p className="text-red-500 text-sm">{errors.address}</p>}
             <div className="relative mt-6">
               <label htmlFor="typeOfCompany" className="text-primary mb-5">{t("TypeOfCompany")}</label>
-              <input
+              <select
                 name="typeOfCompany"
                 id="typeOfCompany"
                 className="text-primary w-full pl-6 bg-transparent border-b-primary border-b focus:outline-none"
-                type="text"
                 value={formData.typeOfCompany}
                 onChange={handleInputChange}
                 required
-              />
+              >
+                <option value="">{t("PleaseSelect")}</option>
+                <option value="transfer">{t("Transfer")}</option>
+                <option value="cleaning">{t("Cleaning")}</option>
+              </select>
             </div>
               {errors.typeOfCompany && <p className="text-red-500 text-sm">{errors.typeOfCompany}</p>}
           </div>

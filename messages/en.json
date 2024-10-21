@@ -167,7 +167,10 @@
         "InvalidEmail": "Invalid Email",
         "Logout": "Logout",
         "CreatedSuccessfully": "Your Account has been created successfully.",
-        "WaitApproval": "Please wait for approval notification from our system administrator."
+        "WaitApproval": "Please wait for approval notification from our system administrator.",
+        "PleaseSelect": "PleaseSelect",
+        "Transfer": "Transfer",
+        "Cleaning": "Cleaning"
     },
     "Application": {
         "Header": {

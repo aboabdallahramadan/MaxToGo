@@ -40,6 +40,10 @@ body {
   font-family: 'Readex Pro', sans-serif;
 }
 
+.slick-dots>li.slick-active>button::before {
+  color: var(--primaryColor) !important;
+}
+
 .slick-dots>li>button::before {
   color: var(--foreground) !important;
 }
