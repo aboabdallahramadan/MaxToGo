@@ -186,7 +186,8 @@
         "AvailableTasks": {
             "AvailableTasks": "Available Tasks",
             "MyTasks": "My Tasks",
-            "Purchases": "Purchases"
+            "Purchases": "Purchases",
+            "NoTasks": "No Tasks Available"
         }
     }
 }

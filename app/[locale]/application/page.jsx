@@ -1,4 +1,5 @@
 import AdsSection from "@/components/application/AdsSection";
+import AvailableTasksSection from "@/components/application/AvailableTasksSection";
 import GoldenBar from "@/components/application/GoldenBar";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
@@ -15,6 +16,7 @@ const page = () => {
         </ul>
       </GoldenBar>
       <AdsSection />
+      <AvailableTasksSection />
     </>
   )
 }
