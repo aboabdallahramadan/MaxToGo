@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 import PrimaryLink from "@/components/PrimaryLink";
 import { FaBars, FaGlobe } from "react-icons/fa";
 import { useState } from "react";
+import AuthPageHeader from "@/components/AuthPageHeader";
 
 const Header = () => {
     const t = useTranslations("Header");
@@ -62,7 +63,7 @@ const Header = () => {
           <button
             type="button"
             id="mobile-dropdown-button"
-            className="sm:hidden ml-4"
+            className="sm:hidden ml-4 z-[52]"
             aria-controls="mobile-menu"
             aria-expanded="false"
             onClick={() => setIsMobileMenuOpen((prev) => !prev)}
@@ -100,8 +101,9 @@ const Header = () => {
         {isMobileMenuOpen && (
           <div
             id="mobile-menu"
-            className="absolute right-0 top-10 bg-secondary"
-          >
+            className="absolute right-0 top-0 z-[51] w-1/2 h-screen bg-black/90 border-l border-primary flex flex-col items-center justify-start gap-12"
+            >
+            <AuthPageHeader name={t("Categories")}/>
             <div className="space-y-1 px-2 pb-3 pt-2">
               <ul className="flex flex-col justify-between items-center gap-4">
               <NavLink link="/#" func={()=> setIsMobileMenuOpen(false)}>{t("Home")}</NavLink>

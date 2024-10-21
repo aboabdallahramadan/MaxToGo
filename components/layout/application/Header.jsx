@@ -2,10 +2,12 @@
 import Link from "next/link";
 import ApplicationNavLink from "@/components/ApplicationNavLink";
 import { useTranslations } from "next-intl";
-import { FaBars, FaGlobe } from "react-icons/fa";
+import { FaBars, FaGlobe, FaHome, FaPlus, FaRing } from "react-icons/fa";
 import { useState } from "react";
 import LogoutButton from "@/components/LogoutButton";
 import { usePathname } from "next/navigation";
+import AuthPageHeader from "@/components/AuthPageHeader";
+import { BsBellFill, BsChatFill, BsPersonFill } from "react-icons/bs";
 
 const Header = () => {
     const t = useTranslations("Application.Header");
@@ -55,7 +57,7 @@ const Header = () => {
           <button
             type="button"
             id="mobile-dropdown-button"
-            className="lg:hidden ml-4"
+            className="lg:hidden ml-4 z-[52]"
             aria-controls="mobile-menu"
             aria-expanded="false"
             onClick={() => setIsMobileMenuOpen((prev) => !prev)}
@@ -93,15 +95,26 @@ const Header = () => {
         {isMobileMenuOpen && (
           <div
             id="mobile-menu"
-            className="absolute right-0 top-10 bg-secondary"
-          >
-            <div className="space-y-1 px-2 pb-3 pt-2">
-              <ul className="flex flex-col justify-between items-center gap-4">
-              <ApplicationNavLink link="/application" func={()=> setIsMobileMenuOpen(false)}>{t("Home")}</ApplicationNavLink>
-              <ApplicationNavLink link="/application/add-task/transform" func={()=> setIsMobileMenuOpen(false)}>{t("AddTask")}</ApplicationNavLink>
-              <ApplicationNavLink link="/application/chats" func={()=> setIsMobileMenuOpen(false)}>{t("Chats")}</ApplicationNavLink>
-              <ApplicationNavLink link="/application/notifications" func={()=> setIsMobileMenuOpen(false)}>{t("Notifications")}</ApplicationNavLink>
-              <ApplicationNavLink link="/application/profile" func={()=> setIsMobileMenuOpen(false)}>{t("Profile")}</ApplicationNavLink>
+            className="absolute right-0 top-0 z-[51] w-1/2 h-screen bg-black/90 border-l border-primary flex flex-col items-center justify-start gap-12"
+            >
+            <AuthPageHeader name={t("Categories")}/>
+            <div className="space-y-1 px-2 pb-3 pt-2 w-full">
+              <ul className="flex flex-col justify-between items-start gap-4 w-full">
+              <ApplicationNavLink link="/application" func={()=> setIsMobileMenuOpen(false)}>
+                <FaHome />{t("Home")}
+              </ApplicationNavLink>
+              <ApplicationNavLink link="/application/add-task/transform" func={()=> setIsMobileMenuOpen(false)}>
+                <FaPlus />{t("AddTask")}
+              </ApplicationNavLink>
+              <ApplicationNavLink link="/application/chats" func={()=> setIsMobileMenuOpen(false)}>
+                <BsChatFill />{t("Chats")}
+              </ApplicationNavLink>
+              <ApplicationNavLink link="/application/notifications" func={()=> setIsMobileMenuOpen(false)}>
+                <BsBellFill />{t("Notifications")}
+              </ApplicationNavLink>
+              <ApplicationNavLink link="/application/profile" func={()=> setIsMobileMenuOpen(false)}>
+                <BsPersonFill />{t("Profile")}
+              </ApplicationNavLink>
               </ul>
             </div>
           </div>

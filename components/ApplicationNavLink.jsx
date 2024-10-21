@@ -4,7 +4,7 @@ const ApplicationNavLink = ({children,link,func,active=false}) => {
   return (
     <li>
       <Link href={link} className={`rounded whitespace-nowrap font-bold ml-4 px-4 py-2
-      ${active ? "bg-primary text-secondary" : "border border-transparent hover:border hover:border-primary hover:text-primary"}`} 
+      ${active ? "bg-primary text-secondary" : "border border-transparent hover:border hover:border-primary hover:text-primary flex justify-center items-center gap-2"}`} 
       onClick={func}
     >
         {children}    

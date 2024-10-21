@@ -7,7 +7,8 @@
         "Contact": "Contact Us",
         "GoApp": "Go to app",
         "Swedish": "Swedish",
-        "English": "English"
+        "English": "English",
+        "Categories": "Categories"
     },
     "footer": {
         "MainEmail": "Main Email",
@@ -176,7 +177,8 @@
             "Notifications": "Notifications",
             "Profile": "Profile",
             "English": "English",
-            "Swedish": "Swedish"
+            "Swedish": "Swedish",
+            "Categories": "Categories"
         }
     }
 }
