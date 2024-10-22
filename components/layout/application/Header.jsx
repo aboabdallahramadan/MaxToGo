@@ -35,7 +35,7 @@ const Header = () => {
         <nav className="flex justify-between items-center h-100">
           <ul className="items-center h-100 hidden lg:flex">
             <ApplicationNavLink link="/application" active={strippedPathname == "/application"}>{t("Home")}</ApplicationNavLink>
-            <ApplicationNavLink link="/application/add-task/transform" active={strippedPathname == "/application/add-task/transform"}>{t("AddTask")}</ApplicationNavLink>
+            <ApplicationNavLink link="/application/add-task/transfer" active={strippedPathname == "/application/add-task/transfer"}>{t("AddTask")}</ApplicationNavLink>
             <ApplicationNavLink link="/application/chats" active={strippedPathname == "/application/chats"}>{t("Chats")}</ApplicationNavLink>
             <ApplicationNavLink link="/application/notifications" active={strippedPathname == "/application/notifications"}>{t("Notifications")}</ApplicationNavLink>
             <ApplicationNavLink link="/application/profile" active={strippedPathname == "/application/profile"}>{t("Profile")}</ApplicationNavLink>
@@ -103,7 +103,7 @@ const Header = () => {
               <ApplicationNavLink link="/application" func={()=> setIsMobileMenuOpen(false)}>
                 <FaHome />{t("Home")}
               </ApplicationNavLink>
-              <ApplicationNavLink link="/application/add-task/transform" func={()=> setIsMobileMenuOpen(false)}>
+              <ApplicationNavLink link="/application/add-task/transfer" func={()=> setIsMobileMenuOpen(false)}>
                 <FaPlus />{t("AddTask")}
               </ApplicationNavLink>
               <ApplicationNavLink link="/application/chats" func={()=> setIsMobileMenuOpen(false)}>

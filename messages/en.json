@@ -124,7 +124,15 @@
         "titleStorage": "Storage Task",
         "Area": "Area cubic in meters",
         "StorageType": "Storage Type",
-        "EndingDate": "End of storage date"
+        "EndingDate": "End of storage date",
+        "CreateTask": "Create Task",
+        "transfer": "Transfer",
+        "emptyTruck": "Empty Truck",
+        "Cleaning": "Cleaning",
+        "Storage": "Storage",
+        "transform": "transform",
+        "CompanyName": "Company Name",
+        "Price": "Price"
     },
     "Auth" : {
         "Login": "Login",
@@ -175,7 +183,7 @@
     "Application": {
         "Header": {
             "Home": "Home",
-            "AddTask": "AddTask",
+            "AddTask": "Add Task",
             "Chats": "Chats",
             "Notifications": "Notifications",
             "Profile": "Profile",
@@ -207,7 +215,9 @@
             "TaskMasterRequired": "Task Master name is required",
             "PhoneRequired": "Phone number is required",
             "PurchaseSuccess": "Your purchase has been proceed successfully",
-            "PurchaseFailed": "Something went wrong"
+            "PurchaseFailed": "Something went wrong",
+            "TaskDetails": "Task Details",
+            "Name": "Name"
         }
     }
 }
