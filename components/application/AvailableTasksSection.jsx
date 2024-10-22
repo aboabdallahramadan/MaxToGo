@@ -17,23 +17,25 @@ const AvailableTasksSection = () => {
         },
         {
             "id":2,
-            "type": "cleaning",
+            "type": "truck",
             "name": "clean my apartment",
             "completionDate": "8/9/2024",
             "price": "200",
-            "location": "Gaza"
+            "location": "Gaza",
+            "toLocation": "Aleppo"
         },
         {
             "id":3,
-            "type": "cleaning",
+            "type": "transfer",
             "name": "clean my apartment",
             "completionDate": "8/9/2024",
             "price": "200",
-            "location": "Gaza"
+            "location": "Gaza",
+            "toLocation": "Aleppo"
         },
         {
             "id":4,
-            "type": "cleaning",
+            "type": "storage",
             "name": "clean my apartment",
             "completionDate": "8/9/2024",
             "price": "200",

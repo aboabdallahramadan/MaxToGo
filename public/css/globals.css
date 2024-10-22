@@ -16,6 +16,7 @@
   --foreground: #ffffff;
   --primaryColor: #FECC02;
   --secondaryColor: #006AA7;
+  --hoverPrimaryColor: #fecc0247;
 }
 
 .logoMark::before {

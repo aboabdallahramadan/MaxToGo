@@ -187,7 +187,27 @@
             "AvailableTasks": "Available Tasks",
             "MyTasks": "My Tasks",
             "Purchases": "Purchases",
-            "NoTasks": "No Tasks Available"
+            "NoTasks": "No Tasks Available",
+            "Type": "Type",
+            "TaskName": "Task Name",
+            "Location": "Location",
+            "FromLocation": "From Location",
+            "ToLocation": "To Location",
+            "CompletionDate": "Completion Date",
+            "Price": "Price",
+            "Details": "Details",
+            "Purchase": "Purchase",
+            "ConfirmPurchase": "Do you really want to {action} a {type} job for {price}€ ?",
+            "buy": "buy",
+            "offer": "offer",
+            "TaskMaster": "Task Master",
+            "Phone": "Phone",
+            "Yes": "Yes",
+            "No": "No",
+            "TaskMasterRequired": "Task Master name is required",
+            "PhoneRequired": "Phone number is required",
+            "PurchaseSuccess": "Your purchase has been proceed successfully",
+            "PurchaseFailed": "Something went wrong"
         }
     }
 }
