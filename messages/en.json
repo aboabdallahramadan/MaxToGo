@@ -217,7 +217,23 @@
             "PurchaseSuccess": "Your purchase has been proceed successfully",
             "PurchaseFailed": "Something went wrong",
             "TaskDetails": "Task Details",
-            "Name": "Name"
+            "Name": "Name",
+            "TaskId" : "Task Id",
+            "PhoneNumber": "Phone Number",
+            "isInternationalOrLocal": "Is International Or Local",
+            "vehicleSize": "Vehicle Size",
+            "startingDate" : "Starting Date",
+            "apartmentType": "Apartment Type",
+            "floorNumberOne": "Floor Number for the first location",
+            "floorNumberTwo": "Floor Number for second location",
+            "elevator" : "is there elevator in both locations?",
+            "isWrapping" : "does it includes wrapping?",
+            "numberOfWorkers": "Number Of Workers",
+            "numberOfCars": "Number Of Cars",
+            "storageDuration": "Storage Duration",
+            "area": "area",
+            "Balcony": "is there balcony",
+            "isTimeFlexible": "Is Time Flexible"
         }
     }
 }

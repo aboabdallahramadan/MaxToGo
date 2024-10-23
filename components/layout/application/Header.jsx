@@ -33,9 +33,10 @@ const Header = () => {
             <p className="text-primary font-bold">{userName}</p>
         </div>
         <nav className="flex justify-between items-center h-100">
+          
           <ul className="items-center h-100 hidden lg:flex">
             <ApplicationNavLink link="/application" active={strippedPathname == "/application"}>{t("Home")}</ApplicationNavLink>
-            <ApplicationNavLink link="/application/add-task/transfer" active={strippedPathname == "/application/add-task/transfer"}>{t("AddTask")}</ApplicationNavLink>
+            <ApplicationNavLink link="/application/add-task/transfer" active={strippedPathname.includes("/application/add-task")}>{t("AddTask")}</ApplicationNavLink>
             <ApplicationNavLink link="/application/chats" active={strippedPathname == "/application/chats"}>{t("Chats")}</ApplicationNavLink>
             <ApplicationNavLink link="/application/notifications" active={strippedPathname == "/application/notifications"}>{t("Notifications")}</ApplicationNavLink>
             <ApplicationNavLink link="/application/profile" active={strippedPathname == "/application/profile"}>{t("Profile")}</ApplicationNavLink>
