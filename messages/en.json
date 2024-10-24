@@ -237,7 +237,16 @@
             "ConfirmReceipt": "Confirm Receipt",
             "confirmed": "Confirmed",
             "Chat": "Chat",
-            "DeleteTask" : "Delete Task"
+            "DeleteTask" : "Delete Task",
+            "searchByLocation" : "Search by location...",
+            "All": "All",
+            "Cleaning": "Cleaning",
+            "Transfer": "Transfer",
+            "noTasks": "No Tasks Available",
+            "noTasksFound": "No Tasks Found",
+            "Truck": "Truck",
+            "Storage": "Storage"
+
         }
     }
 }

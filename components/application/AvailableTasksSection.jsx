@@ -3,9 +3,12 @@ import { useEffect, useState } from "react";
 import Spinner from "@/components/Spinner";
 import { useTranslations } from "next-intl";
 import AvailableTaskCard from "./AvailableTaskCard";
+
 const AvailableTasksSection = () => {
     const t = useTranslations("Application.AvailableTasks");
     const [isLoading, setIsLoading] = useState(false);
+    const [searchLocation, setSearchLocation] = useState("");
+    const [selectedType, setSelectedType] = useState("all");
     const [tasks, setTasks] = useState([
         {
             "id":1,
@@ -41,42 +44,71 @@ const AvailableTasksSection = () => {
             "price": "200",
             "location": "Gaza"
         }
-      ]);
-      useEffect(() => {
+    ]);
+
+    const taskTypes = ["all", "cleaning", "truck", "transfer", "storage"];
+
+    const filteredTasks = tasks.filter(task => {
+        const locationMatch = task.location.toLowerCase().includes(searchLocation.toLowerCase());
+        const typeMatch = selectedType === "all" || task.type === selectedType;
+        return locationMatch && typeMatch;
+    });
+
+    useEffect(() => {
         const fetchTasks = async () => {
-          try {
-            setIsLoading(true);
-            const response = await fetch("YOUR_API_ENDPOINT"); // Replace with your API endpoint
-            const data = await response.json();
-            setTasks(data); // Assuming the data is an array of objects with {imagePath, link}
-          } catch (error) {
-            console.error("Error fetching ads:", error);
-          } finally {
-            setIsLoading(false)
-          }
+            try {
+                setIsLoading(true);
+                const response = await fetch("YOUR_API_ENDPOINT");
+                const data = await response.json();
+                setTasks(data);
+            } catch (error) {
+                console.error("Error fetching tasks:", error);
+            } finally {
+                setIsLoading(false)
+            }
         };
-    
-        // fetchTasks(); // Uncomment this line to fetch real data from your API
-      }, []);
-  return (
-    <section className="mt-16">
-        <div className="container">
-            <div className="content flex flex-col justify-start items-center gap-4">
-                {isLoading ? (
-                    <Spinner/>
-                ) : (
-                    tasks.length > 0 ? (
-                        tasks.map((task) => (
-                            <AvailableTaskCard key={task.id} task={task}/>
-                        ))
+        // fetchTasks();
+    }, []);
+
+    return (
+        <section className="mt-16">
+            <div className="container">
+                <div className="filters mb-8 flex flex-col sm:flex-row gap-4">
+                    <input
+                        type="text"
+                        placeholder={t("searchByLocation")}
+                        value={searchLocation}
+                        onChange={(e) => setSearchLocation(e.target.value)}
+                        className="p-2 border rounded-md flex-1 bg-transparent text-primary placeholder:text-primary"
+                    />
+                    <select
+                        value={selectedType}
+                        onChange={(e) => setSelectedType(e.target.value)}
+                        className="p-2 border rounded-md w-full sm:w-48 bg-transparent text-primary"
+                    >
+                        {taskTypes.map((type) => (
+                            <option key={type} value={type}>
+                                {t(type.charAt(0).toUpperCase() + type.slice(1))}
+                            </option>
+                        ))}
+                    </select>
+                </div>
+                <div className="content flex flex-col justify-start items-center gap-4">
+                    {isLoading ? (
+                        <Spinner/>
                     ) : (
-                    <p className="w-full text-center">{t("NoTasks")}</p>
-                    )
-                )}
+                        filteredTasks.length > 0 ? (
+                            filteredTasks.map((task) => (
+                                <AvailableTaskCard key={task.id} task={task}/>
+                            ))
+                        ) : (
+                            <p className="w-full text-center mb-12">{t("NoTasks")}</p>
+                        )
+                    )}
+                </div>
             </div>
-        </div>
-    </section>
-  )
+        </section>
+    )
 }
 
 export default AvailableTasksSection
