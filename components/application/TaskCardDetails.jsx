@@ -12,8 +12,8 @@ const TaskCardDetails = ({task}) => {
         </p>
         {task.type == "transfer" && <FaTruck className="text-primary text-3xl" />}
         {task.type == "cleaning" && <FaHandSparkles className="text-primary text-3xl" />}
-        {task.type == "truck" && <BsTruckFlatbed className="text-primary text-3xl" />}
-        {task.type == "storage" && <FaBoxes className="text-primary text-3xl" />}
+        {task.type == "emptyCar" && <BsTruckFlatbed className="text-primary text-3xl" />}
+        {task.type == "warehousing" && <FaBoxes className="text-primary text-3xl" />}
       </div>
 
       {/* Task details */}
@@ -29,11 +29,11 @@ const TaskCardDetails = ({task}) => {
         <div className="w-full text-center flex flex-col items-center justify-center gap-1 sm:w-1/2">
           <div className="flex items-center justify-center gap-1 w-full">
             <p className="font-bold text-nowrap">
-              {task.type == "transfer" || task.type == "truck" ? t("Location") : t("FromLocation")}: 
+              {task.type == "transfer" || task.type == "emptyCar" ? t("Location") : t("FromLocation")}: 
             </p>
             <p className="text-primary">{task.location}</p>
           </div>
-          {(task.type == "transfer" || task.type == "truck") && (
+          {(task.type == "transfer" || task.type == "emptyCar") && (
             <div className="flex items-center justify-center gap-1 w-full">
               <p className="font-bold text-nowrap">{t("ToLocation")}: </p>
               <p className="text-primary">{task.toLocation}</p>

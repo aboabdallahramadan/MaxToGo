@@ -7,7 +7,6 @@ import { toast } from "react-toastify";
 
 // Icons
 import { AiOutlineFileText, AiOutlineCalendar, AiOutlineHome, AiOutlinePhone } from "react-icons/ai";
-import { FaBuilding, FaTruck } from "react-icons/fa";
 import { FiArrowUpRight, FiArrowDownRight } from "react-icons/fi";
 import Spinner from "@/components/Spinner";
 
@@ -62,7 +61,7 @@ const page = () => {
 
   return (
     <div className="container">
-      <SectionHeader name={t("titleStorage")} />
+      <SectionHeader name={t("titlewarehousing")} />
       <FormContainer>
         <form onSubmit={handleSubmit}>
           {/* Task Name */}

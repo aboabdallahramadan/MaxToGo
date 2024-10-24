@@ -20,7 +20,7 @@ const AvailableTasksSection = () => {
         },
         {
             "id":2,
-            "type": "truck",
+            "type": "emptyCar",
             "name": "clean my apartment",
             "completionDate": "8/9/2024",
             "price": "200",
@@ -38,7 +38,7 @@ const AvailableTasksSection = () => {
         },
         {
             "id":4,
-            "type": "storage",
+            "type": "warehousing",
             "name": "clean my apartment",
             "completionDate": "8/9/2024",
             "price": "200",
@@ -46,7 +46,7 @@ const AvailableTasksSection = () => {
         }
     ]);
 
-    const taskTypes = ["all", "cleaning", "truck", "transfer", "storage"];
+    const taskTypes = ["all", "cleaning", "emptyCar", "transfer", "warehousing"];
 
     const filteredTasks = tasks.filter(task => {
         const locationMatch = task.location.toLowerCase().includes(searchLocation.toLowerCase());

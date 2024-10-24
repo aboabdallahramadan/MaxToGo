@@ -15,7 +15,7 @@ const page = () => {
   const t = useTranslations("GuestTasks");
   const [isLoading,setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
-    taskType: "storage",
+    taskType: "warehousing",
     price: "",
     taskName: "",
     startingDate: "",
@@ -68,7 +68,7 @@ const page = () => {
     <section className="pt-24">
 
         <div className="container">
-            <SelectTaskType active="storage"></SelectTaskType>
+            <SelectTaskType active="warehousing"></SelectTaskType>
             <form onSubmit={handleSubmit}>
             {/* Task Name */}
             <div className="relative flex flex-col items-start justify-between w-full gap-4">

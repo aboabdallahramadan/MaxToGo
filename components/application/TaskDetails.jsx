@@ -1,5 +1,4 @@
 import { useTranslations } from "next-intl";
-import { AiOutlineApartment } from "react-icons/ai";
 import { BsArrowDownUp, BsBuildingFill, BsCalendarDate, BsChatFill, BsHouseFill, BsPeopleFill, BsPerson, BsPersonFill, BsPhoneFill, BsTextCenter, BsType } from "react-icons/bs";
 import { FaBoxes, FaCalendarTimes, FaChartArea, FaIdBadge, FaLocationArrow, FaMoneyBill } from "react-icons/fa";
 import { FiTruck } from "react-icons/fi";
@@ -25,7 +24,7 @@ const TaskDetails = ({task}) => {
                 <p>{task.name}</p>
             </div>
             {
-                (task.type == "storage" || task.type == "emptyTruck") && (
+                (task.type == "warehousing" || task.type == "emptyCar") && (
                 <div className="flex justify-center items-center gap-2">
                     <BsCalendarDate className="text-primary"/>
                     <p className="font-bold text-primary">{t("startingDate")}:</p>
@@ -64,7 +63,7 @@ const TaskDetails = ({task}) => {
                 <p>{task.phoneNumber}</p>
             </div>
             {
-                (task.type == "transfer" || task.type == "emptyTruck") && (
+                (task.type == "transfer" || task.type == "emptyCar") && (
                     <>
                         <div className="flex justify-center items-center gap-2">
                             <FaLocationArrow className="text-primary"/>
@@ -121,7 +120,7 @@ const TaskDetails = ({task}) => {
                 )
             }
             {
-                (task.type == "emptyTruck") && (
+                (task.type == "emptyCar") && (
                     <>
                         <div className="flex justify-center items-center gap-2">
                             <BsPeopleFill className="text-primary"/>
@@ -137,7 +136,7 @@ const TaskDetails = ({task}) => {
                 )
             }
             {
-                (task.type == "storage") && (
+                (task.type == "warehousing") && (
                     <>
                         <div className="flex justify-center items-center gap-2">
                             <FaCalendarTimes className="text-primary"/>
@@ -162,7 +161,7 @@ const TaskDetails = ({task}) => {
                 )
             }
             {
-                (task.type != "storage") && (
+                (task.type != "warehousing") && (
                 <div className="flex justify-center items-center gap-2">
                     <BsCalendarDate className="text-primary"/>
                     <p className="font-bold text-primary">{t("isTimeFlexible")}:</p>

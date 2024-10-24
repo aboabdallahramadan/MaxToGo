@@ -99,7 +99,7 @@ const t = useTranslations("Application.AvailableTasks");
             {/* Modal title */}
             <div className="flex justify-start gap-4 items-start">
               <BsInfoCircle className="text-primary text-5xl"/>
-              <h2 className="text-lg font-bold mb-4">{t("ConfirmPurchase" , {action: task.type == "truck" ? t("buy") : t("offer"), type: task.type , price: task.price})}</h2>
+              <h2 className="text-lg font-bold mb-4">{t("ConfirmPurchase" , {action: task.type == "emptyCar" ? t("buy") : t("offer"), type: task.type , price: task.price})}</h2>
             </div>
 
             {/* TaskMaster input */}

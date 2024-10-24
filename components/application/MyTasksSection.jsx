@@ -1,10 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
 import Spinner from "../Spinner";
-import PurchasedTaskCard from "./PurchasedTaskCard";
 import { useTranslations } from "next-intl";
+import MyTaskCard from "./MyTaskCard";
 
-const PurchasedTasksSection = () => {
+const MyTasksSection = () => {
     const t = useTranslations("Application.AvailableTasks");
     const [isLoading,setIsLoading] = useState(false);
     const [tasks, setTasks] = useState([
@@ -67,25 +67,25 @@ const PurchasedTasksSection = () => {
     
         // fetchTasks(); // Uncomment this line to fetch real data from your API
       }, []);
-    return (
+  return (
     <>
-        <section className="pt-24">
-            <div className="content flex flex-col justify-start items-center gap-4">
-                {isLoading ? (
-                    <Spinner/>
+    <section className="pt-24">
+        <div className="content flex flex-col justify-start items-center gap-4">
+            {isLoading ? (
+                <Spinner/>
+            ) : (
+                tasks.length > 0 ? (
+                    tasks.map((task) => (
+                        <MyTaskCard key={task.id} task={task}/>
+                    ))
                 ) : (
-                    tasks.length > 0 ? (
-                        tasks.map((task) => (
-                            <PurchasedTaskCard key={task.id} task={task}/>
-                        ))
-                    ) : (
-                    <p className="w-full text-center">{t("NoTasks")}</p>
-                    )
-                )}
-            </div>
-        </section>
-    </>
-    )
+                <p className="w-full text-center">{t("NoTasks")}</p>
+                )
+            )}
+        </div>
+    </section>
+</>
+  )
 }
 
-export default PurchasedTasksSection
+export default MyTasksSection

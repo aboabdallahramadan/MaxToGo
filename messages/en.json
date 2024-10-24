@@ -121,7 +121,7 @@
         "NumberOfWorkers": "Number Of Workers Available",
         "titleTruck": "Moving in the way task",
         "StorageDuration": "Storage Duration",
-        "titleStorage": "Storage Task",
+        "titlewarehousing": "Warehousing Task",
         "Area": "Area cubic in meters",
         "StorageType": "Storage Type",
         "EndingDate": "End of storage date",
@@ -129,7 +129,7 @@
         "transfer": "Transfer",
         "emptyTruck": "Empty Truck",
         "Cleaning": "Cleaning",
-        "Storage": "Storage",
+        "warehousing": "warehousing",
         "transform": "transform",
         "CompanyName": "Company Name",
         "Price": "Price"
@@ -245,7 +245,9 @@
             "noTasks": "No Tasks Available",
             "noTasksFound": "No Tasks Found",
             "Truck": "Truck",
-            "Storage": "Storage"
+            "warehousing": "Warehousing",
+            "EmptyCar": "Empty Car",
+            "Warehousing": "Warehousing"
 
         }
     }

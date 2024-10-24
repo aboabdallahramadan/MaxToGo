@@ -15,14 +15,14 @@ const SelectTaskType = ({active}) => {
             <option  value="transfer">
                 {t("transfer")}
             </option>
-            <option  value="empty-truck">
+            <option  value="empty-Car">
                 {t("emptyTruck")}
             </option>
             <option  value="cleaning">
                 {t("Cleaning")}
             </option>
-            <option  value="storage">
-                {t("Storage")}
+            <option  value="warehousing">
+                {t("warehousing")}
             </option>
         </select>
     </div>

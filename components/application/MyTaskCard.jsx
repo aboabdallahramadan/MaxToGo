@@ -3,9 +3,8 @@ import { useTranslations } from "next-intl";
 import TaskCardDetails from "./TaskCardDetails";
 import GoToTaskChat from "./GoToTaskChat";
 
-const PurchasedTaskCard = ({task}) => {
-  const t = useTranslations("Application.AvailableTasks");
-
+const MyTaskCard = ({task}) => {
+    const t = useTranslations("Application.AvailableTasks");
   return (
     <div className='flex flex-col justify-start items-center gap-4 px-2 py-4 border-2 border-transparent border-b-foreground hover:border-2 hover:border-primary hover:bg-hoverPrimary'>
       
@@ -26,7 +25,7 @@ const PurchasedTaskCard = ({task}) => {
       </div>
       
     </div>
-  );
+  )
 }
 
-export default PurchasedTaskCard
+export default MyTaskCard

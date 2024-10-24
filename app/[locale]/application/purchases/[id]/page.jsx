@@ -16,7 +16,7 @@ const page = () => {
                 {   
                     // for all tasks
                     "id":2,
-                    "type": "storage",
+                    "type": "warehousing",
                     "name": "clean my apartment",
                     "completionDate": "8/9/2024",
                     "price": "200",
@@ -25,14 +25,14 @@ const page = () => {
                     "taskMaster": "hany alalmany",
                     "phoneNumber": "+96398888888",
 
-                    //empty truck
+                    //empty Car
                     "numberOfWorkers":"9",
                     "numberOfCars": "5",
 
                     //cleaning
                     "balcony": "no",
 
-                    // storage
+                    // warehousing
                     "storageDuration": "3 days",
                     "area": "example",
 
@@ -42,18 +42,18 @@ const page = () => {
                     "elevator": "no",
                     "isWrapping": "no",
 
-                    //transfer and empty truck
+                    //transfer and empty Car
                     "isInternationalOrLocal": "local",
                     "vehicleSize": "x large",
                     "toLocation": "Aleppo",
 
-                    // empty truck and storage
+                    // empty Car and warehousing
                     "startingDate": "12/10/2024",
 
                     //transfer and cleaning
                     "apartmentType": "villa",
 
-                    // empty truck and transfer and cleaning
+                    // empty Car and transfer and cleaning
                     "isTimeFlexible": "yes",
                 }
             )

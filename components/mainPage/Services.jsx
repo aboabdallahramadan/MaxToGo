@@ -14,8 +14,8 @@ const Services = () => {
                 <Link href={"/guest/tasks/moving"}><ServicesCard Icon={BsArrowsMove} title={t("Service1")} text={t("Service1Info")}></ServicesCard></Link>
                 <ServicesCard Icon={FaClock} title={t("Service2")} text={t("Service2Info")}></ServicesCard>
                 <Link href={"/guest/tasks/cleaning"}><ServicesCard Icon={FaHandSparkles} title={t("Service3")} text={t("Service3Info")}></ServicesCard></Link>
-                <Link href={"/guest/tasks/storage"}><ServicesCard Icon={FaBoxes} title={t("Service4")} text={t("Service4Info")}></ServicesCard></Link>
-                <Link href={"/guest/tasks/truck"}><ServicesCard Icon={FaTruckMoving} title={t("Service5")} text={t("Service5Info")}></ServicesCard></Link>
+                <Link href={"/guest/tasks/warehousing"}><ServicesCard Icon={FaBoxes} title={t("Service4")} text={t("Service4Info")}></ServicesCard></Link>
+                <Link href={"/guest/tasks/empty-car"}><ServicesCard Icon={FaTruckMoving} title={t("Service5")} text={t("Service5Info")}></ServicesCard></Link>
                 <ServicesCard Icon={FaBuilding} title={t("Service6")} text={t("Service6Info")}></ServicesCard>
             </div>
         </section>
