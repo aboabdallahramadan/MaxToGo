@@ -69,7 +69,6 @@ const page = () => {
                     <TaskDetails task={task}/>
                     <div className="w-full flex items-center justify-end pb-8">
                         <PurchaseTask task={task}/>
-
                     </div>
                 </>
                 

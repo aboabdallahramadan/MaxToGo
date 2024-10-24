@@ -233,7 +233,11 @@
             "storageDuration": "Storage Duration",
             "area": "area",
             "Balcony": "is there balcony",
-            "isTimeFlexible": "Is Time Flexible"
+            "isTimeFlexible": "Is Time Flexible",
+            "ConfirmReceipt": "Confirm Receipt",
+            "confirmed": "Confirmed",
+            "Chat": "Chat",
+            "DeleteTask" : "Delete Task"
         }
     }
 }

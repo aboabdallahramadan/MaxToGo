@@ -1,11 +1,12 @@
 "use client";
 import { useEffect, useState } from "react";
-import Spinner from "@/components/Spinner";
+import Spinner from "../Spinner";
+import PurchasedTaskCard from "./PurchasedTaskCard";
 import { useTranslations } from "next-intl";
-import AvailableTaskCard from "./AvailableTaskCard";
-const AvailableTasksSection = () => {
+
+const PurchasedTasksSection = () => {
     const t = useTranslations("Application.AvailableTasks");
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading,setIsLoading] = useState(false);
     const [tasks, setTasks] = useState([
         {
             "id":1,
@@ -13,7 +14,9 @@ const AvailableTasksSection = () => {
             "name": "clean my apartment",
             "completionDate": "8/9/2024",
             "price": "200",
-            "location": "Gaza"
+            "location": "Gaza",
+            "receiptConfirmed": true,
+            "chatId": "1"
         },
         {
             "id":2,
@@ -22,7 +25,9 @@ const AvailableTasksSection = () => {
             "completionDate": "8/9/2024",
             "price": "200",
             "location": "Gaza",
-            "toLocation": "Aleppo"
+            "toLocation": "Aleppo",
+            "receiptConfirmed": true,
+            "chatId": "2"
         },
         {
             "id":3,
@@ -31,7 +36,9 @@ const AvailableTasksSection = () => {
             "completionDate": "8/9/2024",
             "price": "200",
             "location": "Gaza",
-            "toLocation": "Aleppo"
+            "toLocation": "Aleppo",
+            "receiptConfirmed": false,
+            "chatId": "3"
         },
         {
             "id":4,
@@ -39,7 +46,9 @@ const AvailableTasksSection = () => {
             "name": "clean my apartment",
             "completionDate": "8/9/2024",
             "price": "200",
-            "location": "Gaza"
+            "location": "Gaza",
+            "receiptConfirmed": false,
+            "chatId": "4"
         }
       ]);
       useEffect(() => {
@@ -58,25 +67,25 @@ const AvailableTasksSection = () => {
     
         // fetchTasks(); // Uncomment this line to fetch real data from your API
       }, []);
-  return (
-    <section className="mt-16">
-        <div className="container">
+    return (
+    <>
+        <section className="pt-24">
             <div className="content flex flex-col justify-start items-center gap-4">
                 {isLoading ? (
                     <Spinner/>
                 ) : (
                     tasks.length > 0 ? (
                         tasks.map((task) => (
-                            <AvailableTaskCard key={task.id} task={task}/>
+                            <PurchasedTaskCard key={task.id} task={task}/>
                         ))
                     ) : (
                     <p className="w-full text-center">{t("NoTasks")}</p>
                     )
                 )}
             </div>
-        </div>
-    </section>
-  )
+        </section>
+    </>
+    )
 }
 
-export default AvailableTasksSection
+export default PurchasedTasksSection
