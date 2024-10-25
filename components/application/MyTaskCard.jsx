@@ -7,21 +7,26 @@ const MyTaskCard = ({task}) => {
     const t = useTranslations("Application.AvailableTasks");
   return (
     <div className='flex flex-col justify-start items-center gap-4 px-2 py-4 border-2 border-transparent border-b-foreground hover:border-2 hover:border-primary hover:bg-hoverPrimary'>
-      
-      <TaskCardDetails task={task}/>
       <div className="flex items-center justify-between w-full">
+        <div>{task.publishDate}</div>
+        <div>{t("Status")}: {task.status}</div>
+      </div>
+      <TaskCardDetails task={task}/>
+      <div className="flex items-center justify-between w-full gap-2">
         {
-          task.receiptConfirmed ? (
-            <div>{t("confirmed")}</div>
+          task.status === "pending" || task.status === "in progress" || task.status === "not purchased" ? (
+            <Link href={`/application/my-tasks/edit/${task.type === "emptyCar" ? "empty-car" : task.type}/${task.id}`} className="bg-transparent text-primary border border-primary px-4 py-2 rounded-lg hover:bg-primary hover:text-secondary">{t("Edit")}</Link>
           ) : (
-            <button className="border border-primary px-4 py-2 rounded-xl hover:bg-primary hover:text-secondary">{t("ConfirmReceipt")}</button>
+            task.status === "waiting confirmation" ? (
+              <button className="bg-transparent text-primary border border-primary px-4 py-2 rounded-lg hover:bg-primary hover:text-secondary">{t("Confirm")}</button>
+            ) : (
+              <></>
+            )
           )
         }
-        
-        <div className="flex items-center justify-center gap-4">
-          <Link href={`/application/purchases/${task.id}`} className="border border-primary px-4 py-2 rounded-xl hover:bg-primary hover:text-secondary">{t("Details")}</Link>
-          <GoToTaskChat task={task}/>
-        </div>
+        <Link href={`/application/my-tasks/${task.id}`} className="bg-transparent text-primary border border-primary px-4 py-2 rounded-lg hover:bg-primary hover:text-secondary">
+          {t("View")}
+        </Link>
       </div>
       
     </div>

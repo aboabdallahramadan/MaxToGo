@@ -132,7 +132,8 @@
         "warehousing": "warehousing",
         "transform": "transform",
         "CompanyName": "Company Name",
-        "Price": "Price"
+        "Price": "Price",
+        "EditTask": "Edit Task"
     },
     "Auth" : {
         "Login": "Login",
@@ -247,8 +248,12 @@
             "Truck": "Truck",
             "warehousing": "Warehousing",
             "EmptyCar": "Empty Car",
-            "Warehousing": "Warehousing"
-
+            "Warehousing": "Warehousing",
+            "Status": "Status",
+            "View": "View",
+            "Edit": "Edit",
+            "EditTask": "Edit Task",
+            "Confirm": "Confirm"
         }
     }
 }
