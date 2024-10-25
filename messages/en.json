@@ -106,7 +106,7 @@
         "VehicleSize": "Vehicle Size",
         "IsTimeFlexible": "Is Time Flexible",
         "IsWrapping": "Do you want wrapping",
-        "TaskType": "TaskType",
+        "TaskType": "Task Type",
         "International": "International",
         "Local": "Local",
         "taskMaster": "Task Master",
@@ -254,6 +254,12 @@
             "Edit": "Edit",
             "EditTask": "Edit Task",
             "Confirm": "Confirm"
+        },
+        "Chat": {
+            "Chat": "Chat",
+            "Chats": "Chats",
+            "TalkToTheAdmin": "Talk to the system administrator",
+            "ChatWithAdmin": "Chat with the system administrator"
         }
     }
 }
