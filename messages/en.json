@@ -260,6 +260,9 @@
             "Chats": "Chats",
             "TalkToTheAdmin": "Talk to the system administrator",
             "ChatWithAdmin": "Chat with the system administrator"
+        },
+        "Notifications" : {
+            "Notifications": "Notifications"
         }
     }
 }
