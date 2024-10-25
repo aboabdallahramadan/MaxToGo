@@ -263,6 +263,13 @@
         },
         "Notifications" : {
             "Notifications": "Notifications"
+        },
+        "Profile": {
+            "Payments": "Payments",
+            "EditInfo": "Edit your  information",
+            "ShareWithFriends": "Share with friends",
+            "Wallet": "Wallet",
+            "TotalOrders": "Total Orders"
         }
     }
 }
