@@ -121,7 +121,7 @@ const MyTasksSection = () => {
                         onChange={() => handleStatusChange('all')}
                         className="form-checkbox h-5 w-5 text-primary border-primary focus:ring-primary accent-primary"
                     />
-                    <span className="text-primary">All</span>
+                    <span className="text-primary">{t("All")}</span>
                 </label>
                 {statusOptions.map((status) => (
                     <label key={status} className="flex items-center gap-2">
@@ -131,7 +131,7 @@ const MyTasksSection = () => {
                             onChange={() => handleStatusChange(status)}
                             className="form-checkbox h-5 w-5 text-primary border-primary focus:ring-primary accent-primary"
                         />
-                        <span className="text-primary">{status}</span>
+                        <span className="text-primary">{t(status)}</span>
                     </label>
                 ))}
             </div>

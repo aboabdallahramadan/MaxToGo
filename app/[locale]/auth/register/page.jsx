@@ -263,7 +263,7 @@ const page = () => {
                 <input name="policy" id="policy" className="bg-transparent accent-primary" type="checkbox"                 
                 checked={formData.policy}
                 onChange={handleInputChange} required/>
-                <label htmlFor="policy" className="text-primary text-center">{t("Agree")} <Link className="text-secondary" href="/auth/register/policy"> {t("Policy")}</Link></label>
+                <label htmlFor="policy" className="text-primary text-center">{t("Agree")} <Link className="text-secondary" href="/auth/register/policy" target="_blank"> {t("Policy")}</Link></label>
             </div >
           </div>
           <div className="flex justify-end items-center gap-4 mt-4">

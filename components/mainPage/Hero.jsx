@@ -17,7 +17,7 @@ const Hero = () => {
                     <h1 className="text-3xl font-extrabold sm:text-5xl text-center">
                     {t('info')}
 
-                        <strong className="block font-extrabold text-primary"> Flytt-connect </strong>
+                        <strong className="block font-extrabold text-primary"> {t("ProjectTitle")} </strong>
                     </h1>
 
                     <div className="mt-8 flex flex-wrap gap-4 text-center justify-center">

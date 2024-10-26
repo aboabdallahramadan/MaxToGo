@@ -1,11 +1,14 @@
-import React from 'react'
+"use client";
+import {useState} from  'react'
 import Image from 'next/image'
 import { Link } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
 import { BsPen, BsPeople, BsWallet } from 'react-icons/bs';
+import ShareModal from '@/components/application/ShareModal';
 
 const page = () => {
-  const t = useTranslations("Application.Profile")
+  const t = useTranslations("Application.Profile");
+  const [isShareModalOpen, setIsShareModalOpen] = useState(false);
   return (
     <div className="min-h-screen p-6">
       <div className="max-w-3xl mx-auto rounded-lg shadow-lg p-8">
@@ -42,13 +45,14 @@ const page = () => {
             <BsWallet className='text-primary'/>
             {t("Payments")}
           </Link>
-          <button 
+          <Link href={"/application/profile/edit"}
             className="flex justify-start gap-2 items-center text-lg w-full text-foreground border-2 border-transparent hover:text-primary hover:border-primary py-3 px-6 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
           >
             <BsPen className='text-primary'/>
             {t("EditInfo")}
-          </button>
+          </Link>
           <button 
+            onClick={() => setIsShareModalOpen(true)}
             className="flex justify-start gap-2 items-center text-lg w-full text-foreground border-2 border-transparent hover:text-primary hover:border-primary py-3 px-6 rounded-lg font-semibold hover:bg-primary/10 transition-colors"
           >
             <BsPeople className='text-primary'/>
@@ -56,6 +60,10 @@ const page = () => {
           </button>
         </div>
       </div>
+      <ShareModal 
+        isOpen={isShareModalOpen}
+        onClose={() => setIsShareModalOpen(false)}
+      />
     </div>
   )
 }

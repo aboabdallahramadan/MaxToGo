@@ -26,7 +26,7 @@ const Header = () => {
         <div className="h-100 w-40">
           <Ilink href={"/"}>
             <Image
-              src="/images/logo.png"
+              src="/images/small-logo.png"
               width={150}
               height={50}
               alt="logo"

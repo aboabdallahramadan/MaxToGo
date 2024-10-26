@@ -31,7 +31,8 @@
     "Hero": {
         "info":"Get shipping and cleaning services easily with",
         "Downland": "Download the App",
-        "Join": "Join Us"
+        "Join": "Join Us",
+        "ProjectTitle": "MOVING GO MAX"
     },
     "About": {
         "About": "About Us",
@@ -151,9 +152,9 @@
         "SetNewPassword": "Set New Password",
         "PasswordConfirmation": "Password Confirmation",
         "CreateAccount": "Create New Account",
-        "HowDoesItWork": "How Does Flytt-Connect Work?",
-        "HowDoesItWorkInfo": "Getting started with Flytt-Connect is simple and straightforward. Follow these steps to begin optimizing your business:",
-        "HowDoesItWorkInfo1": "Create an account on Flytt-Connect by providing your company details and uploading the required documents This includes business registration and any insurance certificates.",
+        "HowDoesItWork": "How Does MOVING GO MAX Work?",
+        "HowDoesItWorkInfo": "Getting started with MOVING GO MAX is simple and straightforward. Follow these steps to begin optimizing your business:",
+        "HowDoesItWorkInfo1": "Create an account on MOVING GO MAX by providing your company details and uploading the required documents This includes business registration and any insurance certificates.",
         "CompanyName": "Company Name",
         "NameOfResponsiblePerson": "Name of responsible person",
         "Address": "Address",
@@ -162,7 +163,7 @@
         "RegisterDocuments": "Register and upload necessary documents",
         "WeSendLoginInformation": "We send login credentials and system usage information",
         "WeSendLoginInformationInfo": "We review your application Our team will review your application and the documents you’ve submitted to ensure everything is in order and that you meet our criteria.",
-        "OnceYourApplication": "Once your application is approved, you will receive your login credentials along with a guide on how to  use the Flytt-Connect platform to book and share assignments.",
+        "OnceYourApplication": "Once your application is approved, you will receive your login credentials along with a guide on how to  use the MOVING GO MAX platform to book and share assignments.",
         "PhoneNumber": "Phone Number",
         "CompanyLogo": "Add the company logo",
         "LicensingInformation": "Licensing Information",
@@ -253,7 +254,12 @@
             "View": "View",
             "Edit": "Edit",
             "EditTask": "Edit Task",
-            "Confirm": "Confirm"
+            "Confirm": "Confirm",
+            "not purchased": "not purchased",
+            "in progress": "in progress",
+            "finished": "finished",
+            "pending": "pending",
+            "waiting confirmation": "waiting confirmation"
         },
         "Chat": {
             "Chat": "Chat",
@@ -269,7 +275,38 @@
             "EditInfo": "Edit your  information",
             "ShareWithFriends": "Share with friends",
             "Wallet": "Wallet",
-            "TotalOrders": "Total Orders"
+            "TotalOrders": "Total Orders",
+            "TotalBalance": "Total Balance",
+            "PaymentHistory": "Payment History",
+            "EditProfileInfo": "Edit Profile Information",
+            "PhoneNumber": "Phone Number",
+            "CompanyName": "Company Name",
+            "ResponsiblePerson": "Responsible Person Name",
+            "Address": "Address",
+            "SaveChanges": "Save Changes"
+        }
+        
+        
+    },
+    "AboutS": {
+        "MainTitle": "About us – MovingGo Max",
+        "Introduction": "MovingGo Max is a revolutionary platform that unites companies in transport, moving, construction, and other service industries under one roof. Our app is designed to promote collaboration between companies, streamline their operations, and create smart, sustainable solutions for growth.",
+        "CollaborationTitle": "Examples of collaboration",
+        "CollaborationIntro": "Through MovingGo Max, companies from different industries can easily interact, sell tasks to each other, and optimize their resources – all via a centralized and user-friendly platform.",
+        "Benefits": {
+            "Title": "Benefits of MovingGo Max:",
+            "Point1": "Maximum efficiency: By coordinating services and selling tasks to each other, companies can reduce empty runs, increase productivity, and maximize their resources.",
+            "Point2": "Cross-industry collaboration: MovingGo Max enables companies from different sectors to connect and collaborate in ways that weren't previously possible.",
+            "Point3": "Sustainable growth: By reducing the number of vehicles on the roads and optimizing resource usage, companies can grow sustainably while contributing to a greener future."
+        },
+        "HowItWorks": {
+            "Title": "This is how MovingGo Max works, via our app or website:",
+            "Step1": "You have a task to sell: If you have a task, for example in the moving industry or any other industry, that you cannot take on or want to sell forward, you can easily do so through MovingGo Max, either via our app or website.",
+            "Step2": "Log in and describe the task: Log in via our app or website, describe the task in detail (e.g., moving from one location to another, delivery of construction materials, or a service), and publish it. The more information you provide, the clearer it becomes for potential buyers.",
+            "Step3": "Other companies see your task: All companies using MovingGo Max, via the app or website, receive the task in their feed. They can either buy the task directly or place bids if you choose to accept offers.",
+            "Step4": "Choose a buyer: When several companies have shown interest, you can choose the company you think is best suited to take over the task – either based on price, experience, or reviews from previous collaborations.",
+            "Step5": "Evaluate the buyer: When the task is complete, you can evaluate the buyer and their service. This way, you help other companies on the platform make well-informed decisions about who they want to collaborate with in the future."
         }
     }
+
 }
