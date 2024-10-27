@@ -274,7 +274,8 @@
             "in progress": "pågående",
             "finished": "avslutad",
             "pending": "väntande",
-            "waiting confirmation": "väntar på bekräftelse"
+            "waiting confirmation": "väntar på bekräftelse",
+            "selectCity": "Välj Stad"
 
         },
         "Chat": {

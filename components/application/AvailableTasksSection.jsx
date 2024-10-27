@@ -7,8 +7,28 @@ import AvailableTaskCard from "./AvailableTaskCard";
 const AvailableTasksSection = () => {
     const t = useTranslations("Application.AvailableTasks");
     const [isLoading, setIsLoading] = useState(false);
-    const [searchLocation, setSearchLocation] = useState("");
+    const [selectedCity, setSelectedCity] = useState("all");
     const [selectedType, setSelectedType] = useState("all");
+    
+    // Add Swedish cities list
+    const swedishCities = [
+        "all",
+        "Stockholm",
+        "Göteborg",
+        "Malmö",
+        "Uppsala",
+        "Västerås",
+        "Örebro",
+        "Linköping",
+        "Helsingborg",
+        "Jönköping",
+        "Norrköping",
+        "Lund",
+        "Umeå",
+        "Gävle",
+        "Borås",
+        "Södertälje"
+    ];
     const [tasks, setTasks] = useState([
         {
             "id":1,
@@ -49,10 +69,11 @@ const AvailableTasksSection = () => {
     const taskTypes = ["all", "cleaning", "emptyCar", "transfer", "warehousing"];
 
     const filteredTasks = tasks.filter(task => {
-        const locationMatch = task.location.toLowerCase().includes(searchLocation.toLowerCase());
+        const locationMatch = selectedCity === "all" || task.location === selectedCity;
         const typeMatch = selectedType === "all" || task.type === selectedType;
         return locationMatch && typeMatch;
     });
+
 
     useEffect(() => {
         const fetchTasks = async () => {
@@ -74,13 +95,17 @@ const AvailableTasksSection = () => {
         <section className="mt-16">
             <div className="container">
                 <div className="filters mb-8 flex flex-col sm:flex-row gap-4">
-                    <input
-                        type="text"
-                        placeholder={t("searchByLocation")}
-                        value={searchLocation}
-                        onChange={(e) => setSearchLocation(e.target.value)}
-                        className="p-2 border rounded-md flex-1 bg-transparent text-primary placeholder:text-primary"
-                    />
+                    <select
+                        value={selectedCity}
+                        onChange={(e) => setSelectedCity(e.target.value)}
+                        className="p-2 border rounded-md flex-1 bg-transparent text-primary"
+                    >
+                        {swedishCities.map((city) => (
+                            <option key={city} value={city}>
+                                {city === "all" ? t("All") : city}
+                            </option>
+                        ))}
+                    </select>
                     <select
                         value={selectedType}
                         onChange={(e) => setSelectedType(e.target.value)}

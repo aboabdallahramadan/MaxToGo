@@ -259,7 +259,8 @@
             "in progress": "in progress",
             "finished": "finished",
             "pending": "pending",
-            "waiting confirmation": "waiting confirmation"
+            "waiting confirmation": "waiting confirmation",
+            "selectCity": "Select City"
         },
         "Chat": {
             "Chat": "Chat",
