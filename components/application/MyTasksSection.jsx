@@ -110,10 +110,9 @@ const MyTasksSection = () => {
       );
 
   return (
-    <>
     <section className="pt-24">
         <div className="content flex flex-col justify-start items-center gap-4 pt-4">
-            <div className="flex flex-wrap gap-4 mb-4">
+            <div className="flex flex-wrap gap-4 mb-4 px-4">
                 <label className="flex items-center gap-2">
                     <input
                         type="checkbox"
@@ -148,7 +147,7 @@ const MyTasksSection = () => {
             )}
         </div>
     </section>
-</>
+
   )
 }
 
