@@ -180,7 +180,9 @@
         "WaitApproval": "Vänta på godkännande från vår systemadministratör.",
         "PleaseSelect": "Vänligen välj",
         "Transfer": "Överföring",
-        "Cleaning": "Städning"
+        "Cleaning": "Städning",
+        "OnlyImagesAllowed": "Endast bilder tillåtna",
+        "OnlyPDFAllowed": "Endast PDF-filer tillåtna"
     },
     "Application": {
         "Header": {
@@ -206,7 +208,16 @@
             "CompanyName": "Företagsnamn",
             "ResponsiblePerson": "Ansvarig persons namn",
             "Address": "Adress",
-            "SaveChanges": "Spara ändringar"
+            "SaveChanges": "Spara ändringar",
+            "InvalidPhoneNumber": "Ogiltigt telefonnummer",
+            "InvalidCompanyName": "Ogiltigt företagsnamn",
+            "InvalidResponsiblePerson": "Ogiltigt ansvarig persons namn",
+            "InvalidAddress": "Ogiltig adress",
+            "CompanyNameRequired": "Företagsnamn krävs",
+            "ResponsiblePersonRequired": "Ansvarig persons namn krävs",
+            "AddressRequired": "Adress krävs",
+            "InvalidImageFormat": "Ogiltig bildformat",
+            "ImageTooLarge": "Bild är för stor"
         },
         "AvailableTasks": {
             "AvailableTasks": "Tillgängliga uppgifter",

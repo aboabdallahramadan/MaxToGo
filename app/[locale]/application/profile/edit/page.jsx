@@ -16,6 +16,60 @@ const Page = () => {
     responsiblePerson: 'John Doe',
     address: 'Kungsgatan 1, 11143 Stockholm'
   })
+  const [errors, setErrors] = useState({})
+
+  const validateForm = () => {
+    let tempErrors = {}
+    
+    // Phone number validation (Swedish format)
+    const phoneRegex = /^(\+46|0)[1-9]\d{8,}$/
+    if (!phoneRegex.test(formData.phoneNumber.replace(/\s/g, ''))) {
+      tempErrors.phoneNumber = t("InvalidPhoneNumber")
+    }
+
+    // Company name validation
+    if (!formData.companyName || formData.companyName.length < 2) {
+      tempErrors.companyName = t("CompanyNameRequired")
+    }
+
+    // Responsible person validation
+    if (!formData.responsiblePerson || formData.responsiblePerson.length < 2) {
+      tempErrors.responsiblePerson = t("ResponsiblePersonRequired")
+    }
+
+    // Address validation
+    if (!formData.address || formData.address.length < 5) {
+      tempErrors.address = t("AddressRequired")
+    }
+
+    setErrors(tempErrors)
+    return Object.keys(tempErrors).length === 0
+  }
+
+  const validateImage = (file) => {
+    const validTypes = ['image/jpeg', 'image/png', 'image/gif']
+    const maxSize = 5 * 1024 * 1024 // 5MB
+
+    if (!file) return true
+
+    if (!validTypes.includes(file.type)) {
+      setErrors(prev => ({
+        ...prev,
+        image: t("InvalidImageFormat")
+      }))
+      return false
+    }
+
+    if (file.size > maxSize) {
+      setErrors(prev => ({
+        ...prev,
+        image: t("ImageTooLarge")
+      }))
+      return false
+    }
+
+    return true
+  }
 
   const handleImageClick = () => {
     fileInputRef.current.click()
@@ -23,23 +77,33 @@ const Page = () => {
 
   const handleImageChange = (e) => {
     const file = e.target.files[0]
-    if (file) {
+    if (file && validateImage(file)) {
       setImageFile(file)
       const imageUrl = URL.createObjectURL(file)
       setSelectedImage(imageUrl)
+      setErrors(prev => ({ ...prev, image: null }))
     }
   }
 
   const handleInputChange = (e) => {
+    const { name, value } = e.target
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [name]: value
     })
+    // Clear error when user starts typing
+    if (errors[name]) {
+      setErrors(prev => ({ ...prev, [name]: null }))
+    }
   }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     
+    if (!validateForm() || !validateImage(imageFile)) {
+      return
+    }
+
     const submitData = new FormData()
     submitData.append('profileImage', imageFile)
     
@@ -94,6 +158,7 @@ const Page = () => {
                 className="hidden"
               />
             </div>
+            {errors.image && <p className="text-red-500 text-sm">{errors.image}</p>}
           </div>
 
             {/* Form Fields */}
@@ -107,8 +172,9 @@ const Page = () => {
                     name="phoneNumber"
                     value={formData.phoneNumber}
                     onChange={handleInputChange}
-                    className="w-full p-3 rounded-lg border border-primary bg-background focus:border-primary"
+                    className={`w-full p-3 rounded-lg border ${errors.phoneNumber ? 'border-red-500' : 'border-primary'} bg-background focus:border-primary`}
                 />
+                {errors.phoneNumber && <p className="text-red-500 text-sm mt-1">{errors.phoneNumber}</p>}
                 </div>
 
                 <div>
@@ -120,8 +186,9 @@ const Page = () => {
                     name="companyName"
                     value={formData.companyName}
                     onChange={handleInputChange}
-                    className="w-full p-3 rounded-lg border border-primary bg-background focus:border-primary"
+                    className={`w-full p-3 rounded-lg border ${errors.companyName ? 'border-red-500' : 'border-primary'} bg-background focus:border-primary`}
                 />
+                {errors.companyName && <p className="text-red-500 text-sm mt-1">{errors.companyName}</p>}
                 </div>
 
                 <div>
@@ -133,8 +200,9 @@ const Page = () => {
                     name="responsiblePerson"
                     value={formData.responsiblePerson}
                     onChange={handleInputChange}
-                    className="w-full p-3 rounded-lg border border-primary bg-background focus:border-primary"
+                    className={`w-full p-3 rounded-lg border ${errors.responsiblePerson ? 'border-red-500' : 'border-primary'} bg-background focus:border-primary`}
                 />
+                {errors.responsiblePerson && <p className="text-red-500 text-sm mt-1">{errors.responsiblePerson}</p>}
                 </div>
 
                 <div>
@@ -146,8 +214,9 @@ const Page = () => {
                     value={formData.address}
                     onChange={handleInputChange}
                     rows="3"
-                    className="w-full p-3 rounded-lg border border-primary bg-background focus:border-primary"
+                    className={`w-full p-3 rounded-lg border ${errors.address ? 'border-red-500' : 'border-primary'} bg-background focus:border-primary`}
                 />
+                {errors.address && <p className="text-red-500 text-sm mt-1">{errors.address}</p>}
                 </div>
             </div>
 
@@ -160,7 +229,6 @@ const Page = () => {
             </form>
         </div>
       </div>
-      
     </div>
   )
 }

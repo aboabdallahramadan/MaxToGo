@@ -180,7 +180,9 @@
         "WaitApproval": "Please wait for approval notification from our system administrator.",
         "PleaseSelect": "PleaseSelect",
         "Transfer": "Transfer",
-        "Cleaning": "Cleaning"
+        "Cleaning": "Cleaning",
+        "OnlyImagesAllowed": "Only Images Allowed",
+        "OnlyPDFAllowed": "Only PDF Allowed"
     },
     "Application": {
         "Header": {
@@ -284,7 +286,13 @@
             "CompanyName": "Company Name",
             "ResponsiblePerson": "Responsible Person Name",
             "Address": "Address",
-            "SaveChanges": "Save Changes"
+            "SaveChanges": "Save Changes",
+            "InvalidPhoneNumber": "Invalid Phone Number",
+            "CompanyNameRequired": "Company Name is required",
+            "ResponsiblePersonRequired": "Responsible Person Name is required",
+            "AddressRequired": "Address is required",
+            "InvalidImageFormat": "Invalid Image Format",
+            "ImageTooLarge": "Image is too large"
         }
         
         

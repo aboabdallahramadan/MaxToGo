@@ -8,6 +8,10 @@ import { BsArrowLeft, BsArrowRight, BsPersonFill } from "react-icons/bs";
 import { Link } from "@/i18n/routing";
 
 const page = () => {
+  const validateFileType = (file, allowedTypes) => {
+    if (!file) return true;
+    return allowedTypes.includes(file.type);
+  };
   const [pageNumber, setPageNumber] = useState(0);
   const [formData, setFormData] = useState({
     companyName: '',
@@ -37,11 +41,48 @@ const page = () => {
   };
 
   const handleInputChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setFormData({
-      ...formData,
-      [name]: type === "checkbox" ? checked : value
-    });
+    const { name, value, type, checked, files } = e.target;
+    
+    if (type === 'file') {
+      const file = files[0];
+      
+      // Define allowed types for each input
+      const fileValidations = {
+        companyLogo: ['image/jpeg', 'image/png', 'image/gif','image/jpg'],
+        licensingInformation: ['application/pdf'],
+        insurance: ['application/pdf']
+      };
+      
+      if (!validateFileType(file, fileValidations[name])) {
+        setErrors(prev => ({
+          ...prev,
+          [name]: name === 'companyLogo' 
+            ? t("OnlyImagesAllowed") 
+            : t("OnlyPDFAllowed")
+        }));
+        e.target.value = '';
+        return;
+      }
+      
+      setFormData({
+        ...formData,
+        [name]: file
+      });
+    } else {
+      setFormData({
+        ...formData,
+        [name]: type === "checkbox" ? checked : value
+      });
+    }
+    
+    // Clear error when valid file is selected
+    if (errors[name]) {
+      setErrors(prev => {
+        const newErrors = { ...prev };
+        delete newErrors[name];
+        return newErrors;
+      });
+    }
   };
 
   const validateForm = () => {
@@ -79,6 +120,7 @@ const page = () => {
   const togglePasswordConfirmationVisibility = () => {
     setShowPasswordConfirmation(!showPasswordConfirmation);
   };
+  
 
   return (
     <>
@@ -237,6 +279,7 @@ const page = () => {
                 required
               />
             </div>
+            {errors.companyLogo && <p className="text-red-500 text-sm">{errors.companyLogo}</p>}
             <div className="relative mt-6">
               <label htmlFor="licensingInformation" className="text-primary mb-5">{t("LicensingInformation")}</label>
               <FaUpload className="absolute bottom-2 left-0 text-primary"/>
@@ -247,24 +290,27 @@ const page = () => {
               hover:file:bg-background" type="file"
               onChange={handleInputChange}
               required/>
-          </div >
-          <div className="relative mt-6">
-              <label htmlFor="insurance" className="text-primary mb-5">{t("CopyOfInsurance")}</label>
-              <FaUpload className="absolute bottom-2 left-0 text-primary"/>
-              <input name="insurance" id="insurance" className="bg-transparent border-b-primary border-b focus:outline-none w-full pl-6 file:mr-4 file:py-2 file:px-4
-              file:rounded-full file:border-0
-              file:text-sm file:font-serif
-              file:bg-background file:text-primary file:cursor-pointer
-              hover:file:bg-background" type="file"
-              onChange={handleInputChange}
-              required/>
-          </div >
+            </div >
+            {errors.licensingInformation && <p className="text-red-500 text-sm">{errors.licensingInformation}</p>}
+            <div className="relative mt-6">
+                <label htmlFor="insurance" className="text-primary mb-5">{t("CopyOfInsurance")}</label>
+                <FaUpload className="absolute bottom-2 left-0 text-primary"/>
+                <input name="insurance" id="insurance" className="bg-transparent border-b-primary border-b focus:outline-none w-full pl-6 file:mr-4 file:py-2 file:px-4
+                file:rounded-full file:border-0
+                file:text-sm file:font-serif
+                file:bg-background file:text-primary file:cursor-pointer
+                hover:file:bg-background" type="file"
+                onChange={handleInputChange}
+                required/>
+            </div >
+            {errors.insurance && <p className="text-red-500 text-sm">{errors.insurance}</p>}
             <div className="relative w-full mt-6 flex justify-start items-center gap-2">
                 <input name="policy" id="policy" className="bg-transparent accent-primary" type="checkbox"                 
                 checked={formData.policy}
                 onChange={handleInputChange} required/>
                 <label htmlFor="policy" className="text-primary text-center">{t("Agree")} <Link className="text-secondary" href="/auth/register/policy" target="_blank"> {t("Policy")}</Link></label>
             </div >
+            
           </div>
           <div className="flex justify-end items-center gap-4 mt-4">
             <div className={`bg-primary py-2 px-4 rounded-lg cursor-pointer ${pageNumber > 0 ? "block" : "hidden"}`} onClick={handlePreviousPage}><BsArrowLeft className="text-secondary text-lg font-bold"/></div>
