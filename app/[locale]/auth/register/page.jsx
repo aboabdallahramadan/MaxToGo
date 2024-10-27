@@ -68,6 +68,17 @@ const page = () => {
         ...formData,
         [name]: file
       });
+    } else if (name === 'phone') {
+      // Only allow numbers and '+' symbol
+      const sanitizedValue = value.replace(/[^\d+]/g, '');
+      // Ensure '+' only appears at the start if present
+      const formattedValue = sanitizedValue.startsWith('+') 
+        ? sanitizedValue.replace(/\+/g, '').replace(/^/, '+')
+        : sanitizedValue.replace(/\+/g, '');
+      setFormData({
+        ...formData,
+        [name]: formattedValue
+      });
     } else {
       setFormData({
         ...formData,
@@ -87,23 +98,32 @@ const page = () => {
 
   const validateForm = () => {
     const newErrors = {};
-
+  
     if (pageNumber === 0) {
       if (!formData.companyName) newErrors.companyName = t("RequiredField");
       if (!formData.numberOfPeople) newErrors.numberOfPeople = t("RequiredField");
       if (!formData.address) newErrors.address = t("RequiredField");
       if (!formData.typeOfCompany) newErrors.typeOfCompany = t("RequiredField");
-    } else if (pageNumber === 1) {
+    } 
+    else if (pageNumber === 1) {
       if (!formData.email) {
         newErrors.email = t("RequiredField");
       } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
         newErrors.email = t("InvalidEmail");
       }
-      if (!formData.password) newErrors.password = t("RequiredField");
-      if (formData.password !== formData.passwordConfirmation) newErrors.passwordConfirmation = t("PasswordsDoNotMatch");
-      if (!formData.phone) newErrors.phone = t("RequiredField");
+      if (!formData.password) {
+        newErrors.password = t("RequiredField");
+      }
+      if (formData.password !== formData.passwordConfirmation) {
+        newErrors.passwordConfirmation = t("PasswordsDoNotMatch");
+      }
+      if (!formData.phone) {
+        newErrors.phone = t("RequiredField");
+      } else if (!/^\+?\d+$/.test(formData.phone)) {
+        newErrors.phone = t("InvalidPhoneFormat");
+      }
     }
-
+  
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
