@@ -16,7 +16,7 @@ const page = () => {
 
             // for all tasks
             "id":2,
-            "type": "cleaning",
+            "type": "transfer",
             "name": "clean my apartment",
             "completionDate": "8/9/2024",
             "price": "200",
@@ -40,7 +40,8 @@ const page = () => {
             // transfer
             "floorNumberOne": "3",
             "floorNumberTwo": "4",
-            "elevator": "no",
+            "elevatorNumberOne": "no",
+            "elevatorNumberTwo": "no",
             "isWrapping": "no",
 
             //transfer and empty Car

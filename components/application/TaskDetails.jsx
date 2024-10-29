@@ -120,8 +120,13 @@ const TaskDetails = ({task}) => {
                                     </div>
                                     <div className="flex justify-start items-center gap-2">
                                         <BsArrowDownUp className="text-primary"/>
-                                        <p className="font-bold">{t("elevator")}:</p>
-                                        <p>{task.elevator}</p>
+                                        <p className="font-bold">{t("elevatorNumberOne")}:</p>
+                                        <p>{task.elevatorNumberOne}</p>
+                                    </div>
+                                    <div className="flex justify-start items-center gap-2">
+                                        <BsArrowDownUp className="text-primary"/>
+                                        <p className="font-bold">{t("elevatorNumberTwo")}:</p>
+                                        <p>{task.elevatorNumberTwo}</p>
                                     </div>
                                     <div className="flex justify-start items-center gap-2">
                                         <FaBoxes className="text-primary"/>

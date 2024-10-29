@@ -27,7 +27,8 @@ const page = () => {
     companyName: "",
     floorNumberOne: "",
     floorNumberTwo: "",
-    elevator: "no",
+    elevatorOne: "no",
+    elevatorTwo: "no",
     vehicleSize: "",
     isTimeFlexible: "yes",
     isWrapping: "no",
@@ -215,32 +216,63 @@ const page = () => {
             </div>
 
             {/* Elevator (Radio) */}
-            <div className="relative flex items-center justify-between flex-col w-full gap-4 mt-8">
-              <h4 className="text-xl text-center w-full">{t("Elevator")}</h4>
-              <div className="flex justify-center items-center  w-full">
-                <div className="flex justify-start items-center">
-                  <input
-                    className="accent-primary"
-                    type="radio"
-                    id="elevatorYes"
-                    name="elevator"
-                    value="yes"
-                    checked={formData.elevator === "yes"}
-                    onChange={handleChange}
-                  />
-                  <label htmlFor="elevatorYes" className="ml-2"> {t("Yes")} </label>
+            <div className="relative flex items-center justify-around flex-col sm:flex-row w-full gap-4 mt-8">
+              <div>
+                <h4 className="text-xl text-center w-full">{t("ElevatorOne")}</h4>
+                <div className="flex justify-center items-center  w-full">
+                  <div className="flex justify-start items-center">
+                    <input
+                      className="accent-primary"
+                      type="radio"
+                      id="elevatorOneYes"
+                      name="elevatorOne"
+                      value="yes"
+                      checked={formData.elevatorOne === "yes"}
+                      onChange={handleChange}
+                    />
+                    <label htmlFor="elevatorOneYes" className="ml-2"> {t("Yes")} </label>
+                  </div>
+                  <div className="flex justify-start items-center ml-6">
+                    <input
+                      className="accent-primary"
+                      type="radio"
+                      id="elevatorOneNo"
+                      name="elevatorOne"
+                      value="no"
+                      checked={formData.elevatorOne === "no"}
+                      onChange={handleChange}
+                    />
+                    <label htmlFor="elevatorOneNo" className="ml-2"> {t("No")} </label>
+                  </div>
                 </div>
-                <div className="flex justify-start items-center ml-6">
-                  <input
-                    className="accent-primary"
-                    type="radio"
-                    id="elevatorNo"
-                    name="elevator"
-                    value="no"
-                    checked={formData.elevator === "no"}
-                    onChange={handleChange}
-                  />
-                  <label htmlFor="elevatorNo" className="ml-2"> {t("No")} </label>
+              </div>
+              <div>
+                <h4 className="text-xl text-center w-full">{t("ElevatorTwo")}</h4>
+                <div className="flex justify-center items-center  w-full">
+                  <div className="flex justify-start items-center">
+                    <input
+                      className="accent-primary"
+                      type="radio"
+                      id="elevatorTwoYes"
+                      name="elevatorTwo"
+                      value="yes"
+                      checked={formData.elevatorTwo === "yes"}
+                      onChange={handleChange}
+                    />
+                    <label htmlFor="elevatorTwoYes" className="ml-2"> {t("Yes")} </label>
+                  </div>
+                  <div className="flex justify-start items-center ml-6">
+                    <input
+                      className="accent-primary"
+                      type="radio"
+                      id="elevatorTwoNo"
+                      name="elevatorTwo"
+                      value="no"
+                      checked={formData.elevatorTwo === "no"}
+                      onChange={handleChange}
+                    />
+                    <label htmlFor="elevatorTwoNo" className="ml-2"> {t("No")} </label>
+                  </div>
                 </div>
               </div>
             </div>

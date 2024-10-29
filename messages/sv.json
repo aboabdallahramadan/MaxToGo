@@ -134,7 +134,9 @@
         "transform": "Transformera",
         "CompanyName": "Företagsnamn",
         "Price": "Pris",
-        "EditTask": "Redigera uppgift"
+        "EditTask": "Redigera uppgift",
+        "ElevatorOne": "Våningsnummer för adress 1",
+        "ElevatorTwo": "Våningsnummer för adress 2"
     },
     "Auth": {
         "Login": "Logga in",
@@ -294,7 +296,9 @@
             "Task Information": "Uppgiftsinformation",
             "Task Details": "Uppgiftsdetaljer",
             "Contact Information": "Kontaktinformation",
-            "Description": "Beskrivning"
+            "Description": "Beskrivning",
+            "elevatorNumberTwo": "Finns det hiss på den andra platsen",
+            "elevatorNumberOne": "Finns det hiss på den första platsen"
 
         },
         "Chat": {

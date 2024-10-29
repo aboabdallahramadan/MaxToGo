@@ -134,7 +134,9 @@
         "transform": "transform",
         "CompanyName": "Company Name",
         "Price": "Price",
-        "EditTask": "Edit Task"
+        "EditTask": "Edit Task",
+        "ElevatorOne": "Elevator in address 1",
+        "ElevatorTwo": "Elevator in address 2"
     },
     "Auth" : {
         "Login": "Login",
@@ -269,7 +271,9 @@
             "Basic Information": "Basic Information",
             "Task Details": "Task Details",
             "Contact Information": "Contact Information",
-            "Description": "Description"
+            "Description": "Description",
+            "elevatorNumberTwo": "Is There elevator in second location?",
+            "elevatorNumberOne": "Is There elevator in first location?"
         },
         "Chat": {
             "Chat": "Chat",
