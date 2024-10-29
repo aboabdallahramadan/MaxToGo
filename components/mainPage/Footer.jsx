@@ -10,7 +10,9 @@ const Footer = () => {
     <footer className="bottom-0 bg-secondary w-full">
         <div className="container py-4">
             <div className="flex justify-center items-center flex-col gap-8 flex-wrap md:flex-row md:gap-4">
-                <div className=""><Image src="/images/logo.png" style={{ width: "auto", height: "auto" }} width={250} height={150}  alt="logo"/></div>
+                <div className="">
+                    <Image src="/images/logo.png" style={{ width: "150px", height: "auto" }} width={150} height={75}  alt="logo"/>
+                </div>
                 <div className="flex flex-col justify-around items-center w-full relative gap-6 sm:gap-1 md:flex-1 sm:flex-row md:w-auto">
                     <div className="flex justify-between items-center gap-4">
                         <FaEnvelope fontSize={30}/>
