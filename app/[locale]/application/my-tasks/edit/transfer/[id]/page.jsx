@@ -32,7 +32,7 @@ const page = () => {
     vehicleSize: "",
     isTimeFlexible: "yes",
     isWrapping: "no",
-    isInternationalOrLocal: "local",
+    taskType: "local",
     taskMaster: "",
     phoneNumber: "",
     text: "",
@@ -376,7 +376,7 @@ const page = () => {
               </div>
             </div>
 
-            {/* Is International Or Local */}
+            {/* Task Type */}
             <div className="relative flex items-center justify-between flex-col w-full gap-4 mt-8">
               <h4 className="text-xl text-center w-full">{t("TaskType")}</h4>
               <div className="flex justify-center items-center  w-full">
@@ -385,9 +385,9 @@ const page = () => {
                     className="accent-primary"
                     type="radio"
                     id="international"
-                    name="isInternationalOrLocal"
+                    name="taskType"
                     value="international"
-                    checked={formData.isInternationalOrLocal === "international"}
+                    checked={formData.taskType === "international"}
                     onChange={handleChange}
                   />
                   <label htmlFor="international" className="ml-2"> {t("International")} </label>
@@ -396,10 +396,22 @@ const page = () => {
                   <input
                     className="accent-primary"
                     type="radio"
+                    id="national"
+                    name="taskType"
+                    value="national"
+                    checked={formData.taskType === "national"}
+                    onChange={handleChange}
+                  />
+                  <label htmlFor="national" className="ml-2"> {t("National")} </label>
+                </div>
+                <div className="flex justify-start items-center ml-6">
+                  <input
+                    className="accent-primary"
+                    type="radio"
                     id="local"
-                    name="isInternationalOrLocal"
+                    name="taskType"
                     value="local"
-                    checked={formData.isInternationalOrLocal === "local"}
+                    checked={formData.taskType === "local"}
                     onChange={handleChange}
                   />
                   <label htmlFor="local" className="ml-2"> {t("Local")} </label>

@@ -112,7 +112,7 @@
         "Local": "Lokal",
         "taskMaster": "Uppgiftsansvarig",
         "phoneNumber": "Telefonnummer",
-        "text": "Text",
+        "text" : "Ytterligare information",
         "Location": "Plats",
         "Balcony": "Har den balkong",
         "titleCleaning": "Städuppgift",
@@ -136,7 +136,8 @@
         "Price": "Pris",
         "EditTask": "Redigera uppgift",
         "ElevatorOne": "Våningsnummer för adress 1",
-        "ElevatorTwo": "Våningsnummer för adress 2"
+        "ElevatorTwo": "Våningsnummer för adress 2",
+        "National": "Nationalitet"
     },
     "Auth": {
         "Login": "Logga in",

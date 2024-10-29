@@ -112,7 +112,7 @@
         "Local": "Local",
         "taskMaster": "Task Master",
         "phoneNumber": "Phone Number",
-        "text": "Text",
+        "text": "Additional Information",
         "Location": "Location",
         "Balcony": "Does it has balcony",
         "titleCleaning": "Cleaning Task",
@@ -136,7 +136,8 @@
         "Price": "Price",
         "EditTask": "Edit Task",
         "ElevatorOne": "Elevator in address 1",
-        "ElevatorTwo": "Elevator in address 2"
+        "ElevatorTwo": "Elevator in address 2",
+        "National": "National"
     },
     "Auth" : {
         "Login": "Login",
