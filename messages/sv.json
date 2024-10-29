@@ -193,7 +193,8 @@
             "Profile": "Profil",
             "English": "Engelska",
             "Swedish": "Svenska",
-            "Categories": "Kategorier"
+            "Categories": "Kategorier",
+            "SystemName": "Moving Go Max"
         },
         "Profile": {
             "Payments": "Betalningar",

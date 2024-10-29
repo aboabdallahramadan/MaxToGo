@@ -193,7 +193,8 @@
             "Profile": "Profile",
             "English": "English",
             "Swedish": "Swedish",
-            "Categories": "Categories"
+            "Categories": "Categories",
+            "SystemName": "MOVING GO MAX"
         },
         "AvailableTasks": {
             "AvailableTasks": "Available Tasks",

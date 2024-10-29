@@ -28,9 +28,9 @@ const Header = () => {
     >
       <div className="container h-12 flex justify-between py-2">
         <div className="flex justify-center items-center gap-2">
-            <div className="bg-[url(/images/profile.jpg)] bg-center bg-no-repeat bg-cover w-10 h-10 rounded-full">
+            <div className="bg-[url(/images/logo.png)] bg-center bg-no-repeat bg-cover w-10 h-10">
             </div>
-            <p className="text-primary font-bold">{userName}</p>
+            <p className="text-primary font-bold">{t("SystemName")}</p>
         </div>
         <nav className="flex justify-between items-center h-100">
           
