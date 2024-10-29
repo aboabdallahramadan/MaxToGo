@@ -265,7 +265,11 @@
             "waiting confirmation": "waiting confirmation",
             "selectCity": "Select City",
             "city": "city",
-            "type": "Type"
+            "type": "Type",
+            "Basic Information": "Basic Information",
+            "Task Details": "Task Details",
+            "Contact Information": "Contact Information",
+            "Description": "Description"
         },
         "Chat": {
             "Chat": "Chat",

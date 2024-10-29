@@ -289,7 +289,12 @@
             "waiting confirmation": "väntar på bekräftelse",
             "selectCity": "Välj Stad",
             "city": "Stad",
-            "type": "Typ"
+            "type": "Typ",
+            "Basic Information":  "Grundläggande information",
+            "Task Information": "Uppgiftsinformation",
+            "Task Details": "Uppgiftsdetaljer",
+            "Contact Information": "Kontaktinformation",
+            "Description": "Beskrivning"
 
         },
         "Chat": {

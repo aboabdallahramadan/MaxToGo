@@ -16,7 +16,7 @@ const page = () => {
 
             // for all tasks
             "id":2,
-            "type": "warehousing",
+            "type": "cleaning",
             "name": "clean my apartment",
             "completionDate": "8/9/2024",
             "price": "200",
