@@ -58,7 +58,7 @@ const ContactUs = () => {
     };
 
     return (
-        <section id="contact ">
+        <section id="contact">
             <SectionHeader name={t("Contact")}></SectionHeader>
             <div className="container pb-8">
                 <p className="text-primary text-center text-lg mb-4">

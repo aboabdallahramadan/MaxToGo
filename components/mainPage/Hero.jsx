@@ -8,9 +8,6 @@ const Hero = () => {
         className="relative bg-[url(/images/hero.jpg)] bg-cover bg-center bg-no-repeat flex justify-center items-center"
         id="hero">
             <div
-                className="absolute inset-0 bg-black/75 sm:bg-transparent sm:from-black/75 sm:to-black/25 sm:bg-gradient-to-r"
-            ></div>
-            <div
                 className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
             >
                 <div className="max-w-xl text-center sm:text-left">
