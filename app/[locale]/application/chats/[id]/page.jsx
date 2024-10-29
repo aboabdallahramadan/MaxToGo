@@ -5,8 +5,9 @@ import MessageBubble from '@/components/application/chat/MessageBubble'
 import { BsCamera } from 'react-icons/bs';
 import TitleGoldenBar from '@/components/application/TitleGoldenBar';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
-  const page = () => {
+const page = () => {
     const t = useTranslations("Application.Chat")
     const [messages, setMessages] = useState([])
     const [loading, setLoading] = useState(true)
@@ -15,6 +16,11 @@ import { useTranslations } from 'next-intl';
     const params = useParams()
     const chatId = params.id
 
+    // Add contact info (this would typically come from your API)
+    const contactInfo = {
+        name: "John Doe",
+        image: "/images/profile.jpg",
+    }
     useEffect(() => {
       // Dummy data for testing
       const dummyMessages = [
@@ -69,6 +75,22 @@ import { useTranslations } from 'next-intl';
         <>
             <TitleGoldenBar name={t("Chat")} goBack={true} />
             <div className="container max-w-4xl pt-24">
+              {/* Contact Profile Section */}
+              <div className=" rounded-t-lg shadow-lg border-b border-primary/20">
+                    <div className="flex items-center gap-4 p-6">
+                        <div className="relative w-16 h-16">
+                            <Image
+                                src={contactInfo.image}
+                                alt={contactInfo.name}
+                                fill
+                                className="rounded-full object-cover border-2 border-primary"
+                            />
+                        </div>
+                        <div>
+                            <h2 className="text-xl font-bold text-primary">{contactInfo.name}</h2>
+                        </div>
+                    </div>
+                </div>
                 <div className="rounded-lg shadow-lg p-6">
                 <div className="space-y-4">
                     {messages.map((message, index) => (
