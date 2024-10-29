@@ -286,7 +286,9 @@
             "finished": "avslutad",
             "pending": "väntande",
             "waiting confirmation": "väntar på bekräftelse",
-            "selectCity": "Välj Stad"
+            "selectCity": "Välj Stad",
+            "city": "Stad",
+            "type": "Typ"
 
         },
         "Chat": {

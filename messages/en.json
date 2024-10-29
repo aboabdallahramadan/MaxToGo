@@ -262,7 +262,9 @@
             "finished": "finished",
             "pending": "pending",
             "waiting confirmation": "waiting confirmation",
-            "selectCity": "Select City"
+            "selectCity": "Select City",
+            "city": "city",
+            "type": "Type"
         },
         "Chat": {
             "Chat": "Chat",

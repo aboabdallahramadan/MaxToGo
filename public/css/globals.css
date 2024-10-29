@@ -19,6 +19,10 @@
   --hoverPrimaryColor: #fecc0247;
 }
 
+select option {
+  background-color: var(--background);
+}
+
 .logoMark::before {
   content: "";
   background-image: url('/images/logo.png');

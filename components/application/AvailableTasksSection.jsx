@@ -94,29 +94,41 @@ const AvailableTasksSection = () => {
     return (
         <section className="mt-16">
             <div className="container">
-                <div className="filters mb-8 flex flex-col sm:flex-row gap-4">
-                    <select
-                        value={selectedCity}
-                        onChange={(e) => setSelectedCity(e.target.value)}
-                        className="p-2 border rounded-md flex-1 bg-transparent text-primary"
-                    >
-                        {swedishCities.map((city) => (
-                            <option key={city} value={city}>
-                                {city === "all" ? t("All") : city}
-                            </option>
-                        ))}
-                    </select>
-                    <select
-                        value={selectedType}
-                        onChange={(e) => setSelectedType(e.target.value)}
-                        className="p-2 border rounded-md w-full sm:w-48 bg-transparent text-primary"
-                    >
-                        {taskTypes.map((type) => (
-                            <option key={type} value={type}>
-                                {t(type.charAt(0).toUpperCase() + type.slice(1))}
-                            </option>
-                        ))}
-                    </select>
+                <div className="filters mb-8 flex flex-col justify-around sm:flex-row gap-4">
+                    <div className="sm:w-48 flex flex-col gap-2 justify-start">
+                        <label htmlFor="city" className="text-primary">{t("city")}</label>
+                        <select
+                            value={selectedCity}
+                            onChange={(e) => setSelectedCity(e.target.value)}
+                            className="p-2 border rounded-md bg-transparent text-primary"
+                            name="city"
+                            id="city"
+                        >
+                            {swedishCities.map((city) => (
+                                <option key={city} value={city}>
+                                    {city === "all" ? t("All") : city}
+                                </option>
+                            ))}
+                        </select>
+                    </div>
+                    
+                    <div className="sm:w-48 flex flex-col gap-2 justify-start">
+                        <label htmlFor="type" className="text-primary">{t("type")}</label>
+                        <select
+                            value={selectedType}
+                            onChange={(e) => setSelectedType(e.target.value)}
+                            className="p-2 border rounded-md  bg-transparent text-primary"
+                            name="type"
+                            id="type"
+                        >
+                            {taskTypes.map((type) => (
+                                <option key={type} value={type}>
+                                    {t(type.charAt(0).toUpperCase() + type.slice(1))}
+                                </option>
+                            ))}
+                        </select>
+                    </div>
+                    
                 </div>
                 <div className="content flex flex-col justify-start items-center gap-4">
                     {isLoading ? (
