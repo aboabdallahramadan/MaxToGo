@@ -1,12 +1,12 @@
 import { Link } from "@/i18n/routing";
-
+import Image from "next/image";
 
 const ChatItem = ({ chat }) => {
   return (
     <Link href={`/application/chats/${chat.id}`}>
         <div className="flex items-center p-4 cursor-pointer hover:bg-gray-700 border border-primary rounded-xl mb-4">
             <div className="w-12 h-12 rounded-full flex items-center justify-center text-primary font-semibold border border-primary">
-                {chat.name.charAt(0)}
+                <Image src={chat.Image} alt={chat.name} className="rounded-full object-cover" style={{ width: '40px', height: '40px' }} width={40} height={40} />
             </div>
             <div className="ml-4 flex-1">
                 <div className="flex justify-between items-center">
