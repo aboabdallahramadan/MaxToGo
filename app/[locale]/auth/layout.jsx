@@ -1,22 +1,16 @@
-import { Link } from '@/i18n/routing';
-import Image from 'next/image';
-import React from 'react'
+import LayoutHeader from "@/components/mainPage/LayoutHeader";
 
 const layout = ({children}) => {
   return (
-    <div className='flex justify-center items-center h-screen w-screen overflow-x-hidden'>
-        <div className="w-full h-full flex flex-col lg:w-1/2  overflow-y-scroll max-h-screen pt-14">
-            <div className='flex justify-center items-center gap-4'>
-                <Link href="/" className="mb-4">
-                    <Image src="/images/logo.png" style={{ width: "auto", height: "auto" }} width={100} height={35}  alt="logo" />
-                </Link>
-            </div>
-            <div className='flex flex-col items-center justify-center flex-1'>
-                {children}
-            </div>
-        </div>
-        <div className="w-1/2 h-full bg-secondary hidden items-center justify-center lg:flex">
-            <Image src="/images/logo.png" style={{ width: "auto", height: "auto" }} width={250} height={150}  alt="logo" />
+    <div className="w-full min-h-screen h-full bg-[url('/images/hero.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
+        <LayoutHeader />
+        <div className="w-full h-12"></div>
+        <div className="container">
+            <div className="w-full h-full flex justify-center items-center">
+                <div className="bg-blue-600/50 rounded-lg p-10 w-3/4 flex flex-col gap-4 items-center">
+                    {children}
+                </div>
+            </div>  
         </div>
     </div>
   )
