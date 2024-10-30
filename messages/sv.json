@@ -242,7 +242,7 @@
             "Price": "Pris",
             "Details": "Detaljer",
             "Purchase": "Köp",
-            "ConfirmPurchase": "Vill du verkligen {action} ett {type} jobb för {price}€ ?",
+            "ConfirmPurchase": "Vill du verkligen {action} ett {type} jobb för {price}",
             "buy": "köpa",
             "offer": "erbjuda",
             "TaskMaster": "Uppgiftsansvarig",
@@ -304,7 +304,12 @@
             "Contact Information": "Kontaktinformation",
             "Description": "Beskrivning",
             "elevatorNumberTwo": "Finns det hiss på den andra platsen",
-            "elevatorNumberOne": "Finns det hiss på den första platsen"
+            "elevatorNumberOne": "Finns det hiss på den första platsen",
+            "NameYourPrice": "Ge ett pris",
+            "OfferAPrice": "Erbjud ett pris",
+            "NewPrice": "Nytt pris",
+            "PriceRequired": "Pris krävs",
+            "InvalidPhoneFormat": "Ogiltigt telefonnummerformat"
 
         },
         "Chat": {

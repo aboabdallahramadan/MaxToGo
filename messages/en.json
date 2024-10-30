@@ -218,7 +218,7 @@
             "Price": "Price",
             "Details": "Details",
             "Purchase": "Purchase",
-            "ConfirmPurchase": "Do you really want to {action} a {type} job for {price}€ ?",
+            "ConfirmPurchase": "Do you really want to {action} a {type} job for {price}",
             "buy": "buy",
             "offer": "offer",
             "TaskMaster": "Task Master",
@@ -279,7 +279,12 @@
             "Contact Information": "Contact Information",
             "Description": "Description",
             "elevatorNumberTwo": "Is There elevator in second location?",
-            "elevatorNumberOne": "Is There elevator in first location?"
+            "elevatorNumberOne": "Is There elevator in first location?",
+            "NameYourPrice": "Name your price",
+            "OfferAPrice": "Offer a price",
+            "NewPrice": "New Price",
+            "PriceRequired": "Price is required",
+            "InvalidPhoneFormat": "Invalid phone format"
         },
         "Chat": {
             "Chat": "Chat",

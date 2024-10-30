@@ -19,6 +19,11 @@ const t = useTranslations("Application.AvailableTasks");
 
   const router = useRouter();
 
+  const validatePhone = (phoneNumber) => {
+    const phoneRegex = /^\+?\d+$/;
+    return phoneRegex.test(phoneNumber);
+  };
+
   // Function to handle "Purchase" button click
   const purchaseTask = () => {
     setIsModalOpen(true); // Show the modal
@@ -40,8 +45,11 @@ const t = useTranslations("Application.AvailableTasks");
     if (!phone) {
       setPhoneError(t("PhoneRequired"));
       isValid = false;
+    } else if (!validatePhone(phone)) {
+        setPhoneError(t("InvalidPhoneFormat"));
+        isValid = false;
     } else {
-      setPhoneError(""); // Clear error if valid
+        setPhoneError("");
     }
 
     if (!isValid) return; // If validation fails, do not proceed
@@ -99,7 +107,7 @@ const t = useTranslations("Application.AvailableTasks");
             {/* Modal title */}
             <div className="flex justify-start gap-4 items-start">
               <BsInfoCircle className="text-primary text-5xl"/>
-              <h2 className="text-lg font-bold mb-4">{t("ConfirmPurchase" , {action: task.type == "emptyCar" ? t("buy") : t("offer"), type: task.type , price: task.price})}</h2>
+              <h2 className="text-lg font-bold mb-4">{t("ConfirmPurchase" , {action: task.type == "emptyCar" ? t("buy") : t("offer"), type: task.type , price: task.price})}€ ?</h2>
             </div>
 
             {/* TaskMaster input */}
@@ -127,8 +135,14 @@ const t = useTranslations("Application.AvailableTasks");
                 type="text"
                 className="bg-transparent border-b-primary border-b focus:outline-none text-primary w-full"
                 value={phone}
-                onChange={(e) => setPhone(e.target.value)}
-              />
+                onChange={(e) => {
+                    const value = e.target.value;
+                    if (value === "" || value === "+" || validatePhone(value)) {
+                        setPhone(value);
+                    }
+                }}
+                placeholder="+1234567890"
+            />
               {phoneError && <p className="text-red-600">{phoneError}</p>} {/* Error message */}
             </div>
 

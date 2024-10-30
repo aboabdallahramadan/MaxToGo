@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 
 import PurchaseTask from "@/components/application/PurchaseTask";
 import TaskCardDetails from "./TaskCardDetails";
+import MakeOffer from "./MakeOffer";
 
 const AvailableTaskCard = ({ task }) => {
   const t = useTranslations("Application.AvailableTasks");
@@ -13,7 +14,14 @@ const AvailableTaskCard = ({ task }) => {
       <TaskCardDetails task={task}/>
       <div className="flex justify-between items-center w-full px-2">
         <Link href={`/application/task/${task.id}`} className="py-2 px-4 text-lg text-foreground border border-primary hover:text-secondary hover:bg-primary rounded-xl">{t("Details")}</Link>
-        <PurchaseTask task={task}/>
+        {
+          task.priceType == "fixed" ? (
+            <PurchaseTask task={task}/>
+          ) : (
+            <MakeOffer task={task}/>
+          )
+        }
+        
       </div>
 
       

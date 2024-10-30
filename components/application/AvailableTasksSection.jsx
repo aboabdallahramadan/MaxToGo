@@ -36,7 +36,8 @@ const AvailableTasksSection = () => {
             "name": "clean my apartment",
             "completionDate": "8/9/2024",
             "price": "200",
-            "location": "Gaza"
+            "location": "Gaza",
+            "priceType": "fixed"
         },
         {
             "id":2,
@@ -45,7 +46,8 @@ const AvailableTasksSection = () => {
             "completionDate": "8/9/2024",
             "price": "200",
             "location": "Gaza",
-            "toLocation": "Aleppo"
+            "toLocation": "Aleppo",
+            "priceType": "offer"
         },
         {
             "id":3,
@@ -54,7 +56,8 @@ const AvailableTasksSection = () => {
             "completionDate": "8/9/2024",
             "price": "200",
             "location": "Gaza",
-            "toLocation": "Aleppo"
+            "toLocation": "Aleppo",
+            "priceType": "fixed"
         },
         {
             "id":4,
@@ -62,7 +65,8 @@ const AvailableTasksSection = () => {
             "name": "clean my apartment",
             "completionDate": "8/9/2024",
             "price": "200",
-            "location": "Gaza"
+            "location": "Gaza",
+            "priceType": "offer"
         }
     ]);
 
