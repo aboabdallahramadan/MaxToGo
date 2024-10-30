@@ -26,6 +26,7 @@ const page = () => {
     fromLocation: "",
     toLocation: "",
     vehicleSize: "",
+    priceType: 'fixed',
     price: "",
     isTimeFlexible: "yes",
     taskType: "local",
@@ -212,25 +213,55 @@ const page = () => {
                     </div>
 
                     {/* Price */}
-                    <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
-                    <label htmlFor="price">
-                        <FaMoneyBill className="inline-block mr-2 text-primary" />
-                        {t("Price")}
-                    </label>
-                    <div>
-                        <input
-                        className="bg-transparent border-b-primary border-b focus:outline-none"
-                        type="number"
-                        id="price"
-                        name="price"
-                        value={formData.price}
-                        onChange={handleChange}
-                        required
-                        />
-                        <span className="text-primary ml-2">€</span>
+                    <div className="relative flex items-center justify-between flex-col w-full gap-4 mt-8">
+                        <h4 className="text-xl text-center w-full">{t("PricePreference")}</h4>
+                        <div className="flex justify-center items-center w-full">
+                            <div className="flex justify-start items-center">
+                                <input
+                                    className="accent-primary"
+                                    type="radio"
+                                    id="fixedPrice"
+                                    name="priceType"
+                                    value="fixed"
+                                    checked={formData.priceType === "fixed"}
+                                    onChange={handleChange}
+                                />
+                                <label htmlFor="fixedPrice" className="ml-2">{t("SetFixedPrice")}</label>
+                            </div>
+                            <div className="flex justify-start items-center ml-6">
+                                <input
+                                    className="accent-primary"
+                                    type="radio"
+                                    id="offers"
+                                    name="priceType"
+                                    value="offers"
+                                    checked={formData.priceType === "offers"}
+                                    onChange={handleChange}
+                                />
+                                <label htmlFor="offers" className="ml-2">{t("GetPriceOffers")}</label>
+                            </div>
+                        </div>
                     </div>
-
-                    </div>
+                    {formData.priceType === 'fixed' && (
+                        <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
+                            <label htmlFor="price">
+                                <FaMoneyBill className="inline-block mr-2 text-primary" />
+                                {t("Price")}
+                            </label>
+                            <div>
+                                <input
+                                    className="bg-transparent border-b-primary border-b focus:outline-none"
+                                    type="number"
+                                    id="price"
+                                    name="price"
+                                    value={formData.price}
+                                    onChange={handleChange}
+                                    required={formData.priceType === 'fixed'}
+                                />
+                                <span className="text-primary ml-2">€</span>
+                            </div>
+                        </div>
+                    )}
 
                     {/* Is Time flexible */}
                     <div className="relative flex items-center justify-between flex-col w-full gap-4 mt-8">

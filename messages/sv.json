@@ -139,7 +139,10 @@
         "ElevatorTwo": "Våningsnummer för adress 2",
         "National": "Nationalitet",
         "Warehousing": "Lagringsuppgift",
-        "Other": "Övrigt"
+        "Other": "Övrigt",
+        "PricePreference": "Prispreferens",
+        "SetFixedPrice": "Ange fast pris",
+        "GetPriceOffers": "Få prisuppgifter"
     },
     "Auth": {
         "Login": "Logga in",

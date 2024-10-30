@@ -137,7 +137,10 @@
         "EditTask": "Edit Task",
         "ElevatorOne": "Elevator in address 1",
         "ElevatorTwo": "Elevator in address 2",
-        "National": "National"
+        "National": "National",
+        "PricePreference": "Price Preference",
+        "SetFixedPrice": "Set Fixed Price",
+        "GetPriceOffers": "Get Price Offers on the task"
     },
     "Auth" : {
         "Login": "Login",

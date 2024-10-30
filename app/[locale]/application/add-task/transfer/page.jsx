@@ -36,7 +36,8 @@ const page = () => {
     taskMaster: "",
     phoneNumber: "",
     text: "",
-    price: ""
+    price: "",
+    priceType: 'fixed'
   });
 
   const handleChange = (e) => {
@@ -295,25 +296,55 @@ const page = () => {
             </div>
 
             {/* Price */}
-            <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
-              <label htmlFor="price">
-                <FaMoneyBill className="inline-block mr-2 text-primary" />
-                {t("Price")}
-              </label>
-              <div>
-                <input
-                  className="bg-transparent border-b-primary border-b focus:outline-none"
-                  type="number"
-                  id="price"
-                  name="price"
-                  value={formData.price}
-                  onChange={handleChange}
-                  required
-                />
-                <span className="text-primary ml-2">€</span>
-              </div>
-
+            <div className="relative flex items-center justify-between flex-col w-full gap-4 mt-8">
+                    <h4 className="text-xl text-center w-full">{t("PricePreference")}</h4>
+                    <div className="flex justify-center items-center w-full">
+                        <div className="flex justify-start items-center">
+                            <input
+                                className="accent-primary"
+                                type="radio"
+                                id="fixedPrice"
+                                name="priceType"
+                                value="fixed"
+                                checked={formData.priceType === "fixed"}
+                                onChange={handleChange}
+                            />
+                            <label htmlFor="fixedPrice" className="ml-2">{t("SetFixedPrice")}</label>
+                        </div>
+                        <div className="flex justify-start items-center ml-6">
+                            <input
+                                className="accent-primary"
+                                type="radio"
+                                id="offers"
+                                name="priceType"
+                                value="offers"
+                                checked={formData.priceType === "offers"}
+                                onChange={handleChange}
+                            />
+                            <label htmlFor="offers" className="ml-2">{t("GetPriceOffers")}</label>
+                        </div>
+                    </div>
             </div>
+            {formData.priceType === 'fixed' && (
+                <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
+                    <label htmlFor="price">
+                        <FaMoneyBill className="inline-block mr-2 text-primary" />
+                        {t("Price")}
+                    </label>
+                    <div>
+                        <input
+                            className="bg-transparent border-b-primary border-b focus:outline-none"
+                            type="number"
+                            id="price"
+                            name="price"
+                            value={formData.price}
+                            onChange={handleChange}
+                            required={formData.priceType === 'fixed'}
+                        />
+                        <span className="text-primary ml-2">€</span>
+                    </div>
+                </div>
+            )}
 
             {/* Is Time flexible */}
             <div className="relative flex items-center justify-between flex-col w-full gap-4 mt-8">
@@ -378,47 +409,47 @@ const page = () => {
             </div>
 
             {/* Task Type */}
-          <div className="relative flex items-center justify-between flex-col w-full gap-4 mt-8">
-            <h4 className="text-xl text-center w-full">{t("TaskType")}</h4>
-            <div className="flex justify-center items-center  w-full">
-              <div className="flex justify-start items-center">
-                <input
-                  className="accent-primary"
-                  type="radio"
-                  id="international"
-                  name="taskType"
-                  value="international"
-                  checked={formData.taskType === "international"}
-                  onChange={handleChange}
-                />
-                <label htmlFor="international" className="ml-2"> {t("International")} </label>
-              </div>
-              <div className="flex justify-start items-center ml-6">
-                <input
-                  className="accent-primary"
-                  type="radio"
-                  id="national"
-                  name="taskType"
-                  value="national"
-                  checked={formData.taskType === "national"}
-                  onChange={handleChange}
-                />
-                <label htmlFor="national" className="ml-2"> {t("National")} </label>
-              </div>
-              <div className="flex justify-start items-center ml-6">
-                <input
-                  className="accent-primary"
-                  type="radio"
-                  id="local"
-                  name="taskType"
-                  value="local"
-                  checked={formData.taskType === "local"}
-                  onChange={handleChange}
-                />
-                <label htmlFor="local" className="ml-2"> {t("Local")} </label>
+            <div className="relative flex items-center justify-between flex-col w-full gap-4 mt-8">
+              <h4 className="text-xl text-center w-full">{t("TaskType")}</h4>
+              <div className="flex justify-center items-center  w-full">
+                <div className="flex justify-start items-center">
+                  <input
+                    className="accent-primary"
+                    type="radio"
+                    id="international"
+                    name="taskType"
+                    value="international"
+                    checked={formData.taskType === "international"}
+                    onChange={handleChange}
+                  />
+                  <label htmlFor="international" className="ml-2"> {t("International")} </label>
+                </div>
+                <div className="flex justify-start items-center ml-6">
+                  <input
+                    className="accent-primary"
+                    type="radio"
+                    id="national"
+                    name="taskType"
+                    value="national"
+                    checked={formData.taskType === "national"}
+                    onChange={handleChange}
+                  />
+                  <label htmlFor="national" className="ml-2"> {t("National")} </label>
+                </div>
+                <div className="flex justify-start items-center ml-6">
+                  <input
+                    className="accent-primary"
+                    type="radio"
+                    id="local"
+                    name="taskType"
+                    value="local"
+                    checked={formData.taskType === "local"}
+                    onChange={handleChange}
+                  />
+                  <label htmlFor="local" className="ml-2"> {t("Local")} </label>
+                </div>
               </div>
             </div>
-          </div>
 
             {/* Task Master */}
             <div className="w-full flex justify-between items-center flex-nowrap gap-4">
