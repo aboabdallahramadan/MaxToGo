@@ -9,8 +9,8 @@ import GoToTaskChat from "@/components/application/GoToTaskChat";
 
 const page = () => {
             const t = useTranslations("Application.AvailableTasks");
-            const [isLoading,setIsLoading] = useState(false);
-            const [isButtonLoading,setIsButtonLoading] = useState(false);
+            const [isLoading, setIsLoading] = useState(false);
+            const [isButtonLoading, setIsButtonLoading] = useState(false);
             const taskId = useParams().id;
             const [task, setTask] = useState(
                 {   
@@ -55,6 +55,10 @@ const page = () => {
 
                     // empty Car and transfer and cleaning
                     "isTimeFlexible": "yes",
+                    user: {
+                      name: "John Doe",
+                      avatar: "/images/profile.jpg",
+                    }
                 }
             )
 
@@ -76,31 +80,36 @@ const page = () => {
 
           return (
             <>
-                <TitleGoldenBar name={t("TaskDetails")} goBack={true}/>
-                <div className="container pt-24">
-                {
-                    isLoading ? <Spinner /> : (
-                        <>
-                            <TaskDetails task={task}/>
-                            <div className="w-full flex items-center justify-between pb-8">
-                              
-                                <button
-                                    onClick={handleDeleteTask}
-                                    className="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg font-semibold transition duration-300"
-                                >
-                                  {
-                                isButtonLoading ? (<Spinner/>) : (
-                                  t("DeleteTask")
-                                )
-                              }
-                                    
-                                </button>
-                                <GoToTaskChat task={task}/>
-                            </div>
-                        </>
-                    )
-                }
-                </div>
+              <TitleGoldenBar name={t("TaskDetails")} goBack={true} />
+              <div className="container pt-24">
+                {isLoading ? (
+                  <Spinner />
+                ) : (
+                  <>
+                    <div className="flex items-center gap-4 mb-8">
+                      <img
+                        src={task.user.avatar}
+                        alt={`${task.user.name}'s avatar`}
+                        className="w-16 h-16 rounded-full object-cover"
+                      />
+                      <div>
+                        <h2 className="text-xl font-semibold">{task.user.name}</h2>
+                      </div>
+                    </div>
+
+                    <TaskDetails task={task} />
+                    <div className="w-full flex items-center justify-between pb-8">
+                      <button
+                        onClick={handleDeleteTask}
+                        className="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg font-semibold transition duration-300"
+                      >
+                        {isButtonLoading ? <Spinner /> : t("DeleteTask")}
+                      </button>
+                      <GoToTaskChat task={task} />
+                    </div>
+                  </>
+                )}
+              </div>
             </>
           )
 }
