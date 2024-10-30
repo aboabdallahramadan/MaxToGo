@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 import GoToTaskChat from "@/components/application/GoToTaskChat";
 import TitleGoldenBar from "@/components/application/TitleGoldenBar";
+import TaskOffers from "@/components/application/TaskOffers";
 
 const TaskPage = () => {
         const router = useRouter();
@@ -21,6 +22,8 @@ const TaskPage = () => {
             "location": "Gaza",
             "taskMaster": "hany alalmany",
             "phoneNumber": "+96398888888",
+            "status": "not purchased",
+            "priceType": "offer",
 
             //empty Car
             "numberOfWorkers":"9",
@@ -52,7 +55,49 @@ const TaskPage = () => {
 
             // empty Car and transfer and cleaning
             "isTimeFlexible": "yes",
-            "chatId": "4"
+            "chatId": "4",
+            "offers": [
+                {
+                    "id": 123,
+                    "user": {
+                        "id": 1,
+                        "name": "John Doe",
+                        "avatar": "/images/profile.jpg",
+                        "rating": 4.5
+                    },
+                    "price": 100,
+                },
+                {
+                    "id": 23,
+                    "user": {
+                        "id": 1,
+                        "name": "John Doe",
+                        "avatar": "/images/profile.jpg",
+                        "rating": 4.5
+                    },
+                    "price": 100,
+                },
+                {
+                    "id": 13,
+                    "user": {
+                        "id": 1,
+                        "name": "John Doe",
+                        "avatar": "/images/profile.jpg",
+                        "rating": 4.5
+                    },
+                    "price": 100,
+                },
+                {
+                    "id": 12,
+                    "user": {
+                        "id": 1,
+                        "name": "John Doe",
+                        "avatar": "/images/profile.jpg",
+                        "rating": 4.5
+                    },
+                    "price": 100,
+                }
+            ]
         }
 )
 
@@ -74,14 +119,27 @@ const TaskPage = () => {
                 <TitleGoldenBar name={t("TaskDetails")} goBack={true}/>
                 <div className="container mx-auto pb-8 pt-24">
                     <TaskDetails task={task} />
+                    {
+                        (task.priceType == "offer" && task.status == "not purchased") &&  (
+                            <TaskOffers task={task}/>
+                        )
+                    }
                     <div className="mt-6 flex justify-between gap-4">
-                        <button
-                            onClick={handleDelete}
-                            className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
-                        >
-                            {t("DeleteTask")}
-                        </button>
-                        <GoToTaskChat task={task}/>
+                        {
+                            task.status == "not purchased" && (
+                                <button
+                                    onClick={handleDelete}
+                                    className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+                                >
+                                    {t("DeleteTask")}
+                                </button>
+                            )
+                        }
+                        {
+                            task.status != "not purchased" && (
+                                <GoToTaskChat task={task}/>
+                            )
+                        }
                     </div>
                 </div>
             </>

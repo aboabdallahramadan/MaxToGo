@@ -18,7 +18,8 @@ const MyTasksSection = () => {
             "receiptConfirmed": true,
             "chatId": 1,
             "publishDate": "1/1/2024",
-            "status": "not purchased"
+            "status": "not purchased",
+            "priceType": "offer"
         },
         {
             "id":2,
@@ -31,7 +32,8 @@ const MyTasksSection = () => {
             "receiptConfirmed": true,
             "chatId": 2,
             "publishDate": "1/1/2024",
-            "status": "in progress"
+            "status": "in progress",
+            "priceType": "fixed"
         },
         {
             "id":3,
@@ -44,7 +46,8 @@ const MyTasksSection = () => {
             "receiptConfirmed": false,
             "chatId": 3,
             "publishDate": "1/1/2024",
-            "status": "finished"
+            "status": "finished",
+            "priceType": "offer"
         },
         {
             "id":4,
@@ -56,7 +59,8 @@ const MyTasksSection = () => {
             "receiptConfirmed": false,
             "chatId": 4,
             "publishDate": "1/1/2024",
-            "status": "pending"
+            "status": "pending",
+            "priceType": "fixed"
         },
         {
           "id":5,
@@ -68,7 +72,8 @@ const MyTasksSection = () => {
           "receiptConfirmed": false,
           "chatId": 5,
           "publishDate": "1/1/2024",
-          "status": "waiting confirmation"
+          "status": "waiting confirmation",
+          "priceType": "offer"
       }
       ]);
       const [selectedStatuses, setSelectedStatuses] = useState([]);

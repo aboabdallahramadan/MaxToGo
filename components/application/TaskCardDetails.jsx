@@ -49,14 +49,17 @@ const TaskCardDetails = ({task}) => {
           </div>
         </div>
         <div className="w-full text-center flex flex-col items-center justify-center sm:w-1/2">
-          <div className="flex items-center justify-center gap-1 w-full">
-            <p className="font-bold text-nowrap">{t("Price")}: </p>
-            <p className="text-primary">{ task.priceType == "fixed" ?
-            (<>{task.price}€</>) : (
-              t("NameYourPrice")
+          
+            
+            { task.priceType == "fixed" &&
+            (
+              <div className="flex items-center justify-center gap-1 w-full">
+                <p className="font-bold text-nowrap">{t("Price")}: </p>
+                <p className="text-primary">{task.price}€</p>
+              </div>
             )
-            }</p>
-          </div>
+            }
+          
         </div>
       </div>
     </>

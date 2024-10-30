@@ -19,21 +19,17 @@ const TaskDetails = ({task}) => {
                         <BsType className="text-primary text-xl"/>
                         <span className="font-bold">{t("Type")}: {task.type}</span>
                     </div>
-                    <div className="flex items-center gap-2">
-                        <FaMoneyBill className="text-primary text-xl"/>
-                        <span className="font-bold">{t("Price")} :
-                            {
-                                task.priceType == "fixed" ? (
-                                    <>
-                                        {task.price}€
-                                    </>
-                                ) : (
-                                    t("NameYourPrice")
-                                )
-                            }
-                            
-                        </span>
-                    </div>
+                    
+                    {
+                        task.priceType == "fixed" && (
+                            <div className="flex items-center gap-2">
+                                <FaMoneyBill className="text-primary text-xl"/>
+                                <span className="font-bold">{t("Price")} :{task.price}€
+                                </span>
+                            </div>
+                        )
+                    }
+                        
                 </div>
             </div>
 

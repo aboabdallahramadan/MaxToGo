@@ -284,7 +284,10 @@
             "OfferAPrice": "Offer a price",
             "NewPrice": "New Price",
             "PriceRequired": "Price is required",
-            "InvalidPhoneFormat": "Invalid phone format"
+            "InvalidPhoneFormat": "Invalid phone format",
+            "AcceptOffer": "Accept Offer",
+            "Offers": "Offers",
+            "NoOffersYetForThisTask": "No offers yet for this task"
         },
         "Chat": {
             "Chat": "Chat",

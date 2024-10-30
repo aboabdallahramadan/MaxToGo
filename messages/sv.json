@@ -309,7 +309,10 @@
             "OfferAPrice": "Erbjud ett pris",
             "NewPrice": "Nytt pris",
             "PriceRequired": "Pris krävs",
-            "InvalidPhoneFormat": "Ogiltigt telefonnummerformat"
+            "InvalidPhoneFormat": "Ogiltigt telefonnummerformat",
+            "AcceptOffer": "Acceptera erbjudande",
+            "Offers": "Erbjudanden",
+            "NoOffersYetForThisTask": "Inga erbjudanden ännu för den här uppgiften"
 
         },
         "Chat": {
