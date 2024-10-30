@@ -8,6 +8,16 @@ const PurchasedTaskCard = ({task}) => {
 
   return (
     <div className='flex flex-col justify-start items-center gap-4 px-2 py-4 border-2 border-transparent border-b-foreground hover:border-2 hover:border-primary hover:bg-hoverPrimary'>
+      <div className="flex items-center gap-3 w-full">
+        <img 
+          src={task.user.avatar || '/default-avatar.png'} 
+          alt="User avatar" 
+          className="w-12 h-12 rounded-full object-cover"
+        />
+        <div>
+          <h3 className="font-medium text-lg">{task.user.name}</h3>
+        </div>
+      </div>
       
       <TaskCardDetails task={task}/>
       <div className="flex items-center justify-between w-full">
@@ -24,7 +34,6 @@ const PurchasedTaskCard = ({task}) => {
           <GoToTaskChat task={task}/>
         </div>
       </div>
-      
     </div>
   );
 }

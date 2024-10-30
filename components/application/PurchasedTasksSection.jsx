@@ -16,7 +16,11 @@ const PurchasedTasksSection = () => {
             "price": "200",
             "location": "Gaza",
             "receiptConfirmed": true,
-            "chatId": "1"
+            "chatId": "1",
+            "user" : {
+                "avatar": "/images/profile.jpg",
+                "name": "john doe"
+            }
         },
         {
             "id":2,
@@ -27,7 +31,11 @@ const PurchasedTasksSection = () => {
             "location": "Gaza",
             "toLocation": "Aleppo",
             "receiptConfirmed": true,
-            "chatId": "2"
+            "chatId": "2",
+            "user" : {
+                "avatar": "/images/profile.jpg",
+                "name": "john doe"
+            }
         },
         {
             "id":3,
@@ -38,7 +46,11 @@ const PurchasedTasksSection = () => {
             "location": "Gaza",
             "toLocation": "Aleppo",
             "receiptConfirmed": false,
-            "chatId": "3"
+            "chatId": "3",
+            "user" : {
+                "avatar": "/images/profile.jpg",
+                "name": "john doe"
+            }
         },
         {
             "id":4,
@@ -48,7 +60,11 @@ const PurchasedTasksSection = () => {
             "price": "200",
             "location": "Gaza",
             "receiptConfirmed": false,
-            "chatId": "4"
+            "chatId": "4",
+            "user" : {
+                "avatar": "/images/profile.jpg",
+                "name": "john doe"
+            }
         }
       ]);
       useEffect(() => {
