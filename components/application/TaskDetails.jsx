@@ -21,7 +21,18 @@ const TaskDetails = ({task}) => {
                     </div>
                     <div className="flex items-center gap-2">
                         <FaMoneyBill className="text-primary text-xl"/>
-                        <span className="font-bold">{t("Price")}: {task.price}€</span>
+                        <span className="font-bold">{t("Price")} :
+                            {
+                                task.priceType == "fixed" ? (
+                                    <>
+                                        {task.price}€
+                                    </>
+                                ) : (
+                                    t("NameYourPrice")
+                                )
+                            }
+                            
+                        </span>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 "use client";
+import MakeOffer from "@/components/application/MakeOffer";
 import PurchaseTask from "@/components/application/PurchaseTask";
 import TaskDetails from "@/components/application/TaskDetails";
 import TitleGoldenBar from "@/components/application/TitleGoldenBar"
@@ -19,6 +20,7 @@ const page = () => {
             "type": "transfer",
             "name": "clean my apartment",
             "completionDate": "8/9/2024",
+            "priceType": "offer",
             "price": "200",
             "text": " task details",
             "location": "Gaza",
@@ -69,7 +71,14 @@ const page = () => {
                 <>
                     <TaskDetails task={task}/>
                     <div className="w-full flex items-center justify-end pb-8">
-                        <PurchaseTask task={task}/>
+                        {
+                            task.priceType == "fixed" ? (
+                                <PurchaseTask task={task}/>
+                            ) : (
+                                <MakeOffer task={task}/>
+                            )
+                        }
+                        
                     </div>
                 </>
                 
