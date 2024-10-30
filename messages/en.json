@@ -185,7 +185,9 @@
         "Transfer": "Transfer",
         "Cleaning": "Cleaning",
         "OnlyImagesAllowed": "Only Images Allowed",
-        "OnlyPDFAllowed": "Only PDF Allowed"
+        "OnlyPDFAllowed": "Only PDF Allowed",
+        "Warehousing": "Warehousing",
+        "Other": "Other"
     },
     "Application": {
         "Header": {

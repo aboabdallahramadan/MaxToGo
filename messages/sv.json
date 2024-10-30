@@ -137,7 +137,9 @@
         "EditTask": "Redigera uppgift",
         "ElevatorOne": "Våningsnummer för adress 1",
         "ElevatorTwo": "Våningsnummer för adress 2",
-        "National": "Nationalitet"
+        "National": "Nationalitet",
+        "Warehousing": "Lagringsuppgift",
+        "Other": "Övrigt"
     },
     "Auth": {
         "Login": "Logga in",

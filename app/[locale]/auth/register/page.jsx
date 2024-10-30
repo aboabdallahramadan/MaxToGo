@@ -217,6 +217,8 @@ const page = () => {
                 <option value="">{t("PleaseSelect")}</option>
                 <option value="transfer">{t("Transfer")}</option>
                 <option value="cleaning">{t("Cleaning")}</option>
+                <option value="warehousing">{t("Warehousing")}</option>
+                <option value="other">{t("Other")}</option>
               </select>
             </div>
               {errors.typeOfCompany && <p className="text-red-500 text-sm">{errors.typeOfCompany}</p>}
