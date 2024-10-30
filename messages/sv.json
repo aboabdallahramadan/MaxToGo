@@ -311,7 +311,8 @@
             "ChatWithAdmin": "Chatta med systemadministratören"
         },
         "Notifications": {
-            "Notifications": "Aviseringar"
+            "Notifications": "Aviseringar",
+            "View Task": "Visa uppgift"
         }
     },
     "AboutS": {

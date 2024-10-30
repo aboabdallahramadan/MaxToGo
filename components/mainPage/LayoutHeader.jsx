@@ -122,7 +122,7 @@ const LayoutHeader = () => {
         {isMobileMenuOpen && (
           <div
             id="mobile-menu"
-            className="absolute right-0 top-0 z-[51] w-1/2 h-screen bg-black/90 border-l border-primary flex flex-col items-center justify-start gap-12"
+            className="absolute right-0 top-0 z-[51] w-3/4 lg:w-1/2 h-screen bg-black/90 border-l border-primary flex flex-col items-center justify-start gap-12"
           >
             <AuthPageHeader name={t("Categories")}/>
             <div className="space-y-1 px-2 pb-3 pt-2">

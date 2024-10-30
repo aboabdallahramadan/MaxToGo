@@ -285,7 +285,8 @@
             "ChatWithAdmin": "Chat with the system administrator"
         },
         "Notifications" : {
-            "Notifications": "Notifications"
+            "Notifications": "Notifications",
+            "View Task": "View Task"
         },
         "Profile": {
             "Payments": "Payments",
