@@ -15,7 +15,7 @@ const page = () => {
   const [pageNumber, setPageNumber] = useState(0);
   const [formData, setFormData] = useState({
     companyName: '',
-    numberOfPeople: '',
+    nameOfResponsiblePerson: '',
     address: '',
     typeOfCompany: '',
     email: '',
@@ -101,7 +101,7 @@ const page = () => {
   
     if (pageNumber === 0) {
       if (!formData.companyName) newErrors.companyName = t("RequiredField");
-      if (!formData.numberOfPeople) newErrors.numberOfPeople = t("RequiredField");
+      if (!formData.nameOfResponsiblePerson) newErrors.nameOfResponsiblePerson = t("RequiredField");
       if (!formData.address) newErrors.address = t("RequiredField");
       if (!formData.typeOfCompany) newErrors.typeOfCompany = t("RequiredField");
     } 
@@ -177,19 +177,19 @@ const page = () => {
             </div>
               {errors.companyName && <p className="text-red-500 text-sm">{errors.companyName}</p>}
             <div className="relative mt-6">
-              <label htmlFor="numberOfPeople" className="text-primary mb-5">{t("NameOfResponsiblePerson")}</label>
+              <label htmlFor="nameOfResponsiblePerson" className="text-primary mb-5">{t("NameOfResponsiblePerson")}</label>
               <BsPersonFill className="absolute bo2tom-1 left-0 text-primary" />
               <input
-                name="numberOfPeople"
-                id="numberOfPeople"
+                name="nameOfResponsiblePerson"
+                id="nameOfResponsiblePerson"
                 className="text-primary w-full pl-6 bg-transparent border-b-primary border-b focus:outline-none"
-                type="number"
-                value={formData.numberOfPeople}
+                type="text"
+                value={formData.nameOfResponsiblePerson}
                 onChange={handleInputChange}
                 required
               />
             </div>
-              {errors.numberOfPeople && <p className="text-red-500 text-sm">{errors.numberOfPeople}</p>}
+              {errors.nameOfResponsiblePerson && <p className="text-red-500 text-sm">{errors.nameOfResponsiblePerson}</p>}
             <div className="relative mt-6">
               <label htmlFor="address" className="text-primary mb-5">{t("Address")}</label>
               <FaMarker className="absolute bottom-2 left-0 text-primary" />
