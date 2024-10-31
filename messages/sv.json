@@ -66,6 +66,9 @@
         "SuccessMessage": "Ditt formulär har skickats framgångsrikt",
         "ErrorMessage": "Något gick fel"
     },
+    "Partners": { 
+        "OurPartners": "Våra partners"
+    },
     "Works": {
         "title": "Ansökan om att gå med i arbetet",
         "Name": "Namn",

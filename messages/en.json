@@ -66,6 +66,9 @@
         "SuccessMessage": "Your form has been submitted successfully",
         "ErrorMessage": "Something went wrong"
     },
+    "Partners" : {
+    "OurPartners": "Our Partners"
+    },
     "Works": {
         "title": "Request to join work",
         "Name": "Name",
