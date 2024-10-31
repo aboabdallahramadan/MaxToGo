@@ -1,25 +1,20 @@
 "use client";
-import Link from "next/link";
 import ApplicationNavLink from "@/components/ApplicationNavLink";
 import { useTranslations } from "next-intl";
-import { FaBars, FaGlobe, FaHome, FaPlus, FaRing } from "react-icons/fa";
+import { FaBars, FaHome, FaPlus} from "react-icons/fa";
 import { useState } from "react";
 import LogoutButton from "@/components/LogoutButton";
 import { usePathname } from "next/navigation";
 import AuthPageHeader from "@/components/AuthPageHeader";
 import { BsBellFill, BsChatFill, BsPersonFill } from "react-icons/bs";
+import LanguageDropdown from "@/components/LanguageDropdown";
 
 const Header = () => {
     const t = useTranslations("Application.Header");
     const pathname = usePathname();
     const languagePattern = /^\/[a-z]{2}/; // Matches language code like /en or /fr
     const strippedPathname = pathname.replace(languagePattern, "");
-
-  let session = true;
-  const userName = "mohammad ramadan"
-
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
 
   return (
@@ -45,16 +40,7 @@ const Header = () => {
 
         <div className="flex justify-between items-center">
           <LogoutButton />
-          <button
-            type="button"
-            id="language-dropdown-button"
-            className="ml-4"
-            aria-controls="language-menu"
-            aria-expanded="false"
-            onClick={() => setIsLanguageMenuOpen((prev) => !prev)}
-          >
-            <FaGlobe className={"text-foreground"} />
-          </button>
+          <LanguageDropdown />
           <button
             type="button"
             id="mobile-dropdown-button"
@@ -66,33 +52,6 @@ const Header = () => {
             <FaBars className={"text-foreground" } />
           </button>
         </div>
-        {isLanguageMenuOpen && (
-          <div
-            id="Language-menu"
-            className="absolute right-0 top-10 bg-secondary"
-          >
-            <div className="space-y-1 px-2 pb-3 pt-2">
-              <ul className="flex flex-col justify-between items-center gap-4">
-                <li>
-                  <Link
-                    href="/en/application"
-                    className="font-bold ml-4 px-4 py-2 border border-transparent hover:border hover:border-primary hover:text-primary whitespace-nowrap rounded"
-                  >
-                    {t("English")}
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/sv/application"
-                    className="font-bold ml-4 px-4 py-2 border border-transparent hover:border hover:border-primary hover:text-primary whitespace-nowrap rounded"
-                  >
-                    {t("Swedish")}
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        )}
         {isMobileMenuOpen && (
           <div
             id="mobile-menu"
