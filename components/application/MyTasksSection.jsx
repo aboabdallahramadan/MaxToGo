@@ -19,7 +19,11 @@ const MyTasksSection = () => {
             "chatId": 1,
             "publishDate": "1/1/2024",
             "status": "not purchased",
-            "priceType": "offer"
+            "priceType": "offer",
+            "user": {
+              "name": "john doe",
+              "image": "/images/profile.jpg"
+            }
         },
         {
             "id":2,
@@ -33,7 +37,11 @@ const MyTasksSection = () => {
             "chatId": 2,
             "publishDate": "1/1/2024",
             "status": "in progress",
-            "priceType": "fixed"
+            "priceType": "fixed",
+            "user": {
+              "name": "john doe",
+              "image": "/images/profile.jpg"
+            }
         },
         {
             "id":3,
@@ -47,7 +55,11 @@ const MyTasksSection = () => {
             "chatId": 3,
             "publishDate": "1/1/2024",
             "status": "finished",
-            "priceType": "offer"
+            "priceType": "offer",
+            "user": {
+              "name": "john doe",
+              "image": "/images/profile.jpg"
+            }
         },
         {
             "id":4,
@@ -60,7 +72,11 @@ const MyTasksSection = () => {
             "chatId": 4,
             "publishDate": "1/1/2024",
             "status": "pending",
-            "priceType": "fixed"
+            "priceType": "fixed",
+            "user": {
+              "name": "john doe",
+              "image": "/images/profile.jpg"
+            }
         },
         {
           "id":5,
@@ -73,7 +89,11 @@ const MyTasksSection = () => {
           "chatId": 5,
           "publishDate": "1/1/2024",
           "status": "waiting confirmation",
-          "priceType": "offer"
+          "priceType": "offer",
+          "user": {
+            "name": "john doe",
+            "image": "/images/profile.jpg"
+          }
       }
       ]);
       const [selectedStatuses, setSelectedStatuses] = useState([]);

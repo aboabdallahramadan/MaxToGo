@@ -287,7 +287,9 @@
             "InvalidPhoneFormat": "Invalid phone format",
             "AcceptOffer": "Accept Offer",
             "Offers": "Offers",
-            "NoOffersYetForThisTask": "No offers yet for this task"
+            "NoOffersYetForThisTask": "No offers yet for this task",
+            "Submit": "Submit",
+            "Cancel": "Cancel"
         },
         "Chat": {
             "Chat": "Chat",

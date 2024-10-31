@@ -2,6 +2,7 @@ import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import TaskCardDetails from "./TaskCardDetails";
 import GoToTaskChat from "./GoToTaskChat";
+import ConfirmTaskButton from "./ConfirmTaskButton";
 
 const MyTaskCard = ({task}) => {
     const t = useTranslations("Application.AvailableTasks");
@@ -17,10 +18,8 @@ const MyTaskCard = ({task}) => {
           task.status === "pending" || task.status === "in progress" || task.status === "not purchased" ? (
             <Link href={`/application/my-tasks/edit/${task.type === "emptyCar" ? "empty-car" : task.type}/${task.id}`} className="bg-transparent text-primary border border-primary px-4 py-2 rounded-lg hover:bg-primary hover:text-secondary">{t("Edit")}</Link>
           ) : (
-            task.status === "waiting confirmation" ? (
-              <button className="bg-transparent text-primary border border-primary px-4 py-2 rounded-lg hover:bg-primary hover:text-secondary">{t("Confirm")}</button>
-            ) : (
-              <></>
+            task.status === "waiting confirmation" && (
+              <ConfirmTaskButton task={task}/>
             )
           )
         }

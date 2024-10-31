@@ -312,7 +312,9 @@
             "InvalidPhoneFormat": "Ogiltigt telefonnummerformat",
             "AcceptOffer": "Acceptera erbjudande",
             "Offers": "Erbjudanden",
-            "NoOffersYetForThisTask": "Inga erbjudanden ännu för den här uppgiften"
+            "NoOffersYetForThisTask": "Inga erbjudanden ännu för den här uppgiften",
+            "Submit": "Skicka",
+            "Cancel": "Avbryt"
 
         },
         "Chat": {

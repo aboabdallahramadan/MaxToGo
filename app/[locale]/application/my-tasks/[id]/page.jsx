@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import GoToTaskChat from "@/components/application/GoToTaskChat";
 import TitleGoldenBar from "@/components/application/TitleGoldenBar";
 import TaskOffers from "@/components/application/TaskOffers";
+import ConfirmTaskButton from "@/components/application/ConfirmTaskButton";
 
 const TaskPage = () => {
         const router = useRouter();
@@ -22,8 +23,14 @@ const TaskPage = () => {
             "location": "Gaza",
             "taskMaster": "hany alalmany",
             "phoneNumber": "+96398888888",
-            "status": "not purchased",
+            "status": "waiting confirmation",
             "priceType": "offer",
+            "user": {
+                "id": 1,
+                "name": "hany alalmany",
+                "image": "/images/profile.jpg",
+                "phoneNumber": "+96398888888",
+            },
 
             //empty Car
             "numberOfWorkers":"9",
@@ -138,6 +145,11 @@ const TaskPage = () => {
                         {
                             task.status != "not purchased" && (
                                 <GoToTaskChat task={task}/>
+                            )
+                        }
+                        {
+                            task.status == "waiting confirmation" && (
+                                <ConfirmTaskButton task={task}/>
                             )
                         }
                     </div>

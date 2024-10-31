@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { BsArrowDownUp, BsBuildingFill, BsCalendarDate, BsChatFill, BsHouseFill, BsPeopleFill, BsPersonFill, BsPhoneFill, BsTextCenter, BsType } from "react-icons/bs";
-import { FaBoxes, FaCalendarTimes, FaChartArea, FaIdBadge, FaLocationArrow, FaMoneyBill } from "react-icons/fa";
+import { FaBoxes, FaCalendarTimes, FaChartArea, FaChartPie, FaIdBadge, FaLocationArrow, FaMoneyBill } from "react-icons/fa";
 import { FiTruck } from "react-icons/fi";
 
 const TaskDetails = ({task}) => {
@@ -18,6 +18,10 @@ const TaskDetails = ({task}) => {
                     <div className="flex items-center gap-2">
                         <BsType className="text-primary text-xl"/>
                         <span className="font-bold">{t("Type")}: {task.type}</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <FaChartPie className="text-primary text-xl"/>
+                        <span className="font-bold">{t("Status")}: {task.status}</span>
                     </div>
                     
                     {
