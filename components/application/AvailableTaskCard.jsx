@@ -63,10 +63,6 @@ const AvailableTaskCard = ({ task }) => {
             {task.type === "warehousing" && (
               <>
                 <div className="flex items-center gap-2">
-                  <FaCalendarTimes className="text-primary"/>
-                  <span className="font-semibold">{t("storageDuration")}: {task.storageDuration}</span>
-                </div>
-                <div className="flex items-center gap-2">
                   <FaChartArea className="text-primary"/>
                   <span className="font-semibold">{t("area")}: {task.area}</span>
                 </div>

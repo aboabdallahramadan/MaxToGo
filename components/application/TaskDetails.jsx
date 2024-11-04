@@ -167,11 +167,6 @@ const TaskDetails = ({task}) => {
                             (task.type == "warehousing") && (
                                 <>
                                     <div className="flex justify-start items-center gap-2">
-                                        <FaCalendarTimes className="text-primary"/>
-                                        <p className="font-bold">{t("storageDuration")}:</p>
-                                        <p>{task.storageDuration}</p>
-                                    </div>
-                                    <div className="flex justify-start items-center gap-2">
                                         <FaChartArea className="text-primary"/>
                                         <p className="font-bold">{t("area")}:</p>
                                         <p>{task.area}</p>

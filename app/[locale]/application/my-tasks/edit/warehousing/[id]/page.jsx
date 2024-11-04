@@ -21,7 +21,6 @@ const page = () => {
     taskName: "",
     startingDate: "",
     endingDate:"",
-    storageDuration: "",
     area: "",
     location: "",
     taskMaster: "",
@@ -163,7 +162,7 @@ const page = () => {
                 </label>
                 <input
                 className="bg-transparent border-b-primary border-b focus:outline-none w-full"
-                type="text"
+                type="number"
                 id="area"
                 name="area"
                 value={formData.area}
@@ -259,11 +258,11 @@ const page = () => {
                 </div>
             </div>
 
-            {/* Storage Type */}
+            {/* text */}
             <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
                 <label htmlFor="text">
                 <AiOutlineFileText className="inline-block mr-2 text-primary" />
-                {t("StorageType")}
+                {t("text")}
                 </label>
                 <textarea
                 className="bg-transparent border-primary border focus:outline-none w-full"
