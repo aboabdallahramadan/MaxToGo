@@ -1,3 +1,4 @@
+import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 
 
@@ -16,6 +17,9 @@ const About = () => {
                 <div className="w-full sm:w-2/6 logoMark relative">
                     <h3 className="text-primary text-center text-4xl pb-9">{t("About")}</h3>
                     <p className="text-center text-xl leading-8">{t("AboutInfo")}</p>
+                    <div className="w-full my-4 flex justify-center items-center">
+                        <Link href="/guest/about" className="py-2 px-4 rounded-lg text-center text-xl leading-8 mx-auto bg-primary text-secondary">{t("ReadMore")}</Link>
+                    </div>
                 </div>
             </div>
         </section>

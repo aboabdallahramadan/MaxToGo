@@ -66,7 +66,41 @@
     },
     "About": {
         "About": "About Us",
-        "AboutInfo": "Max To Go is a digital platform that connects moving, transport, and service companies across Sweden and the EU. We streamline booking and task sharing within transport and logistics to maximize efficiency and customer comfort. By coordinating transport assignments, we help companies manage operations and ensure safe transport, creating smoother workflows and optimizing resources. In doing so, we also make a positive contribution to sustainability by reducing the number of vehicles on the road."
+        "AboutInfo": "Max To Go is a digital platform that connects moving, transport, and service companies across Sweden and the EU. We streamline booking and task sharing within transport and logistics to maximize efficiency and customer comfort. By coordinating transport assignments, we help companies manage operations and ensure safe transport, creating smoother workflows and optimizing resources. In doing so, we also make a positive contribution to sustainability by reducing the number of vehicles on the road.",
+        "ReadMore": "Read More",
+        "SiteTitle": "Max To Go",
+        "welcome": "Welcome to the Smart Path to Future Collaboration and Growth",
+    "intro": "Max To Go is an innovative platform connecting companies in the transport, moving, construction, and other service industries to streamline operations and create smart, sustainable solutions. Through Max To Go, companies can not only sell and buy assignments from one another but also optimize resources, reduce empty trips, and unlock new business opportunities.",
+    "collaboration": {
+      "title": "Examples of Collaboration: Moving and Transport Companies",
+      "description": "In the moving and transport industry, empty trips are common—when a vehicle returns without cargo after a delivery or move. Max To Go allows moving and transport companies to sell these empty trips to other businesses that need transportation from the same area."
+    },
+    "benefits": {
+      "title": "Max To Go – Benefits for All Industries",
+      "costs": "Reduced Costs: Companies avoid unnecessary empty trips, saving fuel and time.",
+      "revenue": "Increased Revenue: By selling empty trips, companies can fill their vehicles on return journeys and generate additional income.",
+      "utilization": "Better Resource Utilization: By coordinating trips between companies, vehicle capacity is maximized for every transport.",
+      "reduced": "Reduced Empty Trips: By buying and selling empty trips from other companies, transporters can make full use of each journey.",
+      "maximized": "Maximized Revenue: Companies can sell extra assignments and purchase assignments from others to fill schedules.",
+      "improved": "Improved Cross-Industry Collaboration: Max To Go provides a platform where companies from various sectors can connect.",
+      "sustainable": "Sustainable Growth: By optimizing trips and reducing empty journeys, we contribute to a more sustainable future."
+    },
+    "industries": {
+      "title": "Examples of Collaboration in Other Industries",
+      "construction": {
+        "title": "Construction and Transport Companies",
+        "description": "Construction companies can easily book material transport from various suppliers directly through the app, coordinating multiple deliveries along the same route."
+      },
+      "service": {
+        "title": "Service Companies",
+        "description": "Companies in sectors like plumbing, electrical work, and cleaning can use Max To Go to coordinate their services with moving and transport companies."
+      },
+      "retail": {
+        "title": "Retail and Logistics",
+        "description": "Stores and warehouses can use Max To Go to sell their transport needs to local transport companies, enabling faster and more cost-effective deliveries."
+      }
+    },
+    "closing": "Max To Go is the future platform for companies in transport, moving, construction, and other service industries that aim to collaborate smarter and grow sustainably."
     },
     "Services": {
         "Services": "Services",

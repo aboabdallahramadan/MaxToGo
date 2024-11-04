@@ -53,7 +53,7 @@
         }
     },
     "whyWe": {
-        "WhyWe": "Varför Moving Go Max?",
+        "WhyWe": "Varför Max To Go?",
         "title1": "Smidig anslutning",
         "title1Info": "Anslut till en digital plattform med alla dina samarbetspartners",
         "title2": "Maximerad kapacitet",
@@ -65,7 +65,41 @@
     },
     "About": {
         "About": "Om oss",
-        "AboutInfo": "Max To Go är en digital plattform som kopplar ihop flytt-, transport- och serviceföretag över hela Sverige och EU. Vi underlättar bokning och förmedling av uppdrag inom transport och logistik för att maximera effektivitet och kundkomfort. Genom att samordna transportuppdrag hjälper vi företag att hantera driftledning och säker transport, vilket skapar en smidigare arbetsprocess och optimerar resurser. På så sätt bidrar vi även positivt till hållbarheten genom att minska antalet fordon på vägarna."
+        "AboutInfo": "Max To Go är en digital plattform som kopplar ihop flytt-, transport- och serviceföretag över hela Sverige och EU. Vi underlättar bokning och förmedling av uppdrag inom transport och logistik för att maximera effektivitet och kundkomfort. Genom att samordna transportuppdrag hjälper vi företag att hantera driftledning och säker transport, vilket skapar en smidigare arbetsprocess och optimerar resurser. På så sätt bidrar vi även positivt till hållbarheten genom att minska antalet fordon på vägarna.",
+        "ReadMore": "Läs mer",
+        "SiteTitle": "Max To Go",
+        "welcome": "Välkommen till Max To Go – den smarta vägen till framtidens samarbete och tillväxt",
+    "intro": "Max To Go är en innovativ plattform som knyter samman företag inom transport, flytt, bygg och andra servicebranscher för att effektivisera deras drift och skapa smarta, hållbara lösningar. Genom Max To Go kan företag inte bara sälja och köpa uppdrag av varandra, utan även optimera resurser, minska tomma körningar och hitta nya affärsmöjligheter.",
+    "collaboration": {
+      "title": "Exempel på samarbete: Flytt- och transportföretag",
+      "description": "Inom flytt- och transportbranschen är tomma körningar vanliga – när ett fordon återvänder utan last efter en leverans eller flytt. Max To Go ger flyttfirmor och transportföretag möjlighet att sälja dessa tomma körningar till andra företag som behöver transport i samma område."
+    },
+    "benefits": {
+      "title": "Max To Go – Fördelar för alla branscher",
+      "costs": "Minskade kostnader: Företag undviker onödiga tomkörningar och sparar bränsle och tid.",
+      "revenue": "Ökad intäkt: Genom att sälja tomkörningar kan företagen fylla sina fordon på returresor och skapa extra inkomster.",
+      "utilization": "Bättre resursutnyttjande: Genom att koordinera körningar mellan företag maximeras lastkapaciteten för varje transport.",
+      "reduced": "Minskade tomkörningar: Genom att sälja och köpa tomkörningar från andra företag kan transportörer utnyttja varje resa fullt ut.",
+      "maximized": "Maximera intäkterna: Företag kan sälja överflödiga uppdrag och köpa uppdrag från andra företag för att fylla sina scheman.",
+      "improved": "Bättre samarbete över branscher: Max To Go skapar en plattform där företag från olika sektorer kan knyta kontakter.",
+      "sustainable": "Hållbar tillväxt: Genom att optimera körningar och minska tomma resor bidrar vi till en mer hållbar framtid."
+    },
+    "industries": {
+      "title": "Exempel på samarbete i andra branscher",
+      "construction": {
+        "title": "Bygg- och transportföretag",
+        "description": "Byggföretag kan enkelt boka materialtransporter från olika leverantörer direkt genom appen och koordinera leveranser från flera leverantörer längs samma rutt."
+      },
+      "service": {
+        "title": "Serviceföretag",
+        "description": "Företag inom områden som VVS, el och städtjänster kan använda Max To Go för att koordinera sina tjänster med flytt- och transportföretag."
+      },
+      "retail": {
+        "title": "Butiker och logistik",
+        "description": "Butiker och lager kan använda Max To Go för att sälja sina transportbehov till lokala transportföretag, vilket möjliggör snabbare och mer kostnadseffektiva leveranser."
+      }
+    },
+    "closing": "Max To Go är framtidens plattform för företag inom transport, flytt, bygg och andra servicebranscher som vill samarbeta smartare och växa hållbart."
     },
     "Services": {
         "Services": "Tjänster",
