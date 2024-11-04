@@ -358,6 +358,22 @@
             "Step4": "Choose a buyer: When several companies have shown interest, you can choose the company you think is best suited to take over the task – either based on price, experience, or reviews from previous collaborations.",
             "Step5": "Evaluate the buyer: When the task is complete, you can evaluate the buyer and their service. This way, you help other companies on the platform make well-informed decisions about who they want to collaborate with in the future."
         }
+    },
+    "Slides": {
+    "SiteTitle": "Max To Go",
+    "title":{
+        "0":  "Welcome to the Smart Path to Future Collaboration and Growth",
+        "1": "Digital Platform for Business Connection",
+        "2": "Uniting Companies Across Borders",
+        "3": "Sustainable Transport Solutions"
+
+    },
+    "description": {
+        "0": "Reach partners across the EU at no cost with just a few clicks.",
+        "1": "We are a digital platform that connects moving, transport, and service companies to enable efficient collaboration, smart growth, and sustainable development.",
+        "2": "A platform for task sharing that unites moving, transport, and service companies across Sweden and EU countries.",
+        "3": "We contribute to sustainability by reducing the number of vehicles on the road through coordinated sharing of transport and service tasks between companies."
+    }
     }
 
 }
