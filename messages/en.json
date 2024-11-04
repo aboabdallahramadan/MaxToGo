@@ -37,6 +37,33 @@
         "Movingab": "Movingab",
         "OurMarket": "Our Market"
     },
+    "Slides": {
+        "SiteTitle": "Max To Go",
+        "title":{
+            "0":  "Welcome to the Smart Path to Future Collaboration and Growth",
+            "1": "Digital Platform for Business Connection",
+            "2": "Uniting Companies Across Borders",
+            "3": "Sustainable Transport Solutions"
+
+        },
+        "description": {
+            "0": "Reach partners across the EU at no cost with just a few clicks.",
+            "1": "We are a digital platform that connects moving, transport, and service companies to enable efficient collaboration, smart growth, and sustainable development.",
+            "2": "A platform for task sharing that unites moving, transport, and service companies across Sweden and EU countries.",
+            "3": "We contribute to sustainability by reducing the number of vehicles on the road through coordinated sharing of transport and service tasks between companies."
+        }
+    },
+    "whyWe": {
+        "WhyWe": "Why Max To Go?",
+        "title1": "Seamless Connection",
+        "title1Info": "Connect to a digital platform with all your partners",
+        "title2": "Maximized Capacity",
+        "title2Info": "Fill your schedule efficiently with assignments",
+        "title3": "Sustainable Growth",
+        "title3Info": "Contribute to reduced environmental impact through ride-sharing and resource-sharing",
+        "title4": "Affordable Assignments",
+        "title4Info": "Pay only for pre-booked task"
+    },
     "About": {
         "About": "About Us",
         "AboutInfo": "Hence, the designer must place temporary texts on the design to show the client the complete form. The role of the Arabic text generator is to save the designer the trouble of searching for alternative text that has nothing to do with the topic the design is talking about, so it appears in an inappropriate way. This text can be installed on any design without a problem. It will not look like copied, unorganized, unformatted, or even incomprehensible text. Because it is still an alternative and temporary text."
@@ -358,22 +385,7 @@
             "Step4": "Choose a buyer: When several companies have shown interest, you can choose the company you think is best suited to take over the task – either based on price, experience, or reviews from previous collaborations.",
             "Step5": "Evaluate the buyer: When the task is complete, you can evaluate the buyer and their service. This way, you help other companies on the platform make well-informed decisions about who they want to collaborate with in the future."
         }
-    },
-    "Slides": {
-    "SiteTitle": "Max To Go",
-    "title":{
-        "0":  "Welcome to the Smart Path to Future Collaboration and Growth",
-        "1": "Digital Platform for Business Connection",
-        "2": "Uniting Companies Across Borders",
-        "3": "Sustainable Transport Solutions"
-
-    },
-    "description": {
-        "0": "Reach partners across the EU at no cost with just a few clicks.",
-        "1": "We are a digital platform that connects moving, transport, and service companies to enable efficient collaboration, smart growth, and sustainable development.",
-        "2": "A platform for task sharing that unites moving, transport, and service companies across Sweden and EU countries.",
-        "3": "We contribute to sustainability by reducing the number of vehicles on the road through coordinated sharing of transport and service tasks between companies."
     }
-    }
+    
 
 }

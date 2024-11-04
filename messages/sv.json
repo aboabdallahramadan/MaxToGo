@@ -37,6 +37,32 @@
         "ProjectTitle": "Max To Go",
         "OurMarket": "Vår marknad"
     },
+    "Slides": {
+        "SiteTitle": "Max To Go",
+        "title": {
+            "0": "Välkommen till den smarta vägen för framtida samarbete och tillväxt",
+            "1": "Digital plattform för företagsanslutning",
+            "2": "Förenar företag över gränserna",
+            "3": "Hållbara transportlösningar"
+        },
+        "description": {
+            "0": "Nå partners i hela EU kostnadsfritt med bara några klick.",
+            "1": "Vi är en digital plattform som kopplar samman flytt-, transport- och serviceföretag för att möjliggöra effektivt samarbete, smart tillväxt och hållbar utveckling.",
+            "2": "En plattform för uppgiftsdelning som förenar flytt-, transport- och serviceföretag i Sverige och EU-länder.",
+            "3": "En plattform som förenar företag inom transport, flytt, bygg och andra servicebranscher under ett gemensamt tak. Vår app är utformad för att främja samarbete mellan företag, effektivisera deras verksamhet och skapa smarta, hållbara lösningar för tillväxt."
+        }
+    },
+    "whyWe": {
+        "WhyWe": "Varför Moving Go Max?",
+        "title1": "Smidig anslutning",
+        "title1Info": "Anslut till en digital plattform med alla dina samarbetspartners",
+        "title2": "Maximerad kapacitet",
+        "title2Info": "Fyll ut ditt schema effektivt med uppdrag",
+        "title3": "Hållbar utveckling",
+        "title3Info": "Bidra till minskad miljöpåverkan genom samkörning, och delning av resurser.",
+        "title4": "Prisvärda uppdrag",
+        "title4Info": "Betala endast för färdigbokade uppdrag."
+    },
     "About": {
         "About": "Om oss",
         "AboutInfo": "Därför måste designern placera tillfälliga texter på designen för att visa klienten den kompletta formen. Den arabiska textgeneratorns roll är att bespara designern besväret att söka efter alternativ text som inte har något med ämnet att göra som designen talar om, så det visas på ett olämpligt sätt. Denna text kan installeras på vilken design som helst utan problem. Det kommer inte att se ut som kopierad, oorganiserad, oformaterad eller ens obegriplig text. Eftersom det fortfarande är en alternativ och tillfällig text."
@@ -361,21 +387,6 @@
       "Step4": "Välj en köpare: När flera företag har visat intresse kan du välja det företag som du tycker är bäst lämpat att ta över uppdraget – antingen baserat på pris, erfarenhet eller omdömen från tidigare samarbeten.",
       "Step5": "Utvärdera köparen: När uppdraget är klart, kan du utvärdera köparen och deras service. På så sätt hjälper du andra företag på plattformen att fatta välgrundade beslut om vilka de vill samarbeta med i framtiden."
     }
-  } ,
-  "Slides": {
-    "SiteTitle": "Max To Go",
-    "title": {
-        "0": "Välkommen till den smarta vägen för framtida samarbete och tillväxt",
-        "1": "Digital plattform för företagsanslutning",
-        "2": "Förenar företag över gränserna",
-        "3": "Hållbara transportlösningar"
-    },
-    "description": {
-        "0": "Nå partners i hela EU kostnadsfritt med bara några klick.",
-        "1": "Vi är en digital plattform som kopplar samman flytt-, transport- och serviceföretag för att möjliggöra effektivt samarbete, smart tillväxt och hållbar utveckling.",
-        "2": "En plattform för uppgiftsdelning som förenar flytt-, transport- och serviceföretag i Sverige och EU-länder.",
-        "3": "En plattform som förenar företag inom transport, flytt, bygg och andra servicebranscher under ett gemensamt tak. Vår app är utformad för att främja samarbete mellan företag, effektivisera deras verksamhet och skapa smarta, hållbara lösningar för tillväxt."
-    }
-  }
+    } 
     
 }
