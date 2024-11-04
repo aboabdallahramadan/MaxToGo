@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import SectionHeader from "./SectionHeader";
 import ServicesCard from "./ServicesCard";
-import { FaClock,FaHandSparkles,FaBoxes,FaTruckMoving,FaBuilding } from "react-icons/fa";
+import { FaClock,FaHandSparkles,FaBoxes,FaTruckMoving } from "react-icons/fa";
 import { BsArrowsMove } from "react-icons/bs";
 import { Link } from "@/i18n/routing";
 
@@ -16,7 +16,7 @@ const Services = () => {
                 <Link href={"/guest/tasks/cleaning"}><ServicesCard Icon={FaHandSparkles} title={t("Service3")} text={t("Service3Info")}></ServicesCard></Link>
                 <Link href={"/guest/tasks/warehousing"}><ServicesCard Icon={FaBoxes} title={t("Service4")} text={t("Service4Info")}></ServicesCard></Link>
                 <Link href={"/guest/tasks/empty-car"}><ServicesCard Icon={FaTruckMoving} title={t("Service5")} text={t("Service5Info")}></ServicesCard></Link>
-                <ServicesCard Icon={FaBuilding} title={t("Service6")} text={t("Service6Info")}></ServicesCard>
+                <ServicesCard Icon={FaTruckMoving} title={t("Service6")} text={t("Service6Info")}></ServicesCard>
             </div>
         </section>
     )
