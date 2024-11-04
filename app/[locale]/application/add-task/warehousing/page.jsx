@@ -70,7 +70,7 @@ const page = () => {
 
         <div className="container">
             <SelectTaskType active="warehousing"></SelectTaskType>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}  className="bg-secondary p-6 rounded-lg shadow-md">
             {/* Task Name */}
             <div className="relative flex flex-col items-start justify-between w-full gap-4">
                 <label htmlFor="taskName">

@@ -74,8 +74,8 @@ const page = () => {
         <TitleGoldenBar name={t("CreateTask")}/>
         <section className="pt-24">
             <div className="container">
-                <SelectTaskType active="emptyCar"/>
-                <form onSubmit={handleSubmit}>
+                <SelectTaskType active="empty-car"/>
+                <form onSubmit={handleSubmit}  className="bg-secondary p-6 rounded-lg shadow-md">
                     {/* Task Name */}
                     <div className="relative flex flex-col items-start justify-between w-full gap-4">
                         <label htmlFor="taskName">

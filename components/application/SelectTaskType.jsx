@@ -15,7 +15,7 @@ const SelectTaskType = ({active}) => {
             <option  value="transfer">
                 {t("transfer")}
             </option>
-            <option  value="empty-Car">
+            <option  value="empty-car">
                 {t("emptyTruck")}
             </option>
             <option  value="cleaning">

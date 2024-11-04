@@ -79,7 +79,7 @@ const page = () => {
       <section className="pt-24">
         <div className="container">
           <SelectTaskType active="transfer"></SelectTaskType>
-          <form onSubmit={handleSubmit} className="py-2">
+          <form onSubmit={handleSubmit} className="bg-secondary p-6 rounded-lg shadow-md">
             {/* Task Name */}
             <div className="relative flex flex-col items-start justify-between w-full gap-4">
               <label htmlFor="taskName">
