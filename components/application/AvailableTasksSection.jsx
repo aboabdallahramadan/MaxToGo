@@ -37,7 +37,46 @@ const AvailableTasksSection = () => {
             "completionDate": "8/9/2024",
             "price": "200",
             "location": "Gaza",
-            "priceType": "fixed"
+            "priceType": "fixed",
+            
+            
+            "text": " task details",
+            "taskMaster": "hany alalmany",
+            "phoneNumber": "+96398888888",
+
+            //empty Car
+            "numberOfWorkers":"9",
+            "numberOfCars": "5",
+
+            //cleaning
+            "balcony": "no",
+
+
+            // warehousing
+            "storageDuration": "3 days",
+            "area": "example",
+
+            // transfer
+            "floorNumberOne": "3",
+            "floorNumberTwo": "4",
+            "elevatorNumberOne": "no",
+            "elevatorNumberTwo": "no",
+            "isWrapping": "no",
+
+            //transfer and empty Car
+            
+            "isInternationalOrLocal": "local",
+            "vehicleSize": "x large",
+            "toLocation": "Aleppo",
+
+            // empty Car and warehousing
+            "startingDate": "12/10/2024",
+
+            //transfer and cleaning
+            "apartmentType": "villa",
+
+            // empty Car and transfer and cleaning
+            "isTimeFlexible": "yes",
         },
         {
             "id":2,
@@ -47,7 +86,46 @@ const AvailableTasksSection = () => {
             "price": "200",
             "location": "Gaza",
             "toLocation": "Aleppo",
-            "priceType": "offer"
+            "priceType": "offer",
+            
+            
+            "text": " task details",
+            "taskMaster": "hany alalmany",
+            "phoneNumber": "+96398888888",
+
+            //empty Car
+            "numberOfWorkers":"9",
+            "numberOfCars": "5",
+
+            //cleaning
+            "balcony": "no",
+
+
+            // warehousing
+            "storageDuration": "3 days",
+            "area": "example",
+
+            // transfer
+            "floorNumberOne": "3",
+            "floorNumberTwo": "4",
+            "elevatorNumberOne": "no",
+            "elevatorNumberTwo": "no",
+            "isWrapping": "no",
+
+            //transfer and empty Car
+            
+            "isInternationalOrLocal": "local",
+            "vehicleSize": "x large",
+            "toLocation": "Aleppo",
+
+            // empty Car and warehousing
+            "startingDate": "12/10/2024",
+
+            //transfer and cleaning
+            "apartmentType": "villa",
+
+            // empty Car and transfer and cleaning
+            "isTimeFlexible": "yes",
         },
         {
             "id":3,
@@ -57,7 +135,46 @@ const AvailableTasksSection = () => {
             "price": "200",
             "location": "Gaza",
             "toLocation": "Aleppo",
-            "priceType": "fixed"
+            "priceType": "fixed",
+            
+            
+            "text": " task details",
+            "taskMaster": "hany alalmany",
+            "phoneNumber": "+96398888888",
+
+            //empty Car
+            "numberOfWorkers":"9",
+            "numberOfCars": "5",
+
+            //cleaning
+            "balcony": "no",
+
+
+            // warehousing
+            "storageDuration": "3 days",
+            "area": "example",
+
+            // transfer
+            "floorNumberOne": "3",
+            "floorNumberTwo": "4",
+            "elevatorNumberOne": "no",
+            "elevatorNumberTwo": "no",
+            "isWrapping": "no",
+
+            //transfer and empty Car
+            
+            "isInternationalOrLocal": "local",
+            "vehicleSize": "x large",
+            "toLocation": "Aleppo",
+
+            // empty Car and warehousing
+            "startingDate": "12/10/2024",
+
+            //transfer and cleaning
+            "apartmentType": "villa",
+
+            // empty Car and transfer and cleaning
+            "isTimeFlexible": "yes",
         },
         {
             "id":4,
@@ -66,7 +183,46 @@ const AvailableTasksSection = () => {
             "completionDate": "8/9/2024",
             "price": "200",
             "location": "Gaza",
-            "priceType": "offer"
+            "priceType": "offer",
+            
+            
+            "text": " task details",
+            "taskMaster": "hany alalmany",
+            "phoneNumber": "+96398888888",
+
+            //empty Car
+            "numberOfWorkers":"9",
+            "numberOfCars": "5",
+
+            //cleaning
+            "balcony": "no",
+
+
+            // warehousing
+            "storageDuration": "3 days",
+            "area": "example",
+
+            // transfer
+            "floorNumberOne": "3",
+            "floorNumberTwo": "4",
+            "elevatorNumberOne": "no",
+            "elevatorNumberTwo": "no",
+            "isWrapping": "no",
+
+            //transfer and empty Car
+            
+            "isInternationalOrLocal": "local",
+            "vehicleSize": "x large",
+            "toLocation": "Aleppo",
+
+            // empty Car and warehousing
+            "startingDate": "12/10/2024",
+
+            //transfer and cleaning
+            "apartmentType": "villa",
+
+            // empty Car and transfer and cleaning
+            "isTimeFlexible": "yes",
         }
     ]);
 
