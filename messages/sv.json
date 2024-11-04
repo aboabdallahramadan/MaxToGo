@@ -141,6 +141,14 @@
     },
     "closing": "Max To Go, både via appen och hemsidan, gör det enkelt för företag att samarbeta, sälja och köpa uppdrag, och bidra till ett smidigt och effektivt arbetsflöde."
     },
+    "IndividualTasks": {
+      "IndividualTasks": "Individuella uppdrag",
+      "SubmitTaskAsIndividual": "Skicka uppdrag som individ",
+      "Transfer": "Överför",
+      "Warehousing": "Magasinering",
+      "Cleaning":"Städning",
+      "EmptyCar":"Tom bil"
+    },
     "Contact": {
         "Contact": "Kontakta oss",
         "ContactInfo": "lägg till din information för att kontakta dig så snart som möjligt",
