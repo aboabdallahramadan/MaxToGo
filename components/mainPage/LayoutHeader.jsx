@@ -12,7 +12,7 @@ import LanguageDropdown from "../LanguageDropdown";
 const LayoutHeader = () => {
   const t = useTranslations("Header");
 
-  let session = true;
+  let session = false;
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -39,8 +39,8 @@ const LayoutHeader = () => {
       }`}
     >
       <div className="container h-12 flex justify-between py-2">
-        <div className="h-100 w-40">
-          <Ilink href={"/"}>
+        <div className="h-full flex items-center justify-center gap-2">
+          <Ilink href={"/"} className="h-12">
             <Image
               src="/images/small-logo.png"
               width={150}
@@ -50,9 +50,15 @@ const LayoutHeader = () => {
               priority
             />
           </Ilink>
+          <a
+            href=""
+            className="bg-primary text-secondary flex justify-center items-center px-3 py-2 whitespace-nowrap rounded text-xs sm:text-base"
+            >
+            {t("Downland")}
+          </a>
         </div>
         <nav className="flex justify-between items-center h-100">
-          <ul className="items-center h-100 hidden sm:flex">
+          <ul className="items-center h-100 hidden md:flex">
             <NavLink link="/#hero">{t("Home")}</NavLink>
             <NavLink link="/#about">{t("About")}</NavLink>
             <NavLink link="/#services">{t("Services")}</NavLink>
@@ -60,7 +66,7 @@ const LayoutHeader = () => {
           </ul>
         </nav>
 
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center text-xs sm:text-base">
           {session ? (
             <PrimaryLink link={"/auth/login"}>{t("Login")}</PrimaryLink>
           ) : (
@@ -70,7 +76,7 @@ const LayoutHeader = () => {
           <button
             type="button"
             id="mobile-dropdown-button"
-            className="sm:hidden ml-4 z-[52]"
+            className="md:hidden ml-4 z-[52]"
             aria-controls="mobile-menu"
             aria-expanded="false"
             onClick={() => setIsMobileMenuOpen((prev) => !prev)}

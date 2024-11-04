@@ -17,14 +17,16 @@ const page = () => {
     companyName: '',
     nameOfResponsiblePerson: '',
     address: '',
-    typeOfCompany: '',
+    typeOfBusiness: '',
     email: '',
     password: '',
     passwordConfirmation: '',
     phone: '',
     companyLogo: '',
-    licensingInformation: '',
-    insurance: '',
+    permitFile: '',
+    organizationNumber: '',
+    buyOrSell: '',
+    description: '',
     policy: true
   });
   const [errors, setErrors] = useState({});
@@ -49,8 +51,7 @@ const page = () => {
       // Define allowed types for each input
       const fileValidations = {
         companyLogo: ['image/jpeg', 'image/png', 'image/gif','image/jpg'],
-        licensingInformation: ['application/pdf'],
-        insurance: ['application/pdf']
+        permitFile: ['application/pdf','image/jpeg']
       };
       
       if (!validateFileType(file, fileValidations[name])) {
@@ -101,9 +102,10 @@ const page = () => {
   
     if (pageNumber === 0) {
       if (!formData.companyName) newErrors.companyName = t("RequiredField");
+      if (!formData.organizationNumber) newErrors.organizationNumber = t("RequiredField");
       if (!formData.nameOfResponsiblePerson) newErrors.nameOfResponsiblePerson = t("RequiredField");
       if (!formData.address) newErrors.address = t("RequiredField");
-      if (!formData.typeOfCompany) newErrors.typeOfCompany = t("RequiredField");
+      if (!formData.typeOfBusiness) newErrors.typeOfBusiness = t("RequiredField");
     } 
     else if (pageNumber === 1) {
       if (!formData.email) {
@@ -177,6 +179,20 @@ const page = () => {
             </div>
               {errors.companyName && <p className="text-red-500 text-sm">{errors.companyName}</p>}
             <div className="relative mt-6">
+              <label htmlFor="organizationNumber" className="text-primary mb-5">{t("OrganizationNumber")}</label>
+              <FaMarker className="absolute bottom-2 left-0 text-primary" />
+              <input
+                name="organizationNumber"
+                id="organizationNumber"
+                className="text-primary w-full pl-6 bg-transparent border-b-primary border-b focus:outline-none"
+                type="text"
+                value={formData.organizationNumber}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
+              {errors.organizationNumber && <p className="text-red-500 text-sm">{errors.organizationNumber}</p>}
+            <div className="relative mt-6">
               <label htmlFor="nameOfResponsiblePerson" className="text-primary mb-5">{t("NameOfResponsiblePerson")}</label>
               <BsPersonFill className="absolute bo2tom-1 left-0 text-primary" />
               <input
@@ -200,17 +216,18 @@ const page = () => {
                 type="text"
                 value={formData.address}
                 onChange={handleInputChange}
+                placeholder={t("SpecifyYourAreaOfOperation")}
                 required
               />
             </div>
               {errors.address && <p className="text-red-500 text-sm">{errors.address}</p>}
             <div className="relative mt-6">
-              <label htmlFor="typeOfCompany" className="text-primary mb-5">{t("TypeOfCompany")}</label>
+              <label htmlFor="typeOfBusiness" className="text-primary mb-5">{t("typeOfBusiness")}</label>
               <select
-                name="typeOfCompany"
-                id="typeOfCompany"
+                name="typeOfBusiness"
+                id="typeOfBusiness"
                 className="text-primary w-full pl-6 bg-transparent border-b-primary border-b focus:outline-none"
-                value={formData.typeOfCompany}
+                value={formData.typeOfBusiness}
                 onChange={handleInputChange}
                 required
               >
@@ -221,7 +238,7 @@ const page = () => {
                 <option value="other">{t("Other")}</option>
               </select>
             </div>
-              {errors.typeOfCompany && <p className="text-red-500 text-sm">{errors.typeOfCompany}</p>}
+              {errors.typeOfBusiness && <p className="text-red-500 text-sm">{errors.typeOfBusiness}</p>}
           </div>
           <div className={pageNumber == 1 ? "block" : "hidden"}>
             <div className="relative mt-6">
@@ -289,6 +306,23 @@ const page = () => {
           </div>
           <div className={pageNumber == 2 ? "block" : "hidden"}>
             <div className="relative mt-6">
+              <label htmlFor="buyOrSell" className="text-primary mb-5">{t("buyOrSell")}</label>
+              <select
+                name="buyOrSell"
+                id="buyOrSell"
+                className="text-primary w-full pl-6 bg-transparent border-b-primary border-b focus:outline-none"
+                value={formData.buyOrSell}
+                onChange={handleInputChange}
+                required
+              >
+                <option value="">{t("PleaseSelect")}</option>
+                <option value="buy">{t("Buy")}</option>
+                <option value="sell">{t("Sell")}</option>
+                <option value="both">{t("Both")}</option>
+              </select>
+            </div>
+            {errors.buyOrSell && <p className="text-red-500 text-sm">{errors.buyOrSell}</p>}
+            <div className="relative mt-6">
               <label htmlFor="companyLogo" className="text-primary mb-5">{t("CompanyLogo")}</label>
               <FaUpload className="absolute bottom-2 left-0 text-primary" />
               <input
@@ -303,21 +337,9 @@ const page = () => {
             </div>
             {errors.companyLogo && <p className="text-red-500 text-sm">{errors.companyLogo}</p>}
             <div className="relative mt-6">
-              <label htmlFor="licensingInformation" className="text-primary mb-5">{t("LicensingInformation")}</label>
-              <FaUpload className="absolute bottom-2 left-0 text-primary"/>
-              <input name="licensingInformation" id="licensingInformation" className="bg-transparent border-b-primary border-b focus:outline-none w-full pl-6 file:mr-4 file:py-2 file:px-4
-              file:rounded-full file:border-0
-              file:text-sm file:font-serif
-              file:bg-background file:text-primary file:cursor-pointer
-              hover:file:bg-background" type="file"
-              onChange={handleInputChange}
-              required/>
-            </div >
-            {errors.licensingInformation && <p className="text-red-500 text-sm">{errors.licensingInformation}</p>}
-            <div className="relative mt-6">
-                <label htmlFor="insurance" className="text-primary mb-5">{t("CopyOfInsurance")}</label>
+                <label htmlFor="permitFile" className="text-primary mb-5">{t("permitFile")}</label>
                 <FaUpload className="absolute bottom-2 left-0 text-primary"/>
-                <input name="insurance" id="insurance" className="bg-transparent border-b-primary border-b focus:outline-none w-full pl-6 file:mr-4 file:py-2 file:px-4
+                <input name="permitFile" id="permitFile" className="bg-transparent border-b-primary border-b focus:outline-none w-full pl-6 file:mr-4 file:py-2 file:px-4
                 file:rounded-full file:border-0
                 file:text-sm file:font-serif
                 file:bg-background file:text-primary file:cursor-pointer
@@ -325,7 +347,7 @@ const page = () => {
                 onChange={handleInputChange}
                 required/>
             </div >
-            {errors.insurance && <p className="text-red-500 text-sm">{errors.insurance}</p>}
+            {errors.permitFile && <p className="text-red-500 text-sm">{errors.permitFile}</p>}
             <div className="relative w-full mt-6 flex justify-start items-center gap-2">
                 <input name="policy" id="policy" className="bg-transparent accent-primary" type="checkbox"                 
                 checked={formData.policy}

@@ -8,7 +8,8 @@
         "GoApp": "Go to app",
         "Swedish": "Swedish",
         "English": "English",
-        "Categories": "Categories"
+        "Categories": "Categories",
+        "Downland": "Download the App"
     },
     "footer": {
         "MainEmail": "Main Email",
@@ -32,7 +33,9 @@
         "info":"Get shipping and cleaning services easily with",
         "Downland": "Download the App",
         "Join": "Join Us",
-        "ProjectTitle": "MOVING GO MAX"
+        "ProjectTitle": "Max To Go",
+        "Movingab": "Movingab",
+        "OurMarket": "Our Market"
     },
     "About": {
         "About": "About Us",
@@ -161,18 +164,18 @@
         "SetNewPassword": "Set New Password",
         "PasswordConfirmation": "Password Confirmation",
         "CreateAccount": "Create New Account",
-        "HowDoesItWork": "How Does MOVING GO MAX Work?",
-        "HowDoesItWorkInfo": "Getting started with MOVING GO MAX is simple and straightforward. Follow these steps to begin optimizing your business:",
-        "HowDoesItWorkInfo1": "Create an account on MOVING GO MAX by providing your company details and uploading the required documents This includes business registration and any insurance certificates.",
+        "HowDoesItWork": "How Does Max To Go Work?",
+        "HowDoesItWorkInfo": "Getting started with Max To Go is simple and straightforward. Follow these steps to begin optimizing your business:",
+        "HowDoesItWorkInfo1": "Create an account on Max To Go by providing your company details and uploading the required documents This includes business registration and any insurance certificates.",
         "CompanyName": "Company Name",
         "NameOfResponsiblePerson": "Name of responsible person",
         "Address": "Address",
-        "TypeOfCompany": "Type Of Company",
+        "typeOfBusiness": "Type Of Business",
         "Submit": "Submit",
         "RegisterDocuments": "Register and upload necessary documents",
         "WeSendLoginInformation": "We send login credentials and system usage information",
         "WeSendLoginInformationInfo": "We review your application Our team will review your application and the documents you’ve submitted to ensure everything is in order and that you meet our criteria.",
-        "OnceYourApplication": "Once your application is approved, you will receive your login credentials along with a guide on how to  use the MOVING GO MAX platform to book and share assignments.",
+        "OnceYourApplication": "Once your application is approved, you will receive your login credentials along with a guide on how to  use the Max To Go platform to book and share assignments.",
         "PhoneNumber": "Phone Number",
         "CompanyLogo": "Add the company logo",
         "LicensingInformation": "Licensing Information",
@@ -191,9 +194,17 @@
         "Transfer": "Transfer",
         "Cleaning": "Cleaning",
         "OnlyImagesAllowed": "Only Images Allowed",
-        "OnlyPDFAllowed": "Only PDF Allowed",
+        "OnlyPDFAllowed": "Only PDF or JBEG Allowed",
         "Warehousing": "Warehousing",
-        "Other": "Other"
+        "Other": "Other",
+        "SpecifyYourAreaOfOperation": "Specify your area of operation",
+        "OrganizationNumber": "Organization Number",
+        "buyOrSell": "Do you want to buy, sell, or both?",
+        "Buy": "Buy",
+        "Sell": "Sell",
+        "Both": "Both",
+        "Description": "Brief Description of Your Company",
+        "permitFile": "Permit File PDF or JBEG"
     },
     "Application": {
         "Header": {
@@ -205,7 +216,7 @@
             "English": "English",
             "Swedish": "Swedish",
             "Categories": "Categories",
-            "SystemName": "MOVING GO MAX"
+            "SystemName": "Max To Go"
         },
         "AvailableTasks": {
             "AvailableTasks": "Available Tasks",

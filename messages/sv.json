@@ -8,7 +8,9 @@
         "GoApp": "Gå till appen",
         "Swedish": "Svenska",
         "English": "Engelska",
-        "Categories": "Kategorier"
+        "Categories": "Kategorier",
+        "Downland": "Ladda ner appen",
+        "Movingab": "Movingab"
     },
     "footer": {
         "MainEmail": "Huvudsaklig e-post",
@@ -32,7 +34,8 @@
         "info": "Få frakt- och städtjänster enkelt med",
         "Downland": "Ladda ner appen",
         "Join": "Gå med oss",
-        "ProjectTitle": "MOVING GO MAX"
+        "ProjectTitle": "Max To Go",
+        "OurMarket": "Vår marknad"
     },
     "About": {
         "About": "Om oss",
@@ -163,18 +166,18 @@
         "SetNewPassword": "Ange nytt lösenord",
         "PasswordConfirmation": "Lösenordsbekräftelse",
         "CreateAccount": "Skapa nytt konto",
-        "HowDoesItWork": "Hur fungerar MOVING GO MAX?",
-        "HowDoesItWorkInfo": "Att komma igång med MOVING GO MAX är enkelt och rakt på sak. Följ dessa steg för att börja optimera din verksamhet:",
-        "HowDoesItWorkInfo1": "Skapa ett konto på MOVING GO MAX genom att ange dina företagsuppgifter och ladda upp de nödvändiga dokumenten Detta inkluderar företagsregistrering och eventuella försäkringscertifikat.",
+        "HowDoesItWork": "Hur fungerar Max To Go?",
+        "HowDoesItWorkInfo": "Att komma igång med Max To Go är enkelt och rakt på sak. Följ dessa steg för att börja optimera din verksamhet:",
+        "HowDoesItWorkInfo1": "Skapa ett konto på Max To Go genom att ange dina företagsuppgifter och ladda upp de nödvändiga dokumenten Detta inkluderar företagsregistrering och eventuella försäkringscertifikat.",
         "CompanyName": "Företagsnamn",
         "NameOfResponsiblePerson": "Namn på ansvarig person",
         "Address": "Adress",
-        "TypeOfCompany": "Företagstyp",
+        "typeOfBusiness": "Typ av verksamheten",
         "Submit": "Skicka",
         "RegisterDocuments": "Registrera och ladda upp nödvändiga dokument",
         "WeSendLoginInformation": "Vi skickar inloggningsuppgifter och systeminformation",
         "WeSendLoginInformationInfo": "Vi granskar din ansökan Vårt team kommer att granska din ansökan och dokumenten du har skickat in för att säkerställa att allt är i ordning och att du uppfyller våra kriterier.",
-        "OnceYourApplication": "När din ansökan är godkänd kommer du att få dina inloggningsuppgifter tillsammans med en guide om hur du använder MOVING GO MAX-plattformen för att boka och dela uppdrag.",
+        "OnceYourApplication": "När din ansökan är godkänd kommer du att få dina inloggningsuppgifter tillsammans med en guide om hur du använder Max To Go-plattformen för att boka och dela uppdrag.",
         "PhoneNumber": "Telefonnummer",
         "CompanyLogo": "Lägg till företagslogotypen",
         "LicensingInformation": "Licensinformation",
@@ -193,7 +196,15 @@
         "Transfer": "Överföring",
         "Cleaning": "Städning",
         "OnlyImagesAllowed": "Endast bilder tillåtna",
-        "OnlyPDFAllowed": "Endast PDF-filer tillåtna"
+        "OnlyPDFAllowed": "Endast PDF eller JBEG filer tillåtna",
+        "SpecifyYourAreaOfOperation": "Ange området för din verksamhet",
+        "OrganizationNumber": "Organisationsnummer",
+        "buyOrSell": "Vill du sälja eller köpa uppdrag eller båda?",
+        "Buy": "Köp",
+        "Sell": "Sälj",
+        "Both": "Båda",
+        "Description": "Beskriv lite kort ditt företag",
+        "permitFile": "Tillstånd fil PDF eller JBEG"
     },
     "Application": {
         "Header": {
@@ -205,7 +216,7 @@
             "English": "Engelska",
             "Swedish": "Svenska",
             "Categories": "Kategorier",
-            "SystemName": "Moving Go Max"
+            "SystemName": "Max To Go"
         },
         "Profile": {
             "Payments": "Betalningar",

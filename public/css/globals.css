@@ -15,6 +15,7 @@
   --background: #000000;
   --foreground: #ffffff;
   --primaryColor: #FECC02;
+  --primaryColorHover: #d2a903;
   --secondaryColor: #006AA7;
   --hoverPrimaryColor: #fecc0247;
 }
@@ -57,4 +58,22 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* scrollBar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primaryColor);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primaryColorHover);
 }
