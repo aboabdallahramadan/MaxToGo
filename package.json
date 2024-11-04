@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "jspdf": "^2.5.2",
     "next": "14.2.15",
     "next-intl": "^3.21.1",
     "react": "^18",
@@ -16,6 +17,7 @@
     "react-icons": "^5.3.0",
     "react-slick": "^0.30.2",
     "react-spinners": "^0.14.1",
+    "react-to-print": "^3.0.2",
     "react-toastify": "^10.0.6",
     "slick-carousel": "^1.8.1"
   },

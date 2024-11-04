@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl';
 import { BsPen, BsPeople, BsWallet, BsChatDots } from 'react-icons/bs';
 import ShareModal from '@/components/application/ShareModal';
 import FeedbackModal from '@/components/application/FeedbackModal';
+import { FaFileInvoice } from 'react-icons/fa';
 
 
 const page = () => {
@@ -47,6 +48,13 @@ const page = () => {
           >
             <BsWallet className='text-primary'/>
             {t("Payments")}
+          </Link>
+          <Link 
+            href="/application/profile/invoices"
+            className="flex justify-start gap-2 items-center text-lg w-full text-foreground border-2 border-transparent hover:text-primary hover:border-primary py-3 px-6 rounded-lg text-center font-semibold hover:bg-primary/90 transition-colors"
+          >
+            <FaFileInvoice className='text-primary'/>
+            {t("Invoices")}
           </Link>
           <Link href={"/application/profile/edit"}
             className="flex justify-start gap-2 items-center text-lg w-full text-foreground border-2 border-transparent hover:text-primary hover:border-primary py-3 px-6 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
