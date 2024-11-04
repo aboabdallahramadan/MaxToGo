@@ -454,7 +454,12 @@
             "ResponsiblePersonRequired": "Ansvarig persons namn krävs",
             "AddressRequired": "Adress krävs",
             "InvalidImageFormat": "Ogiltig bildformat",
-            "ImageTooLarge": "Bild är för stor"
+            "ImageTooLarge": "Bild är för stor",
+            "WriteFeedbackHere": "Skriv dina åsikter här",
+            "Cancel": "Avbryt",
+            "Send": "Skicka",
+            "Submit": "Skicka",
+            "SendFeedback": "Skicka feedback"
         },
         "AvailableTasks": {
             "AvailableTasks": "Tillgängliga uppgifter",

@@ -3,12 +3,15 @@ import {useState} from  'react'
 import Image from 'next/image'
 import { Link } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
-import { BsPen, BsPeople, BsWallet } from 'react-icons/bs';
+import { BsPen, BsPeople, BsWallet, BsChatDots } from 'react-icons/bs';
 import ShareModal from '@/components/application/ShareModal';
+import FeedbackModal from '@/components/application/FeedbackModal';
+
 
 const page = () => {
   const t = useTranslations("Application.Profile");
   const [isShareModalOpen, setIsShareModalOpen] = useState(false);
+  const [isFeedbackModalOpen, setIsFeedbackModalOpen] = useState(false);
   return (
     <div className="min-h-screen p-6">
       <div className="max-w-3xl mx-auto rounded-lg shadow-lg p-8">
@@ -58,12 +61,21 @@ const page = () => {
             <BsPeople className='text-primary'/>
             {t("ShareWithFriends")}
           </button>
+          <button 
+            onClick={() => setIsFeedbackModalOpen(true)}
+            className="flex justify-start gap-2 items-center text-lg w-full text-foreground border-2 border-transparent hover:text-primary hover:border-primary py-3 px-6 rounded-lg font-semibold hover:bg-primary/10 transition-colors"
+          >
+            <BsChatDots className='text-primary'/>
+            {t("SendFeedback")}
+          </button>
         </div>
       </div>
       <ShareModal 
         isOpen={isShareModalOpen}
         onClose={() => setIsShareModalOpen(false)}
       />
+      <FeedbackModal isOpen={isFeedbackModalOpen}
+        onClose={() => setIsFeedbackModalOpen(false)} />
     </div>
   )
 }

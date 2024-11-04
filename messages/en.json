@@ -549,7 +549,12 @@
             "ResponsiblePersonRequired": "Responsible Person Name is required",
             "AddressRequired": "Address is required",
             "InvalidImageFormat": "Invalid Image Format",
-            "ImageTooLarge": "Image is too large"
+            "ImageTooLarge": "Image is too large",
+            "WriteFeedbackHere": "Write Feedback Here",
+            "Cancel": "Cancel",
+            "Send": "Send",
+            "Submit": "Submit",
+            "SendFeedback": "Send Feedback"
         }
         
         

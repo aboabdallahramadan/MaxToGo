@@ -26,7 +26,6 @@ const page = () => {
     previousCompanies: "",
     nationality: "",
     maritalStatus: "single", // Radio button
-    gender: "male", // Radio button
     cv: null, // File upload
   });
 
@@ -277,37 +276,6 @@ const page = () => {
                   onChange={handleChange}
                 />
                 <label htmlFor="married" className="ml-2"> {t("Married")} </label>
-              </div>
-            </div>
-          </div>
-
-          {/* Gender (Radio) */}
-          <div className="relative flex items-start justify-start w-full gap-4 mt-8">
-            <h4>{t("Gender")} : </h4>
-            <div className="flex flex-col sm:flex-row">
-              <div className="flex justify-start items-center">
-                <input
-                  className="accent-primary"
-                  type="radio"
-                  id="male"
-                  name="gender"
-                  value="male"
-                  checked={formData.gender === "male"}
-                  onChange={handleChange}
-                />
-                <label htmlFor="male" className="ml-2"> {t("Male")} </label>
-              </div>
-              <div className="flex justify-start items-center ml-6">
-                <input
-                  className="accent-primary"
-                  type="radio"
-                  id="female"
-                  name="gender"
-                  value="female"
-                  checked={formData.gender === "female"}
-                  onChange={handleChange}
-                />
-                <label htmlFor="female" className="ml-2"> {t("Female")} </label>
               </div>
             </div>
           </div>
