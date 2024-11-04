@@ -12,7 +12,7 @@ import LanguageDropdown from "../LanguageDropdown";
 const LayoutHeader = () => {
   const t = useTranslations("Header");
 
-  let session = false;
+  let session = true;
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);

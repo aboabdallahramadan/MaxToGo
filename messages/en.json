@@ -27,7 +27,8 @@
         "Email": "Email",
         "EnterValidEmail": "Enter Valid Email",
         "SuccessMessage": "You are subscribed successfully",
-        "ErrorMessage": "Something went wrong"
+        "ErrorMessage": "Something went wrong",
+        "FAQs": "FAQs"
     },
     "Hero": {
         "info":"Get shipping and cleaning services easily with",
@@ -117,6 +118,30 @@
         "Service6": "Register Available Vehicles",
         "Service6Info": "Do you have a truck available on a certain day? Register your vehicle on our platform so that other companies can book it for their transportation needs. This creates a flexible and safe transport solution for everyone involved."
     },
+    "HowItWorks": {
+    "title": "This is how Max To Go works, via our app or website:",
+    "step1": {
+      "title": "You have a task to sell",
+      "description": "If you have a task, for example in the moving or another industry, that you cannot take on or want to sell to others, you can easily do so through Max To Go, either via our app or website."
+    },
+    "step2": {
+      "title": "Log in and describe the task",
+      "description": "Log in via our app or website, describe the task in detail (e.g., a move from one location to another, delivery of construction materials, or a service), and publish it. The more information you provide, the clearer it will be for potential buyers."
+    },
+    "step3": {
+      "title": "Other companies see your task",
+      "description": "All companies using Max To Go, whether via the app or website, will see the task in their feed. They can either buy the task directly or place bids if you choose to accept offers."
+    },
+    "step4": {
+      "title": "Choose a buyer",
+      "description": "Once several companies have shown interest, you can choose the one you think is best suited to take on the task – either based on price, experience, or reviews from previous collaborations."
+    },
+    "step5": {
+      "title": "Evaluate the buyer",
+      "description": "After the task is completed, you can evaluate the buyer and their service. This helps other companies on the platform make informed decisions about whom to collaborate with in the future."
+    },
+    "closing": "Max To Go, through both the app and the website, makes it easy for companies to collaborate, sell and buy tasks, and contribute to a smooth and efficient workflow."
+  },
     "Contact": {
         "Contact": "Contact Us",
         "ContactInfo": "add your information to contact you as soon as possible",
@@ -133,6 +158,49 @@
     "Partners" : {
     "OurPartners": "Our Partners"
     },
+    "FAQs": {
+    "title": "FAQs for Max To Go",
+    "q1": "What is Max To Go?",
+    "a1": "Max To Go is a digital platform that connects transport, moving, and service companies to streamline operations and facilitate collaboration.",
+    "q2": "How does Max To Go work?",
+    "a2": "Users can register, post tasks, and either buy or sell services such as transport, moving, and logistics through the platform.",
+    "q3": "Who can use Max To Go?",
+    "a3": "Any company in the transport, moving, or service industry can register and use the platform.",
+    "q4": "How do I create an account?",
+    "a4": "You can create an account by visiting our website and following the registration process, which involves providing some basic information about your company.",
+    "q5": "Is there a fee to use Max To Go?",
+    "a5": "Registration is free, but there may be fees associated with specific transactions or services on the platform.",
+    "q6": "How do I post a task?",
+    "a6": "Once you're logged in, navigate to the task posting section, provide detailed information about the task, and submit it for other users to see.",
+    "q7": "Can I sell my empty trips?",
+    "a7": "Yes, you can list your empty trips on the platform for other companies to purchase, maximizing your vehicle's utilization.",
+    "q8": "How can I find other companies to collaborate with?",
+    "a8": "You can browse the platform to find companies that offer services complementary to your own and contact them directly through the app.",
+    "q9": "What types of tasks can I post?",
+    "a9": "You can post tasks related to transport, moving, logistics, and even service jobs like cleaning and maintenance.",
+    "q10": "How do payments work on Max To Go?",
+    "a10": "Payments are arranged directly between the buyer and seller outside of the app; Max To Go does not handle transactions.",
+    "q11": "What if I have a problem with a task or a company?",
+    "a11": "You can contact us at info@movinggomax.com for assistance with any issues or disputes.",
+    "q12": "Is my data safe with Max To Go?",
+    "a12": "Yes, we comply with GDPR regulations and take the necessary steps to protect your personal and company data.",
+    "q13": "How does Max To Go contribute to sustainability?",
+    "a13": "By facilitating collaboration and resource sharing, Max To Go helps reduce empty trips, which minimizes fuel consumption and environmental impact.",
+    "q14": "Can I use the platform for international tasks?",
+    "a14": "Yes, Max To Go allows for connections not just within Sweden but also across EU countries.",
+    "q15": "What types of companies can benefit from Max To Go?",
+    "a15": "Transport companies, moving firms, construction companies, and service providers can all benefit from increased collaboration and efficiency.",
+    "q16": "How do I remove a posted task?",
+    "a16": "To remove a task, simply contact us at info@movinggomax.com, and we will assist you in deleting it from the platform.",
+    "q17": "Are there any restrictions on who I can sell tasks to?",
+    "a17": "No, you can sell tasks to any registered user on the platform as long as they meet the requirements for the service you're offering.",
+    "q18": "What happens if a company doesn't fulfill a task?",
+    "a18": "We recommend addressing the issue directly with the company involved, but you can also report it to us for further review.",
+    "q19": "Can I access Max To Go from my mobile device?",
+    "a19": "Yes, Max To Go is designed to be accessible from both desktop and mobile devices for your convenience.",
+    "q20": "How do I contact Max To Go for support?",
+    "a20": "You can reach us via email at info@movinggomax.com for any inquiries or support requests."
+  },
     "Works": {
         "title": "Request to join work",
         "Name": "Name",

@@ -7,6 +7,7 @@ import Footer from '@/components/mainPage/Footer';
 import PartnersSection from '@/components/mainPage/PartnersSection';
 import Slides from '@/components/mainPage/Slides';
 import WhyWe from '@/components/mainPage/WhyWe';
+import HowItWorks from '@/components/mainPage/HowItWorks';
 export default function Home() {
   return (
     <>
@@ -17,6 +18,7 @@ export default function Home() {
       <About />
       <Services />
       <PartnersSection />
+      <HowItWorks />
       <ContactUs />
       <Footer />
     </>

@@ -28,7 +28,8 @@
         "Email": "E-post",
         "EnterValidEmail": "Ange giltig e-postadress",
         "SuccessMessage": "Du har prenumererat framgångsrikt",
-        "ErrorMessage": "Något gick fel"
+        "ErrorMessage": "Något gick fel",
+        "FAQs":  "Vanliga frågor"
     },
     "Hero": {
         "info": "Få frakt- och städtjänster enkelt med",
@@ -116,6 +117,30 @@
         "Service6": "Registrera tillgängliga fordon",
         "Service6Info": "Har du en lastbil tillgänglig en viss dag? Registrera ditt fordon på vår plattform så andra företag kan boka det för sina transportbehov. Detta skapar en flexibel och säker transportlösning för alla inblandade."
     },
+    "HowItWorks": {
+    "title": "Så här fungerar Max To Go, via vår app eller hemsida:",
+    "step1": {
+      "title": "Du har ett uppdrag att sälja",
+      "description": "Om du har ett uppdrag, till exempel inom flyttbranschen eller någon annan bransch, som du inte kan ta dig an eller vill sälja vidare, kan du enkelt göra det via Max To Go, antingen genom vår app eller hemsida."
+    },
+    "step2": {
+      "title": "Logga in och beskriv uppdraget",
+      "description": "Logga in via vår app eller hemsida, beskriv uppdraget i detalj (t.ex. flytt från en plats till en annan, leverans av byggmaterial eller en tjänst), och publicera det. Ju mer information du ger, desto tydligare blir det för potentiella köpare."
+    },
+    "step3": {
+      "title": "Andra företag ser ditt uppdrag",
+      "description": "Alla företag som använder Max To Go, via appen eller hemsidan, får uppdraget i sitt flöde. De kan antingen köpa uppdraget direkt eller lämna bud på det om du väljer att ta emot bud."
+    },
+    "step4": {
+      "title": "Välj en köpare",
+      "description": "När flera företag har visat intresse kan du välja det företag som du tycker är bäst lämpat att ta över uppdraget – antingen baserat på pris, erfarenhet eller omdömen från tidigare samarbeten."
+    },
+    "step5": {
+      "title": "Utvärdera köparen",
+      "description": "När uppdraget är klart, kan du utvärdera köparen och deras service. På så sätt hjälper du andra företag på plattformen att fatta välgrundade beslut om vilka de vill samarbeta med i framtiden."
+    },
+    "closing": "Max To Go, både via appen och hemsidan, gör det enkelt för företag att samarbeta, sälja och köpa uppdrag, och bidra till ett smidigt och effektivt arbetsflöde."
+    },
     "Contact": {
         "Contact": "Kontakta oss",
         "ContactInfo": "lägg till din information för att kontakta dig så snart som möjligt",
@@ -131,6 +156,49 @@
     },
     "Partners": { 
         "OurPartners": "Våra partners"
+    },
+    "FAQs": {
+    "title": "Vanliga frågor om Max To Go",
+    "q1": "Vad är Max To Go?",
+    "a1": "Max To Go är en digital plattform som kopplar samman transport-, flytt- och serviceföretag för att effektivisera verksamheten och underlätta samarbetet.",
+    "q2": "Hur fungerar Max To Go?",
+    "a2": "Användare kan registrera sig, posta uppdrag och antingen köpa eller sälja tjänster som transport, flytt och logistik genom plattformen.",
+    "q3": "Vem kan använda Max To Go?",
+    "a3": "Alla företag inom transport-, flytt- eller serviceindustrin kan registrera sig och använda plattformen.",
+    "q4": "Hur skapar jag ett konto?",
+    "a4": "Du kan skapa ett konto genom att besöka vår webbplats och följa registreringsprocessen, som innefattar att ge viss grundläggande information om ditt företag.",
+    "q5": "Är det någon avgift för att använda Max To Go?",
+    "a5": "Registreringen är gratis, men det kan finnas avgifter kopplade till specifika transaktioner eller tjänster på plattformen.",
+    "q6": "Hur postar jag ett uppdrag?",
+    "a6": "När du är inloggad navigerar du till sektionen för att posta uppdrag, ger detaljerad information om uppdraget och skickar in det för andra användare att se.",
+    "q7": "Kan jag sälja mina tomma körningar?",
+    "a7": "Ja, du kan lista dina tomma körningar på plattformen för andra företag att köpa, vilket maximerar din fordonsanvändning.",
+    "q8": "Hur kan jag hitta andra företag att samarbeta med?",
+    "a8": "Du kan bläddra på plattformen för att hitta företag som erbjuder kompletterande tjänster och kontakta dem direkt via appen.",
+    "q9": "Vilka typer av uppdrag kan jag posta?",
+    "a9": "Du kan posta uppdrag relaterade till transport, flytt, logistik och till och med servicejobb som städning och underhåll.",
+    "q10": "Hur fungerar betalningarna på Max To Go?",
+    "a10": "Betalningarna arrangeras direkt mellan köparen och säljaren utanför appen; Max To Go hanterar inte transaktionerna.",
+    "q11": "Vad händer om jag har ett problem med ett uppdrag eller ett företag?",
+    "a11": "Du kan kontakta oss på info@movinggomax.com för hjälp med eventuella problem eller tvister.",
+    "q12": "Är mina data säkra hos Max To Go?",
+    "a12": "Ja, vi följer GDPR-regler och vidtar nödvändiga åtgärder för att skydda din personliga och företagsinformation.",
+    "q13": "Hur bidrar Max To Go till hållbarhet?",
+    "a13": "Genom att underlätta samarbete och resursdelning hjälper Max To Go till att minska tomma körningar, vilket minimerar bränsleförbrukning och miljöpåverkan.",
+    "q14": "Kan jag använda plattformen för internationella uppdrag?",
+    "a14": "Ja, Max To Go tillåter kopplingar inte bara inom Sverige utan också över EU-länder.",
+    "q15": "Vilka typer av företag kan dra nytta av Max To Go?",
+    "a15": "Transportföretag, flyttfirmor, byggföretag och serviceleverantörer kan alla dra nytta av ökat samarbete och effektivitet.",
+    "q16": "Hur tar jag bort ett postat uppdrag?",
+    "a16": "För att ta bort ett uppdrag, kontakta oss helt enkelt på info@movinggomax.com, så hjälper vi dig att ta bort det från plattformen.",
+    "q17": "Finns det några begränsningar för vem jag kan sälja uppdrag till?",
+    "a17": "Nej, du kan sälja uppdrag till alla registrerade användare på plattformen så länge de uppfyller kraven för den tjänst du erbjuder.",
+    "q18": "Vad händer om ett företag inte fullföljer ett uppdrag?",
+    "a18": "Vi rekommenderar att du tar upp frågan direkt med det involverade företaget, men du kan också rapportera det till oss för vidare granskning.",
+    "q19": "Kan jag få tillgång till Max To Go från min mobila enhet?",
+    "a19": "Ja, Max To Go är utformad för att vara tillgänglig från både stationära och mobila enheter för din bekvämlighet.",
+    "q20": "Hur kontaktar jag Max To Go för support?",
+    "a20": "Du kan nå oss via e-post på info@movinggomax.com för eventuella frågor eller supportärenden."
     },
     "Works": {
         "title": "Ansökan om att gå med i arbetet",

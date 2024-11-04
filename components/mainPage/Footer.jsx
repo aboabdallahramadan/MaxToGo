@@ -46,6 +46,9 @@ const Footer = () => {
                         <li>
                             <Link href={"/application"}>{t("GoToTheApp")}</Link>
                         </li>
+                        <li>
+                            <Link href={"/guest/faqs"}>{t("FAQs")}</Link>
+                        </li>
                     </ul>
                 </div>
                 <Subscribe />
