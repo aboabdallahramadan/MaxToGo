@@ -333,7 +333,85 @@
         "Sell": "Sell",
         "Both": "Both",
         "Description": "Brief Description of Your Company",
-        "permitFile": "Permit File PDF or JBEG"
+        "permitFile": "Permit File PDF or JBEG",
+        "Terms": {
+    "title": "Terms of Use for Max To Go",
+    "lastUpdated": "Last updated: October 28, 2024",
+    "sections": {
+      "terms": {
+        "title": "Terms for Using Max To Go",
+        "content": {
+          "1": "By using Max To Go, you agree to the current terms of use."
+        }
+      },
+      "howItWorks": {
+        "title": "How Max To Go Works",
+        "content": {
+          "1": "Max To Go is a platform that connects transport, moving, and service companies to streamline logistics, transport, and booking tasks.",
+          "2": "By registering and describing tasks on Max To Go, companies can buy and sell services such as transport, moving, and logistics, as well as manage available resources to maximize capacity.",
+          "3": "When a task is published, other companies within the network can buy or place a bid, enabling a secure and efficient transfer of tasks.",
+          "4": "Max To Go will send an email confirmation for each completed task transaction. Contact is made directly between the user and the purchasing company.",
+          "5": "If users wish to remove a request or a published task from the platform, they can contact us at: info@movinggomax.com."
+        }
+      },
+      "usage": {
+        "title": "Using Max To Go",
+        "content": {
+          "1": "Misrepresenting an association with Max To Go or our partners, either publicly or privately, is prohibited.",
+          "2": "Unauthorized access to non-public parts of the platform or information from other users is not allowed.",
+          "3": "Max To Go must not be used to distribute malicious code or to gather hidden information from other users.",
+          "4": "Users must not interfere with other users' ability to use the platform.",
+          "5": "Impersonating another person or entity is prohibited.",
+          "6": "If there is suspected misuse of the platform, Max To Go reserves the right to suspend the account."
+        }
+      },
+      "responsibilities": {
+        "title": "Responsibilities and Relationship with Suppliers",
+        "content": {
+          "1": "Max To Go facilitates contact between users and providers and is not involved in the execution or content of the agreements made between parties.",
+          "2": "Transport companies, moving companies, and service companies on Max To Go are independent, and we do not guarantee that all providers will contact users with offers.",
+          "3": "The use of Max To Go is at the user's own risk, and Max To Go is not responsible for the execution or quality of agreements. However, we only work with reliable and reputable companies.",
+          "4": "Max To Go partners with selected independent companies but does not guarantee that the offers are the best or cheapest on the market.",
+          "5": "Max To Go is not responsible for force majeure events such as natural disasters, strikes, import restrictions, or other unforeseen events impacting our platform.",
+          "6": "Max To Go is not responsible for any taxes or fees related to the use of the platform."
+        }
+      },
+      "intellectual": {
+        "title": "Intellectual Property",
+        "content": {
+          "1": "All intellectual property rights related to Max To Go belong to Max To Go and may not be used commercially without written permission."
+        }
+      },
+      "communication": {
+        "title": "Communication",
+        "content": {
+          "1": "All communication with Max To Go is conducted electronically via info@movinggomax.com."
+        }
+      },
+      "privacy": {
+        "title": "Privacy Policy and Personal Data",
+        "content": {
+          "1": "Max To Go complies with the General Data Protection Regulation (GDPR), and collected data is used solely for the purpose of connecting relevant transport and service companies."
+        }
+      },
+      "changes": {
+        "title": "Changes",
+        "content": {
+          "1": "Max To Go reserves the right to change the terms of use without prior notice. Continued use implies acceptance of the new terms.",
+          "2": "The date of the latest update is shown at the top of this document."
+        }
+      },
+      "governing": {
+        "title": "Governing Law and Disputes",
+        "content": {
+          "1": "Use of Max To Go and any disputes are subject to Swedish law.",
+          "2": "Disputes should primarily be resolved directly between the parties but may be taken to court if necessary."
+        }
+      }
+    }
+        },
+        "PleaseReadTerms": "Please read the terms of use carefully before using Max To Go.",
+        "PleaseAcceptTerms": "Please accept the terms of use to continue."
     },
     "Application": {
         "Header": {

@@ -1,11 +1,10 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import AuthPageHeader from "@/components/AuthPageHeader";
 import GoBackButton from "@/components/GoBackButton";
 import { useTranslations } from "next-intl";
 import { FaBuilding, FaEnvelope, FaKey, FaMarker, FaPhone, FaEye, FaEyeSlash, FaUpload } from "react-icons/fa";
 import { BsArrowLeft, BsArrowRight, BsPersonFill } from "react-icons/bs";
-import { Link } from "@/i18n/routing";
 
 const page = () => {
   const validateFileType = (file, allowedTypes) => {
@@ -27,10 +26,16 @@ const page = () => {
     organizationNumber: '',
     buyOrSell: '',
     description: '',
-    policy: true
+    policy: false
   });
   const [errors, setErrors] = useState({});
+
   const t = useTranslations("Auth");
+
+  const [hasReadTerms, setHasReadTerms] = useState(false);
+  const termsRef = useRef(null);
+
+  
 
   const handlePreviousPage = () => {
     setPageNumber(pageNumber - 1);
@@ -125,9 +130,28 @@ const page = () => {
         newErrors.phone = t("InvalidPhoneFormat");
       }
     }
+    else if (pageNumber === 2) {
+      if (!formData.buyOrSell) newErrors.buyOrSell = t("RequiredField");
+      if (!formData.companyLogo) newErrors.companyLogo = t("RequiredField");
+      if (!formData.permitFile) newErrors.permitFile = t("RequiredField");
+    }
+    else if (pageNumber === 3) {
+      if (!formData.policy) {
+        newErrors.policy = t("PleaseAcceptTerms");
+      }
+    }
   
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
+  };
+
+  const handleTermsScroll = (e) => {
+    const element = e.target;
+    const isAtBottom = Math.abs(element.scrollHeight - element.scrollTop - element.clientHeight) < 1;
+    
+    if (isAtBottom) {
+      setHasReadTerms(true);
+    }
   };
 
   // State to manage password visibility
@@ -142,7 +166,13 @@ const page = () => {
   const togglePasswordConfirmationVisibility = () => {
     setShowPasswordConfirmation(!showPasswordConfirmation);
   };
-  
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (validateForm()) {
+      console.log("submitted");
+    }
+  };
 
   return (
     <>
@@ -162,7 +192,7 @@ const page = () => {
         <div className={pageNumber == 2 ? "block" : "hidden"}>
           <p className="text-foreground mt-6 mb-6">{t("OnceYourApplication")}</p>
         </div>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className={pageNumber == 0 ? "block" : "hidden"}>
             <div className="relative mt-6">
               <label htmlFor="companyName" className="text-primary mb-5">{t("CompanyName")}</label>
@@ -348,18 +378,53 @@ const page = () => {
                 required/>
             </div >
             {errors.permitFile && <p className="text-red-500 text-sm">{errors.permitFile}</p>}
+          </div>
+          <div className={pageNumber == 3 ? "block" : "hidden"}>
+            <div className="mt-6">
+              <h3 className="text-xl font-bold text-[#3B82F6] mb-4">{t('Terms.title')}</h3>
+              <div 
+                ref={termsRef}
+                onScroll={handleTermsScroll}
+                className="bg-[#1A1A1A] p-6 rounded-lg max-h-96 overflow-y-auto mb-4"
+              >
+                {Object.keys(t.raw('Terms.sections')).map((section) => (
+                  <div key={section} className="mb-6">
+                    <h4 className="text-lg font-bold text-white mb-2">
+                      {t(`Terms.sections.${section}.title`)}
+                    </h4>
+                    {Object.entries(t.raw(`Terms.sections.${section}.content`)).map(([key, _]) => (
+                      <p key={key} className="text-gray-400 mb-2">
+                        {t(`Terms.sections.${section}.content.${key}`)}
+                      </p>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
             <div className="relative w-full mt-6 flex justify-start items-center gap-2">
-                <input name="policy" id="policy" className="bg-transparent accent-primary" type="checkbox"                 
-                checked={formData.policy}
-                onChange={handleInputChange} required/>
-                <label htmlFor="policy" className="text-primary text-center">{t("Agree")} <Link className="text-foreground" href="/auth/register/policy" target="_blank"> {t("Policy")}</Link></label>
+            <input 
+              name="policy" 
+              id="policy" 
+              className="bg-transparent accent-primary" 
+              type="checkbox"                 
+              checked={formData.policy}
+              onChange={handleInputChange} 
+              disabled={!hasReadTerms}
+              required
+            />
+                <label htmlFor="policy" className="text-primary text-center">{t("Agree")} {t("Policy")} </label>
             </div >
-            
+            {errors.policy && <p className="text-red-500 text-sm">{errors.policy}</p>}
+            {!hasReadTerms && (
+              <p className="text-sm text-primary mt-2">
+                {t("PleaseReadTerms")}
+              </p>
+            )}
           </div>
           <div className="flex justify-end items-center gap-4 mt-4">
             <div className={`bg-primary py-2 px-4 rounded-lg cursor-pointer ${pageNumber > 0 ? "block" : "hidden"}`} onClick={handlePreviousPage}><BsArrowLeft className="text-secondary text-lg font-bold"/></div>
-            <div className={`bg-primary py-2 px-4 rounded-lg cursor-pointer ${pageNumber < 2 ? "block" : "hidden"}`} onClick={handleNextPage}><BsArrowRight className="text-secondary text-lg font-bold"/></div>
-            <button type="submit" className={`bg-primary text-secondary py-2 px-4 text-lg font-bold rounded-xl ${pageNumber == 2 ? "block" : "hidden"}`}>{t("Submit")}</button>
+            <div className={`bg-primary py-2 px-4 rounded-lg cursor-pointer ${pageNumber < 3 ? "block" : "hidden"}`} onClick={handleNextPage}><BsArrowRight className="text-secondary text-lg font-bold"/></div>
+            <button type="submit" className={`bg-primary text-secondary py-2 px-4 text-lg font-bold rounded-xl ${pageNumber == 3 ? "block" : "hidden"}`}>{t("Submit")}</button>
           </div>
         </form>
       </div>

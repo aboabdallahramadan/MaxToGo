@@ -332,7 +332,85 @@
         "Sell": "Sälj",
         "Both": "Båda",
         "Description": "Beskriv lite kort ditt företag",
-        "permitFile": "Tillstånd fil PDF eller JBEG"
+        "permitFile": "Tillstånd fil PDF eller JBEG",
+        "Terms": {
+    "title": "Användarvillkor för Moving Go Max",
+    "lastUpdated": "Senast uppdaterad: 2022-04-01",
+    "sections": {
+      "terms": {
+        "title": "Villkor för användning av Moving Go Max",
+        "content": {
+          "1": "Genom att nyttja Moving Go Max accepterar du de aktuella villkoren för användande."
+        }
+      },
+      "howItWorks": {
+        "title": "Så fungerar Moving Go Max",
+        "content": {
+          "1": "Moving Go Max är en plattform som sammanför transport-, flytt- och serviceföretag för att effektivisera logistik, transport och bokning av uppdrag.",
+          "2": "Genom att registrera och beskriva uppdrag på Moving Go Max får företag möjligheten att sälja och köpa tjänster som transport, flytt och logistiktjänster, samt möjligheten att hantera lediga resurser för att maximera sin kapacitet.",
+          "3": "När ett uppdrag publiceras får andra företag inom samma nätverk möjlighet att köpa det eller lägga ett bud, vilket möjliggör en säker och effektiv överföring av uppdrag.",
+          "4": "Moving Go Max skickar en bekräftelse via e-post för varje genomförd uppdragsförmedling. Kontakten sker direkt mellan användaren och det köpande företaget.",
+          "5": "Om användare vill ta bort en förfrågan eller ett publicerat uppdrag från plattformen, kan de kontakta oss på: info@movinggomax.com."
+        }
+      },
+      "usage": {
+        "title": "Användning av Moving Go Max",
+        "content": {
+          "1": "Det är inte tillåtet att utge sig för att ha någon falsk anknytning till Moving Go Max eller våra partners, vare sig i en allmän kontext eller gentemot specifika mottagare.",
+          "2": "Otillåten åtkomst till plattformens icke-offentliga delar eller andra användares information är förbjudet.",
+          "3": "Moving Go Max får inte användas för spridning av skadlig kod eller för att hämta dold information från andra användare.",
+          "4": "Användare ska inte påverka andras möjlighet att använda plattformen.",
+          "5": "Att utge sig för att vara en annan fysisk eller juridisk person är förbjudet.",
+          "6": "Vid misstanke om användning som strider mot våra villkor, kan Moving Go Max spärra kontot."
+        }
+      },
+      "responsibilities": {
+        "title": "Ansvar och förhållande till leverantörer",
+        "content": {
+          "1": "Moving Go Max förmedlar kontakt mellan användaren och leverantören och är därmed inte inblandat i själva utförandet eller innehållet i de erbjudanden som ges mellan parterna.",
+          "2": "Transportföretag, flyttfirmor och serviceföretag på Moving Go Max är oberoende, och vi garanterar inte att alla leverantörer kommer att kontakta användaren med erbjudanden.",
+          "3": "Användning av Moving Go Max sker på eget ansvar, och Moving Go Max tar inget ansvar för avtalens genomförande eller kvalitet. Vi arbetar dock enbart med seriösa och pålitliga aktörer.",
+          "4": "Moving Go Max samarbetar med utvalda och oberoende företag. Vi garanterar inte att erbjudandena är marknadens bästa eller billigaste.",
+          "5": "Moving Go Max tar inget ansvar för force majeure-händelser såsom naturkatastrofer, strejker, importrestriktioner, eller andra oförutsedda händelser som påverkar vår plattform.",
+          "6": "Moving Go Max ansvarar inte för skatter eller avgifter kopplade till användning av plattformen."
+        }
+      },
+      "intellectual": {
+        "title": "Immateriella rättigheter",
+        "content": {
+          "1": "Alla immateriella rättigheter relaterade till Moving Go Max tillhör Moving Go Max och får inte användas kommersiellt utan skriftligt godkännande."
+        }
+      },
+      "communication": {
+        "title": "Kommunikation",
+        "content": {
+          "1": "All kommunikation med Moving Go Max sker elektroniskt via info@movinggomax.com."
+        }
+      },
+      "privacy": {
+        "title": "Integritetsskydd och personuppgifter",
+        "content": {
+          "1": "Moving Go Max följer dataskyddsförordningen (GDPR), och insamlad data används endast i syfte att koppla samman relevanta transport- och serviceföretag."
+        }
+      },
+      "changes": {
+        "title": "Förändringar",
+        "content": {
+          "1": "Moving Go Max förbehåller sig rätten att ändra användarvillkoren utan förvarning. Fortsatt användning innebär samtycke till de nya villkoren.",
+          "2": "Tidpunkten för den senaste uppdateringen framgår högst upp på sidan."
+        }
+      },
+      "governing": {
+        "title": "Lagföring och tvister",
+        "content": {
+          "1": "Användning av Moving Go Max och eventuella tvister är underställda svensk lag.",
+          "2": "Tvister ska i första hand lösas direkt mellan parterna, men kan vid behov tas till domstol."
+        }
+      }
+    }
+        },
+        "PleaseReadTerms": "Läs villkoren",
+        "PleaseAcceptTerms": "Vänligen acceptera villkoren"
     },
     "Application": {
         "Header": {
