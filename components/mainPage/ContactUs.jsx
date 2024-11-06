@@ -66,7 +66,7 @@ const ContactUs = () => {
                 </p>
 
                 <FormContainer>
-                    <form onSubmit={handleSubmit} className="bg-secondary p-12 rounded-lg shadow-lg border border-primary">
+                    <form onSubmit={handleSubmit} className="bg-gray-800 p-12 rounded-lg shadow-lg border border-primary">
                         <div className="flex justify-between items-center gap-4 flex-col sm:flex-row">
                             <div className="flex flex-col items-start justify-between">
                                 <label htmlFor="firstName">{t("FirstName")}</label>

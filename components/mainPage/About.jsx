@@ -79,14 +79,14 @@ const About = () => {
                     </motion.div>
 
                     <motion.div
-                        initial={{ opacity: 0, x: 50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                         className="relative"
                     >
                         <img 
                             src="/images/about1.jpg" 
-                            alt={t("MovingServiceAlt")} 
+                            alt={t("About")} 
                             className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
                         />
                         <div className="absolute -bottom-10 -left-10 bg-white dark:bg-gray-800 p-6 rounded-xl shadow-xl">

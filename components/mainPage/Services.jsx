@@ -26,7 +26,7 @@ const Services = () => {
                 transition={{ duration: 0.5 }}
             >
                 <SectionHeader name={t("Services")} />
-                <p className="text-center text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-12">
+                <p className="text-center text-gray-300 max-w-2xl mx-auto mb-12">
                     {t("ServicesIntro")}
                 </p>
             </motion.div>

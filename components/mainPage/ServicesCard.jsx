@@ -11,15 +11,15 @@ const ServicesCard = ({Icon, title, text}) => {
       className="flex-1 min-w-[300px] max-w-[400px]"
     >
       <div className="p-8 h-full flex flex-col items-center justify-start gap-6 
-        hover:shadow-2xl hover:shadow-primary/20 border border-gray-200 dark:border-gray-700 
-        rounded-xl bg-white dark:bg-gray-800 transition-all duration-300">
+        hover:shadow-2xl hover:shadow-primary/20 border border-gray-700 
+        rounded-xl bg-gray-800 transition-all duration-300">
         <motion.div 
           className="flex items-center justify-center gap-3 mb-2"
         >
           <Icon className="text-primary text-4xl"/>
-          <h3 className="text-xl font-bold text-gray-800 dark:text-white">{title}</h3>
+          <h3 className="text-xl font-bold text-white">{title}</h3>
         </motion.div>
-        <p className="text-center text-gray-600 dark:text-gray-300 leading-relaxed">{text}</p>
+        <p className="text-center text-gray-300 leading-relaxed">{text}</p>
       </div>
     </motion.div>
   )
