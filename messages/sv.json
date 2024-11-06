@@ -164,10 +164,11 @@
     "IndividualTasks": {
       "IndividualTasks": "Individuella uppdrag",
       "SubmitTaskAsIndividual": "Skicka uppdrag som individ",
-      "Transfer": "Överför",
+      "Transfer": "Flytt",
       "Warehousing": "Magasinering",
       "Cleaning":"Städning",
-      "EmptyCar":"Tom bil"
+      "EmptyCar":"Flytt på vägen",
+      "SharingCar":"Samkörning"
     },
     "Contact": {
         "Contact": "Kontakta oss",

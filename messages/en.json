@@ -180,9 +180,10 @@
         "IndividualTasks": "Individual Tasks",
         "SubmitTaskAsIndividual": "Submit Task as Individual",
         "Transfer": "Transfer",
-        "Warehousing": "Warehousing",
+        "Warehousing": "Storage",
         "Cleaning": "Cleaning",
-        "EmptyCar": "Empty Car"
+        "EmptyCar": "Moving on the Way",
+        "SharingCar": "Ride-Sharing"
     },
     "Partners" : {
     "OurPartners": "Our Partners"
