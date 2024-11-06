@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import SecondaryLink from "../SecondaryLink";
 import { Link } from "@/i18n/routing";
+import ChangingTitle from "./hero/ChangingTitle";
 
 const Hero = () => {
     const t = useTranslations("Hero");
@@ -13,9 +14,9 @@ const Hero = () => {
             >
                 <div className="max-w-xl text-center sm:text-left">
                     <h1 className="text-3xl font-extrabold sm:text-5xl text-center">
-                    {t('info')}
+                        <ChangingTitle />
+                        <p className="mt-4 text-2xl">{t('info')}</p>
 
-                        <strong className="block font-extrabold text-primary"> {t("ProjectTitle")} </strong>
                     </h1>
 
                     <div className="mt-8 flex flex-wrap gap-4 text-center justify-center">
