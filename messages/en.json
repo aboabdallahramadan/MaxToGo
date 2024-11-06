@@ -9,7 +9,8 @@
         "Swedish": "Swedish",
         "English": "English",
         "Categories": "Categories",
-        "Downland": "Download the App"
+        "Downland": "Download the App",
+        "Title": "Max To Go"
     },
     "footer": {
         "MainEmail": "Main Email",
@@ -40,7 +41,9 @@
         "Moving": "Moving",
         "Transport&Logistics": "Transport & Logistics",
         "Cleaning": "Cleaning",
-        "Sustainable": "Sustainable"
+        "Sustainable": "Sustainable",
+        "ScanQRCode": "Scan QR Code",
+        "Close": "Close"
     },
     "Slides": {
         "SiteTitle": "Max To Go",

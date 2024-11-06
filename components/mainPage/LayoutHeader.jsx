@@ -39,8 +39,7 @@ const LayoutHeader = () => {
       }`}
     >
       <div className="container h-12 flex justify-between py-2">
-        <div className="h-full flex items-center justify-center gap-2">
-          <Ilink href={"/"} className="h-12">
+          <Ilink href={"/"} className="flex items-center justify-center gap-2">
             <Image
               src="/images/small-logo.png"
               width={150}
@@ -49,14 +48,8 @@ const LayoutHeader = () => {
               style={{ width: "auto", height: "100%" }}
               priority
             />
+          <span className="text-primary text-3xl font-extrabold">{t("Title")}</span>
           </Ilink>
-          <a
-            href=""
-            className="bg-primary text-secondary flex justify-center items-center px-3 py-2 whitespace-nowrap rounded text-xs sm:text-base"
-            >
-            {t("Downland")}
-          </a>
-        </div>
         <nav className="flex justify-between items-center h-100">
           <ul className="items-center h-100 hidden md:flex">
             <NavLink link="/#hero">{t("Home")}</NavLink>

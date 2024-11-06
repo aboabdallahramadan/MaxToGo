@@ -10,7 +10,8 @@
         "English": "Engelska",
         "Categories": "Kategorier",
         "Downland": "Ladda ner appen",
-        "Movingab": "Movingab"
+        "Movingab": "Movingab",
+        "Title": "Max To Go"
     },
     "footer": {
         "MainEmail": "Huvudsaklig e-post",
@@ -40,7 +41,9 @@
         "Moving": "Flytt",
         "Transport&Logistics": "Transport & Logistik",
         "Cleaning": "Städning",
-        "Sustainable": "Hållbar"
+        "Sustainable": "Hållbar",
+        "ScanQRCode": "Scanna QR-kod",
+        "Close": "Stäng"
     },
     "Slides": {
         "SiteTitle": "Max To Go",
