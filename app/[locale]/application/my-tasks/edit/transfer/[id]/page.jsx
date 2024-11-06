@@ -76,9 +76,8 @@ const page = () => {
   return (
     <>
     <TitleGoldenBar name={t("EditTask")}/>
-      <section className="pt-24">
-        <div className="container">
-          <form onSubmit={handleSubmit} className="bg-secondary p-6 rounded-lg shadow-md">
+      <section className="pt-10 w-full">
+          <form onSubmit={handleSubmit} className="px-6">
             {/* Task Name */}
             <div className="relative flex flex-col items-start justify-between w-full gap-4">
               <label htmlFor="taskName">
@@ -509,7 +508,6 @@ const page = () => {
               </button>
             </div>
           </form>
-        </div>
       </section>
     </>
     

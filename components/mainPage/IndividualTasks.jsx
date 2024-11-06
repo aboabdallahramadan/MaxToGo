@@ -39,7 +39,7 @@ const IndividualTasks = () => {
         <section className='py-12'>
             <SectionHeader name={t("IndividualTasks")} />
             <div className="container">
-                <p className='text-secondary text-xl text-center w-full mb-8'>{t("SubmitTaskAsIndividual")}</p>
+                <p className='text-foreground text-xl text-center w-full mb-8'>{t("SubmitTaskAsIndividual")}</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {tasks.map(task => (
                         <Link 

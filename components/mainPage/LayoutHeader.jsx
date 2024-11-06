@@ -55,8 +55,8 @@ const LayoutHeader = () => {
             <NavLink link="/#hero">{t("Home")}</NavLink>
             <NavLink link="/#about">{t("About")}</NavLink>
             <NavLink link="/#services">{t("Services")}</NavLink>
-            <NavLink link="/#contact">{t("Contact")}</NavLink>
             <NavLink link="/coming-soon">{t("OurMarket")}</NavLink>
+            <NavLink link="/#contact">{t("Contact")}</NavLink>
             <NavLink link="https://www.movingab.com/se">{t("Movingab")}</NavLink>
           </ul>
         </nav>
@@ -93,8 +93,8 @@ const LayoutHeader = () => {
               <NavLink link="/#" func={()=> setIsMobileMenuOpen(false)}>{t("Home")}</NavLink>
               <NavLink link="/#about" func={()=> setIsMobileMenuOpen(false)}>{t("About")}</NavLink>
               <NavLink link="/#services" func={()=> setIsMobileMenuOpen(false)}>{t("Services")}</NavLink>
-              <NavLink link="/#contact" func={()=> setIsMobileMenuOpen(false)}>{t("Contact")}</NavLink>
               <NavLink link="/coming-soon" func={()=> setIsMobileMenuOpen(false)}>{t("OurMarket")}</NavLink>
+              <NavLink link="/#contact" func={()=> setIsMobileMenuOpen(false)}>{t("Contact")}</NavLink>
               <NavLink link="https://www.movingab.com/se" func={()=> setIsMobileMenuOpen(false)}>{t("Movingab")}</NavLink>
               </ul>
             </div>

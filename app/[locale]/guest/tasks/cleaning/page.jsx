@@ -60,7 +60,7 @@ const page = () => {
   };
 
   return (
-    <div className="container">
+    <>
       <SectionHeader name={t("titleCleaning")} />
       <FormContainer>
         <form onSubmit={handleSubmit}>
@@ -255,7 +255,7 @@ const page = () => {
           </div>
         </form>
       </FormContainer>
-    </div>
+    </>
   );
 };
 

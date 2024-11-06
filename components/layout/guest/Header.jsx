@@ -22,18 +22,17 @@ const Header = () => {
       className={"fixed w-full z-50 transition-colors duration-300 bg-secondary"}
     >
       <div className="container h-12 flex justify-between py-2">
-        <div className="h-100 w-40">
-          <Ilink href={"/"}>
-            <Image
-              src="/images/small-logo.png"
-              width={150}
-              height={50}
-              alt="logo"
-              style={{ width: "auto", height: "100%" }}
-              priority
-            />
-          </Ilink>
-        </div>
+        <Ilink href={"/"} className="flex items-center justify-center gap-2">
+          <Image
+            src="/images/small-logo.png"
+            width={150}
+            height={50}
+            alt="logo"
+            style={{ width: "auto", height: "100%" }}
+            priority
+          />
+          <span className="text-primary text-lg sm:text-3xl font-extrabold text-nowrap">{t("Title")}</span>
+        </Ilink>
         <nav className="flex justify-between items-center h-100">
           <ul className="items-center h-100 hidden sm:flex">
             <NavLink link="/#hero">{t("Home")}</NavLink>

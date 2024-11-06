@@ -15,13 +15,13 @@ export default function Home() {
       <LayoutHeader/>
       <Hero />
       <Slides />
+      <IndividualTasks />
       <WhyWe />
       <About />
       <Services />
       <PartnersSection />
       <HowItWorks />
       <ContactUs />
-      <IndividualTasks />
       <Footer />
     </>
   );

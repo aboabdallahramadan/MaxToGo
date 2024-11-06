@@ -1,10 +1,9 @@
-import Header from "@/components/layout/guest/Header";
+import LayoutHeader from "@/components/mainPage/LayoutHeader";
 
 const layout = ({children}) => {
   return (
     <>
-    <Header />
-    <div className="w-full h-12"></div>
+    <LayoutHeader />
     {children}
     </>
   )
