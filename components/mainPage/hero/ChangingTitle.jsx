@@ -25,7 +25,8 @@ const ChangingTitle = () => {
 
     return (
         <div className="block">
-            <strong className={`font-extrabold text-primary flex w-full text-nowrap ${currentWordIndex == 1 ? "justify-start" : "justify-center"} gap-2`}>
+            <strong className={`text-xl min-[400px]:text-2xl
+                        md:text-4xl font-extrabold text-primary flex w-full text-nowrap justify-center gap-2`}>
                 <span>
                     {t("ProjectTitle")}
                 </span>
@@ -36,7 +37,9 @@ const ChangingTitle = () => {
                         duration-500
                         text-nowrap
                         text-white
-                        min-w-[200px]
+                        
+                        min-w-[120px]
+                        sm:min-w-[250px]
                         ${fade ? 'opacity-100' : 'opacity-0'}
                     `}
                 >

@@ -48,14 +48,16 @@ const LayoutHeader = () => {
               style={{ width: "auto", height: "100%" }}
               priority
             />
-          <span className="text-primary text-3xl font-extrabold">{t("Title")}</span>
+          <span className="text-primary text-lg sm:text-3xl font-extrabold text-nowrap">{t("Title")}</span>
           </Ilink>
         <nav className="flex justify-between items-center h-100">
-          <ul className="items-center h-100 hidden md:flex">
+          <ul className="px-6 items-center gap-2 h-100 hidden text-base xl:text-xl lg:flex">
             <NavLink link="/#hero">{t("Home")}</NavLink>
             <NavLink link="/#about">{t("About")}</NavLink>
             <NavLink link="/#services">{t("Services")}</NavLink>
             <NavLink link="/#contact">{t("Contact")}</NavLink>
+            <NavLink link="/coming-soon">{t("OurMarket")}</NavLink>
+            <NavLink link="https://www.movingab.com/se">{t("Movingab")}</NavLink>
           </ul>
         </nav>
 
@@ -69,7 +71,7 @@ const LayoutHeader = () => {
           <button
             type="button"
             id="mobile-dropdown-button"
-            className="md:hidden ml-4 z-[52]"
+            className="lg:hidden ml-4 z-[52]"
             aria-controls="mobile-menu"
             aria-expanded="false"
             onClick={() => setIsMobileMenuOpen((prev) => !prev)}
@@ -92,6 +94,8 @@ const LayoutHeader = () => {
               <NavLink link="/#about" func={()=> setIsMobileMenuOpen(false)}>{t("About")}</NavLink>
               <NavLink link="/#services" func={()=> setIsMobileMenuOpen(false)}>{t("Services")}</NavLink>
               <NavLink link="/#contact" func={()=> setIsMobileMenuOpen(false)}>{t("Contact")}</NavLink>
+              <NavLink link="/coming-soon" func={()=> setIsMobileMenuOpen(false)}>{t("OurMarket")}</NavLink>
+              <NavLink link="https://www.movingab.com/se" func={()=> setIsMobileMenuOpen(false)}>{t("Movingab")}</NavLink>
               </ul>
             </div>
           </div>
