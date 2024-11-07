@@ -50,6 +50,12 @@ const page = () => {
       */
     }, [chatId])
 
+    useEffect(() => {
+      if (selectedImage) {
+        handleSendMessage();
+      }
+    }, [selectedImage]);
+
     const handleSendMessage = () => {
       if (newMessage.trim() !== '' || selectedImage) {
         const newMsg = {
@@ -60,7 +66,7 @@ const page = () => {
         }
         setMessages([...messages, newMsg])
         setNewMessage('')
-        setSelectedImage(null)
+        setSelectedImage(null) // Reset selectedImage after sending
       }
     }
 

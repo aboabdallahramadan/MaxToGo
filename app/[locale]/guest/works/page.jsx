@@ -47,8 +47,6 @@ const page = () => {
 
     try {
       const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-      const apiKey = process.env.API_KEY;
-
       // Create a FormData object to send files and form data
       const form = new FormData();
       Object.entries(formData).forEach(([key, value]) => {
