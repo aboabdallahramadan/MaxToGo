@@ -13,16 +13,16 @@ const SelectTaskType = ({active}) => {
         <BsType className="text-primary text-lg absolute bottom-1 left-0"/>
         <select defaultValue={active} className="text-primary pl-6 bg-transparent border-b-primary border-b focus:outline-none cursor-pointer" onChange={handleOnchange} id="type" name="type">
             <option  value="transfer">
-                {t("transfer")}
+                {t("MovingHelp")}
             </option>
             <option  value="empty-car">
-                {t("emptyTruck")}
+                {t("MovingOnTheWay")}
             </option>
             <option  value="cleaning">
                 {t("Cleaning")}
             </option>
             <option  value="warehousing">
-                {t("warehousing")}
+                {t("Storage")}
             </option>
         </select>
     </div>

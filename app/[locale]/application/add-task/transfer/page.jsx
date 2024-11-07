@@ -1,13 +1,11 @@
 "use client";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import FormContainer from "@/components/FormContainer";
-import SectionHeader from "@/components/mainPage/SectionHeader";
 import { toast } from "react-toastify";
 
 // Icons
 import { AiOutlineFileText, AiOutlineCalendar, AiOutlineHome, AiOutlinePhone } from "react-icons/ai";
-import { FaBuilding, FaMoneyBill, FaTruck } from "react-icons/fa";
+import { FaBuilding, FaMoneyBill, FaTruck, FaRulerCombined } from "react-icons/fa";
 import { FiArrowUpRight, FiArrowDownRight } from "react-icons/fi";
 import Spinner from "@/components/Spinner";
 import TitleGoldenBar from "@/components/application/TitleGoldenBar";
@@ -29,6 +27,8 @@ const page = () => {
     floorNumberTwo: "",
     elevatorOne: "no",
     elevatorTwo: "no",
+    fromLocationSize: "",
+    toLocationSize: "",
     vehicleSize: "",
     isTimeFlexible: "yes",
     isWrapping: "no",
@@ -130,6 +130,73 @@ const page = () => {
               />
             </div>
 
+            {/* Floor Number One */}
+            <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
+              <label htmlFor="floorNumberOne">
+                <AiOutlineHome className="inline-block mr-2 text-primary" />
+                {t("FloorNumberOne")}
+              </label>
+              <input
+                className="bg-transparent border-b-primary border-b focus:outline-none w-full"
+                type="number"
+                id="floorNumberOne"
+                name="floorNumberOne"
+                value={formData.floorNumberOne}
+                onChange={handleChange}
+                required
+              />
+            </div>
+
+            {/* Elevator */}
+            <div className="relative flex items-center justify-around flex-col sm:flex-row w-full gap-4 mt-8">
+              <div>
+                <h4 className="text-xl text-center w-full">{t("ElevatorOne")}</h4>
+                <div className="flex justify-center items-center  w-full">
+                  <div className="flex justify-start items-center">
+                    <input
+                      className="accent-primary"
+                      type="radio"
+                      id="elevatorOneYes"
+                      name="elevatorOne"
+                      value="yes"
+                      checked={formData.elevatorOne === "yes"}
+                      onChange={handleChange}
+                    />
+                    <label htmlFor="elevatorOneYes" className="ml-2"> {t("Yes")} </label>
+                  </div>
+                  <div className="flex justify-start items-center ml-6">
+                    <input
+                      className="accent-primary"
+                      type="radio"
+                      id="elevatorOneNo"
+                      name="elevatorOne"
+                      value="no"
+                      checked={formData.elevatorOne === "no"}
+                      onChange={handleChange}
+                    />
+                    <label htmlFor="elevatorOneNo" className="ml-2"> {t("No")} </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             {/* From Location Size */}
+            <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
+              <label htmlFor="fromLocationSize">
+                <FaRulerCombined className="inline-block mr-2 text-primary" />
+                {t("FromLocationSize")}
+              </label>
+              <input
+                className="bg-transparent border-b-primary border-b focus:outline-none w-full"
+                type="text"
+                id="fromLocationSize"
+                name="fromLocationSize"
+                value={formData.fromLocationSize}
+                onChange={handleChange}
+                required
+              />
+            </div>
+
             {/* To Location */}
             <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
               <label htmlFor="toLocation">
@@ -142,6 +209,73 @@ const page = () => {
                 id="toLocation"
                 name="toLocation"
                 value={formData.toLocation}
+                onChange={handleChange}
+                required
+              />
+            </div>
+
+            {/* Floor Number Two */}
+            <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
+              <label htmlFor="floorNumberTwo">
+                <AiOutlineHome className="inline-block mr-2 text-primary" />
+                {t("FloorNumberTwo")}
+              </label>
+              <input
+                className="bg-transparent border-b-primary border-b focus:outline-none w-full"
+                type="number"
+                id="floorNumberTwo"
+                name="floorNumberTwo"
+                value={formData.floorNumberTwo}
+                onChange={handleChange}
+                required
+              />
+            </div>
+
+            {/* Elevator */}
+            <div className="relative flex items-center justify-around flex-col sm:flex-row w-full gap-4 mt-8">
+              <div>
+                <h4 className="text-xl text-center w-full">{t("ElevatorTwo")}</h4>
+                <div className="flex justify-center items-center  w-full">
+                  <div className="flex justify-start items-center">
+                    <input
+                      className="accent-primary"
+                      type="radio"
+                      id="elevatorTwoYes"
+                      name="elevatorTwo"
+                      value="yes"
+                      checked={formData.elevatorTwo === "yes"}
+                      onChange={handleChange}
+                    />
+                    <label htmlFor="elevatorTwoYes" className="ml-2"> {t("Yes")} </label>
+                  </div>
+                  <div className="flex justify-start items-center ml-6">
+                    <input
+                      className="accent-primary"
+                      type="radio"
+                      id="elevatorTwoNo"
+                      name="elevatorTwo"
+                      value="no"
+                      checked={formData.elevatorTwo === "no"}
+                      onChange={handleChange}
+                    />
+                    <label htmlFor="elevatorTwoNo" className="ml-2"> {t("No")} </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* To Location Size */}
+            <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
+              <label htmlFor="toLocationSize">
+                <FaRulerCombined className="inline-block mr-2 text-primary" />
+                {t("ToLocationSize")}
+              </label>
+              <input
+                className="bg-transparent border-b-primary border-b focus:outline-none w-full"
+                type="text"
+                id="toLocationSize"
+                name="toLocationSize"
+                value={formData.toLocationSize}
                 onChange={handleChange}
                 required
               />
@@ -179,102 +313,6 @@ const page = () => {
                 onChange={handleChange}
                 required
               />
-            </div>
-
-            {/* Floor Number One */}
-            <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
-              <label htmlFor="floorNumberOne">
-                <AiOutlineHome className="inline-block mr-2 text-primary" />
-                {t("FloorNumberOne")}
-              </label>
-              <input
-                className="bg-transparent border-b-primary border-b focus:outline-none w-full"
-                type="number"
-                id="floorNumberOne"
-                name="floorNumberOne"
-                value={formData.floorNumberOne}
-                onChange={handleChange}
-                required
-              />
-            </div>
-
-            {/* Floor Number Two */}
-            <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
-              <label htmlFor="floorNumberTwo">
-                <AiOutlineHome className="inline-block mr-2 text-primary" />
-                {t("FloorNumberTwo")}
-              </label>
-              <input
-                className="bg-transparent border-b-primary border-b focus:outline-none w-full"
-                type="number"
-                id="floorNumberTwo"
-                name="floorNumberTwo"
-                value={formData.floorNumberTwo}
-                onChange={handleChange}
-                required
-              />
-            </div>
-
-            {/* Elevator (Radio) */}
-            <div className="relative flex items-center justify-around flex-col sm:flex-row w-full gap-4 mt-8">
-              <div>
-                <h4 className="text-xl text-center w-full">{t("ElevatorOne")}</h4>
-                <div className="flex justify-center items-center  w-full">
-                  <div className="flex justify-start items-center">
-                    <input
-                      className="accent-primary"
-                      type="radio"
-                      id="elevatorOneYes"
-                      name="elevatorOne"
-                      value="yes"
-                      checked={formData.elevatorOne === "yes"}
-                      onChange={handleChange}
-                    />
-                    <label htmlFor="elevatorOneYes" className="ml-2"> {t("Yes")} </label>
-                  </div>
-                  <div className="flex justify-start items-center ml-6">
-                    <input
-                      className="accent-primary"
-                      type="radio"
-                      id="elevatorOneNo"
-                      name="elevatorOne"
-                      value="no"
-                      checked={formData.elevatorOne === "no"}
-                      onChange={handleChange}
-                    />
-                    <label htmlFor="elevatorOneNo" className="ml-2"> {t("No")} </label>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <h4 className="text-xl text-center w-full">{t("ElevatorTwo")}</h4>
-                <div className="flex justify-center items-center  w-full">
-                  <div className="flex justify-start items-center">
-                    <input
-                      className="accent-primary"
-                      type="radio"
-                      id="elevatorTwoYes"
-                      name="elevatorTwo"
-                      value="yes"
-                      checked={formData.elevatorTwo === "yes"}
-                      onChange={handleChange}
-                    />
-                    <label htmlFor="elevatorTwoYes" className="ml-2"> {t("Yes")} </label>
-                  </div>
-                  <div className="flex justify-start items-center ml-6">
-                    <input
-                      className="accent-primary"
-                      type="radio"
-                      id="elevatorTwoNo"
-                      name="elevatorTwo"
-                      value="no"
-                      checked={formData.elevatorTwo === "no"}
-                      onChange={handleChange}
-                    />
-                    <label htmlFor="elevatorTwoNo" className="ml-2"> {t("No")} </label>
-                  </div>
-                </div>
-              </div>
             </div>
 
             {/* Vehicle Size */}
@@ -378,7 +416,7 @@ const page = () => {
 
             {/* Is Wrapping */}
             <div className="relative flex items-center justify-between flex-col w-full gap-4 mt-8">
-              <h4 className="text-xl text-center w-full">{t("IsWrapping")}</h4>
+              <h4 className="text-xl text-center w-full">{t("Packing")}</h4>
               <div className="flex justify-center items-center  w-full">
                 <div className="flex justify-start items-center">
                   <input
@@ -409,34 +447,10 @@ const page = () => {
 
             {/* Task Type */}
             <div className="relative flex items-center justify-between flex-col w-full gap-4 mt-8">
-              <h4 className="text-xl text-center w-full">{t("TaskType")}</h4>
-              <div className="flex justify-center items-center  w-full">
+                <h4 className="text-xl text-center w-full">{t("TaskType")}</h4>
+                <div className="flex justify-center items-center gap-4 w-full">
                 <div className="flex justify-start items-center">
-                  <input
-                    className="accent-primary"
-                    type="radio"
-                    id="international"
-                    name="taskType"
-                    value="international"
-                    checked={formData.taskType === "international"}
-                    onChange={handleChange}
-                  />
-                  <label htmlFor="international" className="ml-2"> {t("International")} </label>
-                </div>
-                <div className="flex justify-start items-center ml-6">
-                  <input
-                    className="accent-primary"
-                    type="radio"
-                    id="national"
-                    name="taskType"
-                    value="national"
-                    checked={formData.taskType === "national"}
-                    onChange={handleChange}
-                  />
-                  <label htmlFor="national" className="ml-2"> {t("National")} </label>
-                </div>
-                <div className="flex justify-start items-center ml-6">
-                  <input
+                    <input
                     className="accent-primary"
                     type="radio"
                     id="local"
@@ -444,10 +458,36 @@ const page = () => {
                     value="local"
                     checked={formData.taskType === "local"}
                     onChange={handleChange}
-                  />
-                  <label htmlFor="local" className="ml-2"> {t("Local")} </label>
+                    />
+                    <label htmlFor="local" className="ml-2"> {t("Local")} </label>
                 </div>
-              </div>
+                <div className="flex justify-start items-center">
+                    <input
+                    className="accent-primary"
+                    type="radio"
+                    id="national"
+                    name="taskType"
+                    value="national"
+                    checked={formData.taskType === "national"}
+                    onChange={handleChange}
+                    />
+                    <label htmlFor="national" className="ml-2"> {t("National")} </label>
+                </div>
+                <div className="flex justify-start items-center">
+                    <input
+                    className="accent-primary"
+                    type="radio"
+                    id="international"
+                    name="taskType"
+                    value="international"
+                    checked={formData.taskType === "international"}
+                    onChange={handleChange}
+                    />
+                    <label htmlFor="international" className="ml-2"> {t("International")} </label>
+                </div>
+                
+                
+                </div>
             </div>
 
             {/* Task Master */}

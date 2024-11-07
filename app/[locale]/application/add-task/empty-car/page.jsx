@@ -298,7 +298,31 @@ const page = () => {
                     {/* Task Type */}
                     <div className="relative flex items-center justify-between flex-col w-full gap-4 mt-8">
                         <h4 className="text-xl text-center w-full">{t("TaskType")}</h4>
-                        <div className="flex justify-center items-center  w-full">
+                        <div className="flex justify-center items-center gap-4 w-full">
+                        <div className="flex justify-start items-center">
+                            <input
+                            className="accent-primary"
+                            type="radio"
+                            id="local"
+                            name="taskType"
+                            value="local"
+                            checked={formData.taskType === "local"}
+                            onChange={handleChange}
+                            />
+                            <label htmlFor="local" className="ml-2"> {t("Local")} </label>
+                        </div>
+                        <div className="flex justify-start items-center">
+                            <input
+                            className="accent-primary"
+                            type="radio"
+                            id="national"
+                            name="taskType"
+                            value="national"
+                            checked={formData.taskType === "national"}
+                            onChange={handleChange}
+                            />
+                            <label htmlFor="national" className="ml-2"> {t("National")} </label>
+                        </div>
                         <div className="flex justify-start items-center">
                             <input
                             className="accent-primary"
@@ -311,30 +335,8 @@ const page = () => {
                             />
                             <label htmlFor="international" className="ml-2"> {t("International")} </label>
                         </div>
-                        <div className="flex justify-start items-center ml-6">
-                            <input
-                            className="accent-primary"
-                            type="radio"
-                            id="national"
-                            name="taskType"
-                            value="national"
-                            checked={formData.taskType === "national"}
-                            onChange={handleChange}
-                            />
-                            <label htmlFor="national" className="ml-2"> {t("National")} </label>
-                        </div>
-                        <div className="flex justify-start items-center ml-6">
-                            <input
-                            className="accent-primary"
-                            type="radio"
-                            id="local"
-                            name="taskType"
-                            value="local"
-                            checked={formData.taskType === "local"}
-                            onChange={handleChange}
-                            />
-                            <label htmlFor="local" className="ml-2"> {t("Local")} </label>
-                        </div>
+                        
+                        
                         </div>
                     </div>
                     {/* Task Master */}
