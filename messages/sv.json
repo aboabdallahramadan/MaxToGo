@@ -259,7 +259,9 @@
         "Female": "Kvinna",
         "Send": "Skicka",
         "SuccessMessage": "ditt formulär har skickats framgångsrikt",
-        "ErrorMessage": "Något gick fel"
+        "ErrorMessage": "Något gick fel",
+        "Experience": "Erfarenhet",
+        "Phone": "Telefonnummer"
     },
     "GuestTasks": {
         "title": "Transformeringsuppgift",

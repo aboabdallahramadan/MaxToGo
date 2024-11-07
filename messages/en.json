@@ -261,7 +261,9 @@
         "Female": "Female",
         "Send": "Send",
         "SuccessMessage": "your form has been submitted successfully",
-        "ErrorMessage": "Something went wrong"
+        "ErrorMessage": "Something went wrong",
+        "Experience": "Experience",
+        "Phone": "Phone Number"
     },
     "GuestTasks": {
         "title": "Transform Task",

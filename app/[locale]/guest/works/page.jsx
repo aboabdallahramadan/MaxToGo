@@ -3,8 +3,8 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import FormContainer from "@/components/FormContainer";
 import SectionHeader from "@/components/mainPage/SectionHeader";
-import { BsBuildingFill, BsHouseFill, BsMapFill, BsPersonWorkspace } from "react-icons/bs";
-import { FaUser, FaEnvelope, FaUserGraduate, FaCertificate, FaBookReader, FaFile } from "react-icons/fa";
+import {  BsHouseFill } from "react-icons/bs";
+import { FaUser, FaEnvelope, FaFile, FaPhone } from "react-icons/fa";
 import { toast } from "react-toastify";
 import Spinner from "@/components/Spinner";
 
@@ -17,15 +17,9 @@ const page = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     address: "",
-    academicAchievement: "",
-    courses: "",
-    experienceCertificates: "",
-    workType: "",
-    skills: "",
-    previousCompanies: "",
-    nationality: "",
-    maritalStatus: "single", // Radio button
+    experience: "",
     cv: null, // File upload
   });
 
@@ -109,6 +103,21 @@ const page = () => {
             />
           </div>
 
+          {/* Phone */}
+          <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
+            <label htmlFor="phone">{t("Phone")}</label>
+            <FaPhone className="absolute bottom-2" />
+            <input
+              className="bg-transparent border-b-primary border-b focus:outline-none w-full pl-6"
+              type="tel"
+              id="phone"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              required
+            />
+          </div>
+
           {/* Address */}
           <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
             <label htmlFor="address">{t("Address")}</label>
@@ -124,91 +133,14 @@ const page = () => {
             />
           </div>
 
-          {/* Academic Achievement */}
+          {/* Experience */}
           <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
-            <label htmlFor="academic-achievement">{t("AcademicAchievement")}</label>
-            <FaUserGraduate className="absolute bottom-2" />
-            <input
-              className="bg-transparent border-b-primary border-b focus:outline-none w-full pl-6"
-              type="text"
-              id="academic-achievement"
-              name="academicAchievement"
-              value={formData.academicAchievement}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          {/* Courses */}
-          <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
-            <label htmlFor="courses">{t("Courses")}</label>
-            <FaCertificate className="absolute bottom-2" />
-            <input
-              className="bg-transparent border-b-primary border-b focus:outline-none w-full pl-6"
-              type="text"
-              id="courses"
-              name="courses"
-              value={formData.courses}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          {/* Experience Certificates */}
-          <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
-            <label htmlFor="experience-certificates">{t("ExperienceCertificates")}</label>
-            <FaCertificate className="absolute bottom-2" />
-            <input
-              className="bg-transparent border-b-primary border-b focus:outline-none w-full pl-6"
-              type="text"
-              id="experience-certificates"
-              name="experienceCertificates"
-              value={formData.experienceCertificates}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          {/* Work Type */}
-          <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
-            <label htmlFor="work-type">{t("WorkType")}</label>
-            <BsPersonWorkspace className="absolute bottom-2" />
-            <input
-              className="bg-transparent border-b-primary border-b focus:outline-none w-full pl-6"
-              type="text"
-              id="work-type"
-              name="workType"
-              value={formData.workType}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          {/* Skills */}
-          <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
-            <label htmlFor="skills">{t("Skills")}</label>
-            <FaBookReader className="absolute bottom-2" />
-            <input
-              className="bg-transparent border-b-primary border-b focus:outline-none w-full pl-6"
-              type="text"
-              id="skills"
-              name="skills"
-              value={formData.skills}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          {/* Previous Companies */}
-          <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
-            <label htmlFor="previous-companies">{t("PreviousCompanies")}</label>
-            <BsBuildingFill className="absolute bottom-2" />
-            <input
-              className="bg-transparent border-b-primary border-b focus:outline-none w-full pl-6"
-              type="text"
-              id="previous-companies"
-              name="previousCompanies"
-              value={formData.previousCompanies}
+            <label htmlFor="experience">{t("Experience")}</label>
+            <textarea
+              className="bg-transparent border-primary border focus:outline-none w-full"
+              id="experience"
+              name="experience"
+              value={formData.experience}
               onChange={handleChange}
               required
             />
@@ -232,55 +164,9 @@ const page = () => {
             />
           </div>
 
-          {/* Nationality */}
-          <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
-            <label htmlFor="nationality">{t("Nationality")}</label>
-            <BsMapFill className="absolute bottom-2" />
-            <input
-              className="bg-transparent border-b-primary border-b focus:outline-none w-full pl-6"
-              type="text"
-              id="nationality"
-              name="nationality"
-              value={formData.nationality}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          {/* Marital Status (Radio) */}
-          <div className="relative flex items-start justify-start w-full gap-4 mt-8">
-            <h4>{t("MaritalStatus")} : </h4>
-            <div className="flex flex-col sm:flex-row">
-              <div className="flex justify-start items-center">
-                <input
-                  className="accent-primary"
-                  type="radio"
-                  id="single"
-                  name="maritalStatus"
-                  value="single"
-                  checked={formData.maritalStatus === "single"}
-                  onChange={handleChange}
-                />
-                <label htmlFor="single" className="ml-2"> {t("Single")} </label>
-              </div>
-              <div className="flex justify-start items-center ml-6">
-                <input
-                  className="accent-primary"
-                  type="radio"
-                  id="married"
-                  name="maritalStatus"
-                  value="married"
-                  checked={formData.maritalStatus === "married"}
-                  onChange={handleChange}
-                />
-                <label htmlFor="married" className="ml-2"> {t("Married")} </label>
-              </div>
-            </div>
-          </div>
-
           <div className="flex justify-end items-center w-full">
             <button type="submit" className="bg-primary text-secondary px-4 py-2 rounded-lg mt-6">
-            {isLoading ? <Spinner /> : t("Send")}
+              {isLoading ? <Spinner /> : t("Send")}
             </button>
           </div>
         </form>
