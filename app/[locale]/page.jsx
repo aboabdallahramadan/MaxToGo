@@ -9,6 +9,7 @@ import Slides from '@/components/mainPage/Slides';
 import WhyWe from '@/components/mainPage/WhyWe';
 import HowItWorks from '@/components/mainPage/HowItWorks';
 import IndividualTasks from '@/components/mainPage/IndividualTasks';
+import Faqs from '@/components/mainPage/Faqs';
 export default function Home() {
   return (
     <>
@@ -21,6 +22,7 @@ export default function Home() {
       <Services />
       <PartnersSection />
       <HowItWorks />
+      <Faqs />
       <ContactUs />
       <Footer />
     </>
