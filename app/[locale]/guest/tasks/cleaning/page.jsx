@@ -4,12 +4,7 @@ import { useTranslations } from "next-intl";
 import FormContainer from "@/components/FormContainer";
 import SectionHeader from "@/components/mainPage/SectionHeader";
 import { toast } from "react-toastify";
-
-// Icons
-import { AiOutlineFileText, AiOutlineCalendar, AiOutlineHome, AiOutlinePhone } from "react-icons/ai";
-import { FaBuilding } from "react-icons/fa";
-import {  FiArrowDownRight } from "react-icons/fi";
-import Spinner from "@/components/Spinner";
+import Cleaning from "@/components/tasksforms/Cleaning";
 
 const page = () => {
   const t = useTranslations("GuestTasks");
@@ -63,197 +58,14 @@ const page = () => {
     <>
       <SectionHeader name={t("titleCleaning")} />
       <FormContainer>
-        <form onSubmit={handleSubmit}>
-          {/* Task Name */}
-          <div className="relative flex flex-col items-start justify-between w-full gap-4">
-            <label htmlFor="taskName">
-              <AiOutlineFileText className="inline-block mr-2" />
-              {t("TaskName")}
-            </label>
-            <input
-              className="bg-transparent border-b-primary border-b focus:outline-none w-full"
-              type="text"
-              id="taskName"
-              name="taskName"
-              value={formData.taskName}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          
-          {/* Location */}
-          <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
-            <label htmlFor="location">
-              <FiArrowDownRight className="inline-block mr-2" />
-              {t("Location")}
-            </label>
-            <input
-              className="bg-transparent border-b-primary border-b focus:outline-none w-full"
-              type="text"
-              id="location"
-              name="location"
-              value={formData.location}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          {/* Apartment Type */}
-          <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
-            <label htmlFor="apartmentType">
-              <FaBuilding className="inline-block mr-2" />
-              {t("ApartmentType")}
-            </label>
-            <input
-              className="bg-transparent border-b-primary border-b focus:outline-none w-full"
-              type="text"
-              id="apartmentType"
-              name="apartmentType"
-              value={formData.apartmentType}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          {/* Balcony */}
-          <div className="relative flex items-center justify-between flex-col w-full gap-4 mt-8">
-            <h4 className="text-xl text-center w-full">{t("Balcony")}</h4>
-            <div className="flex justify-center items-center  w-full">
-              <div className="flex justify-start items-center">
-                <input
-                  className="accent-primary"
-                  type="radio"
-                  id="balconyYes"
-                  name="balcony"
-                  value="yes"
-                  checked={formData.balcony === "yes"}
-                  onChange={handleChange}
-                />
-                <label htmlFor="balconyYes" className="ml-2"> {t("Yes")} </label>
-              </div>
-              <div className="flex justify-start items-center ml-6">
-                <input
-                  className="accent-primary"
-                  type="radio"
-                  id="balconyNo"
-                  name="balcony"
-                  value="no"
-                  checked={formData.balcony === "no"}
-                  onChange={handleChange}
-                />
-                <label htmlFor="balconyNo" className="ml-2"> {t("No")} </label>
-              </div>
-            </div>
-          </div>
-
-          {/* Date and Time */}
-          <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
-            <label htmlFor="dateTime">
-              <AiOutlineCalendar className="inline-block mr-2" />
-              {t("DateTime")}
-            </label>
-            <input
-              className="bg-transparent border-b-primary border-b focus:outline-none w-full :"
-              type="datetime-local"
-              id="dateTime"
-              name="dateTime"
-              value={formData.dateTime}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          {/* Is Time flexible */}
-          <div className="relative flex items-center justify-between flex-col w-full gap-4 mt-8">
-            <h4 className="text-xl text-center w-full">{t("IsTimeFlexible")}</h4>
-            <div className="flex justify-center items-center  w-full">
-              <div className="flex justify-start items-center">
-                <input
-                  className="accent-primary"
-                  type="radio"
-                  id="isTimeFlexibleYes"
-                  name="isTimeFlexible"
-                  value="yes"
-                  checked={formData.isTimeFlexible === "yes"}
-                  onChange={handleChange}
-                />
-                <label htmlFor="isTimeFlexibleYes" className="ml-2"> {t("Yes")} </label>
-              </div>
-              <div className="flex justify-start items-center ml-6">
-                <input
-                  className="accent-primary"
-                  type="radio"
-                  id="isTimeFlexibleNo"
-                  name="isTimeFlexible"
-                  value="no"
-                  checked={formData.isTimeFlexible === "no"}
-                  onChange={handleChange}
-                />
-                <label htmlFor="isTimeFlexibleNo" className="ml-2"> {t("No")} </label>
-              </div>
-            </div>
-          </div>
-
-          {/* Task Master */}
-          <div className="w-full flex justify-between items-center flex-nowrap gap-4">
-            <div className="relative flex flex-col items-start justify-between w-2/5 gap-4 mt-6">
-              <label htmlFor="taskMaster">
-                <AiOutlineFileText className="inline-block mr-2" />
-                {t("taskMaster")}
-              </label>
-              <input
-                className="bg-transparent border-b-primary border-b focus:outline-none w-full"
-                type="text"
-                id="taskMaster"
-                name="taskMaster"
-                value={formData.taskMaster}
-                onChange={handleChange}
-                required
-              />
-            </div>
-
-            {/* Phone Number */}
-            <div className="relative flex flex-col items-start justify-between w-2/5 gap-4 mt-6">
-              <label htmlFor="phoneNumber">
-                <AiOutlinePhone className="inline-block mr-2" />
-                {t("phoneNumber")}
-              </label>
-              <input
-                className="bg-transparent border-b-primary border-b focus:outline-none w-full"
-                type="text"
-                id="phoneNumber"
-                name="phoneNumber"
-                value={formData.phoneNumber}
-                onChange={handleChange}
-                required
-              />
-            </div>
-          </div>
-
-          {/* Text */}
-          <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
-            <label htmlFor="text">
-              <AiOutlineFileText className="inline-block mr-2" />
-              {t("text")}
-            </label>
-            <textarea
-              className="bg-transparent border-primary border focus:outline-none w-full"
-              type="text"
-              id="text"
-              name="text"
-              value={formData.text}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          <div className="flex justify-end items-center w-full">
-            <button type="submit" className="bg-primary text-secondary px-4 py-2 rounded-lg mt-6">
-              {isLoading ? <Spinner /> : t("Submit")}
-            </button>
-          </div>
-        </form>
+        <Cleaning
+            formData={formData}
+            handleChange={handleChange}
+            handleSubmit={handleSubmit}
+            isLoading={isLoading}
+            t={t}
+            isGuest={true}
+        />
       </FormContainer>
     </>
   );
