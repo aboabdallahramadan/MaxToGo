@@ -42,7 +42,7 @@ const IndividualTasks = () => {
     ];
 
     return (
-        <section className='py-12'>
+        <section className='py-12' id='individual-tasks'>
             <SectionHeader name={t("IndividualTasks")} />
             <div className="container">
                 <p className='text-foreground text-xl text-center w-full mb-8'>{t("SubmitTaskAsIndividual")}</p>

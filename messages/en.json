@@ -21,7 +21,7 @@
         "Mobile": "Mobile",
         "Services": "Services",
         "AboutUs": "About Us",
-        "AboutUsInfo": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed",
+        "AboutUsInfo": "the Smart Path to Future Collaboration and Growth",
         "Location": "2416 Mapleview Drive Tampa, FL 33634",
         "WorkWithUs": "Work With Us",
         "GoToTheApp": "Go To The App",
@@ -31,7 +31,16 @@
         "EnterValidEmail": "Enter Valid Email",
         "SuccessMessage": "You are subscribed successfully",
         "ErrorMessage": "Something went wrong",
-        "FAQs": "FAQs"
+        "FAQs": "FAQs",
+        "Explore": "Explore",
+        "Contact": "Contact",
+        "SiteTitle":"MaxToGo",
+        "AllRightsReserved": "All Rights Reserved",
+        "OurServices": "Our Services",
+        "IndividualTasks":"Individual Tasks",
+        "ContactUs": "Contact Us",
+        "Movingab": "Movingab",
+        "OurMarket": "Our Market"
     },
     "Hero": {
         "info":"Welcome to the Smart Path to Future Collaboration and Growth",
