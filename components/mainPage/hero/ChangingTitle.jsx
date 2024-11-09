@@ -5,18 +5,18 @@ import { useState, useEffect } from "react";
 const ChangingTitle = () => {
     const t = useTranslations("Hero");
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
-    const [fade, setFade] = useState(true);
+    const [rotate, setRotate] = useState(true);
 
     const words = ["Moving", "Transport&Logistics", "Cleaning", "Sustainable"];
 
     useEffect(() => {
         const intervalId = setInterval(() => {
-            setFade(false);
+            setRotate(false);
             setTimeout(() => {
                 setCurrentWordIndex((prevIndex) => 
                     prevIndex === words.length - 1 ? 0 : prevIndex + 1
                 );
-                setFade(true);
+                setRotate(true);
             }, 500);
         }, 2000);
 
@@ -25,22 +25,20 @@ const ChangingTitle = () => {
 
     return (
         <div className="block">
-            <strong className={`text-xl min-[400px]:text-2xl
-                        md:text-4xl font-extrabold text-primary flex w-full text-nowrap justify-center gap-2`}>
+            <strong className="text-xl flex flex-col gap-1 min-[400px]:text-2xl md:text-4xl font-extrabold text-primary flex w-full text-nowrap justify-center gap-2">
                 <span>
                     {t("ProjectTitle")}
                 </span>
                 <span 
                     className={`
                         inline-block 
-                        transition-opacity 
+                        transition-transform 
                         duration-500
                         text-nowrap
                         text-white
-                        
                         min-w-[120px]
                         sm:min-w-[250px]
-                        ${fade ? 'opacity-100' : 'opacity-0'}
+                        ${rotate ? 'rotate-0' : 'rotate-180'}
                     `}
                 >
                     {t(words[currentWordIndex])}

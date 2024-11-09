@@ -8,7 +8,7 @@ const ServicesCard = ({Icon, title, text}) => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       whileHover={{ scale: 1.05, translateY: -10 }}
-      className="flex-1 min-w-[300px] max-w-[400px]"
+      className="flex-1 min-w-[225px] max-w-[400px]"
     >
       <div className="p-8 h-full flex flex-col items-center justify-start gap-6 
         hover:shadow-2xl hover:shadow-primary/20 border border-gray-700 
