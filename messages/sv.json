@@ -131,6 +131,7 @@
     "closing": "Max To Go är framtidens plattform för företag inom transport, flytt, bygg och andra servicebranscher som vill samarbeta smartare och växa hållbart."
     },
     "Services": {
+        "ServicesForCompanies": "Tjänster för företag",
         "ServicesIntro": "Upptäck vårt omfattande utbud av tjänster utformade för att effektivisera din logistik och flyttbehov",
         "Services": "Tjänster",
         "Service1": "Sälj och köp av uppdrag inom flytt och logistik",
@@ -172,7 +173,7 @@
     },
     "IndividualTasks": {
       "IndividualTasks": "Individuella uppdrag",
-      "SubmitTaskAsIndividual": "Skicka uppdrag som individ",
+      "SubmitTaskAsIndividual": "Få offert för som privat person",
       "Transfer": "Flytt",
       "Warehousing": "Magasinering",
       "Cleaning":"Städning",
@@ -636,8 +637,9 @@
             "Submit": "Skicka",
             "Cancel": "Avbryt",
             "payment": "Betalning",
-            "Sold": "Såld"
-
+            "Sold": "Såld",
+            "From": "Från",
+            "To": "Till"
         },
         "Chat": {
             "Chat": "Chatt",
@@ -669,6 +671,23 @@
       "Step4": "Välj en köpare: När flera företag har visat intresse kan du välja det företag som du tycker är bäst lämpat att ta över uppdraget – antingen baserat på pris, erfarenhet eller omdömen från tidigare samarbeten.",
       "Step5": "Utvärdera köparen: När uppdraget är klart, kan du utvärdera köparen och deras service. På så sätt hjälper du andra företag på plattformen att fatta välgrundade beslut om vilka de vill samarbeta med i framtiden."
     }
-    } 
+    },
+    "Sustainable": {
+      "Title": "Max To Go Hållbart",
+      "Preview": "Så Bidrar Vårt Koncept till Hållbarheten: Minskade Tomkörningar, Effektivare Resursanvändning, Stöd till Små och Nystartade Företag, Minskad Trafikbelastning, Grönare Affärsmodeller, Koldioxidreduktion.",
+      "ReadMore": "Läs Mer",
+      "ContributionTitle": "Så Bidrar Vårt Koncept till Hållbarheten:",
+      "ReducedEmptyRuns": "Minskade Tomkörningar",
+      "ReducedEmptyRunsDescription": "Genom att koppla ihop företag kan vi minimera körningar utan last, vilket direkt reducerar onödiga utsläpp och sparar bränsle.",
+      "EfficientResourceUse": "Effektivare Resursanvändning",
+      "EfficientResourceUseDescription": "Företag kan enkelt samordna sina rutter och dela på uppdrag, vilket leder till en bättre utnyttjande av fordon och minskar behovet av fler fordon på vägarna.",
+      "SupportForSmallBusinesses": "Stöd till Små och Nystartade Företag",
+      "SupportForSmallBusinessesDescription": "Vi hjälper små företag att växa hållbart genom att ge dem tillgång till fler uppdrag nära dem, vilket minskar deras behov av långa resor och bränslekonsumtion.",
+      "DecreasedTrafficCongestion": "Minskad Trafikbelastning",
+      "DecreasedTrafficCongestionDescription": "Färre tomma fordon på vägarna betyder minskad trafik, vilket även bidrar till ökad trafiksäkerhet och mindre vägslitage.",
+      "GreenerBusinessModels": "Grönare Affärsmodeller: Plattformen ger företag bättre verktyg för att följa upp hållbara arbetsmetoder, vilket gör att de kan kontrollera och minska sin miljöpåverkan effektivt.",
+      "CarbonEmissionReduction": "Koldioxidreduktion: Genom att undvika överdriven användning av fordon minskar utsläppen, vilket i längden bidrar till en positiv miljöpåverkan.",
+      "ContributionDescription": "Vårt koncept är utformat för att göra transport- och flyttbranschen mer hållbar, effektiv och samarbetsorienterad. Vi vet att en av de största utmaningarna inom logistiken är de långa sträckor som transportfordon kör utan last. Genom vår plattform minimerar vi behovet av att köra tomma turer, vilket har en direkt positiv påverkan på miljön och minskar trafikbelastningen. Vi gör detta möjligt genom att skapa en samarbetsplattform som sammanlänkar transport- och flyttföretag över hela landet. Företagen kan på ett smidigt sätt boka uppdrag, samordna rutter och sälja uppdrag vidare till andra företag inom nätverket – allt för att maximera varje körning och eliminera onödiga tomkörningar. För flytt- och transportföretag innebär detta att de inte längre behöver skicka sina bilar långt för att utföra ett uppdrag på en avlägsen ort och sedan återvända utan last. Istället kan de snabbt och enkelt hitta samarbetspartners i närheten som kan ta över uppdraget. Det betyder att transporter kan ske i en naturlig följd, där företagen delar på uppdragen och tillsammans optimerar sina rutter. På så sätt sparas både tid och bränsle, vilket i sin tur leder till minskade koldioxidutsläpp och mindre slitage på vägnätet. För små och nystartade företag är detta en möjlighet att maximera sin kapacitet och växa hållbart. Genom att ansluta till vårt nätverk får de snabbare tillgång till fler uppdrag och kan fylla sina scheman utan att behöva investera i marknadsföring eller långa resor. Utöver att optimera körningarna hjälper vår plattform företag att undvika överdriven fordonsanvändning, vilket i sin tur bidrar till mindre utsläpp och minskat behov av underhåll. Genom att stödja hållbara affärsmetoder och ge företag verktyg för att undvika onödiga körningar bidrar vi också till att minska transportindustrins övergripande miljöpåverkan. Plattformen gör det enklare att följa upp hållbara arbetsmetoder och ger företagen större kontroll över sina utsläpp. Vi ser oss själva som en pålitlig partner för företag som vill växa utan att kompromissa med miljön. Genom att samla små och stora företag i en gemensam plattform där alla uppdrag är synliga och fördelade rättvist och hållbart, bidrar vi till en grönare och effektivare framtid för transport- och flyttbranschen. Tillsammans kan vi minska vårt ekologiska fotavtryck och bygga ett samhälle där smarta transporter gynnar både företag, miljö och samhälle i stort."
+    }
     
 }

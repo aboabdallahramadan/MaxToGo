@@ -133,6 +133,7 @@
     "closing": "Max To Go is the future platform for companies in transport, moving, construction, and other service industries that aim to collaborate smarter and grow sustainably."
     },
     "Services": {
+      "ServicesForCompanies": "Services for Companies",
       "ServicesIntro": "Discover our comprehensive range of services designed to streamline your logistics and moving needs",
         "Services": "Services",
         "Service1": "Sell and Buy Moving and Logistics Tasks",
@@ -187,7 +188,7 @@
     },
     "IndividualTasks": {
         "IndividualTasks": "Individual Tasks",
-        "SubmitTaskAsIndividual": "Submit Task as Individual",
+        "SubmitTaskAsIndividual": "Get a quote as a private person",
         "Transfer": "Transfer",
         "Warehousing": "Storage",
         "Cleaning": "Cleaning",
@@ -572,7 +573,9 @@
             "Submit": "Submit",
             "Cancel": "Cancel",
             "payment": "payment",
-            "Sold": "Sold"
+            "Sold": "Sold",
+            "From": "From",
+            "To": "To"
         },
         "Chat": {
             "Chat": "Chat",
@@ -668,6 +671,26 @@
             "Step4": "Choose a buyer: When several companies have shown interest, you can choose the company you think is best suited to take over the task – either based on price, experience, or reviews from previous collaborations.",
             "Step5": "Evaluate the buyer: When the task is complete, you can evaluate the buyer and their service. This way, you help other companies on the platform make well-informed decisions about who they want to collaborate with in the future."
         }
+    },
+
+    "Sustainable": {
+      "Title": "Max To Go Sustainable",
+      "Preview": "How Our Concept Contributes to Sustainability: Reduced Empty Runs, More Efficient Resource Use, Support for Small and Start-up Businesses, Decreased Traffic Congestion, Greener Business Models, Carbon Emission Reduction.",
+      "ReadMore": "Read More",
+      "ContributionTitle": "How Our Concept Contributes to Sustainability:",
+      "ReducedEmptyRuns": "Reduced Empty Runs",
+      "ReducedEmptyRunsDescription": "By connecting companies, we minimize trips without loads, directly cutting unnecessary emissions and saving fuel.",
+      "EfficientResourceUse": "More Efficient Resource Use",
+      "EfficientResourceUseDescription": "Businesses can easily coordinate routes and share tasks, leading to optimal vehicle use and fewer vehicles on the road.",
+      "SupportForSmallBusinesses": "Support for Small and Start-up Businesses",
+      "SupportForSmallBusinessesDescription": "We help small businesses grow sustainably by providing access to more local jobs, reducing their need for long-distance trips and fuel consumption.",
+      "DecreasedTrafficCongestion": "Decreased Traffic Congestion",
+      "DecreasedTrafficCongestionDescription": "Fewer empty vehicles mean less traffic, contributing to increased road safety and reduced wear and tear on infrastructure.",
+      "GreenerBusinessModels": "Greener Business Models",
+      "GreenerBusinessModelsDescription": "The platform equips companies with better tools to track sustainable practices, enabling effective monitoring and reduction of environmental impact.",
+      "CarbonEmissionReduction": "Carbon Emission Reduction",
+      "CarbonEmissionReductionDescription": "By avoiding excessive vehicle use, emissions are lowered, creating a positive environmental impact over time.",
+      "ContributionDescription": "Our concept is designed to make the transport and moving industries more sustainable, efficient, and collaboration-driven. We recognize that one of the biggest logistics challenges is the long distances vehicles travel empty. Through our platform, we minimize the need for empty trips, which positively impacts the environment and reduces traffic congestion. This is achieved by creating a collaborative platform that connects moving and transport companies nationwide. Businesses can seamlessly book, coordinate routes, and hand off tasks to other companies within the network – all to maximize each trip and eliminate unnecessary empty runs. For moving and transport companies, this means no more sending vehicles far distances only to return empty. Instead, they can quickly find nearby partners to take on tasks. This enables transport services to flow naturally, with businesses sharing jobs and optimizing routes together. As a result, time and fuel are saved, leading to lower carbon emissions and less road wear. For small and startup companies, this is a chance to maximize capacity and grow sustainably. By joining our network, they gain access to more jobs and can fill their schedules without the need for marketing or long trips. Beyond route optimization, our platform helps companies avoid excessive vehicle usage, reducing emissions and lowering maintenance needs. Supporting sustainable business practices and offering companies tools to prevent unnecessary trips also decreases the overall environmental impact of the transport industry. The platform makes it easier to monitor and follow sustainable practices, giving businesses greater control over emissions. We see ourselves as a reliable partner for companies that want to grow without compromising the environment. By bringing together small and large companies on a single platform where tasks are visible and fairly distributed, we contribute to a greener and more efficient future for the moving and transport industries. Together, we can reduce our ecological footprint and build a society where smart transportation benefits businesses, the environment, and society as a whole."
     }
     
 

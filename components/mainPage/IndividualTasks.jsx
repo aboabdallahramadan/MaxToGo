@@ -11,21 +11,21 @@ const IndividualTasks = () => {
     const tasks = [
         {
             id: 0,
-            name: t("EmptyCar"),
-            icon: <BsTruck className="text-4xl"/>,
-            path: "/guest/tasks/empty-car"
-        },
-        {
-            id: 1,
             name: t("Transfer"),
             icon: <FiTruck className="text-4xl"/>,
             path: "/guest/tasks/moving"
         },
         {
+            id: 1,
+            name: t("EmptyCar"),
+            icon: <BsTruck className="text-4xl"/>,
+            path: "/guest/tasks/empty-car"
+        },
+        {
             id: 2,
-            name: t("Warehousing"),
-            icon: <FaWarehouse className="text-4xl"/>,
-            path: "/guest/tasks/warehousing"
+            name: t("SharingCar"),
+            icon: <FaTruck className="text-4xl"/>,
+            path: "/guest/tasks/empty-car"
         },
         {
             id: 3,
@@ -35,9 +35,9 @@ const IndividualTasks = () => {
         },
         {
             id: 4,
-            name: t("SharingCar"),
-            icon: <FaTruck className="text-4xl"/>,
-            path: "/guest/tasks/empty-car"
+            name: t("Warehousing"),
+            icon: <FaWarehouse className="text-4xl"/>,
+            path: "/guest/tasks/warehousing"
         }
     ];
 

@@ -25,7 +25,7 @@ const Services = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
             >
-                <SectionHeader name={t("Services")} />
+                <SectionHeader name={t("ServicesForCompanies")} />
                 <p className="text-center text-gray-300 max-w-2xl mx-auto mb-12">
                     {t("ServicesIntro")}
                 </p>

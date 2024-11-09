@@ -10,16 +10,18 @@ import WhyWe from '@/components/mainPage/WhyWe';
 import HowItWorks from '@/components/mainPage/HowItWorks';
 import IndividualTasks from '@/components/mainPage/IndividualTasks';
 import Faqs from '@/components/mainPage/Faqs';
+import SustainablePreview from '@/components/mainPage/SustainablePreview';
 export default function Home() {
   return (
     <>
       <LayoutHeader/>
       <Hero />
       <Slides />
+      <Services />
       <IndividualTasks />
       <WhyWe />
+      <SustainablePreview />
       <About />
-      <Services />
       <PartnersSection />
       <HowItWorks />
       <Faqs />

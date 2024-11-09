@@ -29,13 +29,13 @@ const TaskCardDetails = ({task}) => {
         <div className="w-full text-center flex flex-col items-center justify-center gap-1 sm:w-1/2">
           <div className="flex items-center justify-center gap-1 w-full">
             <p className="font-bold text-nowrap">
-              {task.type == "transfer" || task.type == "emptyCar" ? t("Location") : t("FromLocation")}: 
+              {task.type == "transfer" || task.type == "emptyCar" ? t("From") : t("Location")}: 
             </p>
             <p className="text-primary">{task.location}</p>
           </div>
           {(task.type == "transfer" || task.type == "emptyCar") && (
-            <div className="flex items-center justify-center gap-1 w-full">
-              <p className="font-bold text-nowrap">{t("ToLocation")}: </p>
+            <div className="flex items-center justify-center gap-1 w-full mb-1">
+              <p className="font-bold text-nowrap">{t("To")}: </p>
               <p className="text-primary">{task.toLocation}</p>
             </div>
           )}
