@@ -14,7 +14,6 @@ const page = () => {
     price: "",
     taskName: "",
     startingDate: "",
-    endingDate:"",
     area: "",
     location: "",
     taskMaster: "",

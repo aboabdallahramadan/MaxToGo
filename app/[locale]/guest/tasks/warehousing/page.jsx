@@ -12,7 +12,6 @@ const page = () => {
   const [formData, setFormData] = useState({
     taskName: "",
     startingDate: "",
-    endingDate:"",
     area: "",
     location: "",
     taskMaster: "",
@@ -56,7 +55,7 @@ const page = () => {
 
   return (
     <div className="container">
-      <SectionHeader name={t("titlewarehousing")} />
+      <SectionHeader name={t("titleStorage")} />
       <FormContainer>
         <Warehousing formData={formData} handleChange={handleChange} handleSubmit={handleSubmit} isLoading={isLoading} t={t} isGuest={true}/>
       </FormContainer>

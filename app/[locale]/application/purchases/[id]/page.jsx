@@ -17,6 +17,7 @@ const page = () => {
                     // for all tasks
                     "id":2,
                     "type": "warehousing",
+                    "taskStatus": "progress",
                     "name": "clean my apartment",
                     "completionDate": "8/9/2024",
                     "price": "200",
@@ -105,7 +106,11 @@ const page = () => {
                       >
                         {isButtonLoading ? <Spinner /> : t("DeleteTask")}
                       </button>
-                      <GoToTaskChat task={task} />
+                      {
+                        task.status != "completed" && (
+                          <GoToTaskChat task={task} />
+                        )
+                      }
                     </div>
                   </>
                 )}

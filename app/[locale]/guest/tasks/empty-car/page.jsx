@@ -13,6 +13,7 @@ const page = () => {
     taskName: "",
     startingDate: "",
     arrivalDate:"",
+    availableWeight: "",
     numberOfWorkers:"",
     numberOfCars: "",
     fromLocation: "",

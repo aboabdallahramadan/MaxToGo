@@ -90,6 +90,121 @@ const Cleaning = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest 
                     </div>
                 </div>
 
+                {/* Apartment Size */}
+                <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
+                    <label htmlFor="apartmentSize">
+                    <FaBuilding className="inline-block mr-2 text-primary" />
+                    {t("ApartmentSize")}
+                    </label>
+                    <input
+                    className="bg-transparent border-b-primary border-b focus:outline-none w-full"
+                    type="number"
+                    id="apartmentSize"
+                    name="apartmentSize"
+                    value={formData.apartmentSize}
+                    onChange={handleChange}
+                    required
+                    />
+                </div>
+
+                {/* Is Time flexible */}
+                <div className="relative flex items-center justify-between flex-col w-full gap-4 mt-8">
+                    <h4 className="text-xl text-center w-full">{t("IsTimeFlexible")}</h4>
+                    <div className="flex justify-center items-center  w-full">
+                    <div className="flex justify-start items-center">
+                        <input
+                        className="accent-primary"
+                        type="radio"
+                        id="isTimeFlexibleYes"
+                        name="isTimeFlexible"
+                        value="yes"
+                        checked={formData.isTimeFlexible === "yes"}
+                        onChange={handleChange}
+                        />
+                        <label htmlFor="isTimeFlexibleYes" className="ml-2"> {t("Yes")} </label>
+                    </div>
+                    <div className="flex justify-start items-center ml-6">
+                        <input
+                        className="accent-primary"
+                        type="radio"
+                        id="isTimeFlexibleNo"
+                        name="isTimeFlexible"
+                        value="no"
+                        checked={formData.isTimeFlexible === "no"}
+                        onChange={handleChange}
+                        />
+                        <label htmlFor="isTimeFlexibleNo" className="ml-2"> {t("No")} </label>
+                    </div>
+                    </div>
+                </div>
+
+                {/* Cleaning Type */}
+                <div className="relative flex items-center justify-between flex-col w-full gap-4 mt-8">
+                    <h4 className="text-xl text-center w-full">{t("CleaningType")}</h4>
+                    <div className="flex justify-center items-center w-full">
+                        <div className="flex justify-start items-center ml-6">
+                            <input
+                            className="accent-primary"
+                            type="radio"
+                            id="cleaningTypeMoreOut"
+                            name="cleaningType"
+                            value="moreOut"
+                            checked={formData.cleaningType === "moreOut"}
+                            onChange={handleChange}
+                            />
+                            <label htmlFor="cleaningTypeMoreOut" className="ml-2"> {t("MoreOutCleaning")} </label>
+                        </div>
+                        <div className="flex justify-start items-center ml-6">
+                            <input
+                            className="accent-primary"
+                            type="radio"
+                            id="cleaningTypeOffice"
+                            name="cleaningType"
+                            value="office"
+                            checked={formData.cleaningType === "office"}
+                            onChange={handleChange}
+                            />
+                            <label htmlFor="cleaningTypeOffice" className="ml-2"> {t("OfficeCleaning")} </label>
+                        </div>
+                        <div className="flex justify-start items-center ml-6">
+                            <input
+                            className="accent-primary"
+                            type="radio"
+                            id="cleaningTypeHouse"
+                            name="cleaningType"
+                            value="house"
+                            checked={formData.cleaningType === "house"}
+                            onChange={handleChange}
+                            />
+                            <label htmlFor="cleaningTypeHouse" className="ml-2"> {t("HouseCleaning")} </label>
+                        </div>
+                        <div className="flex justify-start items-center ml-6">
+                            <input
+                            className="accent-primary"
+                            type="radio"
+                            id="cleaningTypeWindow"
+                            name="cleaningType"
+                            value="window"
+                            checked={formData.cleaningType === "window"}
+                            onChange={handleChange}
+                            />
+                            <label htmlFor="cleaningTypeWindow" className="ml-2"> {t("WindowCleaning")} </label>
+                        </div>
+                        <div className="flex justify-start items-center ml-6">
+                            <input
+                            className="accent-primary"
+                            type="radio"
+                            id="cleaningTypeOther"
+                            name="cleaningType"
+                            value="other"
+                            checked={formData.cleaningType === "other"}
+                            onChange={handleChange}
+                            />
+                            <label htmlFor="cleaningTypeOther" className="ml-2"> {t("Other")} </label>
+                        </div>
+                    </div>
+                </div>
+
                 {/* Date and Time */}
                 <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
                     <label htmlFor="dateTime">
@@ -162,38 +277,6 @@ const Cleaning = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest 
                 )}
                     </>
                 )}
-                
-
-                {/* Is Time flexible */}
-                <div className="relative flex items-center justify-between flex-col w-full gap-4 mt-8">
-                    <h4 className="text-xl text-center w-full">{t("IsTimeFlexible")}</h4>
-                    <div className="flex justify-center items-center  w-full">
-                    <div className="flex justify-start items-center">
-                        <input
-                        className="accent-primary"
-                        type="radio"
-                        id="isTimeFlexibleYes"
-                        name="isTimeFlexible"
-                        value="yes"
-                        checked={formData.isTimeFlexible === "yes"}
-                        onChange={handleChange}
-                        />
-                        <label htmlFor="isTimeFlexibleYes" className="ml-2"> {t("Yes")} </label>
-                    </div>
-                    <div className="flex justify-start items-center ml-6">
-                        <input
-                        className="accent-primary"
-                        type="radio"
-                        id="isTimeFlexibleNo"
-                        name="isTimeFlexible"
-                        value="no"
-                        checked={formData.isTimeFlexible === "no"}
-                        onChange={handleChange}
-                        />
-                        <label htmlFor="isTimeFlexibleNo" className="ml-2"> {t("No")} </label>
-                    </div>
-                    </div>
-                </div>
 
                 {/* Task Master */}
                 <div className="w-full flex justify-between items-center flex-nowrap gap-4">

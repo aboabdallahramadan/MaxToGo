@@ -41,23 +41,6 @@ const Warehousing = ({ formData, handleChange, handleSubmit, isLoading, t, isGue
                 />
             </div>
 
-            {/*ending Date and Time */}
-            <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
-                <label htmlFor="endingDate">
-                <AiOutlineCalendar className="inline-block mr-2 text-primary" />
-                {t("EndingDate")}
-                </label>
-                <input
-                className="bg-transparent border-b-primary border-b focus:outline-none w-full"
-                type="date"
-                id="endingDate"
-                name="endingDate"
-                value={formData.endingDate}
-                onChange={handleChange}
-                required
-                />
-            </div>
-
             {/* Location */}
             <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
                 <label htmlFor="location">
@@ -129,7 +112,7 @@ const Warehousing = ({ formData, handleChange, handleSubmit, isLoading, t, isGue
                 <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
                     <label htmlFor="price">
                         <FaMoneyBill className="inline-block mr-2 text-primary" />
-                        {t("Price")}
+                        {t("PricePerMonth")}
                     </label>
                     <div>
                         <input

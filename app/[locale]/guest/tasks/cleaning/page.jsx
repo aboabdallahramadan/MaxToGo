@@ -15,6 +15,8 @@ const page = () => {
     dateTime: "",
     location: "",
     apartmentType: "",
+    apartmentSize: "",
+    cleaningType: "moreOut",
     balcony: "no",
     isTimeFlexible: "yes",
     taskMaster: "",

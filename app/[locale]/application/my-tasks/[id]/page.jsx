@@ -143,7 +143,7 @@ const TaskPage = () => {
                             )
                         }
                         {
-                            task.status != "not purchased" && (
+                            (task.status != "not purchased" || task.status != "completed") && (
                                 <GoToTaskChat task={task}/>
                             )
                         }

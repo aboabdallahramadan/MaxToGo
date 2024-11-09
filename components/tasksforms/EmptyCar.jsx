@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiOutlineFileText, AiOutlineCalendar, AiOutlinePhone } from 'react-icons/ai';
-import { FaTruck, FaMoneyBill } from 'react-icons/fa';
+import { FaTruck, FaMoneyBill, FaWeight } from 'react-icons/fa';
 import { FiArrowUpRight, FiArrowDownRight } from 'react-icons/fi';
 import Spinner from '@/components/Spinner';
 
@@ -32,7 +32,7 @@ const EmptyCar = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest 
                         </label>
                         <input
                         className="bg-transparent border-b-primary border-b focus:outline-none w-full"
-                        type="date"
+                        type="datetime-local"
                         id="startingDate"
                         name="startingDate"
                         value={formData.startingDate}
@@ -49,7 +49,7 @@ const EmptyCar = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest 
                         </label>
                         <input
                         className="bg-transparent border-b-primary border-b focus:outline-none w-full"
-                        type="date"
+                        type="datetime-local"
                         id="arrivalDate"
                         name="arrivalDate"
                         value={formData.arrivalDate}
@@ -62,7 +62,7 @@ const EmptyCar = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest 
                     <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
                         <label htmlFor="fromLocation">
                         <FiArrowUpRight className="inline-block mr-2 text-primary" />
-                        {t("FromLocation")}
+                        {t("DriveFromLocation")}
                         </label>
                         <input
                         className="bg-transparent border-b-primary border-b focus:outline-none w-full"
@@ -79,7 +79,7 @@ const EmptyCar = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest 
                     <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
                         <label htmlFor="toLocation">
                         <FiArrowDownRight className="inline-block mr-2 text-primary" />
-                        {t("ToLocation")}
+                        {t("DriveToLocation")}
                         </label>
                         <input
                         className="bg-transparent border-b-primary border-b focus:outline-none w-full"
@@ -127,11 +127,28 @@ const EmptyCar = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest 
                         />
                     </div>
 
+                    {/* Available Weight */}
+                    <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
+                        <label htmlFor="availableWeight">
+                        <FaWeight className="inline-block mr-2 text-primary" />
+                        {t("AvailableWeight")}
+                        </label>
+                        <input
+                        className="bg-transparent border-b-primary border-b focus:outline-none w-full"
+                        type="number"
+                        id="availableWeight"
+                        name="availableWeight"
+                        value={formData.availableWeight}
+                        onChange={handleChange}
+                        required
+                        />
+                    </div>
+
                     {/* Number of Workers */}
                     <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
                         <label htmlFor="numberOfWorkers">
-                        <FaTruck className="inline-block mr-2 text-primary" />
-                        {t("NumberOfWorkers")}
+                            <FaTruck className="inline-block mr-2 text-primary" />
+                            {t("NumberOfWorkers")}
                         </label>
                         <input
                         className="bg-transparent border-b-primary border-b focus:outline-none w-full"

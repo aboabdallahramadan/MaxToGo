@@ -11,6 +11,7 @@ const PurchasedTasksSection = () => {
         {
             "id":1,
             "type": "cleaning",
+            "taskStatus": "progress",
             "name": "clean my apartment",
             "completionDate": "8/9/2024",
             "price": "200",
@@ -25,6 +26,7 @@ const PurchasedTasksSection = () => {
         {
             "id":2,
             "type": "emptyCar",
+            "taskStatus": "progress",
             "name": "clean my apartment",
             "completionDate": "8/9/2024",
             "price": "200",
@@ -40,6 +42,7 @@ const PurchasedTasksSection = () => {
         {
             "id":3,
             "type": "transfer",
+            "taskStatus": "completed",
             "name": "clean my apartment",
             "completionDate": "8/9/2024",
             "price": "200",
@@ -55,6 +58,7 @@ const PurchasedTasksSection = () => {
         {
             "id":4,
             "type": "warehousing",
+            "taskStatus": "completed",
             "name": "clean my apartment",
             "completionDate": "8/9/2024",
             "price": "200",

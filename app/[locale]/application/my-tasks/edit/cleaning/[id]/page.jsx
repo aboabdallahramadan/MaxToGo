@@ -16,6 +16,8 @@ const page = () => {
     location: "",
     apartmentType: "",
     balcony: "no",
+    apartmentSize: "",
+    cleaningType: "moreOut",
     priceType: 'fixed',
     price: "",
     isTimeFlexible: "yes",

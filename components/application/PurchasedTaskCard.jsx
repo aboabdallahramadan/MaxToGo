@@ -31,7 +31,11 @@ const PurchasedTaskCard = ({task}) => {
         
         <div className="flex items-center justify-center gap-4">
           <Link href={`/application/purchases/${task.id}`} className="border border-primary px-4 py-2 rounded-xl hover:bg-primary hover:text-secondary">{t("Details")}</Link>
-          <GoToTaskChat task={task}/>
+          {
+            task.status != "completed" && (
+              <GoToTaskChat task={task}/>
+            )
+          }
         </div>
       </div>
     </div>

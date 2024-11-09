@@ -15,6 +15,7 @@ const page = () => {
     startingDate: "",
     arrivalDate:"",
     numberOfWorkers:"",
+    availableWeight: "",
     numberOfCars: "",
     fromLocation: "",
     toLocation: "",
