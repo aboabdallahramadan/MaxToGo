@@ -635,7 +635,8 @@
             "NoOffersYetForThisTask": "Inga erbjudanden ännu för den här uppgiften",
             "Submit": "Skicka",
             "Cancel": "Avbryt",
-            "payment": "Betalning"
+            "payment": "Betalning",
+            "Sold": "Såld"
 
         },
         "Chat": {

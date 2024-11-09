@@ -571,7 +571,8 @@
             "NoOffersYetForThisTask": "No offers yet for this task",
             "Submit": "Submit",
             "Cancel": "Cancel",
-            "payment": "payment"
+            "payment": "payment",
+            "Sold": "Sold"
         },
         "Chat": {
             "Chat": "Chat",

@@ -131,11 +131,11 @@ const AvailableTaskCard = ({ task }) => {
 
       <div className="flex justify-between items-center w-full px-2 mt-2">
         <button onClick={() => setIsExpanded(!isExpanded)} className="py-2 px-4 text-lg text-foreground border border-primary hover:text-secondary hover:bg-primary rounded-xl">{t("Details")}</button>
-        {task.priceType === "fixed" ? (
+        { task.status === "sold" ? <span className="text-primary border border-primary rounded-xl px-2 py-1">{t("Sold")}</span> : (task.priceType === "fixed" ? (
           <PurchaseTask task={task}/>
         ) : (
           <MakeOffer task={task}/>
-        )}
+        ))}
       </div>
     </div>
   );

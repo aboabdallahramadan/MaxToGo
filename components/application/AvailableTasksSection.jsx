@@ -32,6 +32,7 @@ const AvailableTasksSection = () => {
     const [tasks, setTasks] = useState([
         {
             "id":1,
+            "status": "active",
             "type": "cleaning",
             "name": "clean my apartment",
             "completionDate": "8/9/2024",
@@ -80,6 +81,7 @@ const AvailableTasksSection = () => {
         },
         {
             "id":2,
+            "status": "sold",
             "type": "emptyCar",
             "name": "clean my apartment",
             "completionDate": "8/9/2024",
@@ -129,6 +131,7 @@ const AvailableTasksSection = () => {
         },
         {
             "id":3,
+            "status": "active",
             "type": "transfer",
             "name": "clean my apartment",
             "completionDate": "8/9/2024",
@@ -178,6 +181,7 @@ const AvailableTasksSection = () => {
         },
         {
             "id":4,
+            "status": "active",
             "type": "warehousing",
             "name": "clean my apartment",
             "completionDate": "8/9/2024",
