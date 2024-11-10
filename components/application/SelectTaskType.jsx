@@ -24,6 +24,9 @@ const SelectTaskType = ({active}) => {
             <option  value="warehousing">
                 {t("Storage")}
             </option>
+            <option  value="empty-car">
+                {t("RideShare")}
+            </option>
         </select>
     </div>
   )

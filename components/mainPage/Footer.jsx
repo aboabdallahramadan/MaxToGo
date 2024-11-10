@@ -74,7 +74,7 @@ const Footer = () => {
                             </div>
                             <div className="flex items-center gap-2">
                                 <FaPhone className="text-xl" />
-                                <a href="tel:+999999999999">+999999999999</a>
+                                <a href="tel:004676-0003008">004676-000 30 08</a>
                             </div>
                             <p>{t("Location")}</p>
                         </div>

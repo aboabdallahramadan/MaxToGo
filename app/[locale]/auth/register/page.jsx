@@ -182,7 +182,6 @@ const page = () => {
         <div className={pageNumber == 0 ? "block" : "hidden"}>
           <h2 className="text-primary text-xl mb-4 mt-6">{t("HowDoesItWork")}</h2>
           <p className="text-foreground">{t("HowDoesItWorkInfo")}</p>
-          <p className="text-foreground mb-6">{t("HowDoesItWorkInfo1")}</p>
         </div>
         <div className={pageNumber == 1 ? "block" : "hidden"}>
           <p className="text-foreground mt-6">{t("RegisterDocuments")}</p>

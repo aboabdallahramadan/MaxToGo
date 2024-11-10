@@ -459,7 +459,7 @@ const Moving = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest })
                             onChange={handleChange}
                             required={formData.priceType === 'fixed'}
                         />
-                        <span className="text-primary ml-2">€</span>
+                        <span className="text-primary ml-2">kr</span>
                     </div>
                 </div>
             )}

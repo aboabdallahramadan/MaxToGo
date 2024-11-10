@@ -20,9 +20,9 @@ const WhyWe = () => {
                         initial={{ x: -100, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
                         transition={{ duration: 0.6 }}
-                        className="w-full md:w-1/5 border-b-2 md:border-b-0 md:border-r-2 border-foreground"
+                        className="w-full md:w-1/5 md:max-w-[152px] border-b-2 md:border-b-0 md:border-r-2 border-foreground pr-2"
                     >
-                        <h1 className="text-primary text-5xl font-bold leading-relaxed">{t("WhyWe")}</h1>
+                        <h1 className="text-primary text-5xl font-bold leading-relaxed text-center">{t("WhyWe")}</h1>
                     </motion.div>
                     <div className="flex-1">
                         <ul className="flex flex-col gap-5 text-xl">

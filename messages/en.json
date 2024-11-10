@@ -21,7 +21,7 @@
         "Mobile": "Mobile",
         "Services": "Services",
         "AboutUs": "About Us",
-        "AboutUsInfo": "the Smart Path to Future Collaboration and Growth",
+        "AboutUsInfo": "Maximize your resources by selling empty trips between cities and countries. Register available trips on our platform and connect with transport companies needing to ship goods in the same direction – contributing to sustainability by reducing the number of empty vehicles on the roads.",
         "Location": "2416 Mapleview Drive Tampa, FL 33634",
         "WorkWithUs": "Work With Us",
         "GoToTheApp": "Go To The App",
@@ -96,7 +96,7 @@
         "SatisfiedClients": "Satisfied Clients",
         "YearsExperience": "Years Experience",
         "ExpertMovers": "Expert Movers",
-        "WhyChooseUs": "Why Choose Max To Go?",
+        "WhyChooseUs": "Who are we?",
         "readMore": "Read More",
         "CertifiedMovers": "Certified Movers",
         "LicensedAndInsured": "Fully licensed and insured",
@@ -138,14 +138,14 @@
         "Services": "Services",
         "Service1": "Sell and Buy Moving and Logistics Tasks",
         "Service1Info": "Connect with other moving companies and transport businesses to sell and buy assignments. Whether you offer moving services or logistics solutions, you can easily transfer tasks and maximize your business opportunities.",
-        "Service2": "Sell and Buy Empty Runs",
-        "Service2Info": "Maximize your resource utilization by selling your empty runs between cities or countries. Use our platform to easily register available runs and connect with other transport companies that need to transport goods in the same direction. This contributes to sustainability by reducing the number of empty vehicles on the roads.",
+        "Service2": "Sell and Buy empty trips",
+        "Service2Info": "Maximize your resource utilization by selling your empty trips between cities or countries. Use our platform to easily register available runs and connect with other transport companies that need to transport goods in the same direction. This contributes to sustainability by reducing the number of empty vehicles on the roads.",
         "Service3": "Sell and Buy Service Assignments",
         "Service3Info": "Offer your services in moving cleaning, facility maintenance, and other service areas. By using our platform, companies can easily buy and sell services, creating an efficient and secure workflow.",
         "Service4": "Buy and Sell Storage Services",
         "Service4Info": "Need to temporarily store goods? Our platform enables the buying and selling of storage services, making it easier for businesses to manage their resources and inventory.",
         "Service5": "Ride Sharing",
-        "Service5Info": "Take advantage of ride-sharing opportunities with other businesses. By collaborating, you can share transportation costs and optimize your logistics, improving operational management and enhancing customer comfort.",
+        "Service5Info": "Take advantage of Trip sharing opportunities with other businesses. By collaborating, you can share transportation costs and optimize your logistics, improving operational management and enhancing customer comfort.",
         "Service6": "Register Available Vehicles",
         "Service6Info": "Do you have a truck available on a certain day? Register your vehicle on our platform so that other companies can book it for their transportation needs. This creates a flexible and safe transport solution for everyone involved."
     },
@@ -193,7 +193,7 @@
         "Warehousing": "Storage",
         "Cleaning": "Cleaning",
         "EmptyCar": "Moving on the Way",
-        "SharingCar": "Ride-Sharing"
+        "SharingCar": "Trip sharing"
     },
     "Partners" : {
     "OurPartners": "Our Partners"
@@ -269,7 +269,7 @@
     },
     "GuestTasks": {
         "title": "Transform Task",
-        "TaskName": "Task Name",
+        "TaskName": "Task Title",
         "DateTime": "The date and time required to complete it",
         "FromLocation": "The address will moving from",
         "DriveFromLocation": "The Address will drive from",
@@ -307,7 +307,7 @@
         "StorageDuration": "Storage Duration",
         "titlewarehousing": "Warehousing Task",
         "titleStorage": "Storage Task",
-        "Area": "Area in square meters",
+        "Area": "Area in cubic meters or m2",
         "CleaningType": "Cleaning Type",
         "WindowCleaning": "Window Cleaning",
         "HouseCleaning": "House Cleaning",
@@ -322,7 +322,7 @@
         "warehousing": "warehousing",
         "transform": "transform",
         "CompanyName": "Company Name",
-        "Price": "Price",
+        "Price": "Price Including VAT",
         "EditTask": "Edit Task",
         "ElevatorOne": "Elevator in address 1",
         "ElevatorTwo": "Elevator in address 2",
@@ -350,7 +350,8 @@
         "AreThereHeavyThings": "Are There Heavy Things (More than 50KG)",
         "UploadImage": "Upload Image",
         "HowManyMonths": "How Many Months",
-        "HowManyYears": "How Many Years"
+        "HowManyYears": "How Many Years",
+        "RideShare": "Ride-share"
         
     },
     "Auth" : {
@@ -370,8 +371,7 @@
         "PasswordConfirmation": "Password Confirmation",
         "CreateAccount": "Create New Account",
         "HowDoesItWork": "How Does Max To Go Work?",
-        "HowDoesItWorkInfo": "Getting started with Max To Go is simple and straightforward. Follow these steps to begin optimizing your business:",
-        "HowDoesItWorkInfo1": "Create an account on Max To Go by providing your company details and uploading the required documents This includes business registration and any insurance certificates.",
+        "HowDoesItWorkInfo": "We have gathered qualified moving and transport companies on our platform to guarantee the lowest prices and fast service. By optimizing truck movements across the country, we offer a sustainable solution that helps reduce the number of vehicles on the roads.",
         "CompanyName": "Company Name",
         "NameOfResponsiblePerson": "Name of responsible person",
         "Address": "Address",
@@ -507,7 +507,7 @@
             "Purchases": "Purchases",
             "NoTasks": "No Tasks Available",
             "Type": "Type",
-            "TaskName": "Task Name",
+            "TaskName": "Task Title",
             "Location": "Location",
             "FromLocation": "From Location",
             
@@ -675,7 +675,7 @@
         "CollaborationIntro": "Through MovingGo Max, companies from different industries can easily interact, sell tasks to each other, and optimize their resources – all via a centralized and user-friendly platform.",
         "Benefits": {
             "Title": "Benefits of MovingGo Max:",
-            "Point1": "Maximum efficiency: By coordinating services and selling tasks to each other, companies can reduce empty runs, increase productivity, and maximize their resources.",
+            "Point1": "Maximum efficiency: By coordinating services and selling tasks to each other, companies can reduce empty trips, increase productivity, and maximize their resources.",
             "Point2": "Cross-industry collaboration: MovingGo Max enables companies from different sectors to connect and collaborate in ways that weren't previously possible.",
             "Point3": "Sustainable growth: By reducing the number of vehicles on the roads and optimizing resource usage, companies can grow sustainably while contributing to a greener future."
         },
@@ -691,10 +691,10 @@
 
     "Sustainable": {
       "Title": "Max To Go Sustainable",
-      "Preview": "How Our Concept Contributes to Sustainability: Reduced Empty Runs, More Efficient Resource Use, Support for Small and Start-up Businesses, Decreased Traffic Congestion, Greener Business Models, Carbon Emission Reduction.",
+      "Preview": "How Our Concept Contributes to Sustainability: Reduced empty trips, More Efficient Resource Use, Support for Small and Start-up Businesses, Decreased Traffic Congestion, Greener Business Models, Carbon Emission Reduction.",
       "ReadMore": "Read More",
       "ContributionTitle": "How Our Concept Contributes to Sustainability:",
-      "ReducedEmptyRuns": "Reduced Empty Runs",
+      "ReducedEmptyRuns": "Reduced empty trips",
       "ReducedEmptyRunsDescription": "By connecting companies, we minimize trips without loads, directly cutting unnecessary emissions and saving fuel.",
       "EfficientResourceUse": "More Efficient Resource Use",
       "EfficientResourceUseDescription": "Businesses can easily coordinate routes and share tasks, leading to optimal vehicle use and fewer vehicles on the road.",
@@ -706,7 +706,7 @@
       "GreenerBusinessModelsDescription": "The platform equips companies with better tools to track sustainable practices, enabling effective monitoring and reduction of environmental impact.",
       "CarbonEmissionReduction": "Carbon Emission Reduction",
       "CarbonEmissionReductionDescription": "By avoiding excessive vehicle use, emissions are lowered, creating a positive environmental impact over time.",
-      "ContributionDescription": "Our concept is designed to make the transport and moving industries more sustainable, efficient, and collaboration-driven. We recognize that one of the biggest logistics challenges is the long distances vehicles travel empty. Through our platform, we minimize the need for empty trips, which positively impacts the environment and reduces traffic congestion. This is achieved by creating a collaborative platform that connects moving and transport companies nationwide. Businesses can seamlessly book, coordinate routes, and hand off tasks to other companies within the network – all to maximize each trip and eliminate unnecessary empty runs. For moving and transport companies, this means no more sending vehicles far distances only to return empty. Instead, they can quickly find nearby partners to take on tasks. This enables transport services to flow naturally, with businesses sharing jobs and optimizing routes together. As a result, time and fuel are saved, leading to lower carbon emissions and less road wear. For small and startup companies, this is a chance to maximize capacity and grow sustainably. By joining our network, they gain access to more jobs and can fill their schedules without the need for marketing or long trips. Beyond route optimization, our platform helps companies avoid excessive vehicle usage, reducing emissions and lowering maintenance needs. Supporting sustainable business practices and offering companies tools to prevent unnecessary trips also decreases the overall environmental impact of the transport industry. The platform makes it easier to monitor and follow sustainable practices, giving businesses greater control over emissions. We see ourselves as a reliable partner for companies that want to grow without compromising the environment. By bringing together small and large companies on a single platform where tasks are visible and fairly distributed, we contribute to a greener and more efficient future for the moving and transport industries. Together, we can reduce our ecological footprint and build a society where smart transportation benefits businesses, the environment, and society as a whole."
+      "ContributionDescription": "Our concept is designed to make the transport and moving industries more sustainable, efficient, and collaboration-driven. We recognize that one of the biggest logistics challenges is the long distances vehicles travel empty. Through our platform, we minimize the need for empty trips, which positively impacts the environment and reduces traffic congestion. This is achieved by creating a collaborative platform that connects moving and transport companies nationwide. Businesses can seamlessly book, coordinate routes, and hand off tasks to other companies within the network – all to maximize each trip and eliminate unnecessary empty trips. For moving and transport companies, this means no more sending vehicles far distances only to return empty. Instead, they can quickly find nearby partners to take on tasks. This enables transport services to flow naturally, with businesses sharing jobs and optimizing routes together. As a result, time and fuel are saved, leading to lower carbon emissions and less road wear. For small and startup companies, this is a chance to maximize capacity and grow sustainably. By joining our network, they gain access to more jobs and can fill their schedules without the need for marketing or long trips. Beyond route optimization, our platform helps companies avoid excessive vehicle usage, reducing emissions and lowering maintenance needs. Supporting sustainable business practices and offering companies tools to prevent unnecessary trips also decreases the overall environmental impact of the transport industry. The platform makes it easier to monitor and follow sustainable practices, giving businesses greater control over emissions. We see ourselves as a reliable partner for companies that want to grow without compromising the environment. By bringing together small and large companies on a single platform where tasks are visible and fairly distributed, we contribute to a greener and more efficient future for the moving and transport industries. Together, we can reduce our ecological footprint and build a society where smart transportation benefits businesses, the environment, and society as a whole."
     }
     
 
