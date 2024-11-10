@@ -10,9 +10,11 @@ const page = () => {
   const t = useTranslations("GuestTasks");
   const [isLoading,setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phoneNumber: "",
     taskName: "",
-    startingDate: "",
-    arrivalDate:"",
+    dateTime: "",
     availableWeight: "",
     numberOfWorkers:"",
     numberOfCars: "",
@@ -21,8 +23,8 @@ const page = () => {
     vehicleSize: "",
     isTimeFlexible: "yes",
     taskType: "local",
-    taskMaster: "",
-    phoneNumber: "",
+    taskMasterName: "",
+    taskMasterPhoneNumber: "",
     text: ""
   });
 

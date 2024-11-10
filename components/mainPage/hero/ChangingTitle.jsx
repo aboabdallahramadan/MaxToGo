@@ -25,7 +25,7 @@ const ChangingTitle = () => {
 
     return (
         <div className="block">
-            <strong className="text-xl flex flex-col gap-1 min-[400px]:text-2xl md:text-4xl font-extrabold text-primary flex w-full text-nowrap justify-center gap-2">
+            <strong className="text-xl flex flex-col min-[400px]:text-2xl md:text-4xl font-extrabold text-primary w-full text-nowrap justify-center gap-2">
                 <span>
                     {t("ProjectTitle")}
                 </span>

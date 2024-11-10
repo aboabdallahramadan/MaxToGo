@@ -11,8 +11,7 @@ const page = () => {
   const [formData, setFormData] = useState({
     taskType: "emptyTruck",
     taskName: "",
-    startingDate: "",
-    arrivalDate:"",
+    dateTime: "",
     availableWeight: "",
     numberOfWorkers:"",
     numberOfCars: "",
@@ -23,8 +22,8 @@ const page = () => {
     price: "",
     isTimeFlexible: "yes",
     taskType: "local",
-    taskMaster: "",
-    phoneNumber: "",
+    taskMasterName: "",
+    taskMasterPhoneNumber: "",
     text: ""
   });
 
