@@ -7,6 +7,97 @@ import Spinner from '@/components/Spinner';
 const Cleaning = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest }) => {
   return (
     <form onSubmit={handleSubmit} className={`${!isGuest && "px-6" }`}>
+
+                {
+                    isGuest && (
+                    <>
+                        {/* Name */}
+                        <div className="relative flex flex-col items-start justify-between w-full gap-4">
+                            <label htmlFor="name">
+                            <BsPerson className="inline-block mr-2 text-primary" />
+                            {t("Name")}
+                            </label>
+                            <input
+                            className="bg-transparent border-b-primary border-b focus:outline-none w-full"
+                            type="text"
+                            id="name"
+                            name="name"
+                            value={formData.name}
+                            onChange={handleChange}
+                            required
+                            />
+                        </div>
+                        {/* Email */}
+                        <div className="relative flex flex-col items-start justify-between w-full gap-4">
+                            <label htmlFor="email">
+                            <AiOutlineMail className="inline-block mr-2 text-primary" />
+                            {t("Email")}
+                            </label>
+                            <input
+                            className="bg-transparent border-b-primary border-b focus:outline-none w-full"
+                            type="email"
+                            id="email"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleChange}
+                            required
+                            />
+                        </div>
+                        {/* Phone Number */}
+                        <div className="relative flex flex-col items-start justify-between w-full gap-4">
+                            <label htmlFor="phoneNumber">
+                            <AiOutlinePhone className="inline-block mr-2 text-primary" />
+                            {t("phoneNumber")}
+                            </label>
+                            <input
+                            className="bg-transparent border-b-primary border-b focus:outline-none w-full"
+                            type="text"
+                            id="phoneNumber"
+                            name="phoneNumber"
+                            value={formData.phoneNumber}
+                            onChange={handleChange}
+                            />
+                        </div>
+
+                    </>
+                    )
+                }
+      
+
+                {/* Task Master */}
+                <div className="w-full flex justify-between items-center flex-nowrap gap-4">
+                    <div className="relative flex flex-col items-start justify-between w-2/5 gap-4 mt-6">
+                    <label htmlFor="taskMasterName">
+                        <AiOutlineFileText className="inline-block mr-2 text-primary" />
+                        {t("taskMaster")}
+                    </label>
+                    <input
+                        className="bg-transparent border-b-primary border-b focus:outline-none w-full"
+                        type="text"
+                        id="taskMasterName"
+                        name="taskMasterName"
+                        value={formData.taskMasterName}
+                        onChange={handleChange}
+                        required
+                    />
+                    </div>
+
+                    {/* Phone Number */}
+                    <div className="relative flex flex-col items-start justify-between w-2/5 gap-4 mt-6">
+                    <label htmlFor="taskMasterPhoneNumber">
+                        <AiOutlinePhone className="inline-block mr-2 text-primary" />
+                        {t("phoneNumber")}
+                    </label>
+                    <input
+                        className="bg-transparent border-b-primary border-b focus:outline-none w-full"
+                        type="text"
+                        id="taskMasterPhoneNumber"
+                        name="taskMasterPhoneNumber"
+                        value={formData.taskMasterPhoneNumber}
+                        onChange={handleChange}
+                    />
+                    </div>
+                </div>
                 {/* Task Name */}
                 <div className="relative flex flex-col items-start justify-between w-full gap-4">
                     <label htmlFor="taskName">
@@ -106,6 +197,37 @@ const Cleaning = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest 
                     required
                     />
                 </div>
+
+                {/* Do you have Rut*/}
+            <div className="relative flex items-center justify-between flex-col w-full gap-4 mt-8">
+              <h4 className="text-xl text-center w-full">{t("DoYouHaveRut")}</h4>
+              <div className="flex justify-center items-center  w-full">
+                <div className="flex justify-start items-center">
+                  <input
+                    className="accent-primary"
+                    type="radio"
+                    id="haveRutYes"
+                    name="haveRut"
+                    value="yes"
+                    checked={formData.haveRut === "yes"}
+                    onChange={handleChange}
+                  />
+                  <label htmlFor="haveRutYes" className="ml-2"> {t("Yes")} </label>
+                </div>
+                <div className="flex justify-start items-center ml-6">
+                  <input
+                    className="accent-primary"
+                    type="radio"
+                    id="haveRutNo"
+                    name="haveRut"
+                    value="no"
+                    checked={formData.haveRut === "no"}
+                    onChange={handleChange}
+                  />
+                  <label htmlFor="haveRutNo" className="ml-2"> {t("No")} </label>
+                </div>
+              </div>
+            </div>
 
                 {/* Is Time flexible */}
                 <div className="relative flex items-center justify-between flex-col w-full gap-4 mt-8">
@@ -277,42 +399,6 @@ const Cleaning = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest 
                 )}
                     </>
                 )}
-
-                {/* Task Master */}
-                <div className="w-full flex justify-between items-center flex-nowrap gap-4">
-                    <div className="relative flex flex-col items-start justify-between w-2/5 gap-4 mt-6">
-                    <label htmlFor="taskMaster">
-                        <AiOutlineFileText className="inline-block mr-2 text-primary" />
-                        {t("taskMaster")}
-                    </label>
-                    <input
-                        className="bg-transparent border-b-primary border-b focus:outline-none w-full"
-                        type="text"
-                        id="taskMaster"
-                        name="taskMaster"
-                        value={formData.taskMaster}
-                        onChange={handleChange}
-                        required
-                    />
-                    </div>
-
-                    {/* Phone Number */}
-                    <div className="relative flex flex-col items-start justify-between w-2/5 gap-4 mt-6">
-                    <label htmlFor="phoneNumber">
-                        <AiOutlinePhone className="inline-block mr-2 text-primary" />
-                        {t("phoneNumber")}
-                    </label>
-                    <input
-                        className="bg-transparent border-b-primary border-b focus:outline-none w-full"
-                        type="text"
-                        id="phoneNumber"
-                        name="phoneNumber"
-                        value={formData.phoneNumber}
-                        onChange={handleChange}
-                        required
-                    />
-                    </div>
-                </div>
 
                 {/* Text */}
                 <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">

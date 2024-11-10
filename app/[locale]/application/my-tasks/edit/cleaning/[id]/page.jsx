@@ -21,8 +21,9 @@ const page = () => {
     priceType: 'fixed',
     price: "",
     isTimeFlexible: "yes",
-    taskMaster: "",
-    phoneNumber: "",
+    taskMasterName: "",
+    taskMasterPhoneNumber: "",
+    haveRut: "no",
     text: ""
   });
 

@@ -11,6 +11,9 @@ const page = () => {
   const [isLoading,setIsLoading] = useState(false);
 
   const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phoneNumber: "",
     taskName: "",
     dateTime: "",
     location: "",
@@ -19,8 +22,9 @@ const page = () => {
     cleaningType: "moreOut",
     balcony: "no",
     isTimeFlexible: "yes",
-    taskMaster: "",
-    phoneNumber: "",
+    taskMasterName: "",
+    taskMasterPhoneNumber: "",
+    haveRut: "no",
     text: ""
   });
 
