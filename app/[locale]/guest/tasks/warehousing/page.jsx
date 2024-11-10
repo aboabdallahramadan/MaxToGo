@@ -10,13 +10,19 @@ const page = () => {
   const t = useTranslations("GuestTasks");
   const [isLoading,setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phoneNumber: "",
     taskName: "",
     startingDate: "",
     area: "",
     location: "",
-    taskMaster: "",
-    phoneNumber: "",
-    text: ""
+    taskMasterName: "",
+    taskMasterPhoneNumber: "",
+    months: "",
+    years: "",
+    text: "",
+    image: ""
   });
 
   const handleChange = (e) => {

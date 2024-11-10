@@ -1,12 +1,102 @@
 import React from 'react';
-import { AiOutlineFileText, AiOutlineCalendar, AiOutlinePhone } from 'react-icons/ai';
+import { AiOutlineFileText, AiOutlineCalendar, AiOutlinePhone, AiOutlineMail, AiOutlineFileImage } from 'react-icons/ai';
 import { FaMoneyBill } from 'react-icons/fa';
 import { FiArrowUpRight } from 'react-icons/fi';
+import { BsPerson } from 'react-icons/bs';
 import Spinner from '@/components/Spinner';
-
 const Warehousing = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest }) => {
   return (
     <form onSubmit={handleSubmit}  className={`${!isGuest && "px-6" }`}>
+        {
+        isGuest && (
+          <>
+            {/* Name */}
+            <div className="relative flex flex-col items-start justify-between w-full gap-4">
+                <label htmlFor="name">
+                <BsPerson className="inline-block mr-2 text-primary" />
+                {t("Name")}
+                </label>
+                <input
+                className="bg-transparent border-b-primary border-b focus:outline-none w-full"
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+                />
+            </div>
+            {/* Email */}
+            <div className="relative flex flex-col items-start justify-between w-full gap-4">
+                <label htmlFor="email">
+                <AiOutlineMail className="inline-block mr-2 text-primary" />
+                {t("Email")}
+                </label>
+                <input
+                className="bg-transparent border-b-primary border-b focus:outline-none w-full"
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                />
+            </div>
+            {/* Phone Number */}
+            <div className="relative flex flex-col items-start justify-between w-full gap-4">
+                <label htmlFor="phoneNumber">
+                <AiOutlinePhone className="inline-block mr-2 text-primary" />
+                {t("phoneNumber")}
+                </label>
+                <input
+                className="bg-transparent border-b-primary border-b focus:outline-none w-full"
+                type="text"
+                id="phoneNumber"
+                name="phoneNumber"
+                value={formData.phoneNumber}
+                onChange={handleChange}
+                />
+            </div>
+
+          </>
+        )
+      }
+      
+
+      {/* Task Master */}
+      <div className="w-full flex justify-between items-center flex-nowrap gap-4">
+        <div className="relative flex flex-col items-start justify-between w-2/5 gap-4 mt-6">
+          <label htmlFor="taskMasterName">
+            <AiOutlineFileText className="inline-block mr-2 text-primary" />
+            {t("taskMaster")}
+          </label>
+          <input
+            className="bg-transparent border-b-primary border-b focus:outline-none w-full"
+            type="text"
+            id="taskMasterName"
+            name="taskMasterName"
+            value={formData.taskMasterName}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        {/* Phone Number */}
+        <div className="relative flex flex-col items-start justify-between w-2/5 gap-4 mt-6">
+          <label htmlFor="taskMasterPhoneNumber">
+            <AiOutlinePhone className="inline-block mr-2 text-primary" />
+            {t("phoneNumber")}
+          </label>
+          <input
+            className="bg-transparent border-b-primary border-b focus:outline-none w-full"
+            type="text"
+            id="taskMasterPhoneNumber"
+            name="taskMasterPhoneNumber"
+            value={formData.taskMasterPhoneNumber}
+            onChange={handleChange}
+          />
+        </div>
+      </div>
             {/* Task Name */}
             <div className="relative flex flex-col items-start justify-between w-full gap-4">
                 <label htmlFor="taskName">
@@ -41,6 +131,39 @@ const Warehousing = ({ formData, handleChange, handleSubmit, isLoading, t, isGue
                 />
             </div>
 
+            {/* how many months */}
+            <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
+                <label htmlFor="months">
+                <AiOutlineCalendar className="inline-block mr-2 text-primary" />
+                {t("HowManyMonths")}
+                </label>
+                <input
+                className="bg-transparent border-b-primary border-b focus:outline-none w-full"
+                type="number"
+                id="months"
+                name="months"
+                value={formData.months}
+                onChange={handleChange}
+                required
+                />
+            </div>
+
+            {/* how many years*/}
+            <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
+                <label htmlFor="years">
+                <AiOutlineCalendar className="inline-block mr-2 text-primary" />
+                {t("HowManyYears")}
+                </label>
+                <input
+                className="bg-transparent border-b-primary border-b focus:outline-none w-full"
+                type="number"
+                id="years"
+                name="years"
+                value={formData.years}
+                onChange={handleChange}
+                />
+            </div>
+
             {/* Location */}
             <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
                 <label htmlFor="location">
@@ -54,11 +177,12 @@ const Warehousing = ({ formData, handleChange, handleSubmit, isLoading, t, isGue
                 name="location"
                 value={formData.location}
                 onChange={handleChange}
+                placeholder={t("LocationPlaceholder")}
                 required
                 />
             </div>
 
-            {/* area cubic in meters */}
+            {/* area in square meters */}
             <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
                 <label htmlFor="area">
                 <FiArrowUpRight className="inline-block mr-2 text-primary" />
@@ -131,41 +255,22 @@ const Warehousing = ({ formData, handleChange, handleSubmit, isLoading, t, isGue
 
                 </>
             )}
-            
-            {/* Task Master */}
-            <div className="w-full flex justify-between items-center flex-nowrap gap-4">
-                <div className="relative flex flex-col items-start justify-between w-2/5 gap-4 mt-6">
-                <label htmlFor="taskMaster">
-                    <AiOutlineFileText className="inline-block mr-2 text-primary" />
-                    {t("taskMaster")}
-                </label>
-                <input
-                    className="bg-transparent border-b-primary border-b focus:outline-none w-full"
-                    type="text"
-                    id="taskMaster"
-                    name="taskMaster"
-                    value={formData.taskMaster}
-                    onChange={handleChange}
-                    required
-                />
-                </div>
 
-                {/* Phone Number */}
-                <div className="relative flex flex-col items-start justify-between w-2/5 gap-4 mt-6">
-                <label htmlFor="phoneNumber">
-                    <AiOutlinePhone className="inline-block mr-2 text-primary" />
-                    {t("phoneNumber")}
-                </label>
-                <input
-                    className="bg-transparent border-b-primary border-b focus:outline-none w-full"
-                    type="text"
-                    id="phoneNumber"
-                    name="phoneNumber"
-                    value={formData.phoneNumber}
-                    onChange={handleChange}
-                    required
-                />
-                </div>
+            {/* Image Upload */}
+            <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
+              <label htmlFor="image">
+                <AiOutlineFileImage className="inline-block mr-2 text-primary" />
+                {t("UploadImage")}
+              </label>
+              <input
+                className="bg-transparent border-primary border focus:outline-none w-full "
+                type="file"
+                id="image"
+                name="image"
+                accept="image/*"
+                onChange={handleChange}
+                required
+              />
             </div>
 
             {/* text */}

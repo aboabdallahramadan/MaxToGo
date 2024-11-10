@@ -348,7 +348,9 @@
         "From": "Från",
         "To": "Till",
         "AreThereHeavyThings": "Finns det tunga saker (mer än 50KG)",
-        "UploadImage": "Ladda upp bild"
+        "UploadImage": "Ladda upp bild",
+        "HowManyMonths": "Hur många månader",
+        "HowManyYears": "Hur många år"
     },
     "Auth": {
         "Login": "Logga in",

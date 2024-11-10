@@ -16,9 +16,12 @@ const page = () => {
     startingDate: "",
     area: "",
     location: "",
-    taskMaster: "",
-    phoneNumber: "",
-    text: ""
+    taskMasterName: "",
+    taskMasterPhoneNumber: "",
+    months: "",
+    years: "",
+    text: "",
+    image: ""
   });
 
   const handleChange = (e) => {

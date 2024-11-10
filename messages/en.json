@@ -348,7 +348,9 @@
         "From": "From",
         "To": "To",
         "AreThereHeavyThings": "Are There Heavy Things (More than 50KG)",
-        "UploadImage": "Upload Image"
+        "UploadImage": "Upload Image",
+        "HowManyMonths": "How Many Months",
+        "HowManyYears": "How Many Years"
         
     },
     "Auth" : {

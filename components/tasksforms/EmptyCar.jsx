@@ -1,7 +1,8 @@
 import React from 'react';
-import { AiOutlineFileText, AiOutlineCalendar, AiOutlinePhone } from 'react-icons/ai';
+import { AiOutlineFileText, AiOutlineCalendar, AiOutlinePhone, AiOutlineMail, AiOutlineFileImage } from 'react-icons/ai';
 import { FaTruck, FaMoneyBill, FaWeight } from 'react-icons/fa';
 import { FiArrowUpRight, FiArrowDownRight } from 'react-icons/fi';
+import { BsPerson } from 'react-icons/bs';
 import Spinner from '@/components/Spinner';
 
 const EmptyCar = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest }) => {
@@ -370,6 +371,23 @@ const EmptyCar = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest 
                         
                         
                         </div>
+                    </div>
+
+                    {/* Image Upload */}
+                    <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
+                    <label htmlFor="image">
+                        <AiOutlineFileImage className="inline-block mr-2 text-primary" />
+                        {t("UploadImage")}
+                    </label>
+                    <input
+                        className="bg-transparent border-primary border focus:outline-none w-full "
+                        type="file"
+                        id="image"
+                        name="image"
+                        accept="image/*"
+                        onChange={handleChange}
+                        required
+                    />
                     </div>
 
                     {/* Text */}
