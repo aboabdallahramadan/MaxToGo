@@ -54,23 +54,27 @@ const LayoutHeader = () => {
           <ul className="px-6 items-center gap-2 h-100 hidden text-base xl:text-xl lg:flex">
             <NavLink link="/#hero">{t("Home")}</NavLink>
             <NavLink link="/#about">{t("About")}</NavLink>
-            <div className="relative group">
-              <NavLink link="/#services">{t("Services")}</NavLink>
-              <div className="absolute hidden group-hover:block bg-background shadow-lg rounded-md ">
-                <ul className="py-2 flex flex-col gap-4">
-                  <li>
-                    <NavLink link="/#company-services" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
-                      {t("CompanyServices")}
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink link="/#individual-services" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
-                      {t("IndividualServices")}
-                    </NavLink>
-                  </li>
+            <li>
+              <div className="relative group">
+                <ul>
+                <NavLink link="/#company-services">{t("Services")}</NavLink>
                 </ul>
+                <div className="absolute hidden group-hover:block bg-background shadow-lg rounded-md">
+                  <ul className="py-2 flex flex-col gap-2">
+                    
+                      <NavLink link="/#company-services" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+                        {t("CompanyServices")}
+                      </NavLink>
+                    
+                    
+                      <NavLink link="/#individual-services" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+                        {t("IndividualServices")}
+                      </NavLink>
+                    
+                  </ul>
+                </div>
               </div>
-            </div>
+            </li>
             <NavLink link="/coming-soon">{t("OurMarket")}</NavLink>
             <NavLink link="/#contact">{t("Contact")}</NavLink>
             <NavLink link="https://www.movingab.com/se">{t("Movingab")}</NavLink>
@@ -108,7 +112,27 @@ const LayoutHeader = () => {
               <ul className="flex flex-col justify-between items-center gap-4">
               <NavLink link="/#" func={()=> setIsMobileMenuOpen(false)}>{t("Home")}</NavLink>
               <NavLink link="/#about" func={()=> setIsMobileMenuOpen(false)}>{t("About")}</NavLink>
-              <NavLink link="/#services" func={()=> setIsMobileMenuOpen(false)}>{t("Services")}</NavLink>
+              <li>
+              <div className="relative group flex flex-col justify-center items-center gap-2">
+                <ul>
+                <NavLink link="/#company-services">{t("Services")}</NavLink>
+                </ul>
+                <div className="hidden group-hover:block bg-background shadow-lg rounded-md">
+                  <ul className="py-2 flex flex-col gap-2">
+                    
+                      <NavLink link="/#company-services" func={()=> setIsMobileMenuOpen(false)} className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+                        {t("CompanyServices")}
+                      </NavLink>
+                    
+                    
+                      <NavLink link="/#individual-services" func={()=> setIsMobileMenuOpen(false)} className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+                        {t("IndividualServices")}
+                      </NavLink>
+                    
+                  </ul>
+                </div>
+              </div>
+              </li>
               <NavLink link="/coming-soon" func={()=> setIsMobileMenuOpen(false)}>{t("OurMarket")}</NavLink>
               <NavLink link="/#contact" func={()=> setIsMobileMenuOpen(false)}>{t("Contact")}</NavLink>
               <NavLink link="https://www.movingab.com/se" func={()=> setIsMobileMenuOpen(false)}>{t("Movingab")}</NavLink>
