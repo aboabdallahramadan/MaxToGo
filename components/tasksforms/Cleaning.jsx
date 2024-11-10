@@ -1,7 +1,8 @@
 import React from 'react';
-import { AiOutlineFileText, AiOutlineCalendar, AiOutlinePhone } from 'react-icons/ai';
+import { AiOutlineFileText, AiOutlineCalendar, AiOutlinePhone, AiOutlineMail } from 'react-icons/ai';
 import { FaBuilding, FaMoneyBill } from 'react-icons/fa';
 import { FiArrowDownRight } from 'react-icons/fi';
+import { BsPerson } from 'react-icons/bs';
 import Spinner from '@/components/Spinner';
 
 const Cleaning = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest }) => {
