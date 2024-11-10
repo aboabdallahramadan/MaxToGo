@@ -10,15 +10,22 @@ const page = () => {
   const [isLoading,setIsLoading] = useState(false);
 
   const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phoneNumber: "",
     taskName: "",
     dateTime: "",
     fromLocation: "",
     toLocation: "",
     apartmentType: "",
-    floorNumberOne: "",
-    floorNumberTwo: "",
-    elevatorOne: "no",
-    elevatorTwo: "no",
+    fromFloorNumber: "",
+    toFloorNumber: "",
+    fromElevator: "no",
+    toElevator: "no",
+    taskMasterPhoneNumber:"",
+    heavyThings: "no",
+    fromDistanceForParking: "",
+    toDistanceForParking: "",
     fromLocationSize: "",
     toLocationSize: "",
     vehicleSize: "",
@@ -27,7 +34,8 @@ const page = () => {
     taskType: "local",
     taskMaster: "",
     phoneNumber: "",
-    text: ""
+    text: "",
+    haveRut: "no"
   });
 
   const handleChange = (e) => {

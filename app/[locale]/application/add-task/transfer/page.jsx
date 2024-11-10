@@ -17,21 +17,25 @@ const page = () => {
     fromLocation: "",
     toLocation: "",
     apartmentType: "",
-    floorNumberOne: "",
-    floorNumberTwo: "",
-    elevatorOne: "no",
-    elevatorTwo: "no",
+    fromFloorNumber: "",
+    toFloorNumber: "",
+    fromElevator: "no",
+    toElevator: "no",
     fromLocationSize: "",
     toLocationSize: "",
+    heavyThings: "no",
+    fromDistanceForParking: "",
+    toDistanceForParking: "",
     vehicleSize: "",
     isTimeFlexible: "yes",
     isWrapping: "no",
     taskType: "local",
-    taskMaster: "",
-    phoneNumber: "",
+    taskMasterName: "",
+    taskMasterPhoneNumber: "",
     text: "",
     price: "",
-    priceType: 'fixed'
+    priceType: 'fixed',
+    haveRut: "no"
   });
 
   const handleChange = (e) => {
