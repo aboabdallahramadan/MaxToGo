@@ -12,7 +12,9 @@
         "Downland": "Download the App",
         "Title": "Max To Go",
         "OurMarket":"Our Market",
-        "Movingab":"Movingab"
+        "Movingab":"Movingab",
+        "CompanyServices": "Company Services",
+        "IndividualServices": "Individual Services"
     },
     "footer": {
         "MainEmail": "Main Email",

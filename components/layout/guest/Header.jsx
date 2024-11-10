@@ -37,7 +37,23 @@ const Header = () => {
           <ul className="items-center h-100 hidden sm:flex">
             <NavLink link="/#hero">{t("Home")}</NavLink>
             <NavLink link="/#about">{t("About")}</NavLink>
-            <NavLink link="/#services">{t("Services")}</NavLink>
+            <div className="relative group">
+              <NavLink link="/#services">{t("Services")}</NavLink>
+              <div className="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2">
+                <ul className="py-2">
+                  <li>
+                    <NavLink link="/#company-services" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+                      {t("CompanyServices")}
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink link="/#individual-services" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+                      {t("IndividualServices")}
+                    </NavLink>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <NavLink link="/#contact">{t("Contact")}</NavLink>
           </ul>
         </nav>

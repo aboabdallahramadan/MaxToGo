@@ -12,7 +12,9 @@
         "Downland": "Ladda ner appen",
         "Movingab": "Movingab",
         "Title": "Max To Go",
-        "OurMarket":"Vår marknad"
+        "OurMarket":"Vår marknad",
+        "CompanyServices": "Företagstjänster",
+        "IndividualServices": "Individuella tjänster"
     },
     "footer": {
         "MainEmail": "Huvudsaklig e-post",

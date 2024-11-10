@@ -32,14 +32,19 @@ const ChangingTitle = () => {
                 <span 
                     className={`
                         inline-block 
-                        transition-transform 
+                        transition-all 
                         duration-500
                         text-nowrap
                         text-white
                         min-w-[120px]
                         sm:min-w-[250px]
-                        ${rotate ? 'rotate-0' : 'rotate-180'}
+                        transform
+                        origin-bottom
+                        ${rotate ? 'rotate-x-[0deg] opacity-100' : 'rotate-x-[90deg] opacity-0'}
                     `}
+                    style={{
+                        transform: rotate ? 'rotateX(0deg)' : 'rotateX(90deg)',
+                    }}
                 >
                     {t(words[currentWordIndex])}
                 </span>

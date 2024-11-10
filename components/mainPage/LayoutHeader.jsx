@@ -54,7 +54,23 @@ const LayoutHeader = () => {
           <ul className="px-6 items-center gap-2 h-100 hidden text-base xl:text-xl lg:flex">
             <NavLink link="/#hero">{t("Home")}</NavLink>
             <NavLink link="/#about">{t("About")}</NavLink>
-            <NavLink link="/#services">{t("Services")}</NavLink>
+            <div className="relative group">
+              <NavLink link="/#services">{t("Services")}</NavLink>
+              <div className="absolute hidden group-hover:block bg-background shadow-lg rounded-md ">
+                <ul className="py-2 flex flex-col gap-4">
+                  <li>
+                    <NavLink link="/#company-services" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+                      {t("CompanyServices")}
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink link="/#individual-services" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+                      {t("IndividualServices")}
+                    </NavLink>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <NavLink link="/coming-soon">{t("OurMarket")}</NavLink>
             <NavLink link="/#contact">{t("Contact")}</NavLink>
             <NavLink link="https://www.movingab.com/se">{t("Movingab")}</NavLink>

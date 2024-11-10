@@ -19,7 +19,7 @@ const Services = () => {
     };
 
     return (
-        <section id="services" className="py-20 bg-gradient-to-b from-secondary/5 to-transparent">
+        <section id="company-services" className="py-20 bg-gradient-to-b from-secondary/5 to-transparent">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
