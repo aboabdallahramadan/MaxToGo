@@ -347,7 +347,8 @@
         "DistanceForParking": "Avstånd till parkeringsplats i meter",
         "From": "Från",
         "To": "Till",
-        "AreThereHeavyThings": "Finns det tunga saker (mer än 50KG)"
+        "AreThereHeavyThings": "Finns det tunga saker (mer än 50KG)",
+        "UploadImage": "Ladda upp bild"
     },
     "Auth": {
         "Login": "Logga in",

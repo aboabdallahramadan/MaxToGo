@@ -23,6 +23,7 @@ const page = () => {
     fromElevator: "no",
     toElevator: "no",
     taskMasterPhoneNumber:"",
+    image: "",
     heavyThings: "no",
     fromDistanceForParking: "",
     toDistanceForParking: "",

@@ -347,7 +347,8 @@
         "DistanceForParking": "Distance For Car Parking in meters",
         "From": "From",
         "To": "To",
-        "AreThereHeavyThings": "Are There Heavy Things (More than 50KG)"
+        "AreThereHeavyThings": "Are There Heavy Things (More than 50KG)",
+        "UploadImage": "Upload Image"
         
     },
     "Auth" : {
