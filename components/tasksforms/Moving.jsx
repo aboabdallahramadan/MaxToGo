@@ -199,25 +199,49 @@ const Moving = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest })
                       <input
                         className="accent-primary"
                         type="radio"
-                        id="fromElevatorYes"
+                        id="fromElevatorBig"
                         name="fromElevator"
-                        value="yes"
-                        checked={formData.fromElevator === "yes"}
+                        value="big"
+                        checked={formData.fromElevator === "big"}
                         onChange={handleChange}
                       />
-                      <label htmlFor="fromElevatorYes" className="ml-2"> {t("Yes")} </label>
+                      <label htmlFor="fromElevatorBig" className="ml-2"> {t("Big")} </label>
                     </div>
                     <div className="flex justify-start items-center ml-6">
                       <input
                         className="accent-primary"
                         type="radio"
-                        id="fromElevatorNo"
+                        id="fromElevatorMedium"
                         name="fromElevator"
-                        value="no"
-                        checked={formData.fromElevator === "no"}
+                        value="medium"
+                        checked={formData.fromElevator === "medium"}
                         onChange={handleChange}
                       />
-                      <label htmlFor="fromElevatorNo" className="ml-2"> {t("No")} </label>
+                      <label htmlFor="fromElevatorMedium" className="ml-2"> {t("Medium")} </label>
+                    </div>
+                    <div className="flex justify-start items-center ml-6">
+                      <input
+                        className="accent-primary"
+                        type="radio"
+                        id="fromElevatorSmall"
+                        name="fromElevator"
+                        value="small"
+                        checked={formData.fromElevator === "small"}
+                        onChange={handleChange}
+                      />
+                      <label htmlFor="fromElevatorSmall" className="ml-2"> {t("Small")} </label>
+                    </div>
+                    <div className="flex justify-start items-center ml-6">
+                      <input
+                        className="accent-primary"
+                        type="radio"
+                        id="fromElevatorNotFound"
+                        name="fromElevator"
+                        value="notFound"
+                        checked={formData.fromElevator === "notFound"}
+                        onChange={handleChange}
+                      />
+                      <label htmlFor="fromElevatorNotFound" className="ml-2"> {t("NotFound")} </label>
                     </div>
                   </div>
                 </div>
@@ -305,25 +329,49 @@ const Moving = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest })
                       <input
                         className="accent-primary"
                         type="radio"
-                        id="toElevatorYes"
+                        id="toElevatorBig"
                         name="toElevator"
-                        value="yes"
-                        checked={formData.toElevator === "yes"}
+                        value="big"
+                        checked={formData.toElevator === "big"}
                         onChange={handleChange}
                       />
-                      <label htmlFor="toElevatorYes" className="ml-2"> {t("Yes")} </label>
+                      <label htmlFor="toElevatorBig" className="ml-2"> {t("Big")} </label>
                     </div>
                     <div className="flex justify-start items-center ml-6">
                       <input
                         className="accent-primary"
                         type="radio"
-                        id="toElevatorNo"
+                        id="toElevatorMedium"
                         name="toElevator"
-                        value="no"
-                        checked={formData.toElevator === "no"}
+                        value="medium"
+                        checked={formData.toElevator === "medium"}
                         onChange={handleChange}
                       />
-                      <label htmlFor="toElevatorNo" className="ml-2"> {t("No")} </label>
+                      <label htmlFor="toElevatorMedium" className="ml-2"> {t("Medium")} </label>
+                    </div>
+                    <div className="flex justify-start items-center ml-6">
+                      <input
+                        className="accent-primary"
+                        type="radio"
+                        id="toElevatorSmall"
+                        name="toElevator"
+                        value="small"
+                        checked={formData.toElevator === "small"}
+                        onChange={handleChange}
+                      />
+                      <label htmlFor="toElevatorSmall" className="ml-2"> {t("Small")} </label>
+                    </div>
+                    <div className="flex justify-start items-center ml-6">
+                      <input
+                        className="accent-primary"
+                        type="radio"
+                        id="toElevatorNotFound"
+                        name="toElevator"
+                        value="notFound"
+                        checked={formData.toElevator === "notFound"}
+                        onChange={handleChange}
+                      />
+                      <label htmlFor="toElevatorNotFound" className="ml-2"> {t("NotFound")} </label>
                     </div>
                   </div>
                 </div>
