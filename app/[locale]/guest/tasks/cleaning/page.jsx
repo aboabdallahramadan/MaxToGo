@@ -22,8 +22,6 @@ const page = () => {
     cleaningType: "moreOut",
     balcony: "no",
     isTimeFlexible: "yes",
-    taskMasterName: "",
-    taskMasterPhoneNumber: "",
     haveRut: "no",
     text: ""
   });

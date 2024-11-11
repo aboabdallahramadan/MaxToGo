@@ -17,8 +17,6 @@ const page = () => {
     startingDate: "",
     area: "",
     location: "",
-    taskMasterName: "",
-    taskMasterPhoneNumber: "",
     months: "",
     years: "",
     text: "",

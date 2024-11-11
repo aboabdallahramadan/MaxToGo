@@ -61,10 +61,12 @@ const Warehousing = ({ formData, handleChange, handleSubmit, isLoading, t, isGue
           </>
         )
       }
-      
+
 
       {/* Task Master */}
-      <div className="w-full flex justify-between items-center flex-nowrap gap-4">
+      {
+        !isGuest && (
+          <div className="w-full flex justify-between items-center flex-nowrap gap-4">
         <div className="relative flex flex-col items-start justify-between w-2/5 gap-4 mt-6">
           <label htmlFor="taskMasterName">
             <AiOutlineFileText className="inline-block mr-2 text-primary" />
@@ -97,6 +99,11 @@ const Warehousing = ({ formData, handleChange, handleSubmit, isLoading, t, isGue
           />
         </div>
       </div>
+        )
+      }
+
+      
+      
             {/* Task Name */}
             <div className="relative flex flex-col items-start justify-between w-full gap-4">
                 <label htmlFor="taskName">

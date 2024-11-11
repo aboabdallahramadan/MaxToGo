@@ -22,7 +22,6 @@ const page = () => {
     toFloorNumber: "",
     fromElevator: "notFound",
     toElevator: "notFound",
-    taskMasterPhoneNumber:"",
     image: "",
     heavyThings: "no",
     fromDistanceForParking: "",
@@ -33,8 +32,6 @@ const page = () => {
     isTimeFlexible: "yes",
     isWrapping: "no",
     taskType: "local",
-    taskMaster: "",
-    phoneNumber: "",
     text: "",
     haveRut: "no"
   });

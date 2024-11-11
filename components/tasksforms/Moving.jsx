@@ -65,41 +65,46 @@ const Moving = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest })
         )
       }
       
-
       {/* Task Master */}
-      <div className="w-full flex justify-between items-center flex-nowrap gap-4">
-        <div className="relative flex flex-col items-start justify-between w-2/5 gap-4 mt-6">
-          <label htmlFor="taskMasterName">
-            <AiOutlineFileText className="inline-block mr-2 text-primary" />
-            {t("taskMaster")}
-          </label>
-          <input
-            className="bg-transparent border-b-primary border-b focus:outline-none w-full"
-            type="text"
-            id="taskMasterName"
-            name="taskMasterName"
-            value={formData.taskMasterName}
-            onChange={handleChange}
-            required
-          />
+      {
+        !isGuest && (
+          <div className="w-full flex justify-between items-center flex-nowrap gap-4">
+          <div className="relative flex flex-col items-start justify-between w-2/5 gap-4 mt-6">
+            <label htmlFor="taskMasterName">
+              <AiOutlineFileText className="inline-block mr-2 text-primary" />
+              {t("taskMaster")}
+            </label>
+            <input
+              className="bg-transparent border-b-primary border-b focus:outline-none w-full"
+              type="text"
+              id="taskMasterName"
+              name="taskMasterName"
+              value={formData.taskMasterName}
+              onChange={handleChange}
+              required
+            />
+          </div>
+  
+          {/* Phone Number */}
+          <div className="relative flex flex-col items-start justify-between w-2/5 gap-4 mt-6">
+            <label htmlFor="taskMasterPhoneNumber">
+              <AiOutlinePhone className="inline-block mr-2 text-primary" />
+              {t("phoneNumber")}
+            </label>
+            <input
+              className="bg-transparent border-b-primary border-b focus:outline-none w-full"
+              type="text"
+              id="taskMasterPhoneNumber"
+              name="taskMasterPhoneNumber"
+              value={formData.taskMasterPhoneNumber}
+              onChange={handleChange}
+            />
+          </div>
         </div>
-
-        {/* Phone Number */}
-        <div className="relative flex flex-col items-start justify-between w-2/5 gap-4 mt-6">
-          <label htmlFor="taskMasterPhoneNumber">
-            <AiOutlinePhone className="inline-block mr-2 text-primary" />
-            {t("phoneNumber")}
-          </label>
-          <input
-            className="bg-transparent border-b-primary border-b focus:outline-none w-full"
-            type="text"
-            id="taskMasterPhoneNumber"
-            name="taskMasterPhoneNumber"
-            value={formData.taskMasterPhoneNumber}
-            onChange={handleChange}
-          />
-        </div>
-      </div>
+        )
+      }
+      
+      
 
       {/* Task Name */}
       <div className="relative flex flex-col items-start justify-between w-full gap-4">

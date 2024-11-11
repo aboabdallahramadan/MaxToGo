@@ -23,8 +23,6 @@ const page = () => {
     vehicleSize: "",
     isTimeFlexible: "yes",
     taskType: "local",
-    taskMasterName: "",
-    taskMasterPhoneNumber: "",
     image: "",
     text: ""
   });
