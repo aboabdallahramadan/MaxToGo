@@ -20,7 +20,6 @@ const page = () => {
     numberOfCars: "",
     fromLocation: "",
     toLocation: "",
-    vehicleSize: "",
     isTimeFlexible: "yes",
     taskType: "local",
     image: "",

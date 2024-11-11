@@ -28,7 +28,6 @@ const page = () => {
     toDistanceForParking: "",
     fromLocationSize: "",
     toLocationSize: "",
-    vehicleSize: "",
     isTimeFlexible: "yes",
     isWrapping: "no",
     taskType: "local",
