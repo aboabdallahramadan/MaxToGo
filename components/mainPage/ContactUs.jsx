@@ -58,7 +58,7 @@ const ContactUs = () => {
     };
 
     return (
-        <section id="contact" className="bg-[url('/images/hero.jpg')] bg-cover bg-center">
+        <section id="contact">
             <SectionHeader name={t("Contact")}></SectionHeader>
             <div className="container pb-8">
                 <p className="text-primary text-center text-lg mb-4">
@@ -66,7 +66,7 @@ const ContactUs = () => {
                 </p>
 
                 <FormContainer>
-                    <form onSubmit={handleSubmit} className="bg-blue-600/50 rounded-lg p-12 shadow-lg border border-primary">
+                    <form onSubmit={handleSubmit} className="p-12 shadow-lg border border-gray-700 rounded-xl bg-gray-800">
                         <div className="flex justify-between items-center gap-4 flex-col sm:flex-row">
                             <div className="flex flex-col items-start justify-between">
                                 <label htmlFor="firstName">{t("FirstName")}</label>
@@ -86,7 +86,7 @@ const ContactUs = () => {
                             <input className="bg-transparent border-b-primary border-b focus:outline-none w-full" id="email" type="email" name="email" value={formData.email} onChange={handleChange} required />
                         </div>
                         <div className="flex flex-col items-start justify-between mt-6 w-full">
-                            <label htmlFor="location">{t("Location")}</label>
+                            <label htmlFor="location">{t("Address")}</label>
                             <input className="bg-transparent border-b-primary border-b focus:outline-none w-full" id="location" type="text" name="location" value={formData.location} onChange={handleChange} required />
                         </div>
                         <div className="flex flex-col items-start justify-between mt-6 w-full">

@@ -186,7 +186,8 @@
         "Message": "Message",
         "Submit": "Submit",
         "SuccessMessage": "Your form has been submitted successfully",
-        "ErrorMessage": "Something went wrong"
+        "ErrorMessage": "Something went wrong",
+        "Address": "Address"
     },
     "IndividualTasks": {
         "IndividualTasks": "Individual Tasks",
@@ -314,7 +315,7 @@
         "WindowCleaning": "Window Cleaning",
         "HouseCleaning": "House Cleaning",
         "OfficeCleaning": "Office Cleaning",
-        "MoreOutCleaning": "More Out Cleaning",
+        "MoreOutCleaning": "Move Out Cleaning",
         "Other": "Other",
         "StorageType": "Storage Type",
         "CreateTask": "Create Task",
@@ -353,7 +354,8 @@
         "UploadImage": "Upload Image",
         "HowManyMonths": "How Many Months",
         "HowManyYears": "How Many Years",
-        "RideShare": "Ride-share"
+        "RideShare": "Ride-share",
+        "MovingTextareaPlaceholder": "Describe your needs in detail, such as the number of furniture items, moving boxes, goods, or other important information, to ensure you receive the right assistance."
         
     },
     "Auth" : {

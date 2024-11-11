@@ -193,7 +193,8 @@
         "Message": "Meddelande",
         "Submit": "Skicka",
         "SuccessMessage": "Ditt formulär har skickats framgångsrikt",
-        "ErrorMessage": "Något gick fel"
+        "ErrorMessage": "Något gick fel",
+        "Address": "Adress"
     },
     "Partners": { 
         "OurPartners": "Våra partners"
@@ -353,7 +354,8 @@
         "UploadImage": "Ladda upp bild",
         "HowManyMonths": "Hur många månader",
         "HowManyYears": "Hur många år",
-        "RideShare": "Samkörning"
+        "RideShare": "Samkörning",
+        "MovingTextareaPlaceholder": "Beskriv detaljerat dina behov, till exempel antalet möbler, flyttlådor, varor eller annan viktig information, för att säkerställa att du får rätt hjälp."
     },
     "Auth": {
         "Login": "Logga in",

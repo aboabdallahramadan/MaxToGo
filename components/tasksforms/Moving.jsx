@@ -673,6 +673,7 @@ const Moving = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest })
                 name="text"
                 value={formData.text}
                 onChange={handleChange}
+                placeholder={t("MovingTextareaPlaceholder")}
                 required
               />
             </div>
