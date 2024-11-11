@@ -410,80 +410,263 @@
         "Description": "Beskriv lite kort ditt företag",
         "permitFile": "Tillstånd fil PDF eller JBEG",
         "Terms": {
-    "title": "Användarvillkor för Moving Go Max",
-    "lastUpdated": "Senast uppdaterad: 2022-04-01",
-    "sections": {
-      "terms": {
-        "title": "Villkor för användning av Moving Go Max",
-        "content": {
-          "1": "Genom att nyttja Moving Go Max accepterar du de aktuella villkoren för användande."
-        }
-      },
-      "howItWorks": {
-        "title": "Så fungerar Moving Go Max",
-        "content": {
-          "1": "Moving Go Max är en plattform som sammanför transport-, flytt- och serviceföretag för att effektivisera logistik, transport och bokning av uppdrag.",
-          "2": "Genom att registrera och beskriva uppdrag på Moving Go Max får företag möjligheten att sälja och köpa tjänster som transport, flytt och logistiktjänster, samt möjligheten att hantera lediga resurser för att maximera sin kapacitet.",
-          "3": "När ett uppdrag publiceras får andra företag inom samma nätverk möjlighet att köpa det eller lägga ett bud, vilket möjliggör en säker och effektiv överföring av uppdrag.",
-          "4": "Moving Go Max skickar en bekräftelse via e-post för varje genomförd uppdragsförmedling. Kontakten sker direkt mellan användaren och det köpande företaget.",
-          "5": "Om användare vill ta bort en förfrågan eller ett publicerat uppdrag från plattformen, kan de kontakta oss på: info@movinggomax.com."
-        }
-      },
-      "usage": {
-        "title": "Användning av Moving Go Max",
-        "content": {
-          "1": "Det är inte tillåtet att utge sig för att ha någon falsk anknytning till Moving Go Max eller våra partners, vare sig i en allmän kontext eller gentemot specifika mottagare.",
-          "2": "Otillåten åtkomst till plattformens icke-offentliga delar eller andra användares information är förbjudet.",
-          "3": "Moving Go Max får inte användas för spridning av skadlig kod eller för att hämta dold information från andra användare.",
-          "4": "Användare ska inte påverka andras möjlighet att använda plattformen.",
-          "5": "Att utge sig för att vara en annan fysisk eller juridisk person är förbjudet.",
-          "6": "Vid misstanke om användning som strider mot våra villkor, kan Moving Go Max spärra kontot."
-        }
-      },
-      "responsibilities": {
-        "title": "Ansvar och förhållande till leverantörer",
-        "content": {
-          "1": "Moving Go Max förmedlar kontakt mellan användaren och leverantören och är därmed inte inblandat i själva utförandet eller innehållet i de erbjudanden som ges mellan parterna.",
-          "2": "Transportföretag, flyttfirmor och serviceföretag på Moving Go Max är oberoende, och vi garanterar inte att alla leverantörer kommer att kontakta användaren med erbjudanden.",
-          "3": "Användning av Moving Go Max sker på eget ansvar, och Moving Go Max tar inget ansvar för avtalens genomförande eller kvalitet. Vi arbetar dock enbart med seriösa och pålitliga aktörer.",
-          "4": "Moving Go Max samarbetar med utvalda och oberoende företag. Vi garanterar inte att erbjudandena är marknadens bästa eller billigaste.",
-          "5": "Moving Go Max tar inget ansvar för force majeure-händelser såsom naturkatastrofer, strejker, importrestriktioner, eller andra oförutsedda händelser som påverkar vår plattform.",
-          "6": "Moving Go Max ansvarar inte för skatter eller avgifter kopplade till användning av plattformen."
-        }
-      },
-      "intellectual": {
-        "title": "Immateriella rättigheter",
-        "content": {
-          "1": "Alla immateriella rättigheter relaterade till Moving Go Max tillhör Moving Go Max och får inte användas kommersiellt utan skriftligt godkännande."
-        }
-      },
-      "communication": {
-        "title": "Kommunikation",
-        "content": {
-          "1": "All kommunikation med Moving Go Max sker elektroniskt via info@movinggomax.com."
-        }
-      },
-      "privacy": {
-        "title": "Integritetsskydd och personuppgifter",
-        "content": {
-          "1": "Moving Go Max följer dataskyddsförordningen (GDPR), och insamlad data används endast i syfte att koppla samman relevanta transport- och serviceföretag."
-        }
-      },
-      "changes": {
-        "title": "Förändringar",
-        "content": {
-          "1": "Moving Go Max förbehåller sig rätten att ändra användarvillkoren utan förvarning. Fortsatt användning innebär samtycke till de nya villkoren.",
-          "2": "Tidpunkten för den senaste uppdateringen framgår högst upp på sidan."
-        }
-      },
-      "governing": {
-        "title": "Lagföring och tvister",
-        "content": {
-          "1": "Användning av Moving Go Max och eventuella tvister är underställda svensk lag.",
-          "2": "Tvister ska i första hand lösas direkt mellan parterna, men kan vid behov tas till domstol."
-        }
-      }
-    }
+          "title": "Användarvillkor för Moving Go Max",
+          "lastUpdated": "Senast uppdaterad: 2022-04-01",
+          "sections": {
+            "terms": {
+              "title": "Villkor för användning av Moving Go Max",
+              "content": {
+                "1": "Genom att nyttja Moving Go Max accepterar du de aktuella villkoren för användande."
+              }
+            },
+            "howItWorks": {
+              "title": "Så fungerar Moving Go Max",
+              "content": {
+                "1": "Moving Go Max är en plattform som sammanför transport-, flytt- och serviceföretag för att effektivisera logistik, transport och bokning av uppdrag.",
+                "2": "Genom att registrera och beskriva uppdrag på Moving Go Max får företag möjligheten att sälja och köpa tjänster som transport, flytt och logistiktjänster, samt möjligheten att hantera lediga resurser för att maximera sin kapacitet.",
+                "3": "När ett uppdrag publiceras får andra företag inom samma nätverk möjlighet att köpa det eller lägga ett bud, vilket möjliggör en säker och effektiv överföring av uppdrag.",
+                "4": "Moving Go Max skickar en bekräftelse via e-post för varje genomförd uppdragsförmedling. Kontakten sker direkt mellan användaren och det köpande företaget.",
+                "5": "Om användare vill ta bort en förfrågan eller ett publicerat uppdrag från plattformen, kan de kontakta oss på: info@movinggomax.com."
+              }
+            },
+            "usage": {
+              "title": "Användning av Moving Go Max",
+              "content": {
+                "1": "Det är inte tillåtet att utge sig för att ha någon falsk anknytning till Moving Go Max eller våra partners, vare sig i en allmän kontext eller gentemot specifika mottagare.",
+                "2": "Otillåten åtkomst till plattformens icke-offentliga delar eller andra användares information är förbjudet.",
+                "3": "Moving Go Max får inte användas för spridning av skadlig kod eller för att hämta dold information från andra användare.",
+                "4": "Användare ska inte påverka andras möjlighet att använda plattformen.",
+                "5": "Att utge sig för att vara en annan fysisk eller juridisk person är förbjudet.",
+                "6": "Vid misstanke om användning som strider mot våra villkor, kan Moving Go Max spärra kontot."
+              }
+            },
+            "responsibilities": {
+              "title": "Ansvar och förhållande till leverantörer",
+              "content": {
+                "1": "Moving Go Max förmedlar kontakt mellan användaren och leverantören och är därmed inte inblandat i själva utförandet eller innehållet i de erbjudanden som ges mellan parterna.",
+                "2": "Transportföretag, flyttfirmor och serviceföretag på Moving Go Max är oberoende, och vi garanterar inte att alla leverantörer kommer att kontakta användaren med erbjudanden.",
+                "3": "Användning av Moving Go Max sker på eget ansvar, och Moving Go Max tar inget ansvar för avtalens genomförande eller kvalitet. Vi arbetar dock enbart med seriösa och pålitliga aktörer.",
+                "4": "Moving Go Max samarbetar med utvalda och oberoende företag. Vi garanterar inte att erbjudandena är marknadens bästa eller billigaste.",
+                "5": "Moving Go Max tar inget ansvar för force majeure-händelser såsom naturkatastrofer, strejker, importrestriktioner, eller andra oförutsedda händelser som påverkar vår plattform.",
+                "6": "Moving Go Max ansvarar inte för skatter eller avgifter kopplade till användning av plattformen."
+              }
+            },
+            "intellectual": {
+              "title": "Immateriella rättigheter",
+              "content": {
+                "1": "Alla immateriella rättigheter relaterade till Moving Go Max tillhör Moving Go Max och får inte användas kommersiellt utan skriftligt godkännande."
+              }
+            },
+            "communication": {
+              "title": "Kommunikation",
+              "content": {
+                "1": "All kommunikation med Moving Go Max sker elektroniskt via info@movinggomax.com."
+              }
+            },
+            "privacy": {
+              "title": "Integritetsskydd och personuppgifter",
+              "content": {
+                "1": "Moving Go Max följer dataskyddsförordningen (GDPR), och insamlad data används endast i syfte att koppla samman relevanta transport- och serviceföretag."
+              }
+            },
+            "changes": {
+              "title": "Förändringar",
+              "content": {
+                "1": "Moving Go Max förbehåller sig rätten att ändra användarvillkoren utan förvarning. Fortsatt användning innebär samtycke till de nya villkoren.",
+                "2": "Tidpunkten för den senaste uppdateringen framgår högst upp på sidan."
+              }
+            },
+            "governing": {
+              "title": "Lagföring och tvister",
+              "content": {
+                "1": "Användning av Moving Go Max och eventuella tvister är underställda svensk lag.",
+                "2": "Tvister ska i första hand lösas direkt mellan parterna, men kan vid behov tas till domstol."
+              }
+            }
+          }
+        },
+        "ramavtal": {
+          "title": "Förmedlingsavtal för Moving Go Max",
+          "lastUpdated": "Mellan Moving Go Max AB, Org.nr: 559394-8085 och ”Utföraren”",
+          "sections": {
+            "1": {
+              "title": "Syfte och omfattning",
+              "content": {
+                "1": "Moving Go Max erbjuder en digital plattform där företag inom transport, logistik, flytt, städ och andra tjänstebranscher kan samverka genom att förmedla uppdrag och dela resurser. Moving Go Max fungerar som en förmedlare mellan företag som erbjuder och söker tjänster, utan att själva äga, sälja uppdragen. För varje uppdrag förmedlat via plattformen utgår en serviceavgift i form av en procent av uppdragsvärdet."
+              }
+            },
+            "2": {
+              "title": "FÖRMEDLINGSARVODE",
+              "content": {
+                "1": "Förmedlaren har rätt till ett förmedlingsarvode per uppdrag, vilket kan utgå som en procentuell avgift baserad på uppdragets värde eller som en fast avgift, beroende på uppdragets art eller enligt överenskommelse med Uppdragsgivaren. Arvodet ska betalas direkt till Förmedlaren så snart ett uppdrag publiceras eller köps av en uppdragstagare. Vissa undantag kan gälla vid större uppdrag, tomkörningar, eller samkörning."
+              }
+            },
+            "3": {
+              "title": "Kontaktuppgifter och Kommunikationsregler",
+              "content": {
+                "1": "Kontaktuppgifter mellan parter kommer att visas först efter att ett uppdrag har köpts. Före betalning är det förbjudet att dela kontaktuppgifter i kommentarsfältet eller chatten. Moving Go Max kontrollerar alla uppdrag för att säkerställa att dessa regler följs innan publicering. Om någon part bryter mot denna klausul genom att dela kontaktuppgifter i förväg, kan denne omedelbart avregistreras från plattformen och bötfällas."
+              }
+            },
+            "4": {
+              "title": "ANSVARSFÖRDELNING",
+              "content": {
+                "1": "Förmedlarens Ansvar Moving Go Max tillhandahåller en plattform för samarbete och fungerar enbart som förmedlare mellan uppdragsgivare och samarbetspartner. Moving Go Max ansvarar inte för att genomföra eller fullfölja uppdrag och har ingen kontroll över kvaliteten, säkerheten eller utförandet av uppdraget.",
+                "2": "Uppdragsgivarens Ansvar Uppdragsgivaren ansvarar för att lämna korrekta och fullständiga uppgifter om varje uppdrag. Eventuella felaktiga, ofullständiga eller missvisande uppgifter ligger på uppdragsgivarens ansvar.",
+                "3": "Vidarebefordran av Uppdrag Moving Go Max ansvarar för att vidarebefordra uppdragen genom att publicera dem på plattformen, där andra samarbetspartners kan se och köpa uppdragen. Moving Go Max garanterar dock inte att alla uppdrag kommer att säljas eller matchas.",
+                "4": "Samarbetspartners Ansvar Varje samarbetspartner är ansvarig för att ha nödvändiga tillstånd, såsom trafiktillstånd och försäkringar, samt för att hantera eventuella tillkommande kostnader som kan uppstå under utförandet av uppdraget.",
+                "5": "Begränsat Ansvar Moving Go Max kan inte hållas ansvarig för förseningar, misslyckanden, eller eventuella skador som uppstår under ett uppdrag. Ansvaret ligger hos uppdragsgivaren och samarbetspartnern att säkra och genomföra uppdraget på ett professionellt och lagenligt sätt.",
+                "6": "Tvistlösning Eventuella tvister mellan uppdragsgivare och samarbetspartner som uppstår i samband med uppdrag ska lösas mellan parterna själva. Moving Go Max kan bistå med kontaktinformation men har ingen skyldighet att medla eller lösa tvister.",
+                "7": "Undantag för Stora Uppdrag och Tomma Körningar Förmedlingsavgifter och betalningsvillkor kan variera vid stora uppdrag, tomma körningar eller samkörningar. Särskilda villkor kan gälla, och dessa ska i så fall godkännas av alla parter innan uppdraget påbörjas.",
+                "8": "Sekretess och Informationssäkerhet Moving Go Max förbinder sig att hantera användares uppgifter konfidentiellt och enligt gällande lagstiftning. Samarbetspartners och uppdragsgivare förväntas också följa GDPR och andra relevanta dataskyddsregler.",
+                "9": "Avtalets Giltighet Detta avtal gäller från dagen för undertecknandet och tills vidare, om inte en specifik tidsperiod har angetts i avtalet. Avtalet kan sägas upp med omedelbar verkan vid allvarliga brott mot villkoren."
+              }
+            },
+            "5": {
+              "title": "Kvalitetsutvärdering efter Uppdrag",
+              "content": {
+                "1": "För att främja hög kvalitet och tillförlitlighet i alla uppdrag kommer företagen att kunna utvärdera varandra efter varje slutfört uppdrag. Genom detta system säkerställs att både uppdragsgivare och samarbetspartners strävar efter att upprätthålla högsta möjliga standard i utförande och professionalism. Dessa utvärderingar bidrar också till en tryggare och mer transparent arbetsmiljö för alla användare på Moving Go Max-plattformen."
+              }
+            },
+            "6": {
+              "title": "Leverans",
+              "content": {
+                "1": "Uppdragstagaren förbinder sig att i enlighet med avtalet leverera tjänsten som beskrivs i detta dokument vid varje given tidpunkt. Avtalet gäller enbart mellan Uppdragsgivaren och Uppdragstagaren. Avtal eller överenskommelser mellan Uppdragsgivaren och Uppdragstagaren är förbjudna och medför vite enligt nedan."
+              }
+            },
+            "7": {
+              "title": "Leveransplaner/Utförande av tjänst",
+              "content": {
+                "1": "Uppdragstagaren ska följa angivna uppdrag och ansvarar för att tjänsten utförs enligt den överenskomna kvaliteten och inom den avtalade tidsramen. Uppdragstagaren ska använda egna fordon, material och personal. Vid bristande fullgörande av dessa krav kan avtalet sägas upp omedelbart."
+              }
+            },
+            "8": {
+              "title": "Bindande beställningar",
+              "content": {
+                "1": "Alla beställningar är bindande enligt avtalet. Uppdragstagaren ska omedelbart informera Uppdragsgivaren om denne inte kan utföra tjänsten. Beställningar ska alltid göras genom Moving Go Max-plattformen, och brott mot denna klausul medför vite."
+              }
+            },
+            "9": {
+              "title": "Uppdragsgivarens dröjsmål samt ersättning",
+              "content": {
+                "1": "Uppdragsgivaren har rätt att avboka uppdrag vid force majeure eller liknande omständigheter. Om uppdraget avbokas av Uppdragsgivaren nära inpå utförandet ska ersättning utgå till Uppdragstagaren enligt följande ersättningsmodell:"              }
+            },
+            "10": {
+              "title": "Avbokningsregler och Ersättning",
+              "content": {
+                "1": "Uppdragstagarens Avbokning Uppdragstagaren får inte avboka ett uppdrag inom 48 timmar före det planerade genomförandet. Om avbokning sker tidigare än 48 timmar innan uppdragets start, är uppdragstagaren skyldig att betala en avbokningsavgift motsvarande 25 % av det totala uppdragsvärdet till uppdragsförmedlaren.",
+                "2": "Uppdragsgivarens Avbokning Om uppdragsgivaren avbokar ett uppdrag mindre än 24 timmar före det schemalagda utförandet, utgår en ersättning på 10 % av det totala uppdragsvärdet till uppdragstagaren"
+              }
+            },
+            "11": {
+              "title": "Betalningsvillkor och betalningsförmedlingen",
+              "content": {
+                "1": "Uppdragstagaren har rätt att fakturera Uppdragsgivaren efter 2 dagar med 30 dagars betalningsvillkor. Betalning ska ske senast 20 dagar efter mottagen faktura, vilken ska specificeras enligt uppdraget.",
+                "2": "Moving Go Max kommer så småningom att fungera som betalningsförmedlare för att underlätta transaktioner mellan uppdragsgivare och uppdragstagare. I detta system betalar uppdragsgivaren värdet av uppdraget till Moving Go Max vid uppdragsstart. Efter att uppdraget har slutförts och godkänts av uppdragsgivaren, överför Moving Go Max betalningen vidare till uppdragstagaren."
+              }
+            },
+            "12": {
+              "title": "Ansvarstid och avhjälpande",
+              "content": {
+                "1": "Uppdragstagaren ansvarar för tjänsten i två (2) år från leverans till Uppdragsgivaren enligt konsumenttjänstlagen. Vid behov av avhjälpande åtgärder ska dessa genomföras inom 24 timmar för att erhålla full ersättning."
+              }
+            },
+            "13": {
+              "title": "Betalningsdröjsmål och dröjsmålsränta",
+              "content": {
+                "1": "Vid utebliven betalning har Uppdragstagaren rätt till lagstadgad dröjsmålsränta."
+              }
+            },
+            "14": {
+              "title": "Fast avgift:",
+              "content": {
+                "1": "En fast ersättning som baseras på typ av tjänst som ska utföras, oavsett om uppdraget slutförs eller avbokas."
+              }
+            },
+            "15": {
+              "title": "Procentuell ersättning:",
+              "content": {
+                "1": "En procentandel av det totala avtalade beloppet för uppdraget, där procenten bestäms i förväg och baseras på hur nära avbokningen sker i förhållande till den avtalade tjänsten."
+              }
+            },
+            "16": {
+              "title": "Kostnadsersättning:",
+              "content": {
+                "1": "Ersättning för dokumenterade kostnader som Uppdragstagaren har ådragit sig fram till avbokningen, vilket kan inkludera arbetskostnader, materialkostnader eller andra direkta utgifter relaterade till uppdraget."
+              }
+            },
+            "17": {
+              "title": "77.Kvalitetskontroll",
+              "content": {
+                "1": "Moving Go Max förbehåller sig rätten att utföra kvalitetskontroller på tjänster som utförs av Uppdragstagaren. Uppdragstagaren är skyldig att samarbeta med Moving Go Max i dessa kontroller och vidta nödvändiga åtgärder för att åtgärda eventuella brister."
+              }
+            },
+            "18": {
+              "title": "Ändringar i avtal och tjänster",
+              "content": {
+                "1": "Eventuella ändringar i avtalet eller i de tjänster som ska utföras måste godkännas skriftligen av både Uppdragsgivaren och Uppdragstagaren. Ändringar kan leda till justeringar av tidsplaner och kostnader."
+              }
+            },
+            "19": {
+              "title": "Ansvarsbegränsning",
+              "content": {
+                "1": "Moving Go Max ansvarar inte för eventuella skador eller förluster som kan uppstå till följd av Uppdragstagarens utförande av tjänsterna, såvida inte sådana skador beror på grov vårdslöshet eller uppsåtligt handlande av Moving Go Max."
+              }
+            },
+            "20": {
+              "title": "10. BINDNINGSTID, EXKLUSIVITET OCH SANKTIONER",
+              "content": {
+                "1": "1. Livslångt Samarbetsåtagande Genom att godkänna dessa villkor binder sig både uppdragsgivare och samarbetspartners till Moving Go Max för en obegränsad tidsperiod, utan särskild bindningstid. Detta innebär ett livslångt åtagande att endast använda Moving Go Max för förmedling av uppdrag inom liknande tjänster.",
+                "2": "2. Exklusivitetsklausul Uppdragsgivare och samarbetspartners förbinder sig att inte använda konkurrerande digitala förmedlingsplattformar för liknande tjänster. Detta gäller enbart samarbeten mellan företag, och inte privata kunder, B2B plattformer. ",
+                "3": "3. Sanktioner vid Överträdelse Vid brott mot exklusivitetsklausulen kan Moving Go Max, efter bedömning, påföra en sanktionsavgift om 100 000 kronor. Moving Go Max förbehåller sig rätten att vidta ytterligare åtgärder, inklusive uppsägning av medlemskap och andra rättsliga åtgärder.",
+                "4": "4. Anpassning och Uppdatering Moving Go Max kan uppdatera avtalet vid större marknadsförändringar eller lagstiftning för att skydda plattformens exklusivitet och konkurrenskraft.",
+                "5": "5. Under avtalets giltighetstid förbinder sig Uppdragsgivaren att enbart tilldela sina flyttuppdrag till Förmedlaren. Uppdragsgivaren får inte ingå avtal eller på annat sätt överlåta uppdrag till andra förmedlare, flyttfirmor, transport, städning eller andra serviceföretag utan skriftligt godkännande från Förmedlaren."
+              }
+            },
+            "21": {
+              "title": "6. FÖRSÄKRINGAR OCH TILLSTÅND",
+              "content": {
+                "1": "1. Krav på Tillstånd och Försäkringar Samarbetspartners är skyldiga att inneha samtliga nödvändiga trafiktillstånd samt relevanta försäkringar enligt gällande lagstiftning för att kunna utföra flyttuppdrag på ett lagligt och tryggt sätt.",
+                "2": "2. Försäkringsansvar Det är samarbetspartnerns ansvar att säkerställa giltighet för och bära kostnaderna för alla erforderliga försäkringar, däribland ansvarsförsäkring, transportförsäkring samt andra eventuella försäkringar som krävs för utförandet av uppdragen.",
+                "3": "3. Ansvar för Extra Kostnader Samarbetspartners står för kostnader kopplade till tillstånd och övriga nödvändiga utgifter som kan uppstå vid utförandet av köpta uppdrag, inklusive exempelvis avgifter för specifika tillstånd eller ytterligare försäkringsbehov."
+              }
+            },
+            "22": {
+              "title": "Extra Kostnader och Tillägg",
+              "content": {
+                "1": "Uppdragstagaren har rätt att begära ersättning för extra kostnader om det visar sig att uppdraget kräver mer tid eller resurser än vad som ursprungligen angivits. Detta gäller särskilt om uppdragstagaren upptäcker att den information som tillhandahållits av uppdragsförmedlaren eller uppdragsgivaren inte överensstämmer med verkligheten, exempelvis i fråga om volym (kubikmeter), vikt, antal föremål eller andra förutsättningar för transporten. Tilläggskostnaderna ska specificeras och förklaras för uppdragsgivaren innan tilläggsarbetet påbörjas."
+              }
+            },
+            "23": {
+              "title": "8. KONFIDENTIALITET",
+              "content": {
+                "1": "Skydd av Konfidentiell Information Parterna förbinder sig att inte avslöja konfidentiell information om varandra, samarbetspartners eller uppgifter kopplade till privata kunder för tredje part utan föregående skriftligt godkännande från den andra parten.",
+                "2": "Hantering av Kunduppgifter All information om privata kunder, inklusive personuppgifter och annan känslig data, ska behandlas i enlighet med gällande dataskyddslagstiftning (GDPR). Samarbetspartners förbinder sig att vidta alla nödvändiga åtgärder för att skydda sådana uppgifter mot obehörig åtkomst, förlust eller spridning.",
+                "3": "Begränsning av Användning Konfidentiell information får endast användas för att uppfylla de åtaganden som följer av detta avtal. Användning av kunduppgifter eller information om samarbetspartners för andra syften är strikt förbjudet och kan leda till avtalsbrott."
+              }
+            },
+            "24": {
+              "title": "9. UTVÄRDERING OCH JUSTERING AV AVTALET",
+              "content": {
+                "1": "Avtalet och priserna för förmedlingsarvodet kan utvärderas och justeras vid behov. Utvärderingar kan göras kontinuerligt, och justeringar kan ske när som helst för att säkerställa att avtalet förblir relevant och rättvist för alla parter."
+              }
+            },
+            "25": {
+              "title": "12. GDPR OCH DATASKYDD",
+              "content": {
+                "1": "1. Databehandling: Parterna förbinder sig att följa GDPR (General Data Protection Regulation) och tillämpliga dataskyddslagar vid hantering av personuppgifter relaterade till detta Avtal.",
+                "2": "2. Personuppgiftsansvar: Uppdragsgivaren är personuppgiftsansvarig för personuppgifter som delas med Förmedlaren i samband med flyttuppdrag. Förmedlaren agerar som personuppgiftsbiträde och behandlar personuppgifter enbart enligt instruktioner från Uppdragsgivaren.",
+                "3": "3. Samtycke och Information: Uppdragsgivaren ansvarar för att ha inhämtat nödvändigt samtycke från registrerade personer och tillhandahålla dem information om hur deras personuppgifter behandlas.",
+                "4": "4. Säkerhet: Förmedlaren ska vidta lämpliga tekniska och organisatoriska åtgärder för att skydda personuppgifter mot oavsiktlig eller olaglig förstörelse, förlust, ändring, obehörig spridning eller åtkomst.",
+                "5": "5. Incidentrapportering: Uppdragstagaren ska omedelbart informera Uppdragsgivaren och förmedlaren om eventuella personuppgiftsincidenter och samarbeta för att hantera och rapportera sådana incidenter till tillsynsmyndigheter och registrerade personer enligt lagkrav."
+              }
+            },
+            "26": {
+              "title": "13. ÖVRIGA VILLKOR",
+              "content": {
+                "1": "Tvister som uppstår i samband med detta Avtal ska i första hand lösas genom förhandlingar mellan parterna. Om enighet inte kan nås, ska tvisten avgöras i svensk domstol med tillämpning av svensk lag."
+              }
+            }
+          }
         },
         "PleaseReadTerms": "Läs villkoren",
         "PleaseAcceptTerms": "Vänligen acceptera villkoren"

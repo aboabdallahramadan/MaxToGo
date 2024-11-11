@@ -413,80 +413,266 @@
         "Description": "Brief Description of Your Company",
         "permitFile": "Permit File PDF or JBEG",
         "Terms": {
-    "title": "Terms of Use for Max To Go",
-    "lastUpdated": "Last updated: October 28, 2024",
-    "sections": {
-      "terms": {
-        "title": "Terms for Using Max To Go",
-        "content": {
-          "1": "By using Max To Go, you agree to the current terms of use."
-        }
-      },
-      "howItWorks": {
-        "title": "How Max To Go Works",
-        "content": {
-          "1": "Max To Go is a platform that connects transport, moving, and service companies to streamline logistics, transport, and booking tasks.",
-          "2": "By registering and describing tasks on Max To Go, companies can buy and sell services such as transport, moving, and logistics, as well as manage available resources to maximize capacity.",
-          "3": "When a task is published, other companies within the network can buy or place a bid, enabling a secure and efficient transfer of tasks.",
-          "4": "Max To Go will send an email confirmation for each completed task transaction. Contact is made directly between the user and the purchasing company.",
-          "5": "If users wish to remove a request or a published task from the platform, they can contact us at: info@movinggomax.com."
-        }
-      },
-      "usage": {
-        "title": "Using Max To Go",
-        "content": {
-          "1": "Misrepresenting an association with Max To Go or our partners, either publicly or privately, is prohibited.",
-          "2": "Unauthorized access to non-public parts of the platform or information from other users is not allowed.",
-          "3": "Max To Go must not be used to distribute malicious code or to gather hidden information from other users.",
-          "4": "Users must not interfere with other users' ability to use the platform.",
-          "5": "Impersonating another person or entity is prohibited.",
-          "6": "If there is suspected misuse of the platform, Max To Go reserves the right to suspend the account."
-        }
-      },
-      "responsibilities": {
-        "title": "Responsibilities and Relationship with Suppliers",
-        "content": {
-          "1": "Max To Go facilitates contact between users and providers and is not involved in the execution or content of the agreements made between parties.",
-          "2": "Transport companies, moving companies, and service companies on Max To Go are independent, and we do not guarantee that all providers will contact users with offers.",
-          "3": "The use of Max To Go is at the user's own risk, and Max To Go is not responsible for the execution or quality of agreements. However, we only work with reliable and reputable companies.",
-          "4": "Max To Go partners with selected independent companies but does not guarantee that the offers are the best or cheapest on the market.",
-          "5": "Max To Go is not responsible for force majeure events such as natural disasters, strikes, import restrictions, or other unforeseen events impacting our platform.",
-          "6": "Max To Go is not responsible for any taxes or fees related to the use of the platform."
-        }
-      },
-      "intellectual": {
-        "title": "Intellectual Property",
-        "content": {
-          "1": "All intellectual property rights related to Max To Go belong to Max To Go and may not be used commercially without written permission."
-        }
-      },
-      "communication": {
-        "title": "Communication",
-        "content": {
-          "1": "All communication with Max To Go is conducted electronically via info@movinggomax.com."
-        }
-      },
-      "privacy": {
-        "title": "Privacy Policy and Personal Data",
-        "content": {
-          "1": "Max To Go complies with the General Data Protection Regulation (GDPR), and collected data is used solely for the purpose of connecting relevant transport and service companies."
-        }
-      },
-      "changes": {
-        "title": "Changes",
-        "content": {
-          "1": "Max To Go reserves the right to change the terms of use without prior notice. Continued use implies acceptance of the new terms.",
-          "2": "The date of the latest update is shown at the top of this document."
-        }
-      },
-      "governing": {
-        "title": "Governing Law and Disputes",
-        "content": {
-          "1": "Use of Max To Go and any disputes are subject to Swedish law.",
-          "2": "Disputes should primarily be resolved directly between the parties but may be taken to court if necessary."
-        }
-      }
-    }
+          "object":"Terms",
+          "title": "Terms of Use for Max To Go",
+          "lastUpdated": "Last updated: October 28, 2024",
+          "sections": {
+            "terms": {
+              "title": "Terms for Using Max To Go",
+              "content": {
+                "1": "By using Max To Go, you agree to the current terms of use."
+              }
+            },
+            "howItWorks": {
+              "title": "How Max To Go Works",
+              "content": {
+                "1": "Max To Go is a platform that connects transport, moving, and service companies to streamline logistics, transport, and booking tasks.",
+                "2": "By registering and describing tasks on Max To Go, companies can buy and sell services such as transport, moving, and logistics, as well as manage available resources to maximize capacity.",
+                "3": "When a task is published, other companies within the network can buy or place a bid, enabling a secure and efficient transfer of tasks.",
+                "4": "Max To Go will send an email confirmation for each completed task transaction. Contact is made directly between the user and the purchasing company.",
+                "5": "If users wish to remove a request or a published task from the platform, they can contact us at: info@movinggomax.com."
+              }
+            },
+            "usage": {
+              "title": "Using Max To Go",
+              "content": {
+                "1": "Misrepresenting an association with Max To Go or our partners, either publicly or privately, is prohibited.",
+                "2": "Unauthorized access to non-public parts of the platform or information from other users is not allowed.",
+                "3": "Max To Go must not be used to distribute malicious code or to gather hidden information from other users.",
+                "4": "Users must not interfere with other users' ability to use the platform.",
+                "5": "Impersonating another person or entity is prohibited.",
+                "6": "If there is suspected misuse of the platform, Max To Go reserves the right to suspend the account."
+              }
+            },
+            "responsibilities": {
+              "title": "Responsibilities and Relationship with Suppliers",
+              "content": {
+                "1": "Max To Go facilitates contact between users and providers and is not involved in the execution or content of the agreements made between parties.",
+                "2": "Transport companies, moving companies, and service companies on Max To Go are independent, and we do not guarantee that all providers will contact users with offers.",
+                "3": "The use of Max To Go is at the user's own risk, and Max To Go is not responsible for the execution or quality of agreements. However, we only work with reliable and reputable companies.",
+                "4": "Max To Go partners with selected independent companies but does not guarantee that the offers are the best or cheapest on the market.",
+                "5": "Max To Go is not responsible for force majeure events such as natural disasters, strikes, import restrictions, or other unforeseen events impacting our platform.",
+                "6": "Max To Go is not responsible for any taxes or fees related to the use of the platform."
+              }
+            },
+            "intellectual": {
+              "title": "Intellectual Property",
+              "content": {
+                "1": "All intellectual property rights related to Max To Go belong to Max To Go and may not be used commercially without written permission."
+              }
+            },
+            "communication": {
+              "title": "Communication",
+              "content": {
+                "1": "All communication with Max To Go is conducted electronically via info@movinggomax.com."
+              }
+            },
+            "privacy": {
+              "title": "Privacy Policy and Personal Data",
+              "content": {
+                "1": "Max To Go complies with the General Data Protection Regulation (GDPR), and collected data is used solely for the purpose of connecting relevant transport and service companies."
+              }
+            },
+            "changes": {
+              "title": "Changes",
+              "content": {
+                "1": "Max To Go reserves the right to change the terms of use without prior notice. Continued use implies acceptance of the new terms.",
+                "2": "The date of the latest update is shown at the top of this document."
+              }
+            },
+            "governing": {
+              "title": "Governing Law and Disputes",
+              "content": {
+                "1": "Use of Max To Go and any disputes are subject to Swedish law.",
+                "2": "Disputes should primarily be resolved directly between the parties but may be taken to court if necessary."
+              }
+            }
+          }
+        },
+        "ramavtal": {
+          "object": "Ramavtal",
+          "title": "Brokerage Agreement for Moving Go Max",
+          "lastUpdated": "Between Moving Go Max AB, Org.nr: 559394-8085 and the 'Performer'",
+          "sections": {
+            "1": {
+              "title": "Purpose and Scope",
+              "content": {
+                "1": "Moving Go Max offers a digital platform where companies in transport, logistics, moving, cleaning, and other service industries can collaborate by mediating assignments and sharing resources. Moving Go Max acts as an intermediary between companies offering and seeking services, without owning or selling the assignments themselves. A service fee in the form of a percentage of the assignment value is charged for each assignment mediated via the platform."
+              }
+            },
+            "2": {
+              "title": "BROKERAGE FEE",
+              "content": {
+                "1": "The broker is entitled to a brokerage fee per assignment, which may be a percentage fee based on the value of the assignment or a fixed fee, depending on the nature of the assignment or as agreed with the Client. The fee is to be paid directly to the Broker as soon as an assignment is published or purchased by an assignee. Certain exceptions may apply for larger assignments, empty runs, or shared runs."
+              }
+            },
+            "3": {
+              "title": "Contact Information and Communication Rules",
+              "content": {
+                "1": "Contact information between parties will be displayed only after an assignment has been purchased. Before payment, it is prohibited to share contact information in the comment field or chat. Moving Go Max checks all assignments to ensure these rules are followed before publication. If any party violates this clause by sharing contact information in advance, they may be immediately deregistered from the platform and fined."
+              }
+            },
+            "4": {
+              "title": "RESPONSIBILITY DISTRIBUTION",
+              "content": {
+                "1": "Broker's Responsibility Moving Go Max provides a platform for collaboration and acts solely as an intermediary between clients and partners. Moving Go Max is not responsible for executing or completing assignments and has no control over the quality, safety, or execution of the assignment.",
+                "2": "Client's Responsibility The client is responsible for providing accurate and complete information about each assignment. Any incorrect, incomplete, or misleading information is the responsibility of the client.",
+                "3": "Forwarding of Assignments Moving Go Max is responsible for forwarding assignments by publishing them on the platform, where other partners can see and purchase the assignments. However, Moving Go Max does not guarantee that all assignments will be sold or matched.",
+                "4": "Partner's Responsibility Each partner is responsible for having the necessary permits, such as traffic permits and insurance, and for handling any additional costs that may arise during the execution of the assignment.",
+                "5": "Limited Liability Moving Go Max cannot be held responsible for delays, failures, or any damages that occur during an assignment. It is the responsibility of the client and the partner to secure and execute the assignment in a professional and legal manner.",
+                "6": "Dispute Resolution Any disputes between the client and the partner that arise in connection with the assignment should be resolved between the parties themselves. Moving Go Max can assist with contact information but has no obligation to mediate or resolve disputes.",
+                "7": "Exceptions for Large Assignments and Empty Runs Brokerage fees and payment terms may vary for large assignments, empty runs, or shared runs. Special conditions may apply, and these must be approved by all parties before the assignment begins.",
+                "8": "Confidentiality and Information Security Moving Go Max is committed to handling users' information confidentially and in accordance with applicable legislation. Partners and clients are also expected to comply with GDPR and other relevant data protection regulations.",
+                "9": "Validity of the Agreement This agreement is valid from the date of signing and until further notice, unless a specific period has been specified in the agreement. The agreement can be terminated with immediate effect in the event of serious breaches of the terms."
+              }
+            },
+            "5": {
+              "title": "Quality Evaluation after Assignment",
+              "content": {
+                "1": "To promote high quality and reliability in all assignments, companies will be able to evaluate each other after each completed assignment. Through this system, it is ensured that both clients and partners strive to maintain the highest possible standard in execution and professionalism. These evaluations also contribute to a safer and more transparent working environment for all users on the Moving Go Max platform."
+              }
+            },
+            "6": {
+              "title": "Delivery",
+              "content": {
+                "1": "The assignee undertakes to deliver the service described in this document at each given time in accordance with the agreement. The agreement applies only between the Client and the Assignee. Agreements or arrangements between the Client and the Assignee are prohibited and entail a penalty as described below."
+              }
+            },
+            "7": {
+              "title": "Delivery Plans/Execution of Service",
+              "content": {
+                "1": "The assignee must follow the specified assignments and is responsible for ensuring that the service is performed according to the agreed quality and within the agreed timeframe. The assignee must use their own vehicles, materials, and personnel. In the event of failure to meet these requirements, the agreement may be terminated immediately."
+              }
+            },
+            "8": {
+              "title": "Binding Orders",
+              "content": {
+                "1": "All orders are binding according to the agreement. The assignee must immediately inform the Client if they cannot perform the service. Orders must always be made through the Moving Go Max platform, and violations of this clause entail a penalty."
+              }
+            },
+            "9": {
+              "title": "Client's Delay and Compensation",
+              "content": {
+                "1": "The client has the right to cancel assignments in the event of force majeure or similar circumstances. If the assignment is canceled by the client close to execution, compensation shall be paid to the assignee according to the following compensation model:"
+              }
+            },
+            "10": {
+              "title": "Cancellation Rules and Compensation",
+              "content": {
+                "1": "Assignee's Cancellation The assignee may not cancel an assignment within 48 hours before the planned execution. If cancellation occurs earlier than 48 hours before the start of the assignment, the assignee is obliged to pay a cancellation fee corresponding to 25% of the total assignment value to the broker.",
+                "2": "Client's Cancellation If the client cancels an assignment less than 24 hours before the scheduled execution, compensation of 10% of the total assignment value is paid to the assignee."
+              }
+            },
+            "11": {
+              "title": "Payment Terms and Payment Mediation",
+              "content": {
+                "1": "The assignee has the right to invoice the Client after 2 days with 30 days payment terms. Payment must be made no later than 20 days after receiving the invoice, which must be specified according to the assignment.",
+                "2": "Moving Go Max will eventually act as a payment mediator to facilitate transactions between clients and assignees. In this system, the client pays the value of the assignment to Moving Go Max at the start of the assignment. After the assignment has been completed and approved by the client, Moving Go Max transfers the payment to the assignee."
+              }
+            },
+            "12": {
+              "title": "Liability Period and Remediation",
+              "content": {
+                "1": "The assignee is responsible for the service for two (2) years from delivery to the Client according to the Consumer Services Act. If remedial measures are needed, these must be carried out within 24 hours to receive full compensation."
+              }
+            },
+            "13": {
+              "title": "Payment Delay and Late Payment Interest",
+              "content": {
+                "1": "In the event of non-payment, the assignee is entitled to statutory late payment interest."
+              }
+            },
+            "14": {
+              "title": "Fixed Fee:",
+              "content": {
+                "1": "A fixed compensation based on the type of service to be performed, regardless of whether the assignment is completed or canceled."
+              }
+            },
+            "15": {
+              "title": "Percentage Compensation:",
+              "content": {
+                "1": "A percentage of the total agreed amount for the assignment, where the percentage is determined in advance and based on how close the cancellation occurs in relation to the agreed service."
+              }
+            },
+            "16": {
+              "title": "Cost Compensation:",
+              "content": {
+                "1": "Compensation for documented costs incurred by the assignee up to the cancellation, which may include labor costs, material costs, or other direct expenses related to the assignment."
+              }
+            },
+            "17": {
+              "title": "Quality Control",
+              "content": {
+                "1": "Moving Go Max reserves the right to perform quality checks on services performed by the assignee. The assignee is obliged to cooperate with Moving Go Max in these checks and take necessary measures to address any deficiencies."
+              }
+            },
+            "18": {
+              "title": "Changes to Agreement and Services",
+              "content": {
+                "1": "Any changes to the agreement or the services to be performed must be approved in writing by both the Client and the Assignee. Changes may lead to adjustments in schedules and costs."
+              }
+            },
+            "19": {
+              "title": "Limitation of Liability",
+              "content": {
+                "1": "Moving Go Max is not responsible for any damages or losses that may arise as a result of the assignee's performance of the services, unless such damages are due to gross negligence or intentional misconduct by Moving Go Max."
+              }
+            },
+            "20": {
+              "title": "Binding Period, Exclusivity, and Sanctions",
+              "content": {
+                "1": "1. Lifetime Commitment By accepting these terms, both clients and partners commit to Moving Go Max for an unlimited period, without a specific binding period. This means a lifetime commitment to only use Moving Go Max for the mediation of assignments within similar services.",
+                "2": "2. Exclusivity Clause Clients and partners commit not to use competing digital mediation platforms for similar services. This applies only to collaborations between companies, and not private customers, B2B platforms.",
+                "3": "3. Sanctions for Violation In the event of a breach of the exclusivity clause, Moving Go Max may, after assessment, impose a sanction fee of 100,000 SEK. Moving Go Max reserves the right to take further action, including termination of membership and other legal actions.",
+                "4": "4. Adaptation and Updating Moving Go Max may update the agreement in the event of major market changes or legislation to protect the platform's exclusivity and competitiveness.",
+                "5": "5. During the validity of the agreement, the Client commits to only assign their moving assignments to the Broker. The Client may not enter into agreements or otherwise transfer assignments to other brokers, moving companies, transport, cleaning, or other service companies without written approval from the Broker."
+              }
+            },
+            "21": {
+              "title": "Insurance and Permits",
+              "content": {
+                "1": "1. Requirement for Permits and Insurance Partners are required to have all necessary traffic permits and relevant insurance according to applicable legislation to be able to perform moving assignments legally and safely.",
+                "2": "2. Insurance Responsibility It is the partner's responsibility to ensure the validity of and bear the costs for all required insurance, including liability insurance, transport insurance, and other necessary insurance for the execution of the assignments.",
+                "3": "3. Responsibility for Extra Costs Partners are responsible for costs related to permits and other necessary expenses that may arise during the execution of purchased assignments, including fees for specific permits or additional insurance needs."
+              }
+            },
+            "22": {
+              "title": "Extra Costs and Additions",
+              "content": {
+                "1": "The assignee has the right to request compensation for extra costs if it turns out that the assignment requires more time or resources than originally stated. This is especially true if the assignee discovers that the information provided by the broker or the client does not match reality, for example in terms of volume (cubic meters), weight, number of items, or other conditions for the transport. Additional costs must be specified and explained to the client before the additional work begins."
+              }
+            },
+            "23": {
+              "title": "Confidentiality",
+              "content": {
+                "1": "Protection of Confidential Information The parties commit not to disclose confidential information about each other, partners, or information related to private customers to third parties without prior written approval from the other party.",
+                "2": "Handling of Customer Information All information about private customers, including personal data and other sensitive data, must be handled in accordance with applicable data protection legislation (GDPR). Partners commit to taking all necessary measures to protect such information from unauthorized access, loss, or dissemination.",
+                "3": "Limitation of Use Confidential information may only be used to fulfill the obligations arising from this agreement. The use of customer data or information about partners for other purposes is strictly prohibited and may lead to a breach of contract."
+              }
+            },
+            "24": {
+              "title": "Evaluation and Adjustment of the Agreement",
+              "content": {
+                "1": "The agreement and the prices for the brokerage fee can be evaluated and adjusted as needed. Evaluations can be made continuously, and adjustments can be made at any time to ensure that the agreement remains relevant and fair to all parties."
+              }
+            },
+            "25": {
+              "title": "GDPR and Data Protection",
+              "content": {
+                "1": "1. Data Processing: The parties commit to following GDPR (General Data Protection Regulation) and applicable data protection laws when handling personal data related to this Agreement.",
+                "2": "2. Data Controller: The client is the data controller for personal data shared with the Broker in connection with moving assignments. The broker acts as a data processor and processes personal data only according to instructions from the client.",
+                "3": "3. Consent and Information: The client is responsible for obtaining the necessary consent from registered individuals and providing them with information on how their personal data is processed.",
+                "4": "4. Security: The broker must take appropriate technical and organizational measures to protect personal data against accidental or unlawful destruction, loss, alteration, unauthorized dissemination, or access.",
+                "5": "5. Incident Reporting: The assignee must immediately inform the client and the broker of any personal data incidents and cooperate to manage and report such incidents to supervisory authorities and registered individuals as required by law."
+              }
+            },
+            "26": {
+              "title": "Other Terms",
+              "content": {
+                "1": "Disputes arising in connection with this Agreement shall primarily be resolved through negotiations between the parties. If an agreement cannot be reached, the dispute shall be settled in a Swedish court applying Swedish law."
+              }
+            }
+          }
         },
         "PleaseReadTerms": "Please read the terms of use carefully before using Max To Go.",
         "PleaseAcceptTerms": "Please accept the terms of use to continue."
