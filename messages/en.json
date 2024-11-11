@@ -135,7 +135,7 @@
     "closing": "Max To Go is the future platform for companies in transport, moving, construction, and other service industries that aim to collaborate smarter and grow sustainably."
     },
     "Services": {
-      "ServicesForCompanies": "Services for Companies",
+      "ServicesForCompanies": "Company Services",
       "ServicesIntro": "Discover our comprehensive range of services designed to streamline your logistics and moving needs",
         "Services": "Services",
         "Service1": "Sell and Buy Moving and Logistics Tasks",
@@ -177,7 +177,7 @@
   },
     "Contact": {
         "Contact": "Contact Us",
-        "ContactInfo": "add your information to contact you as soon as possible",
+        "ContactInfo": "Add your information to contact you as soon as possible",
         "FirstName": "First Name",
         "LastName": "Last Name",
         "PhoneNumber": "Phone Number",
@@ -190,9 +190,9 @@
         "Address": "Address"
     },
     "IndividualTasks": {
-        "IndividualTasks": "Individual Tasks",
+        "IndividualTasks": "Private Services",
         "SubmitTaskAsIndividual": "Get a quote as a private person",
-        "Transfer": "Transfer",
+        "Transfer": "Moving Help",
         "Warehousing": "Storage",
         "Cleaning": "Cleaning",
         "EmptyCar": "Moving on the Way",

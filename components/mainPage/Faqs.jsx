@@ -6,7 +6,7 @@ const Faqs = () => {
   const t = useTranslations('FAQs');
 
   // Select a subset of FAQs to display on the home page
-  const faqsList = [1, 2, 3]; // Example: Display the first three FAQs
+  const faqsList = [1, 2]; 
 
   return (
     <div className="text-white py-16">

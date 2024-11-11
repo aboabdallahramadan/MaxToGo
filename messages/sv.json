@@ -133,7 +133,7 @@
     "closing": "Max To Go är framtidens plattform för företag inom transport, flytt, bygg och andra servicebranscher som vill samarbeta smartare och växa hållbart."
     },
     "Services": {
-        "ServicesForCompanies": "Tjänster för företag",
+        "ServicesForCompanies": "Företagstjänster",
         "ServicesIntro": "Upptäck vårt omfattande utbud av tjänster utformade för att effektivisera din logistik och flyttbehov",
         "Services": "Tjänster",
         "Service1": "Sälj och köp av uppdrag inom flytt och logistik",
@@ -174,9 +174,9 @@
     "closing": "Max To Go, både via appen och hemsidan, gör det enkelt för företag att samarbeta, sälja och köpa uppdrag, och bidra till ett smidigt och effektivt arbetsflöde."
     },
     "IndividualTasks": {
-      "IndividualTasks": "Individuella uppdrag",
-      "SubmitTaskAsIndividual": "Få offert för som privat person",
-      "Transfer": "Flytt",
+      "IndividualTasks": "Privata tjänster",
+      "SubmitTaskAsIndividual": "Få offert som privat person",
+      "Transfer": "Flyttstöd",
       "Warehousing": "Magasinering",
       "Cleaning":"Städning",
       "EmptyCar":"Flytt på vägen",
@@ -184,7 +184,7 @@
     },
     "Contact": {
         "Contact": "Kontakta oss",
-        "ContactInfo": "lägg till din information för att kontakta dig så snart som möjligt",
+        "ContactInfo": "Lägg till din information för att kontakta dig så snart som möjligt",
         "FirstName": "Förnamn",
         "LastName": "Efternamn",
         "PhoneNumber": "Telefonnummer",
