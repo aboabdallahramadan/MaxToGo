@@ -10,10 +10,10 @@ const TaskCardDetails = ({task}) => {
         <p className="text-lg">
           <span className="font-bold">{t("Type")}: </span> {task.type}
         </p>
-        {task.type == "transfer" && <FaTruck className="text-primary text-3xl" />}
-        {task.type == "cleaning" && <FaHandSparkles className="text-primary text-3xl" />}
-        {task.type == "emptyCar" && <BsTruckFlatbed className="text-primary text-3xl" />}
-        {task.type == "warehousing" && <FaBoxes className="text-primary text-3xl" />}
+        {task.type == "transfer" && <FaTruck className="text-primary text-8xl" />}
+        {task.type == "cleaning" && <FaHandSparkles className="text-primary text-8xl" />}
+        {task.type == "emptyCar" && <BsTruckFlatbed className="text-primary text-8xl" />}
+        {task.type == "warehousing" && <FaBoxes className="text-primary text-8xl" />}
       </div>
 
       {/* Task details */}
