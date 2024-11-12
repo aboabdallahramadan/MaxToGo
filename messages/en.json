@@ -182,7 +182,7 @@
         "LastName": "Last Name",
         "PhoneNumber": "Phone Number",
         "Email": "Email",
-        "Location": "Location",
+        "Location": "Address",
         "Message": "Message",
         "Submit": "Submit",
         "SuccessMessage": "Your form has been submitted successfully",
@@ -290,7 +290,7 @@
         "Submit": "Submit",
         "SuccessMessage": "Your form has been submitted successfully",
         "ErrorMessage":"Something went wrong",
-        "VehicleSize": "Vehicle Size in cubic meters",
+        "VehicleSize": "Vehicle Size required in cubic meters",
         "IsTimeFlexible": "Is Time Flexible",
         "IsWrapping": "Do you want wrapping",
         "TaskType": "Task Type",
@@ -310,7 +310,7 @@
         "StorageDuration": "Storage Duration",
         "titlewarehousing": "Warehousing Task",
         "titleStorage": "Storage Task",
-        "Area": "Area in cubic meters or m2",
+        "Area": "Area required in cubic meters or m2",
         "CleaningType": "Cleaning Type",
         "WindowCleaning": "Window Cleaning",
         "HouseCleaning": "House Cleaning",
@@ -362,7 +362,8 @@
         "Medium": "Medium",
         "MovingOutCleaning": "Do you wish Moving-out cleaning",
         "TripSharing": "Trip Sharing",
-        "CleaningImages": "Please upload images for the kitchen and bathrooms to get the right price"
+        "CleaningImages": "Please upload images for the kitchen and bathrooms to get the right price",
+        "AvailableSizeInCubic": "Available Size In Cubic"
         
     },
     "Auth" : {
@@ -706,7 +707,7 @@
             "NoTasks": "No Tasks Available",
             "Type": "Type",
             "TaskName": "Task Title",
-            "Location": "Location",
+            "Location": "Address",
             "FromLocation": "From Location",
             
             "ToLocation": "To Location",

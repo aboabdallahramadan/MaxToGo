@@ -204,35 +204,40 @@ const Cleaning = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest 
                 </div>
 
                 {/* Do you have Rut*/}
-            <div className="relative flex items-center justify-between flex-col w-full gap-4 mt-8">
-              <h4 className="text-xl text-center w-full">{t("DoYouHaveRut")}</h4>
-              <div className="flex justify-center items-center  w-full">
-                <div className="flex justify-start items-center">
-                  <input
-                    className="accent-primary"
-                    type="radio"
-                    id="haveRutYes"
-                    name="haveRut"
-                    value="yes"
-                    checked={formData.haveRut === "yes"}
-                    onChange={handleChange}
-                  />
-                  <label htmlFor="haveRutYes" className="ml-2"> {t("Yes")} </label>
-                </div>
-                <div className="flex justify-start items-center ml-6">
-                  <input
-                    className="accent-primary"
-                    type="radio"
-                    id="haveRutNo"
-                    name="haveRut"
-                    value="no"
-                    checked={formData.haveRut === "no"}
-                    onChange={handleChange}
-                  />
-                  <label htmlFor="haveRutNo" className="ml-2"> {t("No")} </label>
-                </div>
-              </div>
-            </div>
+                {
+                    isGuest && (
+                        <div className="relative flex items-center justify-between flex-col w-full gap-4 mt-8">
+                            <h4 className="text-xl text-center w-full">{t("DoYouHaveRut")}</h4>
+                            <div className="flex justify-center items-center  w-full">
+                                <div className="flex justify-start items-center">
+                                <input
+                                    className="accent-primary"
+                                    type="radio"
+                                    id="haveRutYes"
+                                    name="haveRut"
+                                    value="yes"
+                                    checked={formData.haveRut === "yes"}
+                                    onChange={handleChange}
+                                />
+                                <label htmlFor="haveRutYes" className="ml-2"> {t("Yes")} </label>
+                                </div>
+                                <div className="flex justify-start items-center ml-6">
+                                <input
+                                    className="accent-primary"
+                                    type="radio"
+                                    id="haveRutNo"
+                                    name="haveRut"
+                                    value="no"
+                                    checked={formData.haveRut === "no"}
+                                    onChange={handleChange}
+                                />
+                                <label htmlFor="haveRutNo" className="ml-2"> {t("No")} </label>
+                                </div>
+                            </div>
+                        </div>
+                    )
+                }
+            
 
                 {/* Is Time flexible */}
                 <div className="relative flex items-center justify-between flex-col w-full gap-4 mt-8">

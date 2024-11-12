@@ -35,8 +35,7 @@ const page = () => {
     text: "",
     images: "",
     price: "",
-    priceType: 'fixed',
-    haveRut: "no"
+    priceType: 'fixed'
   });
 
   const handleChange = (e) => {

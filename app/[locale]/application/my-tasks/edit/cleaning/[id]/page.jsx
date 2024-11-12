@@ -23,7 +23,6 @@ const page = () => {
     isTimeFlexible: "yes",
     taskMasterName: "",
     taskMasterPhoneNumber: "",
-    haveRut: "no",
     text: "",
     images: ""
   });

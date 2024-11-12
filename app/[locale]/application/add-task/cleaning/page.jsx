@@ -24,7 +24,6 @@ const page = () => {
     isTimeFlexible: "yes",
     taskMasterName: "",
     taskMasterPhoneNumber: "",
-    haveRut: "no",
     priceType: 'fixed',
     text: "",
     images: ""

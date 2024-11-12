@@ -197,7 +197,7 @@ const Warehousing = ({ formData, handleChange, handleSubmit, isLoading, t, isGue
                 </label>
                 <input
                 className="bg-transparent border-b-primary border-b focus:outline-none w-full"
-                type="number"
+                type="text"
                 id="area"
                 name="area"
                 value={formData.area}

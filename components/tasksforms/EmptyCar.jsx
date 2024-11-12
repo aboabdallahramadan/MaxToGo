@@ -181,7 +181,7 @@ const EmptyCar = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest 
                             <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
                                 <label htmlFor="vehicleSize">
                                 <FaTruck className="inline-block mr-2 text-primary" />
-                                {t("VehicleSize")}
+                                {t("AvailableSizeInCubic")}
                                 </label>
                                 <input
                                 className="bg-transparent border-b-primary border-b focus:outline-none w-full"
