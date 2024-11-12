@@ -21,7 +21,7 @@ const page = () => {
     months: "",
     years: "",
     text: "",
-    image: ""
+    images: ""
   });
 
   const handleChange = (e) => {

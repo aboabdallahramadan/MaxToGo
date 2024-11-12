@@ -23,7 +23,8 @@ const page = () => {
     balcony: "no",
     isTimeFlexible: "yes",
     haveRut: "no",
-    text: ""
+    text: "",
+    images: ""
   });
 
   const handleChange = (e) => {

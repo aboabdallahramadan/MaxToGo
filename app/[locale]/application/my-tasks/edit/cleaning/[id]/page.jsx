@@ -24,7 +24,8 @@ const page = () => {
     taskMasterName: "",
     taskMasterPhoneNumber: "",
     haveRut: "no",
-    text: ""
+    text: "",
+    images: ""
   });
 
   const handleChange = (e) => {

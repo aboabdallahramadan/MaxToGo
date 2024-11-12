@@ -33,7 +33,7 @@ const page = () => {
     taskMasterName: "",
     taskMasterPhoneNumber: "",
     text: "",
-    image: "",
+    images: "",
     price: "",
     priceType: 'fixed',
     haveRut: "no"

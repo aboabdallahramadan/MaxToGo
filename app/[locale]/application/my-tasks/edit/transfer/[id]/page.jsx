@@ -31,7 +31,7 @@ const page = () => {
     taskType: "local",
     taskMasterName: "",
     taskMasterPhoneNumber:"",
-    image: "",
+    images: "",
     text: "",
     priceType: 'fixed',
     price: "",

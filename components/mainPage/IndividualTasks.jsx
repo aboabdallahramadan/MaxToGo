@@ -17,24 +17,18 @@ const IndividualTasks = () => {
         },
         {
             id: 1,
-            name: t("EmptyCar"),
-            icon: <BsTruck className="text-4xl"/>,
-            path: "/guest/tasks/empty-car"
-        },
-        {
-            id: 2,
             name: t("SharingCar"),
             icon: <FaTruck className="text-4xl"/>,
             path: "/guest/tasks/empty-car"
         },
         {
-            id: 3,
+            id: 2,
             name: t("Cleaning"),
             icon: <FaBroom className="text-4xl"/>,
             path: "/guest/tasks/cleaning"
         },
         {
-            id: 4,
+            id: 3,
             name: t("Warehousing"),
             icon: <FaWarehouse className="text-4xl"/>,
             path: "/guest/tasks/warehousing"
@@ -46,7 +40,7 @@ const IndividualTasks = () => {
             <SectionHeader name={t("IndividualTasks")} />
             <div className="container">
                 <p className='text-foreground text-xl text-center w-full mb-8'>{t("SubmitTaskAsIndividual")}</p>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {tasks.map(task => (
                         <Link 
                             key={task.id} 

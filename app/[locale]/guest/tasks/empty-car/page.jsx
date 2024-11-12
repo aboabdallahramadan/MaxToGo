@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import FormContainer from "@/components/FormContainer";
 import SectionHeader from "@/components/mainPage/SectionHeader";
 import { toast } from "react-toastify";
-import EmptyCar from "@/components/tasksforms/EmptyCar";
+import Moving from "@/components/tasksforms/Moving";
 
 const page = () => {
   const t = useTranslations("GuestTasks");
@@ -15,15 +15,25 @@ const page = () => {
     phoneNumber: "",
     taskName: "",
     dateTime: "",
-    availableWeight: "",
-    numberOfWorkers:"",
-    numberOfCars: "",
     fromLocation: "",
     toLocation: "",
+    apartmentType: "",
+    fromFloorNumber: "",
+    toFloorNumber: "",
+    fromElevator: "notFound",
+    toElevator: "notFound",
+    heavyThings: "no",
+    fromDistanceForParking: "",
+    toDistanceForParking: "",
+    fromLocationSize: "",
+    toLocationSize: "",
     isTimeFlexible: "yes",
+    isWrapping: "no",
+    isMovingOutCleaning: "no",
     taskType: "local",
-    image: "",
-    text: ""
+    text: "",
+    haveRut: "no",
+    images: ""
   });
 
   const handleChange = (e) => {
@@ -61,9 +71,9 @@ const page = () => {
 
   return (
     <div className="container">
-      <SectionHeader name={t("titleTruck")} />
+      <SectionHeader name={t("TripSharing")} />
       <FormContainer>
-        <EmptyCar
+        <Moving
             formData={formData}
             handleChange={handleChange}
             handleSubmit={handleSubmit}

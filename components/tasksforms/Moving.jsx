@@ -199,7 +199,19 @@ const Moving = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest })
               <div className="relative flex items-center justify-around flex-col sm:flex-row w-full gap-4 mt-8">
                 <div>
                   <h4 className="text-xl text-center w-full">{t("Elevator")}</h4>
-                  <div className="flex justify-center items-center  w-full">
+                  <div className="flex justify-center items-center  w-full gap-4">
+                    <div className="flex justify-start items-center">
+                      <input
+                        className="accent-primary"
+                        type="radio"
+                        id="fromElevatorNotFound"
+                        name="fromElevator"
+                        value="notFound"
+                        checked={formData.fromElevator === "notFound"}
+                        onChange={handleChange}
+                      />
+                      <label htmlFor="fromElevatorNotFound" className="ml-2"> {t("NotFound")} </label>
+                    </div>
                     <div className="flex justify-start items-center">
                       <input
                         className="accent-primary"
@@ -212,7 +224,7 @@ const Moving = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest })
                       />
                       <label htmlFor="fromElevatorBig" className="ml-2"> {t("Big")} </label>
                     </div>
-                    <div className="flex justify-start items-center ml-6">
+                    <div className="flex justify-start items-center">
                       <input
                         className="accent-primary"
                         type="radio"
@@ -224,7 +236,7 @@ const Moving = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest })
                       />
                       <label htmlFor="fromElevatorMedium" className="ml-2"> {t("Medium")} </label>
                     </div>
-                    <div className="flex justify-start items-center ml-6">
+                    <div className="flex justify-start items-center">
                       <input
                         className="accent-primary"
                         type="radio"
@@ -236,18 +248,7 @@ const Moving = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest })
                       />
                       <label htmlFor="fromElevatorSmall" className="ml-2"> {t("Small")} </label>
                     </div>
-                    <div className="flex justify-start items-center ml-6">
-                      <input
-                        className="accent-primary"
-                        type="radio"
-                        id="fromElevatorNotFound"
-                        name="fromElevator"
-                        value="notFound"
-                        checked={formData.fromElevator === "notFound"}
-                        onChange={handleChange}
-                      />
-                      <label htmlFor="fromElevatorNotFound" className="ml-2"> {t("NotFound")} </label>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -329,7 +330,19 @@ const Moving = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest })
               <div className="relative flex items-center justify-around flex-col sm:flex-row w-full gap-4 mt-8">
                 <div>
                   <h4 className="text-xl text-center w-full">{t("Elevator")}</h4>
-                  <div className="flex justify-center items-center  w-full">
+                  <div className="flex justify-center items-center  w-full gap-4">
+                    <div className="flex justify-start items-center">
+                      <input
+                        className="accent-primary"
+                        type="radio"
+                        id="toElevatorNotFound"
+                        name="toElevator"
+                        value="notFound"
+                        checked={formData.toElevator === "notFound"}
+                        onChange={handleChange}
+                      />
+                      <label htmlFor="toElevatorNotFound" className="ml-2"> {t("NotFound")} </label>
+                    </div>
                     <div className="flex justify-start items-center">
                       <input
                         className="accent-primary"
@@ -342,7 +355,7 @@ const Moving = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest })
                       />
                       <label htmlFor="toElevatorBig" className="ml-2"> {t("Big")} </label>
                     </div>
-                    <div className="flex justify-start items-center ml-6">
+                    <div className="flex justify-start items-center">
                       <input
                         className="accent-primary"
                         type="radio"
@@ -354,7 +367,7 @@ const Moving = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest })
                       />
                       <label htmlFor="toElevatorMedium" className="ml-2"> {t("Medium")} </label>
                     </div>
-                    <div className="flex justify-start items-center ml-6">
+                    <div className="flex justify-start items-center">
                       <input
                         className="accent-primary"
                         type="radio"
@@ -366,18 +379,7 @@ const Moving = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest })
                       />
                       <label htmlFor="toElevatorSmall" className="ml-2"> {t("Small")} </label>
                     </div>
-                    <div className="flex justify-start items-center ml-6">
-                      <input
-                        className="accent-primary"
-                        type="radio"
-                        id="toElevatorNotFound"
-                        name="toElevator"
-                        value="notFound"
-                        checked={formData.toElevator === "notFound"}
-                        onChange={handleChange}
-                      />
-                      <label htmlFor="toElevatorNotFound" className="ml-2"> {t("NotFound")} </label>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -567,6 +569,42 @@ const Moving = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest })
               </div>
             </div>
 
+            {/* Moving out cleaning */}
+            {
+              isGuest && (
+                <div className="relative flex items-center justify-between flex-col w-full gap-4 mt-8">
+                  <h4 className="text-xl text-center w-full">{t("MovingOutCleaning")}</h4>
+                  <div className="flex justify-center items-center  w-full">
+                    <div className="flex justify-start items-center">
+                      <input
+                        className="accent-primary"
+                        type="radio"
+                        id="isMovingOutCleaningYes"
+                        name="isMovingOutCleaning"
+                        value="yes"
+                        checked={formData.isMovingOutCleaning === "yes"}
+                        onChange={handleChange}
+                      />
+                      <label htmlFor="isMovingOutCleaningYes" className="ml-2"> {t("Yes")} </label>
+                    </div>
+                    <div className="flex justify-start items-center ml-6">
+                      <input
+                        className="accent-primary"
+                        type="radio"
+                        id="isMovingOutCleaningNo"
+                        name="isMovingOutCleaning"
+                        value="no"
+                        checked={formData.isMovingOutCleaning === "no"}
+                        onChange={handleChange}
+                      />
+                      <label htmlFor="isMovingOutCleaningNo" className="ml-2"> {t("No")} </label>
+                    </div>
+                  </div>
+                </div>
+              )
+            }
+            
+
             {/* Are There Heavy Things(More than 50KG) */}
             <div className="relative flex items-center justify-between flex-col w-full gap-4 mt-8">
               <h4 className="text-xl text-center w-full">{t("AreThereHeavyThings")}</h4>
@@ -645,16 +683,17 @@ const Moving = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest })
 
             {/* Image Upload */}
             <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
-              <label htmlFor="image">
+              <label htmlFor="images">
                 <AiOutlineFileImage className="inline-block mr-2 text-primary" />
                 {t("UploadImage")}
               </label>
               <input
                 className="bg-transparent border-primary border focus:outline-none w-full "
                 type="file"
-                id="image"
-                name="image"
+                id="images"
+                name="images"
                 accept="image/*"
+                multiple
                 onChange={handleChange}
                 required
               />

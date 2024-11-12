@@ -22,7 +22,7 @@ const page = () => {
     toFloorNumber: "",
     fromElevator: "notFound",
     toElevator: "notFound",
-    image: "",
+    images: "",
     heavyThings: "no",
     fromDistanceForParking: "",
     toDistanceForParking: "",
@@ -30,6 +30,7 @@ const page = () => {
     toLocationSize: "",
     isTimeFlexible: "yes",
     isWrapping: "no",
+    isMovingOutCleaning: "no",
     taskType: "local",
     text: "",
     haveRut: "no"

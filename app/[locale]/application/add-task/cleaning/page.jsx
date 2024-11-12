@@ -26,7 +26,8 @@ const page = () => {
     taskMasterPhoneNumber: "",
     haveRut: "no",
     priceType: 'fixed',
-    text: ""
+    text: "",
+    images: ""
   });
 
   const handleChange = (e) => {
