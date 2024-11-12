@@ -128,6 +128,9 @@ const page = () => {
       } else if (!/^\+?\d+$/.test(formData.phone)) {
         newErrors.phone = t("InvalidPhoneFormat");
       }
+      if (!formData.description) {
+        newErrors.description = t("RequiredField");
+      }
     }
     else if (pageNumber === 2) {
       if (!formData.buyOrSell) newErrors.buyOrSell = t("RequiredField");
@@ -328,6 +331,19 @@ const page = () => {
               />
             </div>
               {errors.phone && <p className="text-red-500 text-sm">{errors.phone}</p>}
+            <div className="relative mt-6">
+              <label htmlFor="description" className="text-primary mb-5">{t("Description")}</label>
+              <textarea
+                name="description"
+                id="description"
+                className="text-primary w-full bg-transparent border-primary border focus:outline-none"
+                value={formData.description}
+                onChange={handleInputChange}
+                placeholder={t("DescriptionPlaceholder")}
+                required
+              />
+            </div>
+              {errors.description && <p className="text-red-500 text-sm">{errors.description}</p>}
           </div>
           <div className={pageNumber == 2 ? "block" : "hidden"}>
             <div className="relative mt-6">

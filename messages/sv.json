@@ -671,7 +671,8 @@
           }
         },
         "PleaseReadTerms": "Läs villkoren",
-        "PleaseAcceptTerms": "Vänligen acceptera villkoren"
+        "PleaseAcceptTerms": "Vänligen acceptera villkoren",
+        "DescriptionPlaceholder": "Beskriv kort dina tjänster, t.ex. \"Flytt & Städ.\" Texten visas på vår hemsida under våra samarbetspartners."
     },
     "Application": {
         "Header": {

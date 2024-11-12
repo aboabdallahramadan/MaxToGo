@@ -18,7 +18,7 @@ const MustRead = ({t, t0, name, formData, handleInputChange, errors}) => {
   return (
     <div>
         <div>
-        <h3 className="text-xl font-bold text-[#3B82F6] mb-4">{t0('title')}</h3>
+        <h3 className="text-xl font-bold text-foreground mb-4">{t0('title')}</h3>
         <div 
             ref={termsRef}
             onScroll={handleTermsScroll}

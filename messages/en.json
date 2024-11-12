@@ -677,7 +677,8 @@
           }
         },
         "PleaseReadTerms": "Please read the terms of use carefully before using Max To Go.",
-        "PleaseAcceptTerms": "Please accept the terms of use to continue."
+        "PleaseAcceptTerms": "Please accept the terms of use to continue.",
+        "DescriptionPlaceholder": "Briefly describe your services, e.g., \"Moving & Cleaning.\" This text will be displayed on our website under our partners."
     },
     "Application": {
         "Header": {
