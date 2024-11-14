@@ -8,9 +8,13 @@ import { FaBars } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import AuthPageHeader from "../AuthPageHeader";
 import LanguageDropdown from "../LanguageDropdown";
+import MovingabModal from "../MovingabModal";
 
 const LayoutHeader = () => {
   const t = useTranslations("Header");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const handleModalOpen = () => setIsModalOpen(true);
+  const handleModalClose = () => setIsModalOpen(false);
 
   let session = true;
 
@@ -77,7 +81,9 @@ const LayoutHeader = () => {
             </li>
             <NavLink link="/coming-soon">{t("OurMarket")}</NavLink>
             <NavLink link="/#contact">{t("Contact")}</NavLink>
-            <NavLink link="https://www.movingab.com/se">{t("Movingab")}</NavLink>
+            <li className="cursor-pointer font-bold px-4 py-2 border border-transparent hover:border hover:border-primary hover:text-primary whitespace-nowrap rounded" onClick={handleModalOpen}>
+              {t("Movingab")}
+            </li>
           </ul>
         </nav>
 
@@ -135,12 +141,19 @@ const LayoutHeader = () => {
               </li>
               <NavLink link="/coming-soon" func={()=> setIsMobileMenuOpen(false)}>{t("OurMarket")}</NavLink>
               <NavLink link="/#contact" func={()=> setIsMobileMenuOpen(false)}>{t("Contact")}</NavLink>
-              <NavLink link="https://www.movingab.com/se" func={()=> setIsMobileMenuOpen(false)}>{t("Movingab")}</NavLink>
+              <li className="cursor-pointer font-bold px-4 py-2 border border-transparent hover:border hover:border-primary hover:text-primary whitespace-nowrap rounded" onClick={()=> {setIsMobileMenuOpen(false); handleModalOpen()}}>{t("Movingab")}</li>
               </ul>
             </div>
           </div>
         )}
       </div>
+      <MovingabModal
+        isOpen={isModalOpen}
+        onClose={handleModalClose}
+        content={t("MovingabModal")}
+        buttonText={t("LearnMore")}
+        buttonLink="https://movingab.com/"
+      />
     </header>
   );
 };

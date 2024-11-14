@@ -14,7 +14,9 @@
         "Title": "Max To Go",
         "OurMarket":"Vår marknad",
         "CompanyServices": "Företagstjänster",
-        "IndividualServices": "Individuella tjänster"
+        "IndividualServices": "Individuella tjänster",
+        "MovingabModal": "MovingAB – Din pålitliga bemanningspartner inom flytt, städ och transport över hela Sverige Med snart 1000 kvalificerade konsulter tillgängliga över hela landet, är MovingAB en ledande bemanningsfirma inom flytt, städ och transportbranschen. Vi erbjuder flexibla och pålitliga lösningar för företag som behöver extra arbetskraft, oavsett var i Sverige ni befinner er. Genom MovingAB kan ni enkelt skala upp ert team utan att behöva hantera flera samarbetspartners. Kontakta oss, så tar vi hand om bemanningen och ser till att rätt personal är på plats för varje uppdrag. För långa transporter behöver ni inte skicka hela teamet – det räcker att skicka er chaufför, medan MovingAB erfarna personal står redo att hjälpa till vid både lastningsplats (Punkt A) och lossningsplats (Punkt B). På så sätt kan ni effektivisera era resurser och säkerställa att arbetet flyter smidigt. Läs mer om hur MovingAB kan stötta ditt företag med professionell och flexibel bemanning genom att klicka på länken här.",
+        "LearnMore":"Läs mer"
     },
     "footer": {
         "MainEmail": "Huvudsaklig e-post",
