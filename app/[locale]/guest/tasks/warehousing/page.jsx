@@ -30,7 +30,6 @@ const page = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData)
     setIsLoading(true);
 
     try {

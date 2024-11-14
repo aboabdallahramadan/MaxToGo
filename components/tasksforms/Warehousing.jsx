@@ -4,6 +4,7 @@ import { FaMoneyBill } from 'react-icons/fa';
 import { FiArrowUpRight } from 'react-icons/fi';
 import { BsPerson } from 'react-icons/bs';
 import Spinner from '@/components/Spinner';
+import FileUpload from '@/components/FileUpload';
 const Warehousing = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest }) => {
   return (
     <form onSubmit={handleSubmit}  className={`${!isGuest && "px-6" }`}>
@@ -264,22 +265,7 @@ const Warehousing = ({ formData, handleChange, handleSubmit, isLoading, t, isGue
             )}
 
             {/* Images Upload */}
-            <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
-              <label htmlFor="images">
-                <AiOutlineFileImage className="inline-block mr-2 text-primary" />
-                {t("UploadImage")}
-              </label>
-              <input
-                className="bg-transparent border-primary border focus:outline-none w-full "
-                type="file"
-                id="images"
-                name="images"
-                accept="image/*"
-                multiple
-                onChange={handleChange}
-                required
-              />
-            </div>
+            <FileUpload onFileSelect={handleChange} multiple={true} fileType="image" name="images" />
 
             {/* text */}
             <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">

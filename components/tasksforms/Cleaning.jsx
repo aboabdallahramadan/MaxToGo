@@ -4,6 +4,7 @@ import { FaBuilding, FaMoneyBill } from 'react-icons/fa';
 import { FiArrowDownRight } from 'react-icons/fi';
 import { BsPerson } from 'react-icons/bs';
 import Spinner from '@/components/Spinner';
+import FileUpload from '@/components/FileUpload';
 
 const Cleaning = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest }) => {
   return (
@@ -428,20 +429,7 @@ const Cleaning = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest 
                 </div>
 
                 {/* Images */}
-                <div className="relative flex flex-col items-start justify-between w-full gap-4 mt-6">
-                    <label htmlFor="images">
-                    <AiOutlineFileImage className="inline-block mr-2 text-primary" />
-                    {t("CleaningImages")}
-                    </label>
-                    <input
-                    className="bg-transparent border-b-primary border-b focus:outline-none w-full"
-                    type="file"
-                    id="images"
-                    name="images"
-                    multiple
-                    onChange={handleChange}
-                    />
-                </div>
+                <FileUpload onFileSelect={handleChange} multiple={true} fileType="image" name="images" />
 
                 <div className="flex justify-end items-center w-full">
                     <button type="submit" className="bg-primary text-secondary px-4 py-2 rounded-lg mt-6">

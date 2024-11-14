@@ -77,3 +77,21 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primaryColorHover);
 }
+
+.file-upload {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.file-upload.active {
+  border-color: #007bff;
+  background-color: #e6f7ff;
+}
+
+.file-input {
+  display: none;
+}
