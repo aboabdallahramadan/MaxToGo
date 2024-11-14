@@ -271,10 +271,10 @@ const Cleaning = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest 
                 </div>
 
                 {/* Cleaning Type */}
-                <div className="relative flex items-center justify-between flex-col w-full gap-4 mt-8">
+                <div className="relative flex items-center justify-between flex-col w-full gap-4 my-8">
                     <h4 className="text-xl text-center w-full">{t("CleaningType")}</h4>
-                    <div className="flex justify-center items-center w-full">
-                        <div className="flex justify-start items-center ml-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-5 gap-4 w-full text-nowrap">
+                        <div className="flex justify-center items-center ml-6">
                             <input
                             className="accent-primary"
                             type="radio"
@@ -286,7 +286,7 @@ const Cleaning = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest 
                             />
                             <label htmlFor="cleaningTypeMoreOut" className="ml-2"> {t("MoreOutCleaning")} </label>
                         </div>
-                        <div className="flex justify-start items-center ml-6">
+                        <div className="flex justify-center items-center ml-6">
                             <input
                             className="accent-primary"
                             type="radio"
@@ -298,7 +298,7 @@ const Cleaning = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest 
                             />
                             <label htmlFor="cleaningTypeOffice" className="ml-2"> {t("OfficeCleaning")} </label>
                         </div>
-                        <div className="flex justify-start items-center ml-6">
+                        <div className="flex justify-center items-center ml-6">
                             <input
                             className="accent-primary"
                             type="radio"
@@ -310,7 +310,7 @@ const Cleaning = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest 
                             />
                             <label htmlFor="cleaningTypeHouse" className="ml-2"> {t("HouseCleaning")} </label>
                         </div>
-                        <div className="flex justify-start items-center ml-6">
+                        <div className="flex justify-center items-center ml-6">
                             <input
                             className="accent-primary"
                             type="radio"
@@ -322,7 +322,7 @@ const Cleaning = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest 
                             />
                             <label htmlFor="cleaningTypeWindow" className="ml-2"> {t("WindowCleaning")} </label>
                         </div>
-                        <div className="flex justify-start items-center ml-6">
+                        <div className="flex justify-center items-center ml-6">
                             <input
                             className="accent-primary"
                             type="radio"
