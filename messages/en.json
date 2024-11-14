@@ -273,7 +273,7 @@
         "Phone": "Phone Number"
     },
     "GuestTasks": {
-        "title": "Transform Task",
+        "title": "Moving & Cleaning Quote",
         "TaskName": "Title",
         "DateTime": "The date and time required to complete it",
         "FromLocation": "The address will moving from",
@@ -311,7 +311,7 @@
         "titleTruck": "Moving on the way task",
         "StorageDuration": "Storage Duration",
         "titlewarehousing": "Warehousing Task",
-        "titleStorage": "Storage Task",
+        "titleStorage": "Storage Service",
         "Area": "Area required in cubic meters or m2",
         "CleaningType": "Cleaning Type",
         "WindowCleaning": "Window Cleaning",
@@ -363,10 +363,13 @@
         "Big": "Big",
         "Medium": "Medium",
         "MovingOutCleaning": "Do you wish Moving-out cleaning",
-        "TripSharing": "Trip Sharing",
+        "TripSharing": "Shared Moving and Transport Services",
         "CleaningImages": "Please upload images for the kitchen and bathrooms to get the right price",
-        "AvailableSizeInCubic": "Available Size In Cubic"
-        
+        "AvailableSizeInCubic": "Available Size In Cubic",
+        "MovingDescription": "Through our Max To Go platform, you gain access to a network of over 100 reliable and professional moving and cleaning companies. By submitting your request, we match it with the most qualified companies, ensuring the highest quality at the best price for your moving project.",
+        "WarehousingDescription": "Max To Go also offers storage services for when you need to store your furniture or other items in a safe and accessible way. Our network of trusted storage providers makes it easy for you to find a location that suits your needs, whether you require short-term or long-term storage. Through our platform, you can quickly book storage at competitive prices and feel confident that your belongings are in good hands. We offer flexible solutions for both private and business customers, ensuring your items are stored in secure, well-maintained, and climate-controlled spaces.",
+        "CleaningDescription": "Moving Cleaning, Home Cleaning, Office Cleaning, and Window Washing Max To Go also offers a range of cleaning services, including moving cleaning, home cleaning, office cleaning, and window washing. Through our platform, you can easily request these services from a network of trusted, professional cleaning companies. Whether you're preparing for a move, need a deep cleaning at home, or require regular maintenance for your office, we ensure that you get top-quality service at competitive prices. Our partners are vetted and experienced, so you can rely on us for efficient, thorough, and eco-friendly cleaning solutions.",
+        "EmptyCarDescription": "With Max To Go, private customers can easily take advantage of shared moving and transport services. If you have only a few items to move and want to avoid high costs, shared transport is an ideal option! We track available space on moving trucks across the country, allowing us to offer competitive prices by combining your move or transport needs with other similar jobs. Our partners are qualified moving and transport companies, ensuring a safe, cost-effective, and sustainable solution, while also reducing empty trips and optimizing resource use."
     },
     "Auth" : {
         "Login": "Login",

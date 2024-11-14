@@ -62,6 +62,9 @@ const page = () => {
   return (
     <>
       <SectionHeader name={t("titleCleaning")} />
+      <div className="text-center text-lg text-foreground mb-8">
+        {t("CleaningDescription")}
+      </div>
       <FormContainer>
         <Cleaning
             formData={formData}

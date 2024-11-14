@@ -271,7 +271,7 @@
         "Phone": "Telefonnummer"
     },
     "GuestTasks": {
-        "title": "Transformeringsuppdrag",
+        "title": "Flytt & Städ Offert",
         "TaskName": "Titel",
         "DateTime": "Datum och tid som krävs för att slutföra det",
         "FromLocation": "Adressen kommer att flyttas från",
@@ -315,7 +315,7 @@
         "Other": "Övrigt",
         "StorageDuration": "Lagringstid",
         "titlewarehousing": "Lagringsuppdrag",
-        "titleStorage": "Lagringsuppdrag",
+        "titleStorage": "Magasineringstjänst",
         "Area": "Area krävs i kubikmeter eller m2",
         "StorageType": "Lagringstyp",
         "EndingDate": "Slutdatum för lagring",
@@ -363,10 +363,14 @@
         "Big": "Stor",
         "Medium": "Medium",
         "MovingOutCleaning": "Vill du ha utstädning",
-        "TripSharing": "Samkörning",
+        "TripSharing": "Samkörning för Flytt och Transport",
         "CleaningImages": "Ladda upp bilder för köket och badrummen för att få rätt pris",
-        "AvailableSizeInCubic": "Tillgänglig storlek i kubik"
-    },
+        "AvailableSizeInCubic": "Tillgänglig storlek i kubik",
+        "MovingDescription": "Genom vår Max To Go-plattform får du tillgång till ett nätverk av över 100 seriösa och pålitliga flytt- och städföretag. När du skickar en förfrågan matchar vi den med de mest kvalificerade företagen, vilket ger dig högsta kvalitet till bästa pris för ditt flyttprojekt.",
+        "WarehousingDescription": "Max To Go erbjuder även magasineringstjänster för när du behöver förvara dina möbler eller andra föremål på ett säkert och lättillgängligt sätt. Vårt nätverk av pålitliga magasineringstjänster gör det enkelt för dig att hitta en plats som passar dina behov, vare sig du behöver korttids- eller långtidsförvaring. Genom vår plattform kan du snabbt boka magasinering till konkurrenskraftiga priser och känna dig trygg med att dina saker är i goda händer. Vi erbjuder flexibla lösningar för både privata och företagskunder, och vi ser till att dina föremål förvaras i säkra, välskötta och klimatanpassade lagringsutrymmen.",
+        "CleaningDescription": "Flyttstäd, Hemstäd, Lokalvård och Fönsterputs Max To Go erbjuder också ett brett utbud av städtjänster, inklusive flyttstädning, hemstädning, lokalvård och fönsterputs. Genom vår plattform kan du enkelt begära dessa tjänster från ett nätverk av pålitliga och professionella städföretag. Oavsett om du förbereder för en flytt, behöver en grundlig städning hemma eller behöver regelbundet underhåll för ditt kontor, säkerställer vi att du får tjänster av högsta kvalitet till konkurrenskraftiga priser. Våra samarbetspartners är noggrant utvalda och erfarna, så du kan lita på att vi levererar effektiva, grundliga och miljövänliga städlösningar.",
+        "EmptyCarDescription": "Genom Max To Go kan du som privatkund enkelt nyttja samkörning för både flytt och transport. Om du har ett mindre antal föremål att flytta och vill undvika stora kostnader, är samkörning ett idealiskt val! Vi övervakar lastbilarnas lediga utrymme över hela landet och kan därmed erbjuda förmånliga priser genom att kombinera din flytt eller transport med andra liknande uppdrag. Våra samarbetspartners är kvalificerade flytt- och transportföretag, vilket säkerställer en trygg, prisvärd och hållbar lösning, samtidigt som vi bidrar till färre tomkörningar och bättre resursanvändning."
+      },
     "Auth": {
         "Login": "Logga in",
         "Email": "E-post",

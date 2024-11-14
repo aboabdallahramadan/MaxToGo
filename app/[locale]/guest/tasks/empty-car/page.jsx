@@ -72,6 +72,9 @@ const page = () => {
   return (
     <div className="container">
       <SectionHeader name={t("TripSharing")} />
+      <div className="text-center text-lg text-foreground mb-8">
+        {t("EmptyCarDescription")}
+      </div>
       <FormContainer>
         <Moving
             formData={formData}

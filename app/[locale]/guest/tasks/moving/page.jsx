@@ -72,6 +72,9 @@ const page = () => {
   return (
     <div className="container">
       <SectionHeader name={t("title")} />
+      <div className="text-center text-lg text-foreground mb-8">
+        {t("MovingDescription")}
+      </div>
       <FormContainer>
       <Moving
             formData={formData}
