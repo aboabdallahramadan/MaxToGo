@@ -3,31 +3,33 @@ import { Link } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
 import { FaLeaf } from 'react-icons/fa';
 import Image from 'next/image';
+
 const SustainablePreview = () => {
   const t = useTranslations('Sustainable');
 
   return (
-    <div className="flex flex-col-reverse gap-4 md:flex-row p-8 hover:shadow-2xl hover:shadow-primary/20 border border-gray-700 rounded-xl bg-gray-800 shadow-md">
-      
-      <div className='md:w-3/4'>
-        <div className='flex gap-2 justify-start items-center'>
-          <FaLeaf className="text-primary text-4xl mb-4" />
-          <h2 className="text-2xl font-bold text-foreground mb-4">{t('Title')}</h2>
+    <div className="max-w-3xl mx-auto bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:shadow-2xl">
+      <div className="relative">
+        <Image 
+          src="/images/sustainable.jpg" 
+          alt="Sustainable Image" 
+          width={800}
+          height={600}
+          className="w-full h-72 object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent flex items-end p-4">
+          <FaLeaf className="text-primary text-4xl" />
         </div>
-        <p className="text-base text-gray-300 leading-relaxed mb-6">{t('Preview')}</p>
+      </div>
+      <div className="p-6">
+        <h2 className="text-3xl font-bold text-primary mb-3">{t('Title')}</h2>
+        <p className="text-base text-white mb-4 leading-relaxed">{t('Preview')}</p>
         <Link href="/guest/sustainable">
-          <button className="border border-primary text-white px-6 py-2 rounded-lg hover:bg-primary hover:text-secondary transition duration-300">
+          <button className="inline-block text-primary border border-primary hover:bg-primary hover:text-secondary py-2 px-4 rounded-full hover:bg-primary-dark transition duration-300">
             {t('ReadMore')}
           </button>
         </Link>
       </div>
-      <Image 
-        src="/images/sustainable.jpg" 
-        alt="Sustainable Image" 
-        width={800}
-        height={600}
-        className="h-48 object-cover rounded-xl mb-4"
-      />
     </div>
   );
 };
