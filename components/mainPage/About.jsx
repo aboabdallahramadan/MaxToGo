@@ -33,26 +33,7 @@ const About = () => {
                     </p>
                 </motion.div>
 
-                {/* Stats Section */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20"
-                >
-                    {stats.map((stat, index) => (
-                        <div key={index} className="text-center">
-                            <motion.h3 
-                                className="text-4xl font-bold text-primary mb-2"
-                                whileHover={{ scale: 1.1 }}
-                            >
-                                {stat.number}
-                            </motion.h3>
-                            <p className="text-gray-600 dark:text-gray-400">{stat.label}</p>
-                        </div>
-                    ))}
-                </motion.div>
-
+                
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20 px-4">
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
@@ -98,6 +79,27 @@ const About = () => {
                         </div>
                     </motion.div>
                 </div>
+
+                {/* Stats Section */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}
+                    className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20"
+                >
+                    {stats.map((stat, index) => (
+                        <div key={index} className="text-center">
+                            <motion.h3 
+                                className="text-4xl font-bold text-primary mb-2"
+                                whileHover={{ scale: 1.1 }}
+                            >
+                                {stat.number}
+                            </motion.h3>
+                            <p className="text-gray-600 dark:text-gray-400">{stat.label}</p>
+                        </div>
+                    ))}
+                </motion.div>
+
             </div>
         </section>
     );
