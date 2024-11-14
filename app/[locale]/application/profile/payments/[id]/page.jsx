@@ -4,6 +4,7 @@ import TitleGoldenBar from "@/components/application/TitleGoldenBar";
 import Image from "next/image";
 import { FaIdBadge } from "react-icons/fa";
 import { BsPerson, BsPhone } from "react-icons/bs";
+import PaymentInvoice from "@/components/application/PaymentInvoice";
 
 const page = () => {
     const t = useTranslations("Application.AvailableTasks");
@@ -27,10 +28,51 @@ const page = () => {
             avatar: "/images/profile.jpg",
             name: "john doe"
         }
+    },
+    invoice : {
+        id: "2024-001",
+        date: "2024-01-15",
+        clientName: "Moving Express AB",
+        clientAddress: "Storgatan 123, 11234 Stockholm",
+        items: [
+          {
+            description: "Moving Service - Large Apartment",
+            amount: 1,
+            price: 1500,
+            total: 1500
+          },
+          {
+            description: "Packing Materials",
+            amount: 3,
+            price: 200,
+            total: 600
+          },
+          {
+            description: "Extra Helper",
+            amount: 2,
+            price: 400,
+            total: 800
+          },
+          {
+            description: "Storage Service (1 week)",
+            amount: 1,
+            price: 700,
+            total: 700
+          }
+        ],
+        subtotal: 3600,
+        vat: 900,
+        total: 4500,
+        companyInfo: {
+          name: "Max To Go AB",
+          orgNumber: "556677-8899",
+          address: "Kungsgatan 45, 11156 Stockholm",
+          email: "billing@maxtogo.com",
+          phone: "+46 70 123 45 67"
+        }
 
-    }
+}
 };
-    const task= payment.task
   return (
     <>
     <TitleGoldenBar name={t("payment")} goBack={true}/>
@@ -46,46 +88,8 @@ const page = () => {
                 <p className="text-sm text-foreground/60">{new Date(payment.date).toLocaleDateString()}</p>
                 </div>
             </div>
-
-            <div className='mt-6 flex flex-col justify-start items-center gap-4 px-6 py-4 border-2 border-primary rounded-lg'>
-                
-                <div className="w-full flex items-center justify-between">
-                    <div className="flex items-center gap-3">
-                        <img 
-                        src={task.user.avatar || '/images/default-avatar.png'} 
-                        alt="User avatar" 
-                        className="w-12 h-12 rounded-full object-cover"
-                        />
-                        <div>
-                        <h3 className="font-medium text-lg">{task.user.name}</h3>
-                        </div>
-                    </div>
-                    <div className="h-20">
-                        <Image
-                        src="/images/small-logo.png"
-                        width={150}
-                        height={50}
-                        alt="logo"
-                        style={{ width: "auto", height: "100%" }}
-                        priority
-                        />
-                    </div>
-                </div>
-                <div className="flex justify-between items-center gap-4 w-full flex-wrap">
-                    <div className="text-lg flex items-center justify-start gap-2 w-1/2 sm:w-1/3">
-                        <FaIdBadge className="text-primary"/>
-                        <p>{t("TaskId")}: {task.id}</p>
-                    </div>
-                    <div className="text-lg flex items-center justify-start gap-2 w-1/2 sm:w-1/3">
-                        <BsPerson className="text-primary"/>
-                        <p>{t("TaskMaster")}: {task.taskMaster}</p>
-                    </div>
-                    <div className="text-lg flex items-center justify-start gap-2 w-1/2 sm:w-1/3">
-                        <BsPhone className="text-primary"/>
-                        <p>{t("Phone")}: {task.phone}</p>
-                    </div>
-                </div>
-                <TaskCardDetails task={task}/>
+            <div className="pt-12">
+                <PaymentInvoice invoice={payment.invoice}/>
             </div>
         </div>
     </>

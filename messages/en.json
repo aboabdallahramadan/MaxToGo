@@ -193,7 +193,7 @@
     },
     "IndividualTasks": {
         "IndividualTasks": "Private Services",
-        "SubmitTaskAsIndividual": "Get a quote as a private person",
+        "SubmitTaskAsIndividual": "Get a quote as a private individual completely free of charge.",
         "Transfer": "Moving Help",
         "Warehousing": "Storage",
         "Cleaning": "Cleaning",
@@ -867,7 +867,29 @@
             "OrgNumber": "Organization Number",
             "VATNumber": "VAT Number",
             "ApprovedForTax": "Approved for F-tax",
-            "LatePaymentInfo": "Interest will be charged according to interest law for late payments"
+            "LatePaymentInfo": "Interest will be charged according to interest law for late payments",
+            "Payment": {
+              "SiteName": "Max To Go",
+              "CompanyLogo": "Company Logo",
+              "InvoiceDate": "Date",
+              "ReceiptNumber": "Receipt Number",
+              "Description": "Description",
+              "Quantity": "Quantity",
+              "Unit": "Unit",
+              "UnitPrice": "Unit Price",
+              "VATPercent": "VAT %",
+              "VATAmount": "VAT Amount",
+              "Amount": "Amount",
+              "Subtotal": "Subtotal",
+              "TotalVAT": "Total VAT",
+              "Total": "Total",
+              "OrgNumber": "Organization Number",
+              "VATNumber": "VAT Number",
+              "ContactInfo": "Contact Information",
+              "Phone": "Phone",
+              "Email": "Email",
+              "DownloadPDF": "Download PDF"
+            }
         }
         
         

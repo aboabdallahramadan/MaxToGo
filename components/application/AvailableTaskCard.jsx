@@ -13,7 +13,7 @@ const AvailableTaskCard = ({ task }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className='flex flex-col justify-start items-center gap-4 p-4 border-2 border-transparent border-b-foreground hover:border-2 hover:border-primary hover:bg-hoverPrimary/5 rounded-lg transition-all duration-300'>
+    <div className='bg-gray-800 flex flex-col justify-start items-center gap-4 p-4 border-2 border-transparent border-b-foreground hover:border-2 hover:border-primary hover:bg-hoverPrimary/5 rounded-lg transition-all duration-300'>
       <div 
         onClick={() => setIsExpanded(!isExpanded)}
         className="w-full cursor-pointer"

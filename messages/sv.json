@@ -177,7 +177,7 @@
     },
     "IndividualTasks": {
       "IndividualTasks": "Privata tjänster",
-      "SubmitTaskAsIndividual": "Få offert som privat person",
+      "SubmitTaskAsIndividual": "Få offert som privatperson helt kostnadsfritt.",
       "Transfer": "Flyttstöd",
       "Warehousing": "Magasinering",
       "Cleaning":"Städning",
@@ -764,7 +764,30 @@
             "OrgNumber": "Organisationsnr",
             "VATNumber": "Momsreg.nr",
             "ApprovedForTax": "Godkänd för F-skatt",
-            "LatePaymentInfo": "Vid betalning efter förfallodagen debiteras ränta enligt räntelagen"
+            "LatePaymentInfo": "Vid betalning efter förfallodagen debiteras ränta enligt räntelagen",
+            "Payment": {
+              "SiteName": "Max To Go",
+              "CompanyLogo": "Företagslogotyp",
+              "InvoiceDate": "Datum",
+              "ReceiptNumber": "Kvittonummer",
+              "Description": "Beskrivning",
+              "Quantity": "Antal",
+              "Unit": "Enhet",
+              "UnitPrice": "Á pris",
+              "VATPercent": "Moms %",
+              "VATAmount": "Moms kr",
+              "Amount": "Belopp",
+              "Subtotal": "Belopp före moms",
+              "TotalVAT": "Moms totalt",
+              "Total": "Totalt",
+              "OrgNumber": "Org.nr.",
+              "VATNumber": "Momsreg.nr.",
+              "ContactInfo": "Kontaktuppgifter",
+              "Phone": "Telefon",
+              "Email": "Epost",
+              "DownloadPDF": "Ladda ner PDF"
+
+            }
         },
         "AvailableTasks": {
             "AvailableTasks": "Tillgängliga uppdrager",
