@@ -7,9 +7,6 @@ const TaskCardDetails = ({task}) => {
     <>
         {/* Task information display */}
       <div className='flex flex-col justify-start items-center gap-2'>
-        <p className="text-lg">
-          <span className="font-bold">{t("Type")}: </span> {task.type}
-        </p>
         {task.type == "transfer" && <FaTruck className="text-primary text-8xl" />}
         {task.type == "cleaning" && <FaHandSparkles className="text-primary text-8xl" />}
         {task.type == "emptyCar" && <BsTruckFlatbed className="text-primary text-8xl" />}
