@@ -216,7 +216,7 @@ const LayoutHeader = () => {
       <MovingabModal
         isOpen={isModalOpen}
         onClose={handleModalClose}
-        content={t("MovingabModal")}
+        content={t.rich("MovingabModal" , {br: () => <br/>})}
         buttonText={t("LearnMore")}
         buttonLink="https://movingab.com/"
       />

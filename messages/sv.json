@@ -10,12 +10,12 @@
         "English": "Engelska",
         "Categories": "Kategorier",
         "Downland": "Ladda ner appen",
-        "Movingab": "Movingab",
+        "Movingab": "MovingAB",
         "Title": "MaxToGo",
         "OurMarket":"Vår marknad",
         "CompanyServices": "Företagstjänster",
         "IndividualServices": "Individuella tjänster",
-        "MovingabModal": "MovingAB – Din pålitliga bemanningspartner inom flytt, städ och transport över hela Sverige Med snart 1000 kvalificerade konsulter tillgängliga över hela landet, är MovingAB en ledande bemanningsfirma inom flytt, städ och transportbranschen. Vi erbjuder flexibla och pålitliga lösningar för företag som behöver extra arbetskraft, oavsett var i Sverige ni befinner er. Genom MovingAB kan ni enkelt skala upp ert team utan att behöva hantera flera samarbetspartners. Kontakta oss, så tar vi hand om bemanningen och ser till att rätt personal är på plats för varje uppdrag. För långa transporter behöver ni inte skicka hela teamet – det räcker att skicka er chaufför, medan MovingAB erfarna personal står redo att hjälpa till vid både lastningsplats (Punkt A) och lossningsplats (Punkt B). På så sätt kan ni effektivisera era resurser och säkerställa att arbetet flyter smidigt. Läs mer om hur MovingAB kan stötta ditt företag med professionell och flexibel bemanning genom att klicka på länken här.",
+        "MovingabModal": "MovingAB – Din pålitliga bemanningspartner inom flytt, städ och transport över hela Sverige Med snart 1000 kvalificerade konsulter tillgängliga över hela landet, är MovingAB en ledande bemanningsfirma inom flytt, städ och transportbranschen.<br></br><br></br> Vi erbjuder flexibla och pålitliga lösningar för företag som behöver extra arbetskraft, oavsett var i Sverige ni befinner er.<br></br><br></br> Genom MovingAB kan ni enkelt skala upp ert team utan att behöva hantera flera samarbetspartners.<br></br><br></br> Kontakta oss, så tar vi hand om bemanningen och ser till att rätt personal är på plats för varje uppdrag. För långa transporter behöver ni inte skicka hela teamet – det räcker att skicka er chaufför, medan MovingAB erfarna personal står redo att hjälpa till vid både lastningsplats (Punkt A) och lossningsplats (Punkt B).<br></br><br></br> På så sätt kan ni effektivisera era resurser och säkerställa att arbetet flyter smidigt.<br></br><br></br> Läs mer om hur MovingAB kan stötta ditt företag med professionell och flexibel bemanning genom att klicka på länken här.",
         "LearnMore":"Läs mer"
     },
     "footer": {
@@ -43,7 +43,7 @@
         "OurServices": "Våra tjänster",
         "IndividualTasks": "Individuella uppdrag",
         "ContactUs": "Kontakta oss",
-        "Movingab": "Movingab",
+        "Movingab": "MovingAB",
         "OurMarket":"Vår marknad"
     },
     "Hero": {
@@ -300,7 +300,7 @@
         "phoneNumber": "Telefonnummer",
         "text" : "Ytterligare information",
         "Location": "Adress",
-        "Balcony": "har den glasade balkong",
+        "Balcony": "har den Inglasad balkong",
         "titleCleaning": "Städuppdrag",
         "NumberOfCars": "Antal bilar",
         "StartingDateTime": "Startdatum",
@@ -432,89 +432,89 @@
         "Description": "Beskriv lite kort ditt företag",
         "permitFile": "Tillstånd fil PDF eller JBEG",
         "Terms": {
-          "title": "Användarvillkor för Moving Go Max",
+          "title": "Användarvillkor för Max To Go",
           "lastUpdated": "Senast uppdaterad: 2022-04-01",
           "sections": {
             "terms": {
-              "title": "Villkor för användning av Moving Go Max",
+              "title": "Villkor för användning av Max To Go",
               "content": {
-                "1": "Genom att nyttja Moving Go Max accepterar du de aktuella villkoren för användande."
+                "1": "Genom att nyttja Max To Go accepterar du de aktuella villkoren för användande."
               }
             },
             "howItWorks": {
-              "title": "Så fungerar Moving Go Max",
+              "title": "Så fungerar Max To Go",
               "content": {
-                "1": "Moving Go Max är en plattform som sammanför transport-, flytt- och serviceföretag för att effektivisera logistik, transport och bokning av uppdrag.",
-                "2": "Genom att registrera och beskriva uppdrag på Moving Go Max får företag möjligheten att sälja och köpa tjänster som transport, flytt och logistiktjänster, samt möjligheten att hantera lediga resurser för att maximera sin kapacitet.",
+                "1": "Max To Go är en plattform som sammanför transport-, flytt- och serviceföretag för att effektivisera logistik, transport och bokning av uppdrag.",
+                "2": "Genom att registrera och beskriva uppdrag på Max To Go får företag möjligheten att sälja och köpa tjänster som transport, flytt och logistiktjänster, samt möjligheten att hantera lediga resurser för att maximera sin kapacitet.",
                 "3": "När ett uppdrag publiceras får andra företag inom samma nätverk möjlighet att köpa det eller lägga ett bud, vilket möjliggör en säker och effektiv överföring av uppdrag.",
-                "4": "Moving Go Max skickar en bekräftelse via e-post för varje genomförd uppdragsförmedling. Kontakten sker direkt mellan användaren och det köpande företaget.",
+                "4": "Max To Go skickar en bekräftelse via e-post för varje genomförd uppdragsförmedling. Kontakten sker direkt mellan användaren och det köpande företaget.",
                 "5": "Om användare vill ta bort en förfrågan eller ett publicerat uppdrag från plattformen, kan de kontakta oss på: info@movinggomax.com."
               }
             },
             "usage": {
-              "title": "Användning av Moving Go Max",
+              "title": "Användning av Max To Go",
               "content": {
-                "1": "Det är inte tillåtet att utge sig för att ha någon falsk anknytning till Moving Go Max eller våra partners, vare sig i en allmän kontext eller gentemot specifika mottagare.",
+                "1": "Det är inte tillåtet att utge sig för att ha någon falsk anknytning till Max To Go eller våra partners, vare sig i en allmän kontext eller gentemot specifika mottagare.",
                 "2": "Otillåten åtkomst till plattformens icke-offentliga delar eller andra användares information är förbjudet.",
-                "3": "Moving Go Max får inte användas för spridning av skadlig kod eller för att hämta dold information från andra användare.",
+                "3": "Max To Go får inte användas för spridning av skadlig kod eller för att hämta dold information från andra användare.",
                 "4": "Användare ska inte påverka andras möjlighet att använda plattformen.",
                 "5": "Att utge sig för att vara en annan fysisk eller juridisk person är förbjudet.",
-                "6": "Vid misstanke om användning som strider mot våra villkor, kan Moving Go Max spärra kontot."
+                "6": "Vid misstanke om användning som strider mot våra villkor, kan Max To Go spärra kontot."
               }
             },
             "responsibilities": {
               "title": "Ansvar och förhållande till leverantörer",
               "content": {
-                "1": "Moving Go Max förmedlar kontakt mellan användaren och leverantören och är därmed inte inblandat i själva utförandet eller innehållet i de erbjudanden som ges mellan parterna.",
-                "2": "Transportföretag, flyttfirmor och serviceföretag på Moving Go Max är oberoende, och vi garanterar inte att alla leverantörer kommer att kontakta användaren med erbjudanden.",
-                "3": "Användning av Moving Go Max sker på eget ansvar, och Moving Go Max tar inget ansvar för avtalens genomförande eller kvalitet. Vi arbetar dock enbart med seriösa och pålitliga aktörer.",
-                "4": "Moving Go Max samarbetar med utvalda och oberoende företag. Vi garanterar inte att erbjudandena är marknadens bästa eller billigaste.",
-                "5": "Moving Go Max tar inget ansvar för force majeure-händelser såsom naturkatastrofer, strejker, importrestriktioner, eller andra oförutsedda händelser som påverkar vår plattform.",
-                "6": "Moving Go Max ansvarar inte för skatter eller avgifter kopplade till användning av plattformen."
+                "1": "Max To Go förmedlar kontakt mellan användaren och leverantören och är därmed inte inblandat i själva utförandet eller innehållet i de erbjudanden som ges mellan parterna.",
+                "2": "Transportföretag, flyttfirmor och serviceföretag på Max To Go är oberoende, och vi garanterar inte att alla leverantörer kommer att kontakta användaren med erbjudanden.",
+                "3": "Användning av Max To Go sker på eget ansvar, och Max To Go tar inget ansvar för avtalens genomförande eller kvalitet. Vi arbetar dock enbart med seriösa och pålitliga aktörer.",
+                "4": "Max To Go samarbetar med utvalda och oberoende företag. Vi garanterar inte att erbjudandena är marknadens bästa eller billigaste.",
+                "5": "Max To Go tar inget ansvar för force majeure-händelser såsom naturkatastrofer, strejker, importrestriktioner, eller andra oförutsedda händelser som påverkar vår plattform.",
+                "6": "Max To Go ansvarar inte för skatter eller avgifter kopplade till användning av plattformen."
               }
             },
             "intellectual": {
               "title": "Immateriella rättigheter",
               "content": {
-                "1": "Alla immateriella rättigheter relaterade till Moving Go Max tillhör Moving Go Max och får inte användas kommersiellt utan skriftligt godkännande."
+                "1": "Alla immateriella rättigheter relaterade till Max To Go tillhör Max To Go och får inte användas kommersiellt utan skriftligt godkännande."
               }
             },
             "communication": {
               "title": "Kommunikation",
               "content": {
-                "1": "All kommunikation med Moving Go Max sker elektroniskt via info@movinggomax.com."
+                "1": "All kommunikation med Max To Go sker elektroniskt via info@movinggomax.com."
               }
             },
             "privacy": {
               "title": "Integritetsskydd och personuppdrager",
               "content": {
-                "1": "Moving Go Max följer dataskyddsförordningen (GDPR), och insamlad data används endast i syfte att koppla samman relevanta transport- och serviceföretag."
+                "1": "Max To Go följer dataskyddsförordningen (GDPR), och insamlad data används endast i syfte att koppla samman relevanta transport- och serviceföretag."
               }
             },
             "changes": {
               "title": "Förändringar",
               "content": {
-                "1": "Moving Go Max förbehåller sig rätten att ändra användarvillkoren utan förvarning. Fortsatt användning innebär samtycke till de nya villkoren.",
+                "1": "Max To Go förbehåller sig rätten att ändra användarvillkoren utan förvarning. Fortsatt användning innebär samtycke till de nya villkoren.",
                 "2": "Tidpunkten för den senaste uppdateringen framgår högst upp på sidan."
               }
             },
             "governing": {
               "title": "Lagföring och tvister",
               "content": {
-                "1": "Användning av Moving Go Max och eventuella tvister är underställda svensk lag.",
+                "1": "Användning av Max To Go och eventuella tvister är underställda svensk lag.",
                 "2": "Tvister ska i första hand lösas direkt mellan parterna, men kan vid behov tas till domstol."
               }
             }
           }
         },
         "ramavtal": {
-          "title": "Förmedlingsavtal för Moving Go Max",
-          "lastUpdated": "Mellan Moving Go Max AB, Org.nr: 559394-8085 och ”Utföraren”",
+          "title": "Förmedlingsavtal för Max To Go",
+          "lastUpdated": "Mellan Max To Go AB, Org.nr: 559394-8085 och ”Utföraren”",
           "sections": {
             "1": {
               "title": "Syfte och omfattning",
               "content": {
-                "1": "Moving Go Max erbjuder en digital plattform där företag inom transport, logistik, flytt, städ och andra tjänstebranscher kan samverka genom att förmedla uppdrag och dela resurser. Moving Go Max fungerar som en förmedlare mellan företag som erbjuder och söker tjänster, utan att själva äga, sälja uppdragen. För varje uppdrag förmedlat via plattformen utgår en serviceavgift i form av en procent av uppdragsvärdet."
+                "1": "Max To Go erbjuder en digital plattform där företag inom transport, logistik, flytt, städ och andra tjänstebranscher kan samverka genom att förmedla uppdrag och dela resurser. Max To Go fungerar som en förmedlare mellan företag som erbjuder och söker tjänster, utan att själva äga, sälja uppdragen. För varje uppdrag förmedlat via plattformen utgår en serviceavgift i form av en procent av uppdragsvärdet."
               }
             },
             "2": {
@@ -526,27 +526,27 @@
             "3": {
               "title": "Kontaktuppdrager och Kommunikationsregler",
               "content": {
-                "1": "Kontaktuppdrager mellan parter kommer att visas först efter att ett uppdrag har köpts. Före betalning är det förbjudet att dela kontaktuppdrager i kommentarsfältet eller chatten. Moving Go Max kontrollerar alla uppdrag för att säkerställa att dessa regler följs innan publicering. Om någon part bryter mot denna klausul genom att dela kontaktuppdrager i förväg, kan denne omedelbart avregistreras från plattformen och bötfällas."
+                "1": "Kontaktuppdrager mellan parter kommer att visas först efter att ett uppdrag har köpts. Före betalning är det förbjudet att dela kontaktuppdrager i kommentarsfältet eller chatten. Max To Go kontrollerar alla uppdrag för att säkerställa att dessa regler följs innan publicering. Om någon part bryter mot denna klausul genom att dela kontaktuppdrager i förväg, kan denne omedelbart avregistreras från plattformen och bötfällas."
               }
             },
             "4": {
               "title": "ANSVARSFÖRDELNING",
               "content": {
-                "1": "Förmedlarens Ansvar Moving Go Max tillhandahåller en plattform för samarbete och fungerar enbart som förmedlare mellan uppdragsgivare och samarbetspartner. Moving Go Max ansvarar inte för att genomföra eller fullfölja uppdrag och har ingen kontroll över kvaliteten, säkerheten eller utförandet av uppdraget.",
+                "1": "Förmedlarens Ansvar Max To Go tillhandahåller en plattform för samarbete och fungerar enbart som förmedlare mellan uppdragsgivare och samarbetspartner. Max To Go ansvarar inte för att genomföra eller fullfölja uppdrag och har ingen kontroll över kvaliteten, säkerheten eller utförandet av uppdraget.",
                 "2": "Uppdragsgivarens Ansvar Uppdragsgivaren ansvarar för att lämna korrekta och fullständiga uppdrager om varje uppdrag. Eventuella felaktiga, ofullständiga eller missvisande uppdrager ligger på uppdragsgivarens ansvar.",
-                "3": "Vidarebefordran av Uppdrag Moving Go Max ansvarar för att vidarebefordra uppdragen genom att publicera dem på plattformen, där andra samarbetspartners kan se och köpa uppdragen. Moving Go Max garanterar dock inte att alla uppdrag kommer att säljas eller matchas.",
+                "3": "Vidarebefordran av Uppdrag Max To Go ansvarar för att vidarebefordra uppdragen genom att publicera dem på plattformen, där andra samarbetspartners kan se och köpa uppdragen. Max To Go garanterar dock inte att alla uppdrag kommer att säljas eller matchas.",
                 "4": "Samarbetspartners Ansvar Varje samarbetspartner är ansvarig för att ha nödvändiga tillstånd, såsom trafiktillstånd och försäkringar, samt för att hantera eventuella tillkommande kostnader som kan uppstå under utförandet av uppdraget.",
-                "5": "Begränsat Ansvar Moving Go Max kan inte hållas ansvarig för förseningar, misslyckanden, eller eventuella skador som uppstår under ett uppdrag. Ansvaret ligger hos uppdragsgivaren och samarbetspartnern att säkra och genomföra uppdraget på ett professionellt och lagenligt sätt.",
-                "6": "Tvistlösning Eventuella tvister mellan uppdragsgivare och samarbetspartner som uppstår i samband med uppdrag ska lösas mellan parterna själva. Moving Go Max kan bistå med kontaktinformation men har ingen skyldighet att medla eller lösa tvister.",
+                "5": "Begränsat Ansvar Max To Go kan inte hållas ansvarig för förseningar, misslyckanden, eller eventuella skador som uppstår under ett uppdrag. Ansvaret ligger hos uppdragsgivaren och samarbetspartnern att säkra och genomföra uppdraget på ett professionellt och lagenligt sätt.",
+                "6": "Tvistlösning Eventuella tvister mellan uppdragsgivare och samarbetspartner som uppstår i samband med uppdrag ska lösas mellan parterna själva. Max To Go kan bistå med kontaktinformation men har ingen skyldighet att medla eller lösa tvister.",
                 "7": "Undantag för Stora Uppdrag och Tomma Körningar Förmedlingsavgifter och betalningsvillkor kan variera vid stora uppdrag, tomma körningar eller samkörningar. Särskilda villkor kan gälla, och dessa ska i så fall godkännas av alla parter innan uppdraget påbörjas.",
-                "8": "Sekretess och Informationssäkerhet Moving Go Max förbinder sig att hantera användares uppdrager konfidentiellt och enligt gällande lagstiftning. Samarbetspartners och uppdragsgivare förväntas också följa GDPR och andra relevanta dataskyddsregler.",
+                "8": "Sekretess och Informationssäkerhet Max To Go förbinder sig att hantera användares uppdrager konfidentiellt och enligt gällande lagstiftning. Samarbetspartners och uppdragsgivare förväntas också följa GDPR och andra relevanta dataskyddsregler.",
                 "9": "Avtalets Giltighet Detta avtal gäller från dagen för undertecknandet och tills vidare, om inte en specifik tidsperiod har angetts i avtalet. Avtalet kan sägas upp med omedelbar verkan vid allvarliga brott mot villkoren."
               }
             },
             "5": {
               "title": "Kvalitetsutvärdering efter Uppdrag",
               "content": {
-                "1": "För att främja hög kvalitet och tillförlitlighet i alla uppdrag kommer företagen att kunna utvärdera varandra efter varje slutfört uppdrag. Genom detta system säkerställs att både uppdragsgivare och samarbetspartners strävar efter att upprätthålla högsta möjliga standard i utförande och professionalism. Dessa utvärderingar bidrar också till en tryggare och mer transparent arbetsmiljö för alla användare på Moving Go Max-plattformen."
+                "1": "För att främja hög kvalitet och tillförlitlighet i alla uppdrag kommer företagen att kunna utvärdera varandra efter varje slutfört uppdrag. Genom detta system säkerställs att både uppdragsgivare och samarbetspartners strävar efter att upprätthålla högsta möjliga standard i utförande och professionalism. Dessa utvärderingar bidrar också till en tryggare och mer transparent arbetsmiljö för alla användare på Max To Go-plattformen."
               }
             },
             "6": {
@@ -564,7 +564,7 @@
             "8": {
               "title": "Bindande beställningar",
               "content": {
-                "1": "Alla beställningar är bindande enligt avtalet. Uppdragstagaren ska omedelbart informera Uppdragsgivaren om denne inte kan utföra tjänsten. Beställningar ska alltid göras genom Moving Go Max-plattformen, och brott mot denna klausul medför vite."
+                "1": "Alla beställningar är bindande enligt avtalet. Uppdragstagaren ska omedelbart informera Uppdragsgivaren om denne inte kan utföra tjänsten. Beställningar ska alltid göras genom Max To Go-plattformen, och brott mot denna klausul medför vite."
               }
             },
             "9": {
@@ -583,7 +583,7 @@
               "title": "Betalningsvillkor och betalningsförmedlingen",
               "content": {
                 "1": "Uppdragstagaren har rätt att fakturera Uppdragsgivaren efter 2 dagar med 30 dagars betalningsvillkor. Betalning ska ske senast 20 dagar efter mottagen faktura, vilken ska specificeras enligt uppdraget.",
-                "2": "Moving Go Max kommer så småningom att fungera som betalningsförmedlare för att underlätta transaktioner mellan uppdragsgivare och uppdragstagare. I detta system betalar uppdragsgivaren värdet av uppdraget till Moving Go Max vid uppdragsstart. Efter att uppdraget har slutförts och godkänts av uppdragsgivaren, överför Moving Go Max betalningen vidare till uppdragstagaren."
+                "2": "Max To Go kommer så småningom att fungera som betalningsförmedlare för att underlätta transaktioner mellan uppdragsgivare och uppdragstagare. I detta system betalar uppdragsgivaren värdet av uppdraget till Max To Go vid uppdragsstart. Efter att uppdraget har slutförts och godkänts av uppdragsgivaren, överför Max To Go betalningen vidare till uppdragstagaren."
               }
             },
             "12": {
@@ -619,7 +619,7 @@
             "17": {
               "title": "77.Kvalitetskontroll",
               "content": {
-                "1": "Moving Go Max förbehåller sig rätten att utföra kvalitetskontroller på tjänster som utförs av Uppdragstagaren. Uppdragstagaren är skyldig att samarbeta med Moving Go Max i dessa kontroller och vidta nödvändiga åtgärder för att åtgärda eventuella brister."
+                "1": "Max To Go förbehåller sig rätten att utföra kvalitetskontroller på tjänster som utförs av Uppdragstagaren. Uppdragstagaren är skyldig att samarbeta med Max To Go i dessa kontroller och vidta nödvändiga åtgärder för att åtgärda eventuella brister."
               }
             },
             "18": {
@@ -631,16 +631,16 @@
             "19": {
               "title": "Ansvarsbegränsning",
               "content": {
-                "1": "Moving Go Max ansvarar inte för eventuella skador eller förluster som kan uppstå till följd av Uppdragstagarens utförande av tjänsterna, såvida inte sådana skador beror på grov vårdslöshet eller uppsåtligt handlande av Moving Go Max."
+                "1": "Max To Go ansvarar inte för eventuella skador eller förluster som kan uppstå till följd av Uppdragstagarens utförande av tjänsterna, såvida inte sådana skador beror på grov vårdslöshet eller uppsåtligt handlande av Max To Go."
               }
             },
             "20": {
               "title": "10. BINDNINGSTID, EXKLUSIVITET OCH SANKTIONER",
               "content": {
-                "1": "1. Livslångt Samarbetsåtagande Genom att godkänna dessa villkor binder sig både uppdragsgivare och samarbetspartners till Moving Go Max för en obegränsad tidsperiod, utan särskild bindningstid. Detta innebär ett livslångt åtagande att endast använda Moving Go Max för förmedling av uppdrag inom liknande tjänster.",
+                "1": "1. Livslångt Samarbetsåtagande Genom att godkänna dessa villkor binder sig både uppdragsgivare och samarbetspartners till Max To Go för en obegränsad tidsperiod, utan särskild bindningstid. Detta innebär ett livslångt åtagande att endast använda Max To Go för förmedling av uppdrag inom liknande tjänster.",
                 "2": "2. Exklusivitetsklausul Uppdragsgivare och samarbetspartners förbinder sig att inte använda konkurrerande digitala förmedlingsplattformar för liknande tjänster. Detta gäller enbart samarbeten mellan företag, och inte privata kunder, B2B plattformer. ",
-                "3": "3. Sanktioner vid Överträdelse Vid brott mot exklusivitetsklausulen kan Moving Go Max, efter bedömning, påföra en sanktionsavgift om 100 000 kronor. Moving Go Max förbehåller sig rätten att vidta ytterligare åtgärder, inklusive uppsägning av medlemskap och andra rättsliga åtgärder.",
-                "4": "4. Anpassning och Uppdatering Moving Go Max kan uppdatera avtalet vid större marknadsförändringar eller lagstiftning för att skydda plattformens exklusivitet och konkurrenskraft.",
+                "3": "3. Sanktioner vid Överträdelse Vid brott mot exklusivitetsklausulen kan Max To Go, efter bedömning, påföra en sanktionsavgift om 100 000 kronor. Max To Go förbehåller sig rätten att vidta ytterligare åtgärder, inklusive uppsägning av medlemskap och andra rättsliga åtgärder.",
+                "4": "4. Anpassning och Uppdatering Max To Go kan uppdatera avtalet vid större marknadsförändringar eller lagstiftning för att skydda plattformens exklusivitet och konkurrenskraft.",
                 "5": "5. Under avtalets giltighetstid förbinder sig Uppdragsgivaren att enbart tilldela sina flyttuppdrag till Förmedlaren. Uppdragsgivaren får inte ingå avtal eller på annat sätt överlåta uppdrag till andra förmedlare, flyttfirmor, transport, städning eller andra serviceföretag utan skriftligt godkännande från Förmedlaren."
               }
             },
@@ -836,7 +836,7 @@
             "numberOfCars": "Antal bilar",
             "storageDuration": "Lagringstid",
             "area": "area",
-            "Balcony": "har den glasade balkong",
+            "Balcony": "har den Inglasad balkong",
             "isTimeFlexible": "Är tiden flexibel",
             "ConfirmReceipt": "Bekräfta mottagande",
             "confirmed": "Bekräftad",
@@ -937,8 +937,10 @@
       "SupportForSmallBusinessesDescription": "Vi hjälper små företag att växa hållbart genom att ge dem tillgång till fler uppdrag nära dem, vilket minskar deras behov av långa resor och bränslekonsumtion.",
       "DecreasedTrafficCongestion": "Minskad Trafikbelastning",
       "DecreasedTrafficCongestionDescription": "Färre tomma fordon på vägarna betyder minskad trafik, vilket även bidrar till ökad trafiksäkerhet och mindre vägslitage.",
-      "GreenerBusinessModels": "Grönare Affärsmodeller: Plattformen ger företag bättre verktyg för att följa upp hållbara arbetsmetoder, vilket gör att de kan kontrollera och minska sin miljöpåverkan effektivt.",
-      "CarbonEmissionReduction": "Koldioxidreduktion: Genom att undvika överdriven användning av fordon minskar utsläppen, vilket i längden bidrar till en positiv miljöpåverkan.",
+      "GreenerBusinessModels": "Grönare Affärsmodeller",
+      "GreenerBusinessModelsDescription": "Plattformen ger företag bättre verktyg för att följa upp hållbara arbetsmetoder, vilket gör att de kan kontrollera och minska sin miljöpåverkan effektivt.",
+      "CarbonEmissionReduction": "Koldioxidreduktion:",
+      "CarbonEmissionReductionDescription": " Genom att undvika överdriven användning av fordon minskar utsläppen, vilket i längden bidrar till en positiv miljöpåverkan.",
       "ContributionDescription": "Vårt koncept är utformat för att göra transport- och flyttbranschen mer hållbar, effektiv och samarbetsorienterad. Vi vet att en av de största utmaningarna inom logistiken är de långa sträckor som transportfordon kör utan last. Genom vår plattform minimerar vi behovet av att köra tomma turer, vilket har en direkt positiv påverkan på miljön och minskar trafikbelastningen. Vi gör detta möjligt genom att skapa en samarbetsplattform som sammanlänkar transport- och flyttföretag över hela landet. Företagen kan på ett smidigt sätt boka uppdrag, samordna rutter och sälja uppdrag vidare till andra företag inom nätverket – allt för att maximera varje körning och eliminera onödiga tomkörningar. För flytt- och transportföretag innebär detta att de inte längre behöver skicka sina bilar långt för att utföra ett uppdrag på en avlägsen ort och sedan återvända utan last. Istället kan de snabbt och enkelt hitta samarbetspartners i närheten som kan ta över uppdraget. Det betyder att transporter kan ske i en naturlig följd, där företagen delar på uppdragen och tillsammans optimerar sina rutter. På så sätt sparas både tid och bränsle, vilket i sin tur leder till minskade koldioxidutsläpp och mindre slitage på vägnätet. För små och nystartade företag är detta en möjlighet att maximera sin kapacitet och växa hållbart. Genom att ansluta till vårt nätverk får de snabbare tillgång till fler uppdrag och kan fylla sina scheman utan att behöva investera i marknadsföring eller långa resor. Utöver att optimera körningarna hjälper vår plattform företag att undvika överdriven fordonsanvändning, vilket i sin tur bidrar till mindre utsläpp och minskat behov av underhåll. Genom att stödja hållbara affärsmetoder och ge företag verktyg för att undvika onödiga körningar bidrar vi också till att minska transportindustrins övergripande miljöpåverkan. Plattformen gör det enklare att följa upp hållbara arbetsmetoder och ger företagen större kontroll över sina utsläpp. Vi ser oss själva som en pålitlig partner för företag som vill växa utan att kompromissa med miljön. Genom att samla små och stora företag i en gemensam plattform där alla uppdrag är synliga och fördelade rättvist och hållbart, bidrar vi till en grönare och effektivare framtid för transport- och flyttbranschen. Tillsammans kan vi minska vårt ekologiska fotavtryck och bygga ett samhälle där smarta transporter gynnar både företag, miljö och samhälle i stort."
     }
     

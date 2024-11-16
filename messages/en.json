@@ -12,10 +12,10 @@
         "Downland": "Download the App",
         "Title": "MaxToGo",
         "OurMarket":"Our Market",
-        "Movingab":"Movingab",
+        "Movingab":"MovingAB",
         "CompanyServices": "Company Services",
         "IndividualServices": "Individual Services",
-        "MovingabModal":"MovingAB – Your Trusted Staffing Partner in Moving, Cleaning, and Transportation Across Sweden With nearly 1,000 qualified consultants available nationwide, MovingAB is a leading staffing firm specializing in the moving, cleaning, and transportation industries. We provide flexible and reliable solutions for companies needing extra workforce, wherever you are in Sweden. Through MovingAB, you can easily scale up your team without managing multiple partnerships. Simply contact us, and we’ll handle the staffing, ensuring the right personnel is in place for every assignment. For long-distance moves, there’s no need to send your entire team – just send your driver, and MovingAB’s experienced personnel will be ready to assist at both the loading location (Point A) and unloading location (Point B). This allows you to optimize your resources and ensure smooth operations. Learn more about how MovingAB can support your business with professional and flexible staffing by clicking the link here.",
+        "MovingabModal":"MovingAB – Your Trusted Staffing Partner in Moving, Cleaning, and Transportation Across Sweden With nearly 1,000 qualified consultants available nationwide, MovingAB is a leading staffing firm specializing in the moving, cleaning, and transportation industries.<br></br><br></br> We provide flexible and reliable solutions for companies needing extra workforce, wherever you are in Sweden.<br></br><br></br> Through MovingAB, you can easily scale up your team without managing multiple partnerships. Simply contact us, and we’ll handle the staffing, ensuring the right personnel is in place for every assignment.<br></br><br></br> For long-distance moves, there’s no need to send your entire team – just send your driver, and MovingAB’s experienced personnel will be ready to assist at both the loading location (Point A) and unloading location (Point B).<br></br><br></br> This allows you to optimize your resources and ensure smooth operations.<br></br><br></br> Learn more about how MovingAB can support your business with professional and flexible staffing by clicking the link here.",
         "LearnMore":"Learn More"
     },
     "footer": {
@@ -43,7 +43,7 @@
         "OurServices": "Our Services",
         "IndividualTasks":"Individual Tasks",
         "ContactUs": "Contact Us",
-        "Movingab": "Movingab",
+        "Movingab": "MovingAB",
         "OurMarket": "Our Market"
     },
     "Hero": {
@@ -51,7 +51,7 @@
         "Downland": "Download the App",
         "Join": "Join Us",
         "ProjectTitle": "Max To Go",
-        "Movingab": "Movingab",
+        "Movingab": "MovingAB",
         "OurMarket": "Our Market",
         "Moving": "Moving&Cleaning",
         "Transport&Logistics": "Transport & Logistics",
@@ -302,7 +302,7 @@
         "phoneNumber": "Phone Number",
         "text": "Additional Information",
         "Location": "Address",
-        "Balcony": "is there glazed balcony",
+        "Balcony": "is there Glass Balcony",
         "titleCleaning": "Cleaning Task",
         "NumberOfCars": "Number Of Cars",
         "StartingDateTime": "Starting Date",
@@ -512,13 +512,13 @@
         },
         "ramavtal": {
           "object": "Ramavtal",
-          "title": "Brokerage Agreement for Moving Go Max",
-          "lastUpdated": "Between Moving Go Max AB, Org.nr: 559394-8085 and the 'Performer'",
+          "title": "Brokerage Agreement for Max To Go",
+          "lastUpdated": "Between Max To Go AB, Org.nr: 559394-8085 and the 'Performer'",
           "sections": {
             "1": {
               "title": "Purpose and Scope",
               "content": {
-                "1": "Moving Go Max offers a digital platform where companies in transport, logistics, moving, cleaning, and other service industries can collaborate by mediating assignments and sharing resources. Moving Go Max acts as an intermediary between companies offering and seeking services, without owning or selling the assignments themselves. A service fee in the form of a percentage of the assignment value is charged for each assignment mediated via the platform."
+                "1": "Max To Go offers a digital platform where companies in transport, logistics, moving, cleaning, and other service industries can collaborate by mediating assignments and sharing resources. Max To Go acts as an intermediary between companies offering and seeking services, without owning or selling the assignments themselves. A service fee in the form of a percentage of the assignment value is charged for each assignment mediated via the platform."
               }
             },
             "2": {
@@ -530,27 +530,27 @@
             "3": {
               "title": "Contact Information and Communication Rules",
               "content": {
-                "1": "Contact information between parties will be displayed only after an assignment has been purchased. Before payment, it is prohibited to share contact information in the comment field or chat. Moving Go Max checks all assignments to ensure these rules are followed before publication. If any party violates this clause by sharing contact information in advance, they may be immediately deregistered from the platform and fined."
+                "1": "Contact information between parties will be displayed only after an assignment has been purchased. Before payment, it is prohibited to share contact information in the comment field or chat. Max To Go checks all assignments to ensure these rules are followed before publication. If any party violates this clause by sharing contact information in advance, they may be immediately deregistered from the platform and fined."
               }
             },
             "4": {
               "title": "RESPONSIBILITY DISTRIBUTION",
               "content": {
-                "1": "Broker's Responsibility Moving Go Max provides a platform for collaboration and acts solely as an intermediary between clients and partners. Moving Go Max is not responsible for executing or completing assignments and has no control over the quality, safety, or execution of the assignment.",
+                "1": "Broker's Responsibility Max To Go provides a platform for collaboration and acts solely as an intermediary between clients and partners. Max To Go is not responsible for executing or completing assignments and has no control over the quality, safety, or execution of the assignment.",
                 "2": "Client's Responsibility The client is responsible for providing accurate and complete information about each assignment. Any incorrect, incomplete, or misleading information is the responsibility of the client.",
-                "3": "Forwarding of Assignments Moving Go Max is responsible for forwarding assignments by publishing them on the platform, where other partners can see and purchase the assignments. However, Moving Go Max does not guarantee that all assignments will be sold or matched.",
+                "3": "Forwarding of Assignments Max To Go is responsible for forwarding assignments by publishing them on the platform, where other partners can see and purchase the assignments. However, Max To Go does not guarantee that all assignments will be sold or matched.",
                 "4": "Partner's Responsibility Each partner is responsible for having the necessary permits, such as traffic permits and insurance, and for handling any additional costs that may arise during the execution of the assignment.",
-                "5": "Limited Liability Moving Go Max cannot be held responsible for delays, failures, or any damages that occur during an assignment. It is the responsibility of the client and the partner to secure and execute the assignment in a professional and legal manner.",
-                "6": "Dispute Resolution Any disputes between the client and the partner that arise in connection with the assignment should be resolved between the parties themselves. Moving Go Max can assist with contact information but has no obligation to mediate or resolve disputes.",
+                "5": "Limited Liability Max To Go cannot be held responsible for delays, failures, or any damages that occur during an assignment. It is the responsibility of the client and the partner to secure and execute the assignment in a professional and legal manner.",
+                "6": "Dispute Resolution Any disputes between the client and the partner that arise in connection with the assignment should be resolved between the parties themselves. Max To Go can assist with contact information but has no obligation to mediate or resolve disputes.",
                 "7": "Exceptions for Large Assignments and Empty Runs Brokerage fees and payment terms may vary for large assignments, empty runs, or shared runs. Special conditions may apply, and these must be approved by all parties before the assignment begins.",
-                "8": "Confidentiality and Information Security Moving Go Max is committed to handling users' information confidentially and in accordance with applicable legislation. Partners and clients are also expected to comply with GDPR and other relevant data protection regulations.",
+                "8": "Confidentiality and Information Security Max To Go is committed to handling users' information confidentially and in accordance with applicable legislation. Partners and clients are also expected to comply with GDPR and other relevant data protection regulations.",
                 "9": "Validity of the Agreement This agreement is valid from the date of signing and until further notice, unless a specific period has been specified in the agreement. The agreement can be terminated with immediate effect in the event of serious breaches of the terms."
               }
             },
             "5": {
               "title": "Quality Evaluation after Assignment",
               "content": {
-                "1": "To promote high quality and reliability in all assignments, companies will be able to evaluate each other after each completed assignment. Through this system, it is ensured that both clients and partners strive to maintain the highest possible standard in execution and professionalism. These evaluations also contribute to a safer and more transparent working environment for all users on the Moving Go Max platform."
+                "1": "To promote high quality and reliability in all assignments, companies will be able to evaluate each other after each completed assignment. Through this system, it is ensured that both clients and partners strive to maintain the highest possible standard in execution and professionalism. These evaluations also contribute to a safer and more transparent working environment for all users on the Max To Go platform."
               }
             },
             "6": {
@@ -568,7 +568,7 @@
             "8": {
               "title": "Binding Orders",
               "content": {
-                "1": "All orders are binding according to the agreement. The assignee must immediately inform the Client if they cannot perform the service. Orders must always be made through the Moving Go Max platform, and violations of this clause entail a penalty."
+                "1": "All orders are binding according to the agreement. The assignee must immediately inform the Client if they cannot perform the service. Orders must always be made through the Max To Go platform, and violations of this clause entail a penalty."
               }
             },
             "9": {
@@ -588,7 +588,7 @@
               "title": "Payment Terms and Payment Mediation",
               "content": {
                 "1": "The assignee has the right to invoice the Client after 2 days with 30 days payment terms. Payment must be made no later than 20 days after receiving the invoice, which must be specified according to the assignment.",
-                "2": "Moving Go Max will eventually act as a payment mediator to facilitate transactions between clients and assignees. In this system, the client pays the value of the assignment to Moving Go Max at the start of the assignment. After the assignment has been completed and approved by the client, Moving Go Max transfers the payment to the assignee."
+                "2": "Max To Go will eventually act as a payment mediator to facilitate transactions between clients and assignees. In this system, the client pays the value of the assignment to Max To Go at the start of the assignment. After the assignment has been completed and approved by the client, Max To Go transfers the payment to the assignee."
               }
             },
             "12": {
@@ -624,7 +624,7 @@
             "17": {
               "title": "Quality Control",
               "content": {
-                "1": "Moving Go Max reserves the right to perform quality checks on services performed by the assignee. The assignee is obliged to cooperate with Moving Go Max in these checks and take necessary measures to address any deficiencies."
+                "1": "Max To Go reserves the right to perform quality checks on services performed by the assignee. The assignee is obliged to cooperate with Max To Go in these checks and take necessary measures to address any deficiencies."
               }
             },
             "18": {
@@ -636,16 +636,16 @@
             "19": {
               "title": "Limitation of Liability",
               "content": {
-                "1": "Moving Go Max is not responsible for any damages or losses that may arise as a result of the assignee's performance of the services, unless such damages are due to gross negligence or intentional misconduct by Moving Go Max."
+                "1": "Max To Go is not responsible for any damages or losses that may arise as a result of the assignee's performance of the services, unless such damages are due to gross negligence or intentional misconduct by Max To Go."
               }
             },
             "20": {
               "title": "Binding Period, Exclusivity, and Sanctions",
               "content": {
-                "1": "1. Lifetime Commitment By accepting these terms, both clients and partners commit to Moving Go Max for an unlimited period, without a specific binding period. This means a lifetime commitment to only use Moving Go Max for the mediation of assignments within similar services.",
+                "1": "1. Lifetime Commitment By accepting these terms, both clients and partners commit to Max To Go for an unlimited period, without a specific binding period. This means a lifetime commitment to only use Max To Go for the mediation of assignments within similar services.",
                 "2": "2. Exclusivity Clause Clients and partners commit not to use competing digital mediation platforms for similar services. This applies only to collaborations between companies, and not private customers, B2B platforms.",
-                "3": "3. Sanctions for Violation In the event of a breach of the exclusivity clause, Moving Go Max may, after assessment, impose a sanction fee of 100,000 SEK. Moving Go Max reserves the right to take further action, including termination of membership and other legal actions.",
-                "4": "4. Adaptation and Updating Moving Go Max may update the agreement in the event of major market changes or legislation to protect the platform's exclusivity and competitiveness.",
+                "3": "3. Sanctions for Violation In the event of a breach of the exclusivity clause, Max To Go may, after assessment, impose a sanction fee of 100,000 SEK. Max To Go reserves the right to take further action, including termination of membership and other legal actions.",
+                "4": "4. Adaptation and Updating Max To Go may update the agreement in the event of major market changes or legislation to protect the platform's exclusivity and competitiveness.",
                 "5": "5. During the validity of the agreement, the Client commits to only assign their moving assignments to the Broker. The Client may not enter into agreements or otherwise transfer assignments to other brokers, moving companies, transport, cleaning, or other service companies without written approval from the Broker."
               }
             },
@@ -753,7 +753,7 @@
             "numberOfCars": "Number Of Cars",
             "storageDuration": "Storage Duration",
             "area": "area",
-            "Balcony": "is there glazed balcony",
+            "Balcony": "is there Glass Balcony",
             "isTimeFlexible": "Is Time Flexible",
             "ConfirmReceipt": "Confirm Receipt",
             "confirmed": "Confirmed",

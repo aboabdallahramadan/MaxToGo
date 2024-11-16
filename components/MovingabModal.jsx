@@ -6,7 +6,7 @@ const MovingabModal = ({ isOpen, onClose, content, buttonText, buttonLink }) => 
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-      <div className="bg-background  rounded-lg p-6 max-w-lg w-full">
+      <div className="bg-background overflow-scroll max-h-[90vh] rounded-lg p-6 max-w-lg w-full">
         <div className="flex justify-center items-center w-full relative">
             <button onClick={onClose} className="text-right text-red-500 font-bold absolute right-0 top-0">X</button>
             <h2 className="text-2xl font-bold text-center text-primary">{t("Movingab")}</h2>
