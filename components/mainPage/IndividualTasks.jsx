@@ -45,12 +45,12 @@ const IndividualTasks = () => {
                         <Link 
                             key={task.id} 
                             href={task.path}
-                            className="flex flex-col items-center justify-center p-6 bg-background border-2 border-primary rounded-xl hover:bg-primary/10 transition-all duration-300 group"
+                            className="text-primary flex flex-col items-center justify-center p-6 bg-background border-2 border-primary rounded-xl hover:bg-primary/10 transition-all duration-300 group hover:shadow-xl hover:shadow-primary/20 hover:bg-primary hover:text-secondary"
                         >
-                            <div className="text-primary group-hover:scale-110 transition-transform duration-300">
+                            <div className="group-hover:scale-110 transition-transform duration-300">
                                 {task.icon}
                             </div>
-                            <h3 className="text-xl font-bold text-primary mt-4 text-nowrap">{task.name}</h3>
+                            <h3 className="text-xl font-bold mt-4 text-nowrap">{task.name}</h3>
                         </Link>
                     ))}
                 </div>

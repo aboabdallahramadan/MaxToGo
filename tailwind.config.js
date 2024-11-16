@@ -25,6 +25,9 @@ module.exports = {
         hoverPrimary: "var(--hoverPrimaryColor)"
       },
     },
+    fontFamily: {
+      sans: ['var(--font-sans)', 'sans-serif'],
+    }
   },
   plugins: [],
 };

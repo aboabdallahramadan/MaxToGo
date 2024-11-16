@@ -19,7 +19,7 @@ const LanguageDropdown = () => {
             aria-expanded="false"
             onClick={() => setIsLanguageMenuOpen((prev) => !prev)}
           >
-            <FaGlobe className="text-foreground" />
+            <FaGlobe className="text-lg text-foreground" />
           </button>
           {isLanguageMenuOpen && (
           <div
