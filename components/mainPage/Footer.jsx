@@ -11,7 +11,7 @@ const Footer = () => {
         <footer className="bottom-0 bg-secondary w-full px-2">
             <div className="container py-8">
                 {/* Main Footer Content */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
                     {/* Logo Section */}
                     <div className="flex flex-col gap-4">
                         <Image 
@@ -79,7 +79,7 @@ const Footer = () => {
                             <p>{t("Location")}</p>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-start">
+                    <div className="flex flex-col justify-start col-span-2 lg:col-span-1">
                         <Subscribe />
                     </div>
                 </div>

@@ -68,13 +68,13 @@ const ContactUs = () => {
                 <FormContainer>
                     <form onSubmit={handleSubmit} className="p-12 shadow-lg border border-gray-700 rounded-xl bg-gray-800">
                         <div className="flex justify-between items-center gap-4 flex-col sm:flex-row">
-                            <div className="flex flex-col items-start justify-between">
+                            <div className="flex flex-col items-start justify-between w-full sm:w-1/3 lg:w-2/5">
                                 <label htmlFor="firstName">{t("FirstName")}</label>
-                                <input className="bg-transparent border-b-primary border-b focus:outline-none" type="text" id="firstName" name="firstName" value={formData.firstName} onChange={handleChange} required />
+                                <input className="w-full bg-transparent border-b-primary border-b focus:outline-none" type="text" id="firstName" name="firstName" value={formData.firstName} onChange={handleChange} required />
                             </div>
-                            <div className="flex flex-col items-start justify-between">
+                            <div className="flex flex-col items-start justify-between w-full sm:w-1/3 lg:w-2/5">
                                 <label htmlFor="lastName">{t("LastName")}</label>
-                                <input className="bg-transparent border-b-primary border-b focus:outline-none" type="text" id="lastName" name="lastName" value={formData.lastName} onChange={handleChange} required />
+                                <input className="w-full bg-transparent border-b-primary border-b focus:outline-none" type="text" id="lastName" name="lastName" value={formData.lastName} onChange={handleChange} required />
                             </div>
                         </div>
                         <div className="flex flex-col items-start justify-between mt-6 w-full">

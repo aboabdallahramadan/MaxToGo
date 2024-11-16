@@ -31,7 +31,7 @@ const Moving = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest })
                 />
             </div>
             {/* Email */}
-            <div className="relative flex flex-col items-start justify-between w-full gap-4">
+            <div className="mt-6 relative flex flex-col items-start justify-between w-full gap-4">
                 <label htmlFor="email">
                 <AiOutlineMail className="inline-block mr-2 text-primary" />
                 {t("Email")}
@@ -47,7 +47,7 @@ const Moving = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest })
                 />
             </div>
             {/* Phone Number */}
-            <div className="relative flex flex-col items-start justify-between w-full gap-4">
+            <div className="mt-6 relative flex flex-col items-start justify-between w-full gap-4">
                 <label htmlFor="phoneNumber">
                 <AiOutlinePhone className="inline-block mr-2 text-primary" />
                 {t("phoneNumber")}
@@ -108,7 +108,7 @@ const Moving = ({ formData, handleChange, handleSubmit, isLoading, t, isGuest })
       
 
       {/* Task Name */}
-      <div className="relative flex flex-col items-start justify-between w-full gap-4">
+      <div className="mt-6 relative flex flex-col items-start justify-between w-full gap-4">
           <label htmlFor="taskName">
           <AiOutlineFileText className="inline-block mr-2 text-primary" />
           {t("TaskName")}

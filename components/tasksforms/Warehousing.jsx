@@ -28,7 +28,7 @@ const Warehousing = ({ formData, handleChange, handleSubmit, isLoading, t, isGue
                 />
             </div>
             {/* Email */}
-            <div className="relative flex flex-col items-start justify-between w-full gap-4">
+            <div className="mt-6 relative flex flex-col items-start justify-between w-full gap-4">
                 <label htmlFor="email">
                 <AiOutlineMail className="inline-block mr-2 text-primary" />
                 {t("Email")}
@@ -44,7 +44,7 @@ const Warehousing = ({ formData, handleChange, handleSubmit, isLoading, t, isGue
                 />
             </div>
             {/* Phone Number */}
-            <div className="relative flex flex-col items-start justify-between w-full gap-4">
+            <div className="mt-6 relative flex flex-col items-start justify-between w-full gap-4">
                 <label htmlFor="phoneNumber">
                 <AiOutlinePhone className="inline-block mr-2 text-primary" />
                 {t("phoneNumber")}
@@ -106,7 +106,7 @@ const Warehousing = ({ formData, handleChange, handleSubmit, isLoading, t, isGue
       
       
             {/* Task Name */}
-            <div className="relative flex flex-col items-start justify-between w-full gap-4">
+            <div className="mt-6 relative flex flex-col items-start justify-between w-full gap-4">
                 <label htmlFor="taskName">
                 <AiOutlineFileText className="inline-block mr-2 text-primary" />
                 {t("TaskName")}

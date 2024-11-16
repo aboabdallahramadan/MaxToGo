@@ -49,12 +49,12 @@ const Subscribe = () => {
   return (
     <div className="flex flex-col justify-between items-center gap-2">
       <h3 className="text-center text-xl mb-2 text-primary">{t("Subscribe")}</h3>
-      <form onSubmit={handleSubmit} className="flex flex-col justify-between items-center gap-2">
+      <form onSubmit={handleSubmit} className="flex flex-col justify-between items-center gap-2 w-full">
         <input
           type="email"
           name="email"
           id="email"
-          className="border-2 border-primary bg-transparent p-1 rounded-lg"
+          className="border-2 border-primary bg-transparent p-1 rounded-lg w-full"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder={t("Email")}
