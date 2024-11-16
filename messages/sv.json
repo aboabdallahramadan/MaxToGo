@@ -885,7 +885,8 @@
             "payment": "Betalning",
             "Sold": "Såld",
             "From": "Från",
-            "To": "Till"
+            "To": "Till",
+            "country": "Land"
         },
         "Chat": {
             "Chat": "Chatt",

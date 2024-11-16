@@ -801,7 +801,8 @@
             "payment": "payment",
             "Sold": "Sold",
             "From": "From",
-            "To": "To"
+            "To": "To",
+            "country": "Country"
         },
         "Chat": {
             "Chat": "Chat",

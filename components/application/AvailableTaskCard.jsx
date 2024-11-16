@@ -1,8 +1,8 @@
 "use client";
 import { useState } from 'react';
 import { useTranslations } from "next-intl";
-import { BsArrowDownUp, BsBuildingFill, BsCalendarDate, BsChatFill, BsHouseFill, BsPeopleFill, BsPersonFill, BsPhoneFill, BsTextCenter, BsType } from "react-icons/bs";
-import { FaBoxes, FaCalendarTimes, FaChartArea, FaChartPie, FaIdBadge, FaLocationArrow, FaMoneyBill } from "react-icons/fa";
+import { BsArrowDownUp, BsBuildingFill, BsCalendarDate, BsHouseFill, BsPeopleFill, BsTextCenter, BsType } from "react-icons/bs";
+import { FaBoxes, FaChartArea, FaLocationArrow } from "react-icons/fa";
 import { FiTruck } from "react-icons/fi";
 import PurchaseTask from "@/components/application/PurchaseTask";
 import TaskCardDetails from "./TaskCardDetails";
@@ -13,7 +13,7 @@ const AvailableTaskCard = ({ task }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className='bg-gray-800 flex flex-col justify-start items-center gap-4 p-4 border-2 border-transparent border-b-foreground hover:border-2 hover:border-primary hover:bg-hoverPrimary/5 rounded-lg transition-all duration-300'>
+    <div className='w-full sm:w-3/5 bg-gray-800 flex flex-col justify-start items-center gap-4 p-4 border-2 border-transparent border-b-foreground hover:border-2 hover:border-primary hover:bg-hoverPrimary/5 rounded-lg transition-all duration-300'>
       <div 
         onClick={() => setIsExpanded(!isExpanded)}
         className="w-full cursor-pointer"
