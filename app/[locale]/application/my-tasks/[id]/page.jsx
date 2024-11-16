@@ -23,7 +23,7 @@ const TaskPage = () => {
             "location": "Gaza",
             "taskMaster": "hany alalmany",
             "phoneNumber": "+96398888888",
-            "status": "waiting confirmation",
+            "status": "not purchased",
             "priceType": "offer",
             "user": {
                 "id": 1,

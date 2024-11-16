@@ -127,7 +127,9 @@ const AvailableTasksSection = () => {
         "location": "Gaza",
         "toLocation": "Aleppo",
         "priceType": "offer",
-        
+        "offer": {
+            "price": "100"
+        },
         
         "text": " task details",
         "taskMaster": "hany alalmany",
@@ -226,6 +228,9 @@ const AvailableTasksSection = () => {
         "price": "200",
         "location": "Gaza",
         "priceType": "offer",
+        "offer": {
+            "price": "100"
+        },
         
         
         "text": " task details",

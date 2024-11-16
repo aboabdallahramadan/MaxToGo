@@ -886,7 +886,12 @@
             "Sold": "Såld",
             "From": "Från",
             "To": "Till",
-            "country": "Land"
+            "country": "Land",
+            "MyOffer": "Mitt erbjudande",
+            "EditOffer": "Redigera erbjudande",
+            "DeleteOffer": "Ta bort erbjudande",
+            "Save": "Spara",
+            "Delete": "Ta bort"
         },
         "Chat": {
             "Chat": "Chatt",

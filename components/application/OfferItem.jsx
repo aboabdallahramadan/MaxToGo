@@ -18,7 +18,7 @@ const OfferItem = ({ offer, onAccept }) => {
           </div>
         </div>
         <div className="text-right">
-          <p className="text-xl font-bold text-primary">{offer.price} €</p>
+          <p className="text-xl font-bold text-primary">{offer.price} kr</p>
           <button
             onClick={() => onAccept(offer.id)}
             className="mt-2 px-4 py-2 bg-primary text-white rounded-lg hover:bg-hoverPrimary transition-colors"

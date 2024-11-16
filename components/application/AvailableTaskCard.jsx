@@ -7,13 +7,14 @@ import { FiTruck } from "react-icons/fi";
 import PurchaseTask from "@/components/application/PurchaseTask";
 import TaskCardDetails from "./TaskCardDetails";
 import MakeOffer from "./MakeOffer";
-
+import MyOffer from "./MyOffer";
 const AvailableTaskCard = ({ task }) => {
   const t = useTranslations("Application.AvailableTasks");
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className='w-full sm:w-3/5 bg-gray-800 flex flex-col justify-start items-center gap-4 p-4 border-2 border-transparent border-b-foreground hover:border-2 hover:border-primary hover:bg-hoverPrimary/5 rounded-lg transition-all duration-300'>
+    <div className='w-full sm:w-3/5'>
+    <div className='w-full bg-gray-800 flex flex-col justify-start items-center gap-4 p-4 border-2 border-transparent border-b-foreground hover:border-2 hover:border-primary hover:bg-hoverPrimary/5 rounded-lg transition-all duration-300'>
       <div 
         onClick={() => setIsExpanded(!isExpanded)}
         className="w-full cursor-pointer"
@@ -137,6 +138,12 @@ const AvailableTaskCard = ({ task }) => {
           <MakeOffer task={task}/>
         ))}
       </div>
+    </div>
+    {
+      task.priceType === "offer" && (
+        <MyOffer offer={task.offer}/>
+      )
+    }
     </div>
   );
 };
